@@ -7,13 +7,15 @@ paplay <(cat /tmp/1.wav)
 }
 
 
-
+install_deps(){
+sudo apt-get update -qq
+sudo apt-get install -qq recordmydesktop x11-apps libpulse-dev pulseaudio dbus-x11 espeak mbrola-us2 pulseaudio-utils
 
 sudo apt-get install -y flite fortune pv toilet curl wget tree gxmessage zenity xcowsay notify-osd toilet figlet sox libsox-fmt-mp3
 sudo add-apt-repository ppa:webupd8team/y-ppa-manager -y
 sudo apt-get update 
 sudo apt-get install yad
-
+}
 
 
 run(){
@@ -26,7 +28,7 @@ cd prototypes
 }
 
 
-
+steps(){
 eval "export DISPLAY=:99.0"
 eval "sh -e /etc/init.d/xvfb start"
 dbus-launch pulseaudio --start
@@ -46,3 +48,7 @@ while pgrep -x recordmydesktop > /dev/null ; do sleep 1; done # wait for transco
 tar cf artifacts.tar session.ogv
 ls -l session.ogv
 mv session.ogv /tmp
+}
+
+install_deps
+steps
