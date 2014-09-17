@@ -2,12 +2,26 @@
 
 owner=brownman
 repo=travis_test
+path=`pwd`
+dirname=coverage
+dir=$path/$dirname
+filename=date.txt
+file=$dir/$filename
 
+echo $( date )  > $file
+
+echo [ file info/location ] 
+ls -l $file
+cat $file
+  
+  
 if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   echo -e "Starting to update gh-pages\n"
 
-  #cp -R coverage $HOME/coverage
-  echo $( date )  > date.txt
+
+
+  
+  cp -R $dir $HOME/coverage
 
   cd $HOME
   git config --global user.email "travis@travis-ci.org"
