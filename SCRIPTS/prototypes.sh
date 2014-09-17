@@ -1,12 +1,18 @@
+flite_test(){
+#alias flite=`which flite`
+str=$(dirname `which flite`)
+export PATH=$PATH:$str  
+}
+sudo apt-get install flite
+flite_test 
+exit
 
 sudo apt-get install -y flite fortune pv toilet curl wget tree gxmessage zenity xcowsay notify-osd toilet figlet sox libsox-fmt-mp3
 sudo add-apt-repository ppa:webupd8team/y-ppa-manager -y
 sudo apt-get update 
 sudo apt-get install yad
 
-#alias flite=`which flite`
-str=$(dirname `which flite`)
-export PATH=$PATH:$str
+
 
 cd /tmp
 git clone https://github.com/brownman/prototypes
