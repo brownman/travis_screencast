@@ -17,9 +17,13 @@ sudo apt-get update
 sudo apt-get install yad
 }
 
+set_env(){
+   export AUDIODEV=null
+}
+
 
 run(){
-flite_test   
+    
 cd /tmp
 git clone https://github.com/brownman/prototypes
 cd prototypes
@@ -35,7 +39,7 @@ dbus-launch pulseaudio --start
 eval "recordmydesktop --no-cursor  --output=session.ogv &"
 paplay <(espeak -vmb-us2  "Ok, let's get rickrolled" --stdout)
 #eval "firefox www.youtube.com/watch?v=oHg5SJYRHA0 &"
-run
+flite_test
 sleep 10
 paplay <(espeak -vmb-us2  "That bored me" --stdout)
 killall firefox 
