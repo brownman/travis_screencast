@@ -1,7 +1,7 @@
-[![Build Status](https://travis-ci.org/brownman/travis_test.svg?branch=develop)](https://travis-ci.org/brownman/travis_test)
+[![Build Status](https://travis-ci.org/brownman/travis_screencast.svg?branch=develop)](https://travis-ci.org/brownman/travis_screencast)
 
 
-travis: Automated screencasts
+Travis: Automated screencasts
 ====
 steps:
 ----
@@ -14,7 +14,7 @@ steps:
 
 PRODUCTS
 ====
-- [youtube](https://github.com/brownman/travis_test/blob/gh-pages/session.ogv)
+- [youtube](https://github.com/brownman/travis_screencast/blob/gh-pages/session.ogv)
 - 
 
 
