@@ -8,7 +8,7 @@ env:
 before_install:
   - echo install
 before_script:
-  - SCRIPTS/youtube.sh
+  - ./SCRIPTS/youtube.sh
 build:
   - true
 script:
