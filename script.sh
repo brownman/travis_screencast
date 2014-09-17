@@ -1,18 +1,21 @@
+#!/bin/bash
+
 owner=brownman
 repo=travis_test
 
 if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   echo -e "Starting to update gh-pages\n"
 
-  cp -R coverage $HOME/coverage
+  #cp -R coverage $HOME/coverage
+  echo $( date )  > date.txt
 
   cd $HOME
   git config --global user.email "travis@travis-ci.org"
   git config --global user.name "Travis"
   git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/$owner/$repo.git  gh-pages > /dev/null
 
-  cd gh-pages
-  cp -Rf $HOME/coverage/* .
+  #cd gh-pages
+  #cp -Rf $HOME/coverage/* .
 
   git add -f .
   git commit -m "Travis build $TRAVIS_BUILD_NUMBER pushed to gh-pages"
