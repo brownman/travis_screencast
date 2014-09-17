@@ -40,6 +40,7 @@ eval "recordmydesktop --no-cursor  --output=session.ogv &"
 paplay <(espeak -vmb-us2  "Ok, let's get rickrolled" --stdout)
 #eval "firefox www.youtube.com/watch?v=oHg5SJYRHA0 &"
 flite_test
+set_env
 run
 sleep 10
 paplay <(espeak -vmb-us2  "That bored me" --stdout)
