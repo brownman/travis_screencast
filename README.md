@@ -1,9 +1,10 @@
-Automated screencasts
+travis: Automated screencasts
 ====
-- clone my repos
-- run then + record a screencast
-- upload to github
-- store results on branch: gh-pages
+steps:
+----
+- clone on of my github repositories
+- run it + record a screencast
+- upload to github, to this repo, branch:gh-pages
 
 
 [![Build Status](https://travis-ci.org/brownman/travis_test.svg?branch=develop)](https://travis-ci.org/brownman/travis_test)
