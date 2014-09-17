@@ -1,0 +1,14 @@
+
+
+env:
+  global:
+    #    - secure: "lots-of-seemingly-random-characters"
+    - secure: "eeg3fbZ+021Nwb519WvJ6jBWJxQzepJAq/kPRCQgP7JgWadWcSuOukn+aN+Dij7T8Wks+PRZGsPN91Xh4keKOnlPSBme7wK8pt0osFpy2fdX9KCj6gOp0/+cpRrkpomdSo+hX1iNdqJcFjP8OtMtC08Vs0mTbjzN2OaPtEfuXGU="
+
+
+
+after_script:
+  - echo travis encrypt GH_TOKEN="the-token-from-github" --add env.global
+  - git config credential.helper "store --file=.git/credentials"
+  - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
+  - node ./node_modules/grunt-cli/bin/grunt release
