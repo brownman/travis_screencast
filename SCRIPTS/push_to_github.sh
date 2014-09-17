@@ -1,7 +1,7 @@
 #!/bin/bash
 
 owner=brownman
-repo=travis_test
+repo=travis_screencast
 path=`pwd`
 dirname=coverage
 dir=$path/$dirname
