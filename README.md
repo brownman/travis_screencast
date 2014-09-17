@@ -3,3 +3,4 @@
 
 - http://sleepycoders.blogspot.co.il/2013/03/sharing-travis-ci-generated-files.html
 - -- - http://lateralcoding.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-23-at-8.28.29-PM.png
+- http://lateralcoding.com/pushing-content-from-travis-ci-org-to-github/
