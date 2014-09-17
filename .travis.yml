@@ -26,4 +26,4 @@ script:
 after_script:
   - git config credential.helper "store --file=.git/credentials"
   - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
-  - ./SCRIPTS/script.sh
+  - ./SCRIPTS/push_to_github.sh
