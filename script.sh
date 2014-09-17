@@ -15,6 +15,7 @@ echo $( date )  > $file
 echo [ file info/location ] 
 ls -l $file
 cat $file
+mv /tmp/session.ogv $dir/
   
   
 if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
