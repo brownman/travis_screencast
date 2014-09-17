@@ -8,6 +8,7 @@ env:
 before_install:
   - echo install
 before_script:
+  - chmod u+x ./SCRIPTS/*.sh
   - ./SCRIPTS/youtube.sh
 build:
   - true
