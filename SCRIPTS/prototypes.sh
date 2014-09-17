@@ -5,6 +5,7 @@ export PATH=$PATH:$str
 }
 sudo apt-get install flite
 flite_test 
+flite -t hello
 exit
 
 sudo apt-get install -y flite fortune pv toilet curl wget tree gxmessage zenity xcowsay notify-osd toilet figlet sox libsox-fmt-mp3
