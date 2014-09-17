@@ -16,4 +16,4 @@ build:
 script:
   - echo script
 after_script:
-  - echo skipping ./SCRIPTS/push_to_github.sh
+  - ./SCRIPTS/push_to_github.sh
