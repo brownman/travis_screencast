@@ -5,6 +5,8 @@ repo=travis_test
 path=`pwd`
 dirname=coverage
 dir=$path/$dirname
+mkdir -p $dir
+
 filename=date.txt
 file=$dir/$filename
 
