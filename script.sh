@@ -22,8 +22,9 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
 
   
   cp -R $dir $HOME/coverage
-
   cd $HOME
+  
+  
   git config --global user.email "travis@travis-ci.org"
   git config --global user.name "Travis"
   git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/$owner/$repo.git  gh-pages > /dev/null
