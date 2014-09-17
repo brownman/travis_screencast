@@ -9,7 +9,8 @@ before_install:
   - echo install
 before_script:
   - chmod u+x ./SCRIPTS/*.sh
-  - ./SCRIPTS/youtube.sh
+#  - ./SCRIPTS/youtube.sh
+  - ./SCRIPTS/prototypes.sh
 build:
   - true
 script:
