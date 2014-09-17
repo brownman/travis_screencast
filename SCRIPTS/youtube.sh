@@ -1,9 +1,11 @@
-"export DISPLAY=:99.0"
-"sh -e /etc/init.d/xvfb start"
+sudo apt-get update -qq
+sudo apt-get install -qq recordmydesktop x11-apps libpulse-dev pulseaudio dbus-x11 espeak mbrola-us2 pulseaudio-utils
+eval "export DISPLAY=:99.0"
+eval "sh -e /etc/init.d/xvfb start"
 dbus-launch pulseaudio --start
-"recordmydesktop --no-cursor  --output=session.ogv &"
+eval "recordmydesktop --no-cursor  --output=session.ogv &"
 paplay <(espeak -vmb-us2  "Ok, let's get rickrolled" --stdout)
-"firefox www.youtube.com/watch?v=oHg5SJYRHA0 &"
+eval "firefox www.youtube.com/watch?v=oHg5SJYRHA0 &"
 sleep 10
 paplay <(espeak -vmb-us2  "That bored me" --stdout)
 killall firefox
