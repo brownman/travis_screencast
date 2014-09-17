@@ -4,7 +4,7 @@ sudo add-apt-repository ppa:webupd8team/y-ppa-manager -y
 sudo apt-get update 
 sudo apt-get install yad
 
-
+alias flite=`which flite`
 
 cd /tmp
 git clone https://github.com/brownman/prototypes
