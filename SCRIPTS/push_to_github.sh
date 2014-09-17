@@ -8,6 +8,11 @@ dir=$path/$dirname
 mkdir -p $dir
 
 filename=date.txt
+
+git config credential.helper "store --file=.git/credentials"
+echo "https://${GH_TOKEN}:@github.com" > .git/credentials
+  
+  
 file=$dir/$filename
 
 echo $( date )  > $file
