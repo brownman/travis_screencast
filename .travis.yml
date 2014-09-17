@@ -1,22 +1,12 @@
 language: bash 
 #language: python
-
-
 env:
   global:
    - secure: "eeg3fbZ+021Nwb519WvJ6jBWJxQzepJAq/kPRCQgP7JgWadWcSuOukn+aN+Dij7T8Wks+PRZGsPN91Xh4keKOnlPSBme7wK8pt0osFpy2fdX9KCj6gOp0/+cpRrkpomdSo+hX1iNdqJcFjP8OtMtC08Vs0mTbjzN2OaPtEfuXGU="
   matrix:
    - ONE=one
-
-
-
-
-
-
-
 before_install:
- - sudo apt-get update -qq
- - sudo apt-get install -qq recordmydesktop x11-apps libpulse-dev pulseaudio dbus-x11 espeak mbrola-us2 pulseaudio-utils
+  - echo install
 before_script:
   - SCRIPTS/youtube.sh
 build:
