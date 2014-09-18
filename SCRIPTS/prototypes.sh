@@ -27,12 +27,12 @@ set_env(){
 
 
 run(){
-    
+
 cd /tmp
 git clone https://github.com/brownman/prototypes
 cd prototypes
 ./LIB/install.sh
-skip ./BANK/sanity_loop/run.sh
+./BANK/sanity_loop/run.sh
 }
 
 
@@ -47,7 +47,7 @@ paplay <(espeak -vmb-us2  "Ok, let's get rickrolled" --stdout)
 flite_test
 set_env
 #start pid, delay, kill
-run &
+(set -e; run )&
 pid=$!
 
 sleep 10
