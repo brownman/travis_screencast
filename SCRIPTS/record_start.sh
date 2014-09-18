@@ -10,7 +10,8 @@ commander xvfb -screen 0 1024x768x24
 use assert
 util=byzanz-record
 depend $util
-commander $util --duration=$timeout_record --x=0 --y=0 --width=1280 --height=800 $file_product --display=$DISPLAY
+commander $util --duration=$timeout_record --x=0 --y=0 --width=1280 --height=800 $file_product 
+#--display=$DISPLAY
 #/tmp/screencast/15_24_16_18_09_14.gif 
 
 
