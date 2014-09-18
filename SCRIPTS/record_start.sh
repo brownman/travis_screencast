@@ -3,6 +3,8 @@ commander "export DISPLAY=:99.0"
 commander "sh -e /etc/init.d/xvfb start"
 commander dbus-launch pulseaudio --start
 
+commander xvfb -screen 0 1024x768x24
+
 #commander  "recordmydesktop --no-cursor  --output=session.ogv &"
 #` use_sh screencast ` &
 use assert
