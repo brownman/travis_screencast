@@ -37,6 +37,7 @@ skip ./BANK/sanity_loop/run.sh
 
 
 steps(){
+local pid
 eval "export DISPLAY=:99.0"
 eval "sh -e /etc/init.d/xvfb start"
 dbus-launch pulseaudio --start
@@ -45,10 +46,14 @@ paplay <(espeak -vmb-us2  "Ok, let's get rickrolled" --stdout)
 #eval "firefox www.youtube.com/watch?v=oHg5SJYRHA0 &"
 flite_test
 set_env
-run
+#start pid, delay, kill
+run &
+pid=$!
+
 sleep 10
 paplay <(espeak -vmb-us2  "That bored me" --stdout)
-#killall firefox 
+kill $pid
+
 sleep 2
 paplay <(espeak -vmb-us2  "Much better now" --stdout)
 sleep 2
