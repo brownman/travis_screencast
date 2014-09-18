@@ -4,7 +4,9 @@ set -e
 
 steps_for_library(){
  commander cd $HOME
-  commander git clone  --depth=1 https://github.com/brownman/LIBRARY
+ local url_repo=https://github.com/brownman/LIBRARY
+  commander git clone  --depth=1 $url_repo
+  #git archive --format=tar --remote=$url_repo HEAD | tar xf -
   local dir2
   dir2=$HOME/LIBRARY
   
