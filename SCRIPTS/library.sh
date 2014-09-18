@@ -12,9 +12,11 @@ steps_for_library(){
   #commander tree $dir2
   
   commander1 source $dir2/library.cfg
- 
   commander1 source /tmp/library.cfg
-  commander1 use1
+  
+  
+  echo 1>&2 TESITNG use of the LIBRARY:
+  use print
   commander1 print ok 
 }
 steps_for_library
