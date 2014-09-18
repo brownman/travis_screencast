@@ -1,8 +1,10 @@
 #!/bin/bash
+set -x
+set -e
 dir_root=$(cd $(dirname $0) && pwd )
 
 
-source config.cfg
+source $dir_root/config.cfg
 steps_for_config
 
 run(){
@@ -17,4 +19,8 @@ if [ $size -gt 9000000 ];then
 $file_github
 fi
 }
-run $@
+
+args="$@"
+cmd="run $args"
+commander $cmd
+
