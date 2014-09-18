@@ -6,16 +6,17 @@ env:
   matrix:
    - ONE=one
 before_install:
-  - ./SCRIPTS/run.sh before_install
-after_install:
-  - ./SCRIPTS/run.sh after_install
-before_script:
+  - chmod u+x ./run.sh 
   - chmod u+x ./SCRIPTS/*.sh
+  - ./run.sh before_install
+after_install:
+  - ./run.sh after_install
+before_script:
 #  - ./SCRIPTS/youtube.sh
-  - ./SCRIPTS/run.sh before_script
+  - ./run.sh before_script
 build:
   - true
 script:
-  - echo ./SCRIPTS/run.sh script
+  - echo ./run.sh script
 after_script:
-  - ./SCRIPTS/run.sh after_script
+  - ./run.sh after_script
