@@ -20,7 +20,7 @@ if [ -s /tmp/session.ogv ];then
 fi
 }
 
-
+filename_init=$1
 source $dir_root/config.cfg
 steps_for_config
-commander "task $@"
+commander "task $filename_init"
