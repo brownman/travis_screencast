@@ -6,7 +6,7 @@ env:
   matrix:
    - ONE=one
 before_install:
-  - sudo apt-get install tree
+#  - sudo apt-get install tree
   - chmod u+x ./run.sh 
   - chmod u+x ./SCRIPTS/*.sh
   - ./run.sh library && ./run.sh install_deps
