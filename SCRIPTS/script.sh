@@ -14,5 +14,8 @@ cd prototypes
 ./BANK/sanity_loop/run.sh
 }
 
-args="$@"
-$args
+
+test -f $file_list_session || exiting
+while read line;do
+  commander $line
+done <$file_list_session
