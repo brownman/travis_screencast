@@ -25,10 +25,11 @@ before_script:
 script:
   - ./run.sh tests
 after_script:
-  - ./run.sh record_finish
+  - ./run.sh push_to_github
   
 after_success:
-  - ./run.sh push_to_github
+  - ./run.sh record_finish
+  
 after_failure:
   - echo after_failure
 
