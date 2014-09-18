@@ -1,5 +1,16 @@
 #!/bin/bash
+if [ -s /tmp/session.ogv ];then
+ size=$( du /tmp/session.ogv | cut -d'.'  -f1 ) 
+ echo "[SIZE] $size"
+ if [ $size -gt 9000000 ];then
+  print ok
+ fi
+else
+  exiting
+fi
 
+
+steps(){
 owner=brownman
 repo=travis_screencast
 path=`pwd`
@@ -46,3 +57,6 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
 
   echo -e "Done magic with coverage\n"
 fi
+
+}
+steps
