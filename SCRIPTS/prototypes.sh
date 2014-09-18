@@ -48,7 +48,7 @@ set_env
 run
 sleep 10
 paplay <(espeak -vmb-us2  "That bored me" --stdout)
-killall firefox 
+#killall firefox 
 sleep 2
 paplay <(espeak -vmb-us2  "Much better now" --stdout)
 sleep 2
