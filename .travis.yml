@@ -25,7 +25,7 @@ before_script:
 script:
   - ./run.sh tests
 after_script:
-  - echo ./run.sh record_finish
+  - ./run.sh record_finish
   
 after_success:
   - ./run.sh push_to_github
