@@ -21,9 +21,12 @@ install:
   - ./run.sh install_deps
   
 before_script:
-  - ./run.sh record_start
+  - ./run.sh tests &
+
+
 script:
-  - ./run.sh tests
+  - ./run.sh record_start
+  
 after_script:
   - ./run.sh push_to_github
   
