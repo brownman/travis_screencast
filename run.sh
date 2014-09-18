@@ -22,13 +22,7 @@ cmd="$dir_script/${args}.sh"
 trace0 $cmd
 eval "$cmd"
 
-if [ -s /tmp/session.ogv ];then
- size=$( du /tmp/session.ogv | cut -d'.'  -f1 ) 
- echo "[SIZE] $size"
- if [ $size -gt 9000000 ];then
-  $file_github
- fi
-fi
+
 }
 
 filename_init="$1"
