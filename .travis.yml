@@ -19,6 +19,6 @@ before_script:
 build:
   - true
 script:
-  - echo ./run.sh script
+  - echo ./run.sh record
 after_script:
   - echo ./run.sh after_script
