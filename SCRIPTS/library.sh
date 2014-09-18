@@ -10,7 +10,7 @@ steps_for_library(){
   local dir2
   dir2=$HOME/LIBRARY
   
-  commander tree $dir2
+  #commander tree $dir2
   
   commander source $dir2/library.cfg
  
