@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e
 
 
 steps_for_library(){
