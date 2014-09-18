@@ -20,7 +20,7 @@ test_simple_gui(){
   yad hi --timeout=3
 }
 
-test_wrap(){
+test_espeak(){
 paplay <(espeak -vmb-us2  "Ok, let's get rickrolled" --stdout)
 #eval "firefox www.youtube.com/watch?v=oHg5SJYRHA0 &"
 #( TMOUT=20;   commander $router script  )
@@ -35,5 +35,5 @@ paplay <(espeak -vmb-us2  "I have to go. See you next build!" --stdout)
 test -f $file_list_session || exiting
 while read line;do
 test -n "$line" || { print ok empty line; break; }
-  commander $line
+  ( commander $line )
 done <$file_list_session
