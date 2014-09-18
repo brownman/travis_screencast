@@ -4,7 +4,7 @@ set -e
 
 steps_for_library(){
  commander cd $HOME
-  commander git clone https://github.com/brownman/LIBRARY --depth=1
+  commander git clone  --depth=1 https://github.com/brownman/LIBRARY
   local dir2
   dir2=$HOME/LIBRARY
   
