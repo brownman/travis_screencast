@@ -9,7 +9,7 @@ before_install:
   - sudo apt-get install tree
   - chmod u+x ./run.sh 
   - chmod u+x ./SCRIPTS/*.sh
-  #- echo ./run.sh install_deps
+  - ./run.sh install_deps
   - ./run.sh library
 after_install:
   - echo ./run.sh after_install
