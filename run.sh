@@ -1,5 +1,7 @@
 #!/bin/bash
-dir_root=$( cd `dirname $0`; pwd )
+dir_root=$(cd $(dirname $0) && pwd )
+
+
 source config.cfg
 steps_for_config
 
