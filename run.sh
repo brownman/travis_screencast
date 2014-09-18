@@ -1,6 +1,7 @@
 #!/bin/bash
 set -x
 set -e
+set -u
 export dir_root=$(cd $(dirname $0) && pwd )
 
 
