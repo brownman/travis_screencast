@@ -8,7 +8,7 @@ env:
 before_install:
   - chmod u+x ./run.sh 
   - chmod u+x ./SCRIPTS/*.sh
-  - ./run.sh before_install
+  - ./run.sh install_deps
 after_install:
   - ./run.sh after_install
 before_script:
