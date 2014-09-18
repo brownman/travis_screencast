@@ -4,12 +4,12 @@ env:
   fast_finish: true
   global:
    - secure: "eeg3fbZ+021Nwb519WvJ6jBWJxQzepJAq/kPRCQgP7JgWadWcSuOukn+aN+Dij7T8Wks+PRZGsPN91Xh4keKOnlPSBme7wK8pt0osFpy2fdX9KCj6gOp0/+cpRrkpomdSo+hX1iNdqJcFjP8OtMtC08Vs0mTbjzN2OaPtEfuXGU="
-  
-   
   matrix:
   - fast_finish: true
  # - ONE=one
-   
+
+#build:
+#  - true
    
 before_install:
 #  - sudo apt-get install tree
@@ -19,19 +19,16 @@ before_install:
   
 install:
   - ./run.sh install_deps
-
-  
   
 before_script:
 #  - ./SCRIPTS/youtube.sh
-  - echo ./run.sh before_script
-build:
-  - true
+  - ./run.sh record_start
+
 script:
   - ./run.sh record
 after_success:
-  - echo after_success
+  - ./run.sh push_to_github
 after_failure:
   - echo after_failure
 after_script:
-  - echo ./run.sh after_script
+  - echo ./run.sh record_finish
