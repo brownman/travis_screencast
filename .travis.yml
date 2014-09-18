@@ -5,13 +5,21 @@ env:
    - secure: "eeg3fbZ+021Nwb519WvJ6jBWJxQzepJAq/kPRCQgP7JgWadWcSuOukn+aN+Dij7T8Wks+PRZGsPN91Xh4keKOnlPSBme7wK8pt0osFpy2fdX9KCj6gOp0/+cpRrkpomdSo+hX1iNdqJcFjP8OtMtC08Vs0mTbjzN2OaPtEfuXGU="
   matrix:
    - ONE=one
+   
+   
 before_install:
 #  - sudo apt-get install tree
   - chmod u+x ./run.sh 
   - chmod u+x ./SCRIPTS/*.sh
-  - ./run.sh library && ./run.sh install_deps
+  - ./run.sh library 
+  - ./run.sh install_deps
+  
+install:
+  - echo install
 after_install:
   - echo ./run.sh after_install
+  
+  
 before_script:
 #  - ./SCRIPTS/youtube.sh
   - echo ./run.sh before_script
@@ -19,5 +27,9 @@ build:
   - true
 script:
   - echo ./run.sh record
+after_success:
+  - echo after_success
+after_failure:
+  - echo after_failure
 after_script:
   - echo ./run.sh after_script
