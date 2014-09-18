@@ -1,4 +1,7 @@
+  cd $HOME
   git clone https://github.com/brownman/LIBRARY --depth=1
-  LIBRARY/install.sh
+  $HOME/LIBRARY/install.sh
+  
+  source /tmp/library.cfg
   use1
   print ok 
