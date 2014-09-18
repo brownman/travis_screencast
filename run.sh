@@ -1,4 +1,7 @@
 #!/bin/bash
+shopt -s expand_aliases
+
+
 set -u
 export dir_root=$(cd $(dirname $0) && pwd )
 
