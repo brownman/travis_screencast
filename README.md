@@ -26,3 +26,7 @@ links
 - http://lateralcoding.com/pushing-content-from-travis-ci-org-to-github/
 -- https://github.com/angular/angular.dart/tree/master/scripts/travis
 --- https://github.com/angular/angular.dart/blob/master/scripts/travis/publish-docs.sh
+
+x11
+---
+- https://twolfson.com/2013-09-22-debugging-travis-ci
