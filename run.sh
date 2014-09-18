@@ -1,11 +1,8 @@
 #!/bin/bash
 set -x
 set -e
-dir_root=$(cd $(dirname $0) && pwd )
+export dir_root=$(cd $(dirname $0) && pwd )
 
-
-source $dir_root/config.cfg
-steps_for_config
 
 run(){
 local args="$@"
@@ -21,6 +18,8 @@ fi
 }
 
 args="$@"
+source $dir_root/config.cfg
+steps_for_config
 cmd="run $args"
 commander $cmd
 
