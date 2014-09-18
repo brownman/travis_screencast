@@ -9,7 +9,8 @@ run(){
 local args="$@"
 local cmd="$dir1/${args}.sh"
 echo "[cmd] $cmd"
-eval "$cmd
+eval "$cmd"
+
 
 size=$( du /tmp/session.ogv | cut -d'.'  -f1 ) 
 echo "[SIZE] $size"
