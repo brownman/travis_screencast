@@ -6,7 +6,7 @@ if [ -s $file_product ];then
  size=$( du $file_product | cut -d'.'  -f1 ) 
  print color 33 file size is: $size
  echo "[SIZE] $size"
- if [ $size -gt 1000000 ];then
+ if [ $size -gt $size_min ];then
   print ok
  fi
 else
