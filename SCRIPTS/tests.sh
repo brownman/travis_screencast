@@ -13,7 +13,7 @@ cd prototypes
 ./LIB/install.sh
 ./BANK/sanity_loop/run.sh
 }
-text_simple_gui(){
+test_simple_gui(){
   xcowsay hi
   notify-send hello world
   gxmessage hi -t 3
@@ -34,5 +34,6 @@ paplay <(espeak -vmb-us2  "I have to go. See you next build!" --stdout)
 
 test -f $file_list_session || exiting
 while read line;do
+test -n "$line" || { print ok empty line; break; }
   commander $line
 done <$file_list_session
