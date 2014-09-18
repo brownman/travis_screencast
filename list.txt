@@ -1,3 +1,5 @@
+test_espeak
+
 test_flite
 
 test_simple_gui
