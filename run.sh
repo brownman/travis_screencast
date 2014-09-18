@@ -7,6 +7,7 @@ export dir_root=$(cd $(dirname $0) && pwd )
 
 if [ -L /tmp/library.cfg ];then
 source /tmp/library.cfg
+activate_important
 else
 echo 1>&2  use temporary func: commander
 alias commander=commander1
