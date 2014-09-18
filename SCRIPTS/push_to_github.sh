@@ -1,6 +1,9 @@
 #!/bin/bash
-if [ -s /tmp/session.ogv ];then
- size=$( du /tmp/session.ogv | cut -d'.'  -f1 ) 
+set -u
+
+
+if [ -s $file_product ];then
+ size=$( du $file_product | cut -d'.'  -f1 ) 
  echo "[SIZE] $size"
  if [ $size -gt 9000000 ];then
   print ok
@@ -10,12 +13,13 @@ else
 fi
 
 
+
 steps(){
-owner=brownman
-repo=travis_screencast
-path=`pwd`
-dirname=coverage
-dir=$path/$dirname
+ 
+
+local path=`where_am_i $0`
+local dirname=coverage
+local dir=$path/$dirname
 mkdir -p $dir
 
 filename=date.txt
@@ -36,14 +40,11 @@ mv /tmp/session.ogv $dir/
   
 if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   echo -e "Starting to update gh-pages\n"
-
-
-
   
   cp -R $dir $HOME/coverage
   cd $HOME
   
-  
+
   git config --global user.email "travis@travis-ci.org"
   git config --global user.name "Travis"
   git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/$owner/$repo.git  gh-pages #> /dev/null
