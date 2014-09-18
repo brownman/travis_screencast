@@ -1,3 +1,7 @@
+skip(){
+echo 1>&2 skipping: $@
+}
+
 flite_test(){
 #alias flite=`which flite`
 str=$(dirname `which flite`)
@@ -28,7 +32,7 @@ cd /tmp
 git clone https://github.com/brownman/prototypes
 cd prototypes
 ./LIB/install.sh
-./BANK/sanity_loop/run.sh
+skip ./BANK/sanity_loop/run.sh
 }
 
 
