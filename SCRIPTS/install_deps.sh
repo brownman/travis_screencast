@@ -7,5 +7,5 @@ sudo apt-get install -y  flite fortune pv toilet curl wget tree gxmessage zenity
 sudo add-apt-repository ppa:webupd8team/y-ppa-manager -y
 sudo add-apt-repository ppa:fossfreedom/byzanz -y 
 sudo apt-get update 
-sudo apt-get install yad byzanz-record
+sudo apt-get install yad byzanz
 
