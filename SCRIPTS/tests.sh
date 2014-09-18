@@ -20,6 +20,18 @@ text_simple_gui(){
   yad hi --timeout=3
 }
 
+test_wrap(){
+paplay <(espeak -vmb-us2  "Ok, let's get rickrolled" --stdout)
+#eval "firefox www.youtube.com/watch?v=oHg5SJYRHA0 &"
+#( TMOUT=20;   commander $router script  )
+sleep 10
+paplay <(espeak -vmb-us2  "That bored me" --stdout)
+sleep 2
+paplay <(espeak -vmb-us2  "Much better now" --stdout)
+sleep 2
+paplay <(espeak -vmb-us2  "I have to go. See you next build!" --stdout)
+}
+
 test -f $file_list_session || exiting
 while read line;do
   commander $line
