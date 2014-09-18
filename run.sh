@@ -5,11 +5,11 @@ set -u
 export dir_root=$(cd $(dirname $0) && pwd )
 
 
-run(){
-local args="$@"
-local cmd="$dir1/${args}.sh"
-echo "[cmd] $cmd"
-eval "$cmd"
+task(){
+local cmd args size
+args="$@"
+cmd="$dir_script/${args}.sh"
+ 
 
 
 size=$( du /tmp/session.ogv | cut -d'.'  -f1 ) 
@@ -19,9 +19,7 @@ $file_github
 fi
 }
 
-args="$@"
+
 source $dir_root/config.cfg
 steps_for_config
-cmd="run $args"
-commander $cmd
-
+commander "task $@"
