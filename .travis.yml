@@ -16,8 +16,6 @@ before_install:
 install:
   - ./run.sh install_deps
 
-after_install:
-  - ./run.sh record
   
   
 before_script:
@@ -26,7 +24,7 @@ before_script:
 build:
   - true
 script:
-  - echo ./run.sh record
+  - ./run.sh record
 after_success:
   - echo after_success
 after_failure:
