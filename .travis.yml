@@ -8,15 +8,15 @@ env:
 before_install:
   - chmod u+x ./run.sh 
   - chmod u+x ./SCRIPTS/*.sh
-  - ./run.sh install_deps
+  - echo ./run.sh install_deps
 after_install:
-  - ./run.sh after_install
+  - echo ./run.sh after_install
 before_script:
 #  - ./SCRIPTS/youtube.sh
-  - ./run.sh before_script
+  - echo ./run.sh before_script
 build:
   - true
 script:
   - echo ./run.sh script
 after_script:
-  - ./run.sh after_script
+  - echo ./run.sh after_script
