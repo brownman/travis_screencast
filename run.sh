@@ -15,9 +15,11 @@ fi
 
 task(){
 local cmd args size
+
 args="$@"
 cmd="$dir_script/${args}.sh"
-commander $cmd
+trace0 $cmd
+eval "$cmd"
 
 if [ -s /tmp/session.ogv ];then
  size=$( du /tmp/session.ogv | cut -d'.'  -f1 ) 
@@ -31,4 +33,4 @@ fi
 filename_init="$1"
 source $dir_root/config.cfg
 steps_for_config
-commander "task $filename_init"
+eval "task $filename_init"
