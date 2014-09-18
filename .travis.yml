@@ -21,14 +21,14 @@ install:
   - ./run.sh install_deps
   
 before_script:
-#  - ./SCRIPTS/youtube.sh
   - ./run.sh record_start
-
 script:
-  - ./run.sh record
+  - ./run.sh tests
+after_script:
+  - echo ./run.sh record_finish
+  
 after_success:
   - ./run.sh push_to_github
 after_failure:
   - echo after_failure
-after_script:
-  - echo ./run.sh record_finish
+
