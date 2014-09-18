@@ -12,12 +12,12 @@ before_install:
   - chmod u+x ./run.sh 
   - chmod u+x ./SCRIPTS/*.sh
   - ./run.sh library 
-  - ./run.sh install_deps
   
 install:
-  - echo install
+  - ./run.sh install_deps
+
 after_install:
-  - echo ./run.sh after_install
+  - ./run.sh record
   
   
 before_script:
