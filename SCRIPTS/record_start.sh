@@ -5,6 +5,7 @@ local pid
 eval "export DISPLAY=:99.0"
 eval "sh -e /etc/init.d/xvfb start"
 dbus-launch pulseaudio --start
+
 eval "recordmydesktop --no-cursor  --output=session.ogv &"
 paplay <(espeak -vmb-us2  "Ok, let's get rickrolled" --stdout)
 #eval "firefox www.youtube.com/watch?v=oHg5SJYRHA0 &"
