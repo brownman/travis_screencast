@@ -1,3 +1,4 @@
-test_simple_gui
 test_flite
+
+test_simple_gui
 test_prototype
