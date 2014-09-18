@@ -11,7 +11,7 @@ paplay <(espeak -vmb-us2  "Ok, let's get rickrolled" --stdout)
 flite_test
 set_env
 #start pid, delay, kill
-(  set -e; $router script;  &)
+(  set -e; commander $router script;  )&
 pid=$!
 
 sleep 10
