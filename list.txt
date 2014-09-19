@@ -1,3 +1,5 @@
+test_espeak
+
 test_simple_gui
 
 test_espeak
