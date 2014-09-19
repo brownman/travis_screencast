@@ -10,7 +10,7 @@ if [ -s $file_product ];then
   print ok
  fi
 else
-  print color file is too small
+  print color 31 2333466666666file is too small
   exiting
 fi
 
