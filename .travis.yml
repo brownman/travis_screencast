@@ -15,7 +15,7 @@ before_install:
 #  - sudo apt-get install tree
   - chmod u+x ./run.sh 
   - chmod u+x ./SCRIPTS/*.sh
-  - ./run.sh library 
+  - ./run.sh library > /dev/null
   
 install:
   - ./run.sh install_deps > /dev/null
