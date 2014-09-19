@@ -18,7 +18,7 @@ before_install:
   - ./run.sh library 
   
 install:
-  - ./run.sh install_deps
+  - ./run.sh install_deps > /dev/null
   
 before_script:
   - ./run.sh tests &
