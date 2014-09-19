@@ -21,11 +21,16 @@ install:
   - ./run.sh install_deps > /dev/null
   
 before_script:
-  - ./run.sh tests &
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+  - "dbus-launch pulseaudio --start"
+  
 
 
 script:
-  - ./run.sh record_start
+  - ./run.sh record_start &
+  - sleep 3
+  - ./run.sh tests 
   
 after_script:
   - ./run.sh push_to_github
