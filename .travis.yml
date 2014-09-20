@@ -32,12 +32,12 @@ script:
   - ./run.sh record_start 
   
 after_script:
-  - ./run.sh push_to_github
+  - echo after script
 
 after_success:
-  - echo success
+  - ./run.sh push_to_github
 
-  
+
 after_failure:
   - echo failure
 
