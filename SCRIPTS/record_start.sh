@@ -36,5 +36,6 @@ commander $util -v --duration=$timeout_record --x=0 --y=0 --width=1280 --height=
 
 
 record0 &
-sleep 60
-kill 0
+sleep $timeout_record
+#kill 0
+killall recordmydesktop
