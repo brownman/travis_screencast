@@ -7,7 +7,7 @@ if [ -f "$file_product" ];then
  print color 33 file size is: $size
  print color 33  "[SIZE] $size"
  
- if [ $size -gt $size_min ];then
+ if [ "$size" -gt "$size_min" ];then
 		 print ok
   else
 		 print color 31 file is too small
