@@ -24,7 +24,8 @@ else
 steps(){
  
 
-local path=`where_am_i $0`
+local path=/tmp/1
+#`where_am_i $0`
 local dirname=coverage
 local dir=$path/$dirname
 mkdir -p $dir
