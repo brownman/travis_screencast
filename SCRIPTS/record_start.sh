@@ -16,12 +16,12 @@ options="--width 640 --height 480  \
 --s_quality 10 \
 --v_bitrate 2000000 \
  --no-cursor  \
---delay $timeout_record \
  --no-cursor  \
 --output=$file_product"
 
 commander recordmydesktop $options
 }
+#--delay $timeout_record \
 
 
 record1(){
@@ -36,4 +36,6 @@ commander $util -v --duration=$timeout_record --x=0 --y=0 --width=1280 --height=
 
 
 
-record0
+record0 &
+sleep 60
+kill 0
