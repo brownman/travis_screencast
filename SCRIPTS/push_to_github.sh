@@ -3,7 +3,7 @@ set -u
 
 
 if [ -f "$file_product" ];then
- size=$( du -b $file_product | cut -d'.'  -f1 ) 
+ size=$( du -b $file_product | cut  -f1 ) 
  print color 33 file size is: $size
  print color 33  "[SIZE] $size"
  
