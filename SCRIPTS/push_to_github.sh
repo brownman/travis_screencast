@@ -8,11 +8,15 @@ if [ -f $file_product ];then
  print color 33  "[SIZE] $size"
  if [ $size -gt $size_min ];then
   print ok
- fi
-else
+  else
   print color 31 file is too small
   exiting
 fi
+else
+print error file not exist
+exiting
+ fi
+
 
 
 
