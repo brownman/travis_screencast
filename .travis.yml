@@ -33,12 +33,13 @@ script:
   - ./run.sh tests 
   
 after_script:
-  - echo 
-  
-after_success:
   - ./run.sh push_to_github
+
+after_success:
+  - echo success
+
   
 after_failure:
-  - ./run.sh push_to_github
+  - echo failure
 
 
