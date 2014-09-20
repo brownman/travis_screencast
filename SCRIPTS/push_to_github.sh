@@ -6,14 +6,14 @@ if [ -f "$file_product" ];then
  size=$( du $file_product | cut -d'.'  -f1 ) 
  print color 33 file size is: $size
  print color 33  "[SIZE] $size"
+ 
  if [ $size -gt $size_min ];then
-  print ok
+		 print ok
   else
-  print color 31 file is too small
-  exiting
+		 print color 31 file is too small
+		 exiting
+  fi
 else
-   
-   use exiting
    print error file not exist
    exiting
  fi
