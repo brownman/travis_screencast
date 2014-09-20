@@ -28,9 +28,8 @@ before_script:
 
 
 script:
-  - ./run.sh record_start &
-  - sleep 3
-  - ./run.sh tests 
+  - ./run.sh tests &
+  - ./run.sh record_start 
   
 after_script:
   - ./run.sh push_to_github
