@@ -2,7 +2,7 @@
 set -u
 
 
-if [ -f $file_product ];then
+if [ -f "$file_product" ];then
  size=$( du $file_product | cut -d'.'  -f1 ) 
  print color 33 file size is: $size
  print color 33  "[SIZE] $size"
@@ -11,10 +11,11 @@ if [ -f $file_product ];then
   else
   print color 31 file is too small
   exiting
-fi
 else
-print error file not exist
-exiting
+   
+   use exiting
+   print error file not exist
+   exiting
  fi
 
 
