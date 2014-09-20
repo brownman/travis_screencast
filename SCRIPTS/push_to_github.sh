@@ -5,12 +5,12 @@ set -u
 if [ -s $file_product ];then
  size=$( du $file_product | cut -d'.'  -f1 ) 
  print color 33 file size is: $size
- echo "[SIZE] $size"
+ print color 33  "[SIZE] $size"
  if [ $size -gt $size_min ];then
   print ok
  fi
 else
-  print color 31 2333466666666file is too small
+  print color 31 file is too small
   exiting
 fi
 
