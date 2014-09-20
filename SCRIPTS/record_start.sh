@@ -16,7 +16,6 @@ options="--width 640 --height 480  \
 --s_quality 10 \
 --v_bitrate 2000000 \
  --no-cursor  \
- --no-cursor  \
 --output=$file_product"
 
 commander recordmydesktop $options
