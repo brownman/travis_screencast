@@ -5,6 +5,9 @@ sudo apt-get install -y  libnotify-bin flite fortune pv toilet curl wget tree gx
 sudo apt-get install xvfb
 sudo apt-get install libgtk2.0-0
 
+#install firefox
+sudo apt-get install icewease
+
 #show xinfo of root window
 sudo apt-get install xvfb apt-get libgl1-mesa-dri xfonts-cyrillic xfonts-100dpi xfonts-75dpi
 sudo apt-get install imagemagick x11-utils
