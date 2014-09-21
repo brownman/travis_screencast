@@ -48,8 +48,8 @@ echo "$( date ) $size"  >> $file
 echo [ file info/location ] 
 ls -l $file
 cat $file
-mv $file_product $dir/
-mv $file_product_cover $dir/
+mv $dir_product/* $dir/
+#mv $file_product_cover $dir/
   
   
 if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
@@ -75,6 +75,9 @@ fi
 
 }
 steps(){
-validate_products && upload
+#validate_products && 
+assert file_exist $file_product_cover
+#assert file_has_content $file_product
+upload
 }
 steps
