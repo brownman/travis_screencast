@@ -11,6 +11,8 @@ sudo apt-get install icewease
 #show xinfo of root window
 sudo apt-get install xvfb apt-get libgl1-mesa-dri xfonts-cyrillic xfonts-100dpi xfonts-75dpi
 sudo apt-get install imagemagick x11-utils
+
+sudo apt-get install xdotool wmctrl
 #PPA
 sudo add-apt-repository ppa:webupd8team/y-ppa-manager -y
 sudo add-apt-repository ppa:fossfreedom/byzanz -y 
