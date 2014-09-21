@@ -1,7 +1,7 @@
 #!/bin/bash
 set -u
 
-validate_size(){
+validate_products(){
 if [ -f "$file_product" ];then
  size=$( du -b $file_product | cut  -f1 ) 
  print color 33 file size is: $size
@@ -17,6 +17,8 @@ else
    print error file not exist
    exiting
  fi
+ 
+ test -f $file_product_cover
 }
 
 
@@ -70,7 +72,6 @@ fi
 
 }
 steps(){
-validate_size
-upload
+validate_products && upload
 }
 steps
