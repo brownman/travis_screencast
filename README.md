@@ -14,7 +14,7 @@ steps:
 
 PRODUCTS
 ====
-- [recorded session](https://github.com/brownman/travis_screencast/blob/gh-pages/session.ogv)
+- [recorded session](http://brownman.github.io/travis_screencast)
 - 
 
 
