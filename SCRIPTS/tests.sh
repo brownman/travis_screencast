@@ -16,8 +16,8 @@ cd prototypes
 test_simple_gui(){
   xcowsay hi
   notify-send hello world
-  gxmessage hi -t 3
-  yad hi --timeout=3
+  gxmessage hi -timeout 3
+  yad 'hello world' -timeout=3
 }
 test_firefox(){
 # commander  sudo apt-get install firefox -y
