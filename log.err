@@ -1,0 +1,160 @@
+use temporary func: commander
+[-] /home/travis/build/brownman/travis_screencast/SCRIPTS/library.sh
+[-] ---------------
+[-] [cmd] :: cd /home/travis
+[-] res: 0
+[-] ---------------
+[-] ---------------
+[-] [cmd] :: git clone --depth=1 https://github.com/brownman/LIBRARY --branch=develop
+Cloning into 'LIBRARY'...
+[-] res: 0
+[-] ---------------
+[-] ---------------
+[-] [cmd] :: source /home/travis/LIBRARY/library.cfg
+/home/travis/LIBRARY/library.cfg
+[source] ps1.cfg
+[source] ps4.cfg
+[source] indicator.cfg
+[source] print.cfg
+[source] trace.cfg
+[source] expose_var.cfg
+[source] commander.cfg
+[source] dialog_optional.cfg
+[source] random.cfg
+[source] assert.cfg
+[source] ensure.cfg
+[source] history_sync.cfg
+[source] quick_follow.cfg
+[source] quick_remember.cfg
+[source] register.cfg
+[source] vars.cfg
+[source] alias.cfg
+[source] cat1.cfg
+[source] file_update.cfg
+[source] who_am_i.cfg
+[source] realpath.cfg
+[ register ] use
+[ register ] use_sh
+[source] times1.cfg
+[01;32m[*][0m : Activated Important stuff 
+[01;34m[*][0m skip testing [-] res: 0
+[-] ---------------
+[01;34m[*][0m [cmd] source /tmp/library.cfg library already loaded
+[01;32m[*][0m : 
+TESITNG use of the LIBRARY:
+[01;34m[*][0m [cmd] print ok [01;32m[*][0m : 
+[01;32m[*][0m : 
+/tmp/library.cfg
+[source] ps1.cfg
+[source] ps4.cfg
+[source] dialog_optional.cfg
+[source] history_sync.cfg
+[source] vars.cfg
+[source] alias.cfg
+[ register ] use
+[ register ] use_sh
+[01;32m[*][0m : Activated Important stuff 
+[-] /home/travis/build/brownman/travis_screencast/SCRIPTS/install_deps.sh
+Extracting templates from packages: 93%Extracting templates from packages: 100%
+Extracting templates from packages: 55%Extracting templates from packages: 100%
+E: Unable to locate package icewease
+E: Unable to locate package apt-get
+gpg: requesting key EEA14886 from hkp server keyserver.ubuntu.com
+gpg: key EEA14886: "Launchpad VLC" not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+gpg: requesting key F4FE239D from hkp server keyserver.ubuntu.com
+gpg: key F4FE239D: public key "Launchpad PPA for fossfreedom" imported
+gpg: Total number processed: 1
+gpg:               imported: 1  (RSA: 1)
+/tmp/library.cfg
+[source] ps1.cfg
+[source] ps4.cfg
+[source] dialog_optional.cfg
+[source] history_sync.cfg
+[source] vars.cfg
+[source] alias.cfg
+[ register ] use
+[ register ] use_sh
+[01;32m[*][0m : Activated Important stuff 
+[-] /home/travis/build/brownman/travis_screencast/SCRIPTS/debug_screen.sh
+[01;34m[*][0m [cmd] xwininfo -root -tree [01;32m[*][0m : 
+Xlib:  extension "RANDR" missing on display ":99".
+[01;34m[*][0m [cmd] import -window root $dir_product/session.png [01;32m[*][0m : 
+/tmp/library.cfg
+/tmp/library.cfg
+[source] ps1.cfg
+[source] ps1.cfg
+[source] ps4.cfg
+[source] ps4.cfg
+[source] dialog_optional.cfg
+[source] dialog_optional.cfg
+[source] history_sync.cfg
+[source] history_sync.cfg
+[source] vars.cfg
+[source] vars.cfg
+[source] alias.cfg
+[source] alias.cfg
+[ register ] use
+[ register ] use
+[ register ] use_sh
+[ register ] use_sh
+[01;32m[*][0m : Activated Important stuff 
+[-] /home/travis/build/brownman/travis_screencast/SCRIPTS/record_start.sh
+[01;32m[*][0m : Activated Important stuff 
+[-] /home/travis/build/brownman/travis_screencast/SCRIPTS/tests.sh
+[01;33m[*][0m DISPLAY: :99 [01;34m[*][0m [cmd] recordmydesktop --width 640 --height 480 \ --full-shots --fps 15 --channels 1 --device pulse --v_quality 63 --s_quality 10 --v_bitrate 2000000 --no-wm-check --no-cursor --output=$dir_product/session.${media_type} Initial recording window is set to:
+X:0   Y:0    Width:640    Height:480
+Adjusted recording window is set to:
+X:0   Y:0    Width:640    Height:480
+Initializing...
+Buffer size adjusted to 4096 from 4096 frames.
+Opened PCM device pulse
+Recording on device pulse is set to:
+1 channels at 22050Hz
+Capturing!
+[01;34m[*][0m [cmd] test_firefox [01;34m[*][0m [cmd] firefox www.youtube.com/watch?v=oHg5SJYRHA0 & Xlib:  extension "RANDR" missing on display ":99".
+[01;32m[*][0m : 
+Cannot get client list properties. 
+(_NET_CLIENT_LIST or _WIN_CLIENT_LIST)
+[01;34m[*][0m [cmd] sleep 10 Shutting down.
+*********************************************
+
+Cached 20 MB, from 174 MB that were received.
+Average cache compression ratio: 88.2 %
+
+*********************************************
+Saved 149 frames in a total of 148 requests
+....
+STATE:ENCODING
+Encoding started!
+This may take several minutes.
+Pressing Ctrl-C will cancel the procedure (resuming will not be possible, but
+any portion of the video, which is already encoded won't be deleted).
+Please wait...
+Output file: /tmp/PRODUCT/session.ogv
+[01;32m[*][0m : 
+[01;32m[*][0m : 
+[01;32m[*][0m : empty line 
+Encoding finished!
+Wait a moment please...
+   
+Done.
+Written 681899 bytes
+(610262 of which were video data and 71637 audio data)
+
+Cleanning up cache...
+Done!!!
+Goodbye!
+[01;32m[*][0m : 
+/tmp/library.cfg
+[source] ps1.cfg
+[source] ps4.cfg
+[source] dialog_optional.cfg
+[source] history_sync.cfg
+[source] vars.cfg
+[source] alias.cfg
+[ register ] use
+[ register ] use_sh
+[01;32m[*][0m : Activated Important stuff 
+[-] /home/travis/build/brownman/travis_screencast/SCRIPTS/push_to_github.sh
