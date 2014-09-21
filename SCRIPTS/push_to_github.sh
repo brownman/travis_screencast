@@ -2,6 +2,7 @@
 set -u
 
 validate_products(){
+ local res=0
 if [ -f "$file_product" ];then
  size=$( du -b $file_product | cut  -f1 ) 
  print color 33 file size is: $size
@@ -11,14 +12,15 @@ if [ -f "$file_product" ];then
 		 print ok
   else
 		 print color 31 file is too small
-		 return 1
+		 res=1
   fi
 else
    print error file not exist
-   exiting
+   res=1
  fi
  
- test -f $file_product_cover || { return 1; }
+ test -f $file_product_cover || { res=1; }
+ return $res
 }
 
 
