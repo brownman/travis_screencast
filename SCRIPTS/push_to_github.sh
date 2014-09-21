@@ -21,7 +21,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/$owner/$repo.git  gh-pages #> /dev/null
   cd gh-pages
   
-  mv -Rf $dir_product/* .
+  mv  $dir_product/* .
   mv /tmp/err .
   
   git add -f .
