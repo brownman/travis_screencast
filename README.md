@@ -4,9 +4,11 @@
 
 Travis: Automated screencasts
 ====
+
+##### mission: present my repositories
 steps:
 ----
-- clone on of my github repositories
+- clone one of my github repositories
 - run it + record a screencast
 - upload to github, to this repo, branch:gh-pages
 
