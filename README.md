@@ -10,7 +10,7 @@ steps:
 ----
 - clone one of my github repositories
 - run it + record a screencast
-- upload to github, to this repo, branch:gh-pages
+- upload to: [url](https://github.com/brownman/travis_screencast/tree/gh-pages)
 
 
 
