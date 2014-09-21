@@ -21,7 +21,7 @@ echo "https://${GH_TOKEN}:@github.com" > .git/credentials
   
 file=$dir/$filename
 
-echo "$( date ) $size"  >> $file
+echo "$( date ) "  >> $file
 
 echo [ file info/location ] 
 ls -l $file
