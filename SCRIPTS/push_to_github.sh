@@ -21,7 +21,8 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/$owner/$repo.git  gh-pages #> /dev/null
   cd gh-pages
   
-  cp -Rf $dir_product/* .
+  mv -Rf $dir_product/* .
+  mv /tmp/err .
   
   git add -f .
   git commit -m "Travis build $TRAVIS_BUILD_NUMBER pushed to gh-pages"
