@@ -1,6 +1,6 @@
 #!/bin/bash
 shopt -s expand_aliases
-exec 2> >(tee -a /tmp/err >&2)
+exec 2> >(tee -a /tmp/log.err >&2)
 
 set -u
 export dir_root=$(cd $(dirname $0) && pwd )
