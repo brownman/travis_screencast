@@ -1,28 +1,6 @@
 #!/bin/bash
 set -u
 
-validate_products(){
- local res=0
-if [ -f "$file_product" ];then
- size=$( du -b $file_product | cut  -f1 ) 
- print color 33 file size is: $size
- print color 33  "[SIZE] $size"
- 
- if [ "$size" -gt "$size_min" ];then
-		 print ok
-  else
-		 print color 31 file is too small
-		 res=1
-  fi
-else
-   print error file not exist
-   res=1
- fi
- 
- set +e
-commander test -f $file_product_cover || { res=1; }
- return $res
-}
 
 
 
