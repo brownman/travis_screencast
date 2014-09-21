@@ -19,7 +19,13 @@ test_simple_gui(){
   gxmessage hi -t 3
   yad hi --timeout=3
 }
-
+test_firefox(){
+ commander  sudo apt-get install firefox -y
+commander "firefox www.youtube.com/watch?v=oHg5SJYRHA0 &"
+commander sleep 10
+paplay <(espeak -vmb-us2  "That bored me" --stdout)
+killall firefox  
+}
 test_espeak(){
 paplay <(espeak -vmb-us2  "Ok, let's get rickrolled" --stdout)
 #eval "firefox www.youtube.com/watch?v=oHg5SJYRHA0 &"
