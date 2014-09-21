@@ -4,6 +4,10 @@ sudo apt-get install -qq recordmydesktop x11-apps libpulse-dev pulseaudio dbus-x
 sudo apt-get install -y  libnotify-bin flite fortune pv toilet curl wget tree gxmessage zenity xcowsay notify-osd toilet figlet sox libsox-fmt-mp3
 sudo apt-get install xvfb
 sudo apt-get install libgtk2.0-0
+
+#show xinfo of root window
+sudo apt-get install xvfb apt-get libgl1-mesa-dri xfonts-cyrillic xfonts-100dpi xfonts-75dpi
+sudo apt-get install imagemagick x11-utils
 #PPA
 sudo add-apt-repository ppa:webupd8team/y-ppa-manager -y
 sudo add-apt-repository ppa:fossfreedom/byzanz -y 
