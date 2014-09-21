@@ -42,10 +42,12 @@ paplay <(espeak -vmb-us2  "I have to go. See you next build!" --stdout)
 #export DISPLAY=:99
 #eval "export DISPLAY=:99.0"
 print color 33 "DISPLAY: $DISPLAY""
-commander debug_screen
 
 test -f $file_list_session || exiting
 while read line;do
 test -n "$line" || { print ok empty line; break; }
   ( commander $line )
 done <$file_list_session
+
+commander debug_screen
+
