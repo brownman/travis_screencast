@@ -20,6 +20,7 @@ options="--width 640 --height 480  \
 --output=$file_product"
 
 commander recordmydesktop $options
+
 }
 #--delay $timeout_record \
 
@@ -40,3 +41,5 @@ record0 &
 sleep $timeout_record
 #kill 0
 killall recordmydesktop
+while pgrep -x recordmydesktop > /dev/null ; do sleep 1; done # wait for transcoding
+
