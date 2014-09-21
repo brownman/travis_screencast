@@ -31,8 +31,8 @@ before_script:
 
 script:
   - ./run.sh debug_screen
-  #- ./run.sh tests &
-  #- ./run.sh record_start 
+  - ./run.sh tests &
+  - ./run.sh record_start 
   
 after_script:
   - echo after script
