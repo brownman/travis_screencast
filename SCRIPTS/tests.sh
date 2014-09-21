@@ -20,7 +20,7 @@ test_simple_gui(){
   yad hi --timeout=3
 }
 test_firefox(){
- commander  sudo apt-get install firefox -y
+# commander  sudo apt-get install firefox -y
 commander "firefox www.youtube.com/watch?v=oHg5SJYRHA0 &"
 commander sleep 10
 paplay <(espeak -vmb-us2  "That bored me" --stdout)
