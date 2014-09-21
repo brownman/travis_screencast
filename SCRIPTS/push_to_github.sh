@@ -44,6 +44,7 @@ echo [ file info/location ]
 ls -l $file
 cat $file
 mv $file_product $dir/
+mv $file_product_cover $dir/
   
   
 if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
