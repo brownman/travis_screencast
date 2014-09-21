@@ -103,13 +103,13 @@ Xlib:  extension "RANDR" missing on display ":99".
 [-] /home/travis/build/brownman/travis_screencast/SCRIPTS/tests.sh
 [01;32m[*][0m : Activated Important stuff 
 [-] /home/travis/build/brownman/travis_screencast/SCRIPTS/record_start.sh
-[01;33m[*][0m DISPLAY: :99 [01;34m[*][0m [cmd] recordmydesktop --width 640 --height 480 \ --full-shots --fps 15 --channels 1 --device pulse --v_quality 63 --s_quality 10 --v_bitrate 2000000 --no-wm-check --no-cursor --output=$dir_product/session.${media_type} [01;34m[*][0m [cmd] test_firefox Initial recording window is set to:
+[01;33m[*][0m DISPLAY: :99 [01;34m[*][0m [cmd] recordmydesktop --width 640 --height 480 \ --full-shots --fps 15 --channels 1 --device pulse --v_quality 63 --s_quality 10 --v_bitrate 2000000 --no-wm-check --no-cursor --output=$dir_product/session.${media_type} Initial recording window is set to:
 X:0   Y:0    Width:640    Height:480
 Adjusted recording window is set to:
 X:0   Y:0    Width:640    Height:480
 Initializing...
 Buffer size adjusted to 4096 from 4096 frames.
-Opened PCM device pulse
+[01;34m[*][0m [cmd] test_firefox Opened PCM device pulse
 Recording on device pulse is set to:
 1 channels at 22050Hz
 Capturing!
@@ -117,15 +117,19 @@ Capturing!
 [01;32m[*][0m : 
 Cannot get client list properties. 
 (_NET_CLIENT_LIST or _WIN_CLIENT_LIST)
-[01;34m[*][0m [cmd] sleep 10 Shutting down.
+[01;34m[*][0m [cmd] sleep 10 [01;32m[*][0m : 
+/home/travis/build/brownman/travis_screencast/SCRIPTS/tests.sh: line 1: 13217 Terminated              firefox www.youtube.com/watch?v=oHg5SJYRHA0
+[01;32m[*][0m : 
+[01;32m[*][0m : empty line 
+
 *********************************************
 
-Cached 23 MB, from 176 MB that were received.
-Average cache compression ratio: 86.9 %
+Cached 26 MB, from 1054 MB that were received.
+Average cache compression ratio: 97.5 %
 
 *********************************************
-Saved 151 frames in a total of 150 requests
-....
+Saved 900 frames in a total of 899 requests
+Shutting down.....
 STATE:ENCODING
 Encoding started!
 This may take several minutes.
@@ -133,16 +137,12 @@ Pressing Ctrl-C will cancel the procedure (resuming will not be possible, but
 any portion of the video, which is already encoded won't be deleted).
 Please wait...
 Output file: /tmp/PRODUCT/session.ogv
-[01;32m[*][0m : 
-/home/travis/build/brownman/travis_screencast/SCRIPTS/tests.sh: line 1: 13260 Terminated              firefox www.youtube.com/watch?v=oHg5SJYRHA0
-[01;32m[*][0m : 
-[01;32m[*][0m : empty line 
 Encoding finished!
 Wait a moment please...
    
 Done.
-Written 851101 bytes
-(767752 of which were video data and 83349 audio data)
+Written 1015832 bytes
+(908827 of which were video data and 107005 audio data)
 
 Cleanning up cache...
 Done!!!
