@@ -19,7 +19,8 @@ else
    res=1
  fi
  
- test -f $file_product_cover || { res=1; }
+ set +e
+commander test -f $file_product_cover || { res=1; }
  return $res
 }
 
