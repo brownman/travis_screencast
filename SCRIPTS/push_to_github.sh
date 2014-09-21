@@ -11,14 +11,14 @@ if [ -f "$file_product" ];then
 		 print ok
   else
 		 print color 31 file is too small
-		 exiting
+		 return 1
   fi
 else
    print error file not exist
    exiting
  fi
  
- test -f $file_product_cover
+ test -f $file_product_cover || { return 1; }
 }
 
 
