@@ -49,5 +49,4 @@ test -n "$line" || { print ok empty line; break; }
   ( commander $line )
 done <$file_list_session
 
-commander debug_screen
-
+ 
