@@ -7,7 +7,7 @@ set -u
 upload(){
 local path=/tmp/1
 local dir=$dir_product
-local file_info=$dir/date.txt
+local file_info=$dir_product/date.txt
 
 git config credential.helper "store --file=.git/credentials"
 echo "https://${GH_TOKEN}:@github.com" > .git/credentials
