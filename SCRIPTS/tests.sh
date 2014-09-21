@@ -37,7 +37,9 @@ paplay <(espeak -vmb-us2  "Much better now" --stdout)
 sleep 2
 paplay <(espeak -vmb-us2  "I have to go. See you next build!" --stdout)
 }
-export DISPLAY=:99
+#export DISPLAY=:99
+eval "export DISPLAY=:99.0"
+
 test -f $file_list_session || exiting
 while read line;do
 test -n "$line" || { print ok empty line; break; }
