@@ -21,9 +21,9 @@ install:
   - ./run.sh install_deps > /dev/null
   
 before_script:
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
-  - "dbus-launch pulseaudio --start"
+  - eval "export DISPLAY=:99.0"
+  - eval "sh -e /etc/init.d/xvfb start"
+  - eval "dbus-launch pulseaudio --start"
   
 
 
