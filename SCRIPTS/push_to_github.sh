@@ -1,7 +1,7 @@
 #!/bin/bash
 set -u
 
-
+validate_size(){
 if [ -f "$file_product" ];then
  size=$( du -b $file_product | cut  -f1 ) 
  print color 33 file size is: $size
@@ -17,11 +17,11 @@ else
    print error file not exist
    exiting
  fi
+}
 
 
 
-
-steps(){
+upload(){
  
 
 local path=/tmp/1
@@ -38,7 +38,7 @@ echo "https://${GH_TOKEN}:@github.com" > .git/credentials
   
 file=$dir/$filename
 
-echo $( date )  > $file
+echo "$( date ) $size"  >> $file
 
 echo [ file info/location ] 
 ls -l $file
@@ -67,5 +67,9 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   echo -e "Done magic with coverage\n"
 fi
 
+}
+steps(){
+validate_size
+upload
 }
 steps
