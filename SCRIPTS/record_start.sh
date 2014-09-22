@@ -8,7 +8,7 @@
 #commander recordmydesktop --width 640 --height 480 -x 200 -y 200 --full-shots --fps 15   --channels 1 --device pulse --v_quality 63 --s_quality 10 --v_bitrate 2000000   --delay 10
 #commander  "recordmydesktop --no-cursor  --output=session.ogv &"
 record0(){
-options="--width 640 --height 480  \ 
+options="--width $WIDTH --height $HEIGHT  \ 
 --full-shots --fps 15  \
 --channels 1 \
 --device pulse \
