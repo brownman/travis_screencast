@@ -17,7 +17,8 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/$owner/$repo.git  gh-pages #> /dev/null
   cd gh-pages
   
-  
+  test -d old || { mkdir old; }
+  mv *.* old/
   git rm -rf log
   git rm -rf files
   
