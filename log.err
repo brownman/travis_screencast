@@ -88,53 +88,53 @@ Xlib:  extension "RANDR" missing on display ":99".
 [source] ps4.cfg
 [source] ps4.cfg
 [source] dialog_optional.cfg
+[source] history_sync.cfg
 [source] dialog_optional.cfg
-[source] history_sync.cfg
-[source] history_sync.cfg
 [source] vars.cfg
+[source] history_sync.cfg
+[source] alias.cfg
 [source] vars.cfg
 [source] alias.cfg
-[source] alias.cfg
-[ register ] use
 [ register ] use
 [ register ] use_sh
-[ register ] use_sh
+[ register ] use
 [01;32m[*][0m : Activated Important stuff 
 [-] /home/travis/build/brownman/travis_screencast/SCRIPTS/tests.sh
-[01;32m[*][0m : Activated Important stuff 
+[ register ] use_sh
+[01;33m[*][0m DISPLAY: :99 [01;32m[*][0m : Activated Important stuff 
 [-] /home/travis/build/brownman/travis_screencast/SCRIPTS/record_start.sh
-[01;33m[*][0m DISPLAY: :99 [01;34m[*][0m [cmd] recordmydesktop --width 640 --height 480 \ --full-shots --fps 15 --channels 1 --device pulse --v_quality 63 --s_quality 10 --v_bitrate 2000000 --no-wm-check --no-cursor --output=$dir_product/session.${media_type} Initial recording window is set to:
+[01;34m[*][0m [cmd] test_simple_gui Xlib:  extension "RANDR" missing on display ":99".
+[01;34m[*][0m [cmd] recordmydesktop --width 640 --height 480 \ --full-shots --fps 15 --channels 1 --device pulse --v_quality 63 --s_quality 10 --v_bitrate 2000000 --no-wm-check --no-cursor --output=$dir_product/session.${media_type} Initial recording window is set to:
 X:0   Y:0    Width:640    Height:480
 Adjusted recording window is set to:
 X:0   Y:0    Width:640    Height:480
 Initializing...
 Buffer size adjusted to 4096 from 4096 frames.
-[01;34m[*][0m [cmd] test_simple_gui Opened PCM device pulse
+Opened PCM device pulse
 Recording on device pulse is set to:
 1 channels at 22050Hz
 Capturing!
 Xlib:  extension "RANDR" missing on display ":99".
-Xlib:  extension "RANDR" missing on display ":99".
-Xlib:  extension "RANDR" missing on display ":99".
-[01;34m[*][0m [cmd] test_espeak [01;34m[*][0m [cmd] test_firefox [01;34m[*][0m [cmd] firefox www.youtube.com/watch?v=oHg5SJYRHA0 & Xlib:  extension "RANDR" missing on display ":99".
-[01;32m[*][0m : 
+[01;34m[*][0m [cmd] test_espeak Xlib:  extension "RANDR" missing on display ":99".
+[01;34m[*][0m [cmd] test_firefox [01;34m[*][0m [cmd] firefox www.youtube.com/watch?v=oHg5SJYRHA0 & [01;32m[*][0m : 
 Cannot get client list properties. 
 (_NET_CLIENT_LIST or _WIN_CLIENT_LIST)
 Cannot get client list properties. 
 (_NET_CLIENT_LIST or _WIN_CLIENT_LIST)
+Xlib:  extension "RANDR" missing on display ":99".
 [01;34m[*][0m [cmd] sleep 10 [01;32m[*][0m : empty line 
 [01;32m[*][0m : 
-/home/travis/build/brownman/travis_screencast/SCRIPTS/tests.sh: line 1: 13379 Terminated              firefox www.youtube.com/watch?v=oHg5SJYRHA0
+/home/travis/build/brownman/travis_screencast/SCRIPTS/tests.sh: line 1: 13371 Terminated              firefox www.youtube.com/watch?v=oHg5SJYRHA0
 [01;32m[*][0m : 
 [01;32m[*][0m : 
 
 *********************************************
 
-Cached 27 MB, from 1057 MB that were received.
-Average cache compression ratio: 97.4 %
+Cached 26 MB, from 1066 MB that were received.
+Average cache compression ratio: 97.5 %
 
 *********************************************
-Saved 902 frames in a total of 899 requests
+Saved 910 frames in a total of 900 requests
 Shutting down.....
 STATE:ENCODING
 Encoding started!
@@ -147,8 +147,8 @@ Encoding finished!
 Wait a moment please...
    
 Done.
-Written 1146418 bytes
-(1000753 of which were video data and 145665 audio data)
+Written 1574521 bytes
+(1430277 of which were video data and 144244 audio data)
 
 Cleanning up cache...
 Done!!!
