@@ -19,15 +19,15 @@ Opened PCM device pulse
 Recording on device pulse is set to:
 1 channels at 22050Hz
 Capturing!
-Shutting down.
+
 *********************************************
 
-Cached 68 MB, from 462 MB that were received.
-Average cache compression ratio: 85.2 %
+Cached 66 MB, from 462 MB that were received.
+Average cache compression ratio: 85.5 %
 
 *********************************************
 Saved 154 frames in a total of 150 requests
-....
+Shutting down.....
 STATE:ENCODING
 Encoding started!
 This may take several minutes.
@@ -39,8 +39,8 @@ Encoding finished!
 Wait a moment please...
    
 Done.
-Written 426405 bytes
-(425446 of which were video data and 959 audio data)
+Written 416938 bytes
+(415979 of which were video data and 959 audio data)
 
 Cleanning up cache...
 Done!!!

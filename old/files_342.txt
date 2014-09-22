@@ -1,3 +1,0 @@
-total 464
--rw-rw-r-- 1 travis travis 439841 Sep 22 16:51 session.ogv
--rw-rw-r-- 1 travis travis  31208 Sep 22 16:51 session.png
