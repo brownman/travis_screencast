@@ -15,10 +15,10 @@ before_install:
 #  - sudo apt-get install tree
   - chmod u+x ./run.sh 
   - chmod u+x ./SCRIPTS/*.sh
-  - ./run.sh library > /dev/null
+  - ./run.sh library
   
 install:
-  - ./run.sh install_deps > /dev/null
+  - ./run.sh install_deps
   
 before_script:
   - eval "export DISPLAY=:99"
