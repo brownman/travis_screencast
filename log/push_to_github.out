@@ -1,8 +1,6 @@
 
 Starting to update gh-pages
 
-rm 'old/files.txt'
-rm 'old/log.txt'
 rm 'log/debug_screen.err'
 rm 'log/debug_screen.out'
 rm 'log/install_deps.err'

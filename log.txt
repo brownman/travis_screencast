@@ -1,13 +1,13 @@
 total 100
--rw-rw-r-- 1 travis travis 48733 Sep 22 17:09 install_deps.out
--rw-rw-r-- 1 travis travis  8421 Sep 22 17:09 tests.err
--rw-rw-r-- 1 travis travis  3507 Sep 22 17:08 library.err
--rw-rw-r-- 1 travis travis  1537 Sep 22 17:10 record_start.err
--rw-rw-r-- 1 travis travis  1013 Sep 22 17:10 record_start.out
--rw-rw-r-- 1 travis travis   920 Sep 22 17:09 install_deps.err
--rw-rw-r-- 1 travis travis   498 Sep 22 17:09 debug_screen.err
--rw-rw-r-- 1 travis travis   404 Sep 22 17:10 push_to_github.out
--rw-rw-r-- 1 travis travis   302 Sep 22 17:08 library.out
--rw-rw-r-- 1 travis travis   301 Sep 22 17:10 push_to_github.err
--rw-rw-r-- 1 travis travis   171 Sep 22 17:09 debug_screen.out
--rw-rw-r-- 1 travis travis     4 Sep 22 17:09 tests.out
+-rw-rw-r-- 1 travis travis 48733 Sep 22 17:21 install_deps.out
+-rw-rw-r-- 1 travis travis  8421 Sep 22 17:21 tests.err
+-rw-rw-r-- 1 travis travis  3341 Sep 22 17:20 library.err
+-rw-rw-r-- 1 travis travis  1537 Sep 22 17:22 record_start.err
+-rw-rw-r-- 1 travis travis  1081 Sep 22 17:22 record_start.out
+-rw-rw-r-- 1 travis travis   920 Sep 22 17:21 install_deps.err
+-rw-rw-r-- 1 travis travis   498 Sep 22 17:21 debug_screen.err
+-rw-rw-r-- 1 travis travis   368 Sep 22 17:22 push_to_github.out
+-rw-rw-r-- 1 travis travis   347 Sep 22 17:22 push_to_github.err
+-rw-rw-r-- 1 travis travis   213 Sep 22 17:20 library.out
+-rw-rw-r-- 1 travis travis   171 Sep 22 17:21 debug_screen.out
+-rw-rw-r-- 1 travis travis     4 Sep 22 17:21 tests.out
