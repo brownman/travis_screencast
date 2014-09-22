@@ -1,11 +1,8 @@
 
 Starting to update gh-pages
 
-rm 'README.md'
 rm 'date.txt'
-rm 'err'
-rm 'index.html'
-rm 'log.err'
+rm 'log.txt'
 rm 'log/debug_screen.err'
 rm 'log/debug_screen.out'
 rm 'log/install_deps.err'
