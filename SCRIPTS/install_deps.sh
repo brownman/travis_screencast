@@ -19,3 +19,4 @@ sudo add-apt-repository ppa:fossfreedom/byzanz -y
 sudo apt-get update 
 sudo apt-get install yad byzanz
 
+sudo apt-get install tumiki-fighters
