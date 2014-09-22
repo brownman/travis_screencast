@@ -6,7 +6,7 @@ test_library(){
 }
 test_game(){
   tumiki-fighters
-  xdotool key space
+  xdotool key ctrl
   
 }
 test_flite(){
