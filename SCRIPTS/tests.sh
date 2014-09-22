@@ -4,7 +4,11 @@ test_library(){
   commander pipe_translate hello
   
 }
-
+test_game(){
+  tumiki-fighters
+  xdotool key space
+  
+}
 test_flite(){
 #alias flite=`which flite`
 str=$(dirname `which flite`)
