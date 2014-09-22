@@ -1,2 +1,0 @@
-[CMD] cat $file_rel_target | grep \/${str}.${type} -m1
-finder: found file: /home/travis/LIBRARY/BANK/CFG/alias.cfg

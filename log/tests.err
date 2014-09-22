@@ -20,18 +20,14 @@ __________________________________
 [01;32m[*][0m : input: hello 
 [-] naming: input_wsp: hello
 [-] naming: file_mp3:  /tmp/hello_ru.mp3
-[01;34m[*][0m [ file ] trace: 12 __________________________________
-__________________________________
-[01;34m[*][0m [cmd] ensure rm /tmp/trace [01;32m[*][0m : 
-/home/travis/LIBRARY/BANK/GIST/translate.sh: $2: unbound variable
-/home/travis/LIBRARY/BANK/GIST/translate.sh: $2: unbound variable
-[01;34m[*][0m [PLAYING] paplay2 /tmp/hello_ru.mp3 [01;34m[*][0m [cmd] sleep 2 [01;32m[*][0m : 
+                __________
+_______________/trap_err: \________________
+[01;31m[*][0m : 
 [01;32m[*][0m : 
 [01;34m[*][0m [cmd] /home/travis/LIBRARY/BANK/GIST/translate.sh it hello [source] flite1.cfg
 [source] paplay1.cfg
 [01;34m[*][0m [cmd] trap trap_err ERR [01;32m[*][0m : 
 [01;32m[*][0m : input: hello 
-[01;32m[*][0m : empty line 
 [-] naming: input_wsp: hello
 [-] naming: file_mp3:  /tmp/hello_it.mp3
                 __________
@@ -50,3 +46,4 @@ _______________/trap_err: \________________
 [01;32m[*][0m : 
 [01;32m[*][0m : 
 [01;32m[*][0m : 
+[01;32m[*][0m : empty line 

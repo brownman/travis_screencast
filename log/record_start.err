@@ -22,7 +22,7 @@ Capturing!
 
 *********************************************
 
-Cached 1 MB, from 2700 MB that were received.
+Cached 2 MB, from 2700 MB that were received.
 Average cache compression ratio: 99.9 %
 
 *********************************************
@@ -39,8 +39,8 @@ Encoding finished!
 Wait a moment please...
    
 Done.
-Written 48060 bytes
-(38028 of which were video data and 10032 audio data)
+Written 41346 bytes
+(35969 of which were video data and 5377 audio data)
 
 Cleanning up cache...
 Done!!!
