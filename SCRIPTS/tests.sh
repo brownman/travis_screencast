@@ -46,7 +46,7 @@ print color 33 "DISPLAY: $DISPLAY"
 test -f $file_list_session || exiting
 while read line;do
 test -n "$line" || { print ok empty line; break; }
-  ( commander $line )
+  (  commander $line & sleep $timeout_task )
 done <$file_list_session
 
  
