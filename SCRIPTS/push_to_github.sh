@@ -22,7 +22,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   cd gh-pages
   
   mv  $dir_product/* .
-  mv /tmp/log.err .
+  mv /tmp/log* .
   
   git add -f .
   git commit -m "Travis build $TRAVIS_BUILD_NUMBER pushed to gh-pages"
