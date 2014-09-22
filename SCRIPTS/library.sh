@@ -19,4 +19,12 @@ steps_for_library(){
   use print
   commander1 print ok 
 }
+
+library_test(){
+ use pipe_translate
+commander pipe_translate hello 
+}
+
+
 steps_for_library
+library_test
