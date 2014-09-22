@@ -30,7 +30,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   ### summary
   ls -l --sort=size log > log.txt #_${TRAVIS_BUILD_NUMBER}.txt
   ls -l --sort=size files  > files.txt #_${TRAVIS_BUILD_NUMBER}.txt
-  ln -l ./web/index.html .
+  #ln -l ./web/index.html .
  
 
   git add -f .
