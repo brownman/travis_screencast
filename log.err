@@ -82,32 +82,33 @@ gpg:               imported: 1  (RSA: 1)
 Xlib:  extension "RANDR" missing on display ":99".
 [01;34m[*][0m [cmd] import -window root $dir_product/session.png [01;32m[*][0m : 
 /tmp/library.cfg
+[source] ps1.cfg
+[source] ps4.cfg
 /tmp/library.cfg
 [source] ps1.cfg
-[source] ps1.cfg
-[source] ps4.cfg
 [source] ps4.cfg
 [source] dialog_optional.cfg
+[source] history_sync.cfg
 [source] dialog_optional.cfg
-[source] history_sync.cfg
-[source] history_sync.cfg
 [source] vars.cfg
+[source] history_sync.cfg
+[source] alias.cfg
 [source] vars.cfg
 [source] alias.cfg
-[source] alias.cfg
-[ register ] use
 [ register ] use
 [ register ] use_sh
-[ register ] use_sh
+[ register ] use
 [01;32m[*][0m : Activated Important stuff 
 [-] /home/travis/build/brownman/travis_screencast/SCRIPTS/tests.sh
+[ register ] use_sh
 [01;32m[*][0m : Activated Important stuff 
 [-] /home/travis/build/brownman/travis_screencast/SCRIPTS/record_start.sh
-[01;33m[*][0m DISPLAY: :99 [01;34m[*][0m [cmd] recordmydesktop --width 1280 --height 1024 \ --full-shots --fps 15 --channels 1 --device pulse --v_quality 63 --s_quality 10 --v_bitrate 2000000 --no-wm-check --no-cursor --output=$dir_product/session.${media_type} Window size specification out of bounds!(current resolution:1024x768)
-[01;34m[*][0m [cmd] test_simple_gui Xlib:  extension "RANDR" missing on display ":99".
+[01;33m[*][0m DISPLAY: :99 [01;34m[*][0m [cmd] test_simple_gui Xlib:  extension "RANDR" missing on display ":99".
+[01;34m[*][0m [cmd] recordmydesktop --width 1280 --height 1024 \ --full-shots --fps 15 --channels 1 --device pulse --v_quality 63 --s_quality 10 --v_bitrate 2000000 --no-wm-check --no-cursor --output=$dir_product/session.${media_type} Window size specification out of bounds!(current resolution:1024x768)
 [01;31m[*][0m : 
 Xlib:  extension "RANDR" missing on display ":99".
 [01;34m[*][0m [cmd] test_espeak Xlib:  extension "RANDR" missing on display ":99".
+[01;31m[*][0m : 
 [01;34m[*][0m [cmd] test_firefox [01;34m[*][0m [cmd] firefox www.youtube.com/watch?v=oHg5SJYRHA0 & Xlib:  extension "RANDR" missing on display ":99".
 [01;32m[*][0m : 
 Cannot get client list properties. 
@@ -154,163 +155,15 @@ res: 0
 [cmd] source /tmp/prototypes/LIB/BANK/vars.cfg
 [01;32m[*][0m : empty line 
 [01;32m[*][0m : 
-/home/travis/build/brownman/travis_screencast/SCRIPTS/tests.sh: line 1: 13362 Terminated              firefox www.youtube.com/watch?v=oHg5SJYRHA0
+/home/travis/build/brownman/travis_screencast/SCRIPTS/tests.sh: line 1: 13420 Terminated              firefox www.youtube.com/watch?v=oHg5SJYRHA0
 [01;32m[*][0m : 
 [01;32m[*][0m : 
 ......[01;32m[*][0m : 
 ........[01;34m[*][0m [cmd] assert file_exist /tmp/done ........[01;32m[*][0m : 
-Connection failure: Connection refused
-Connection failure: Connection refused
 Stream error: Too large
 Stream error: Too large
 Stream error: Too large
 Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Connection failure: Connection refused
 Stream error: Too large
 Stream error: Too large
 Stream error: Too large
@@ -1021,7 +874,163 @@ Stream error: Too large
 Stream error: Too large
 Stream error: Too large
 Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
 Connection failure: Connection refused
+Connection failure: Connection refused
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Connection failure: Connection refused
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
 Stream error: Too large
 Stream error: Too large
 Stream error: Too large
@@ -1290,22 +1299,23 @@ Stream error: Too large
 Stream error: Too large
 Stream error: Too large
 Stream error: Too large
+Stream error: Too large
 /tmp/library.cfg
 [source] ps1.cfg
 [source] ps4.cfg
 [source] dialog_optional.cfg
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
-Stream error: Too large
 [source] history_sync.cfg
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
+Stream error: Too large
 Stream error: Too large
 Stream error: Too large
 Stream error: Too large
@@ -1315,14 +1325,17 @@ Stream error: Too large
 [source] alias.cfg
 Stream error: Too large
 Stream error: Too large
-[ register ] use
 Stream error: Too large
+[ register ] use
 Stream error: Too large
 Stream error: Too large
 [ register ] use_sh
 Stream error: Too large
+Stream error: Too large
 [01;32m[*][0m : Activated Important stuff 
 [-] /home/travis/build/brownman/travis_screencast/SCRIPTS/push_to_github.sh
+Stream error: Too large
+Stream error: Too large
 Stream error: Too large
 Stream error: Too large
 Stream error: Too large
