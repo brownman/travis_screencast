@@ -1,3 +1,9 @@
+test_library(){
+  use pipe_translate
+  commander pipe_translate hello
+  
+}
+
 test_flite(){
 #alias flite=`which flite`
 str=$(dirname `which flite`)
