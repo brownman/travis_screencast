@@ -1,10 +1,6 @@
 test_simple_gui
 test_espeak
 test_firefox
-
-
+test_prototype
 
 test_flite
-
-
-test_prototype
