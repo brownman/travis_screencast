@@ -57,7 +57,7 @@ TESITNG use of the LIBRARY:
 [01;32m[*][0m : Activated Important stuff 
 [-] /home/travis/build/brownman/travis_screencast/SCRIPTS/install_deps.sh
 Extracting templates from packages: 93%Extracting templates from packages: 100%
-Extracting templates from packages: 55%Extracting templates from packages: 100%
+Extracting templates from packages: 54%Extracting templates from packages: 100%
 E: Unable to locate package icewease
 E: Unable to locate package apt-get
 gpg: requesting key EEA14886 from hkp server keyserver.ubuntu.com
@@ -104,56 +104,38 @@ Xlib:  extension "RANDR" missing on display ":99".
 [01;32m[*][0m : Activated Important stuff 
 [-] /home/travis/build/brownman/travis_screencast/SCRIPTS/record_start.sh
 [-] /home/travis/build/brownman/travis_screencast/SCRIPTS/tests.sh
-[01;33m[*][0m DISPLAY: :99 [01;34m[*][0m [cmd] recordmydesktop --width 1280 --height 1024 \ --full-shots --fps 15 --channels 1 --device pulse --v_quality 63 --s_quality 10 --v_bitrate 2000000 --no-wm-check --no-cursor --output=$dir_product/session.${media_type} Window size specification out of bounds!(current resolution:1024x768)
-[01;34m[*][0m [cmd] test_library [01;31m[*][0m : 
-[source] pipe_translate.cfg
-[01;34m[*][0m [cmd] pipe_translate hello [CMD] export builtin_translate=/home/travis/LIBRARY/BANK/GIST/translate.sh
+[01;33m[*][0m DISPLAY: :99 [01;34m[*][0m [cmd] recordmydesktop --width 1280 --height 1024 \ --full-shots --fps 15 --channels 1 --device pulse --v_quality 63 --s_quality 10 --v_bitrate 2000000 --no-wm-check --no-cursor --output=$dir_product/session.${media_type} [01;34m[*][0m [cmd] test_library [source] pipe_translate.cfg
+Window size specification out of bounds!(current resolution:1024x768)
+[01;34m[*][0m [cmd] pipe_translate hello [01;31m[*][0m : 
+[CMD] export builtin_translate=/home/travis/LIBRARY/BANK/GIST/translate.sh
 [source] vars.cfg
 [01;34m[*][0m [ file ] languages.txt: 3 __________________________________
 __________________________________
-/home/travis/build/brownman/travis_screencast/SCRIPTS/tests.sh: line 4: type: cowsay: not found
-[01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
 [01;34m[*][0m [cmd] /home/travis/LIBRARY/BANK/GIST/translate.sh ru hello [source] flite1.cfg
 [source] paplay1.cfg
 [01;34m[*][0m [cmd] trap trap_err ERR [01;32m[*][0m : 
 [01;32m[*][0m : input: hello 
-/home/travis/LIBRARY/BANK/GIST/translate.sh: line 4: type: cowsay: not found
-[01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
 [-] naming: input_wsp: hello
-/home/travis/LIBRARY/BANK/GIST/translate.sh: line 4: type: cowsay: not found
-[01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
 [-] naming: file_mp3:  /tmp/hello_ru.mp3
                 __________
 _______________/trap_err: \________________
 [01;31m[*][0m : 
 [01;32m[*][0m : 
-/home/travis/build/brownman/travis_screencast/SCRIPTS/tests.sh: line 4: type: cowsay: not found
-[01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
 [01;34m[*][0m [cmd] /home/travis/LIBRARY/BANK/GIST/translate.sh it hello [source] flite1.cfg
 [source] paplay1.cfg
 [01;34m[*][0m [cmd] trap trap_err ERR [01;32m[*][0m : 
 [01;32m[*][0m : input: hello 
-/home/travis/LIBRARY/BANK/GIST/translate.sh: line 4: type: cowsay: not found
-[01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
 [-] naming: input_wsp: hello
-/home/travis/LIBRARY/BANK/GIST/translate.sh: line 4: type: cowsay: not found
-[01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
 [-] naming: file_mp3:  /tmp/hello_it.mp3
                 __________
 _______________/trap_err: \________________
 [01;31m[*][0m : 
 [01;32m[*][0m : 
-/home/travis/build/brownman/travis_screencast/SCRIPTS/tests.sh: line 4: type: cowsay: not found
-[01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
 [01;34m[*][0m [cmd] /home/travis/LIBRARY/BANK/GIST/translate.sh ar hello [source] flite1.cfg
 [source] paplay1.cfg
 [01;34m[*][0m [cmd] trap trap_err ERR [01;32m[*][0m : 
 [01;32m[*][0m : input: hello 
-/home/travis/LIBRARY/BANK/GIST/translate.sh: line 4: type: cowsay: not found
-[01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
 [-] naming: input_wsp: hello
-/home/travis/LIBRARY/BANK/GIST/translate.sh: line 4: type: cowsay: not found
-[01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
 [-] naming: file_mp3:  /tmp/hello_ar.mp3
                 __________
 _______________/trap_err: \________________
