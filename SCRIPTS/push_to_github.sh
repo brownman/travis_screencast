@@ -11,7 +11,7 @@ local file_info=$dir_product/date.txt
 
 git config credential.helper "store --file=.git/credentials"
 echo "https://${GH_TOKEN}:@github.com" > .git/credentials
-echo "ls -l $dir_product"  > $file_info
+echo "$(ls -l $dir_product)"  > $file_info
   
 if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   echo -e "Starting to update gh-pages\n"
