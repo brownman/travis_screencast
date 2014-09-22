@@ -25,7 +25,9 @@ before_script:
   - eval "sh -e /etc/init.d/xvfb start"
   - eval "dbus-launch pulseaudio --start"
   #- eval "SCREEN='0 640x480x16'"
-  - eval "SCREEN='0 1280x1024x16'"
+  - export WIDTH=1024
+  - export HEIGHT=768
+  - eval "SCREEN='0 $WIDTHxHEIGHTx16'"
 
   
 
