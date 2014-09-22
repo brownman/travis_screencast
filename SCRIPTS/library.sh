@@ -22,7 +22,7 @@ steps_for_library(){
 
 library_test(){
  use pipe_translate
-commander pipe_translate hello 
+commander subshell pipe_translate hello 
 }
 
 
