@@ -6,7 +6,10 @@ test_library(){
 }
 test_game(){
   tumiki-fighters
+  while :;do
   xdotool key ctrl
+  sleep .3
+  done
   
 }
 test_flite(){
