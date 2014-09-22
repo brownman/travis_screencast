@@ -52,12 +52,18 @@ TESITNG use of the LIBRARY:
 [01;34m[*][0m [ file ] languages.txt: 3 __________________________________
 __________________________________
 [01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
+[01;34m[*][0m [ file ] trace: 1 __________________________________
+__________________________________
+[01;34m[*][0m [cmd] ensure rm /tmp/trace [01;32m[*][0m : 
 [01;34m[*][0m [cmd] /home/travis/LIBRARY/BANK/GIST/translate.sh ru hello [source] flite1.cfg
 [source] paplay1.cfg
 [01;34m[*][0m [cmd] trap trap_err ERR [01;32m[*][0m : 
 [01;32m[*][0m : input: hello 
 [01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
 [-] naming: input_wsp: hello
+[01;34m[*][0m [ file ] trace: 1 __________________________________
+__________________________________
+[01;34m[*][0m [cmd] ensure rm /tmp/trace [01;32m[*][0m : 
 [01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
 [-] naming: file_mp3:  /tmp/hello_ru.mp3
                 __________
