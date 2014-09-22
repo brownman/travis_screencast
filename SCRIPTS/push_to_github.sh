@@ -21,7 +21,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   git rm -rf log
   git rm -rf files
   
-  mv  $dir_product/* files
+  mv  $dir_product files #/* files
   mv /tmp/log log
   
   ### summary
