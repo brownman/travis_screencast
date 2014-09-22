@@ -82,8 +82,8 @@ gpg:               imported: 1  (RSA: 1)
 Xlib:  extension "RANDR" missing on display ":99".
 [01;34m[*][0m [cmd] import -window root $dir_product/session.png [01;32m[*][0m : 
 /tmp/library.cfg
-[source] ps1.cfg
 /tmp/library.cfg
+[source] ps1.cfg
 [source] ps1.cfg
 [source] ps4.cfg
 [source] ps4.cfg
@@ -108,15 +108,14 @@ Xlib:  extension "RANDR" missing on display ":99".
 [01;31m[*][0m : 
 Xlib:  extension "RANDR" missing on display ":99".
 [01;34m[*][0m [cmd] test_espeak Xlib:  extension "RANDR" missing on display ":99".
-[01;34m[*][0m [cmd] test_firefox [01;34m[*][0m [cmd] firefox www.youtube.com/watch?v=oHg5SJYRHA0 & [01;32m[*][0m : 
-Cannot get client list properties. 
-(_NET_CLIENT_LIST or _WIN_CLIENT_LIST)
+[01;34m[*][0m [cmd] test_firefox [01;34m[*][0m [cmd] firefox www.youtube.com/watch?v=oHg5SJYRHA0 & Xlib:  extension "RANDR" missing on display ":99".
+[01;32m[*][0m : 
 Cannot get client list properties. 
 (_NET_CLIENT_LIST or _WIN_CLIENT_LIST)
 Xlib:  extension "RANDR" missing on display ":99".
 [01;34m[*][0m [cmd] sleep 10 [01;32m[*][0m : empty line 
 [01;32m[*][0m : 
-/home/travis/build/brownman/travis_screencast/SCRIPTS/tests.sh: line 1: 13345 Terminated              firefox www.youtube.com/watch?v=oHg5SJYRHA0
+/home/travis/build/brownman/travis_screencast/SCRIPTS/tests.sh: line 1: 13406 Terminated              firefox www.youtube.com/watch?v=oHg5SJYRHA0
 [01;32m[*][0m : 
 [01;32m[*][0m : 
 recordmydesktop: no process found
