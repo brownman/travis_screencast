@@ -46,6 +46,7 @@ TESITNG use of the LIBRARY:
 [01;34m[*][0m [cmd] print ok [01;32m[*][0m : 
 [01;32m[*][0m : 
 [source] pipe_translate.cfg
+[01;34m[*][0m [cmd] subshell pipe_translate hello [01;33m[*][0m [jail] run safely: __________________________________
 [01;34m[*][0m [cmd] pipe_translate hello [CMD] export builtin_translate=/home/travis/LIBRARY/BANK/GIST/translate.sh
 [source] vars.cfg
 [01;34m[*][0m [ file ] languages.txt: 3 __________________________________
@@ -90,6 +91,8 @@ _______________/trap_err: \________________
 [01;31m[*][0m : 
 [01;32m[*][0m : 
 [01;32m[*][0m : 
+__________________________________
+[01;32m[*][0m : 
 /tmp/library.cfg
 [source] ps1.cfg
 [source] ps4.cfg
@@ -128,28 +131,28 @@ gpg:               imported: 1  (RSA: 1)
 Xlib:  extension "RANDR" missing on display ":99".
 [01;34m[*][0m [cmd] import -window root $dir_product/session.png [01;32m[*][0m : 
 /tmp/library.cfg
-[source] ps1.cfg
 /tmp/library.cfg
-[source] ps4.cfg
+[source] ps1.cfg
 [source] ps1.cfg
 [source] ps4.cfg
+[source] ps4.cfg
 [source] dialog_optional.cfg
 [source] dialog_optional.cfg
 [source] history_sync.cfg
-[source] vars.cfg
 [source] history_sync.cfg
-[source] alias.cfg
+[source] vars.cfg
 [source] vars.cfg
 [source] alias.cfg
+[source] alias.cfg
 [ register ] use
-[ register ] use_sh
 [ register ] use
-[01;32m[*][0m : Activated Important stuff 
-[-] /home/travis/build/brownman/travis_screencast/SCRIPTS/record_start.sh
 [ register ] use_sh
 [01;32m[*][0m : Activated Important stuff 
 [-] /home/travis/build/brownman/travis_screencast/SCRIPTS/tests.sh
-[01;34m[*][0m [cmd] recordmydesktop --width 1024 --height 768 \ --full-shots --fps 15 --channels 1 --device pulse --v_quality 63 --s_quality 10 --v_bitrate 2000000 --no-wm-check --no-cursor --output=$dir_product/session.${media_type} Initial recording window is set to:
+[ register ] use_sh
+[01;32m[*][0m : Activated Important stuff 
+[-] /home/travis/build/brownman/travis_screencast/SCRIPTS/record_start.sh
+[01;33m[*][0m DISPLAY: :99 [01;34m[*][0m [cmd] recordmydesktop --width 1024 --height 768 \ --full-shots --fps 15 --channels 1 --device pulse --v_quality 63 --s_quality 10 --v_bitrate 2000000 --no-wm-check --no-cursor --output=$dir_product/session.${media_type} Initial recording window is set to:
 X:0   Y:0    Width:1024    Height:768
 Adjusted recording window is set to:
 X:0   Y:0    Width:1024    Height:768
@@ -159,7 +162,7 @@ Opened PCM device pulse
 Recording on device pulse is set to:
 1 channels at 22050Hz
 Capturing!
-[01;33m[*][0m DISPLAY: :99 [01;34m[*][0m [cmd] test_library [source] pipe_translate.cfg
+[01;34m[*][0m [cmd] test_library [source] pipe_translate.cfg
      5:"tests.sh":4(test_library)commander pipe_translate hello
      5:"tests.sh":0(commander)args=($@)
      5:"tests.sh":0(commander)local args
@@ -520,15 +523,15 @@ Capturing!
          5:"vars.cfg":38(time_update)date '+%d %m %y %H %M %S'
         5:"vars.cfg":39(time_update)export date_ws=22_09_14
         5:"vars.cfg":39(time_update)date_ws=22_09_14
-        5:"vars.cfg":40(time_update)export time_ws=08_34_49
-        5:"vars.cfg":40(time_update)time_ws=08_34_49
-        5:"vars.cfg":41(time_update)export time=08:34:49
-        5:"vars.cfg":41(time_update)time=08:34:49
+        5:"vars.cfg":40(time_update)export time_ws=08_35_57
+        5:"vars.cfg":40(time_update)time_ws=08_35_57
+        5:"vars.cfg":41(time_update)export time=08:35:57
+        5:"vars.cfg":41(time_update)time=08:35:57
          5:"vars.cfg":42(time_update)date +%s
-        5:"vars.cfg":42(time_update)export time_secs=1411374889
-        5:"vars.cfg":42(time_update)time_secs=1411374889
-        5:"vars.cfg":53(source)export time=08:34
-        5:"vars.cfg":53(source)time=08:34
+        5:"vars.cfg":42(time_update)export time_secs=1411374957
+        5:"vars.cfg":42(time_update)time_secs=1411374957
+        5:"vars.cfg":53(source)export time=08:35
+        5:"vars.cfg":53(source)time=08:35
         5:"vars.cfg":54(source)export BROWSER=google-chrome-stable
         5:"vars.cfg":54(source)BROWSER=google-chrome-stable
         5:"vars.cfg":55(source)export EDITOR=vim
@@ -582,8 +585,8 @@ Capturing!
       5:"tests.sh":32(pipe_translate)set -o nounset
       5:"tests.sh":33(pipe_translate)local line
       5:"tests.sh":34(pipe_translate)'[' 1 -eq 0 ']'
-       5:"tests.sh":35(pipe_translate)cut -d- -f1
        5:"tests.sh":35(pipe_translate)echo hello
+       5:"tests.sh":35(pipe_translate)cut -d- -f1
       5:"tests.sh":35(pipe_translate)local str1=hello
       5:"tests.sh":36(pipe_translate)'[' -z hello ']'
       5:"tests.sh":37(pipe_translate)local cmd=
@@ -593,8 +596,8 @@ Capturing!
       5:"tests.sh":2(cat1)local res=1
       5:"tests.sh":3(cat1)'[' -f /home/travis/languages.txt ']'
       5:"tests.sh":4(cat1)'[' -s /home/travis/languages.txt ']'
-       5:"tests.sh":5(cat1)wc -l
        5:"tests.sh":5(cat1)cat /home/travis/languages.txt
+       5:"tests.sh":5(cat1)wc -l
       5:"tests.sh":5(cat1)local num=3
       5:"tests.sh":6(cat1)'[' 3 -gt 0 ']'
       5:"tests.sh":7(cat1)'[' true = true ']'
@@ -920,8 +923,8 @@ _________________
       5:"tests.sh":10(trace)random 30
       5:"tests.sh":0(random)set +e
       5:"tests.sh":1(random)local num=30
-      5:"tests.sh":2(random)let 'r = 12466 % 30'
-      5:"tests.sh":3(random)return 16
+      5:"tests.sh":2(random)let 'r = 5953 % 30'
+      5:"tests.sh":3(random)return 13
       5:"tests.sh":42(pipe_translate)commander /home/travis/LIBRARY/BANK/GIST/translate.sh ru hello
       5:"tests.sh":0(commander)args=($@)
       5:"tests.sh":0(commander)local args
@@ -1150,9 +1153,13 @@ _________________
 [01;32m[*][0m : input: hello 
 [-] naming: input_wsp: hello
 [-] naming: file_mp3:  /tmp/hello_ru.mp3
-                __________
-_______________/trap_err: \________________
-[01;31m[*][0m : 
+[01;34m[*][0m [ file ] trace: 12 __________________________________
+__________________________________
+[01;34m[*][0m [cmd] ensure rm /tmp/trace [01;32m[*][0m : 
+/home/travis/LIBRARY/BANK/GIST/translate.sh: $2: unbound variable
+/home/travis/LIBRARY/BANK/GIST/translate.sh: $2: unbound variable
+[01;34m[*][0m [PLAYING] paplay2 /tmp/hello_ru.mp3 [01;32m[*][0m : empty line 
+[01;34m[*][0m [cmd] sleep 2 [01;32m[*][0m : 
       5:"tests.sh":6(commander)res=0
       5:"tests.sh":7(commander)indicator 0
       5:"tests.sh":0(indicator)local res_last=0
@@ -1374,8 +1381,8 @@ _______________/trap_err: \________________
       5:"tests.sh":10(trace)random 30
       5:"tests.sh":0(random)set +e
       5:"tests.sh":1(random)local num=30
-      5:"tests.sh":2(random)let 'r = 1252 % 30'
-      5:"tests.sh":3(random)return 22
+      5:"tests.sh":2(random)let 'r = 25692 % 30'
+      5:"tests.sh":3(random)return 12
       5:"tests.sh":42(pipe_translate)commander /home/travis/LIBRARY/BANK/GIST/translate.sh it hello
       5:"tests.sh":0(commander)args=($@)
       5:"tests.sh":0(commander)local args
@@ -1612,7 +1619,6 @@ _______________/trap_err: \________________
       5:"tests.sh":0(indicator)local res_last=0
       5:"tests.sh":1(indicator)local num=0
       5:"tests.sh":2(indicator)use print
-[01;32m[*][0m : empty line 
       5:"tests.sh":0(use)set -o nounset
       5:"tests.sh":1(use)local str
       5:"tests.sh":2(use)local filename
@@ -1829,7 +1835,7 @@ _______________/trap_err: \________________
       5:"tests.sh":10(trace)random 30
       5:"tests.sh":0(random)set +e
       5:"tests.sh":1(random)local num=30
-      5:"tests.sh":2(random)let 'r = 5839 % 30'
+      5:"tests.sh":2(random)let 'r = 3019 % 30'
       5:"tests.sh":3(random)return 19
       5:"tests.sh":42(pipe_translate)commander /home/travis/LIBRARY/BANK/GIST/translate.sh ar hello
       5:"tests.sh":0(commander)args=($@)
@@ -2600,11 +2606,11 @@ _______________/trap_err: \________________
 
 *********************************************
 
-Cached 2 MB, from 2700 MB that were received.
+Cached 1 MB, from 2691 MB that were received.
 Average cache compression ratio: 99.9 %
 
 *********************************************
-Saved 900 frames in a total of 899 requests
+Saved 897 frames in a total of 899 requests
 Shutting down.....
 STATE:ENCODING
 Encoding started!
@@ -2617,8 +2623,8 @@ Encoding finished!
 Wait a moment please...
    
 Done.
-Written 45705 bytes
-(40259 of which were video data and 5446 audio data)
+Written 48813 bytes
+(38525 of which were video data and 10288 audio data)
 
 Cleanning up cache...
 Done!!!
