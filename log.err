@@ -45,6 +45,51 @@ Cloning into 'LIBRARY'...
 TESITNG use of the LIBRARY:
 [01;34m[*][0m [cmd] print ok [01;32m[*][0m : 
 [01;32m[*][0m : 
+[source] pipe_translate.cfg
+[01;34m[*][0m [cmd] pipe_translate hello [CMD] export builtin_translate=/home/travis/LIBRARY/BANK/GIST/translate.sh
+[source] vars.cfg
+[01;34m[*][0m [ file ] languages.txt: 3 __________________________________
+__________________________________
+[01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
+[01;34m[*][0m [cmd] /home/travis/LIBRARY/BANK/GIST/translate.sh ru hello [source] flite1.cfg
+[source] paplay1.cfg
+[01;34m[*][0m [cmd] trap trap_err ERR [01;32m[*][0m : 
+[01;32m[*][0m : input: hello 
+[01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
+[-] naming: input_wsp: hello
+[01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
+[-] naming: file_mp3:  /tmp/hello_ru.mp3
+                __________
+_______________/trap_err: \________________
+[01;31m[*][0m : 
+[01;32m[*][0m : 
+[01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
+[01;34m[*][0m [cmd] /home/travis/LIBRARY/BANK/GIST/translate.sh it hello [source] flite1.cfg
+[source] paplay1.cfg
+[01;34m[*][0m [cmd] trap trap_err ERR [01;32m[*][0m : 
+[01;32m[*][0m : input: hello 
+[01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
+[-] naming: input_wsp: hello
+[01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
+[-] naming: file_mp3:  /tmp/hello_it.mp3
+                __________
+_______________/trap_err: \________________
+[01;31m[*][0m : 
+[01;32m[*][0m : 
+[01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
+[01;34m[*][0m [cmd] /home/travis/LIBRARY/BANK/GIST/translate.sh ar hello [source] flite1.cfg
+[source] paplay1.cfg
+[01;34m[*][0m [cmd] trap trap_err ERR [01;32m[*][0m : 
+[01;32m[*][0m : input: hello 
+[01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
+[-] naming: input_wsp: hello
+[01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
+[-] naming: file_mp3:  /tmp/hello_ar.mp3
+                __________
+_______________/trap_err: \________________
+[01;31m[*][0m : 
+[01;32m[*][0m : 
+[01;32m[*][0m : 
 /tmp/library.cfg
 [source] ps1.cfg
 [source] ps4.cfg
@@ -85,32 +130,36 @@ Xlib:  extension "RANDR" missing on display ":99".
 /tmp/library.cfg
 [source] ps1.cfg
 /tmp/library.cfg
+[source] ps4.cfg
 [source] ps1.cfg
 [source] ps4.cfg
-[source] ps4.cfg
 [source] dialog_optional.cfg
 [source] dialog_optional.cfg
 [source] history_sync.cfg
+[source] vars.cfg
 [source] history_sync.cfg
-[source] vars.cfg
+[source] alias.cfg
 [source] vars.cfg
 [source] alias.cfg
-[source] alias.cfg
 [ register ] use
+[ register ] use_sh
 [ register ] use
+[01;32m[*][0m : Activated Important stuff 
+[-] /home/travis/build/brownman/travis_screencast/SCRIPTS/record_start.sh
 [ register ] use_sh
 [01;32m[*][0m : Activated Important stuff 
 [-] /home/travis/build/brownman/travis_screencast/SCRIPTS/tests.sh
-[ register ] use_sh
-[01;32m[*][0m : Activated Important stuff 
-[-] /home/travis/build/brownman/travis_screencast/SCRIPTS/record_start.sh
-[01;33m[*][0m DISPLAY: :99 [01;34m[*][0m [cmd] test_library [01;34m[*][0m [cmd] recordmydesktop --width 1024 --height 768 \ --full-shots --fps 15 --channels 1 --device pulse --v_quality 63 --s_quality 10 --v_bitrate 2000000 --no-wm-check --no-cursor --output=$dir_product/session.${media_type} Initial recording window is set to:
+[01;34m[*][0m [cmd] recordmydesktop --width 1024 --height 768 \ --full-shots --fps 15 --channels 1 --device pulse --v_quality 63 --s_quality 10 --v_bitrate 2000000 --no-wm-check --no-cursor --output=$dir_product/session.${media_type} Initial recording window is set to:
 X:0   Y:0    Width:1024    Height:768
 Adjusted recording window is set to:
 X:0   Y:0    Width:1024    Height:768
 Initializing...
 Buffer size adjusted to 4096 from 4096 frames.
-[source] pipe_translate.cfg
+Opened PCM device pulse
+Recording on device pulse is set to:
+1 channels at 22050Hz
+Capturing!
+[01;33m[*][0m DISPLAY: :99 [01;34m[*][0m [cmd] test_library [source] pipe_translate.cfg
      5:"tests.sh":4(test_library)commander pipe_translate hello
      5:"tests.sh":0(commander)args=($@)
      5:"tests.sh":0(commander)local args
@@ -152,12 +201,8 @@ Buffer size adjusted to 4096 from 4096 frames.
      5:"tests.sh":7(use)local file
      5:"tests.sh":8(use)local res=1
      5:"tests.sh":9(use)str0=print
-Opened PCM device pulse
-Recording on device pulse is set to:
-1 channels at 22050Hz
      5:"tests.sh":10(use)local act=
      5:"tests.sh":11(use)test 1 -gt 0
-Capturing!
       5:"tests.sh":15(use)basename print
      5:"tests.sh":15(use)local funcname=print
      5:"tests.sh":16(use)set -o pipefail
@@ -475,15 +520,15 @@ Capturing!
          5:"vars.cfg":38(time_update)date '+%d %m %y %H %M %S'
         5:"vars.cfg":39(time_update)export date_ws=22_09_14
         5:"vars.cfg":39(time_update)date_ws=22_09_14
-        5:"vars.cfg":40(time_update)export time_ws=08_28_50
-        5:"vars.cfg":40(time_update)time_ws=08_28_50
-        5:"vars.cfg":41(time_update)export time=08:28:50
-        5:"vars.cfg":41(time_update)time=08:28:50
+        5:"vars.cfg":40(time_update)export time_ws=08_34_49
+        5:"vars.cfg":40(time_update)time_ws=08_34_49
+        5:"vars.cfg":41(time_update)export time=08:34:49
+        5:"vars.cfg":41(time_update)time=08:34:49
          5:"vars.cfg":42(time_update)date +%s
-        5:"vars.cfg":42(time_update)export time_secs=1411374530
-        5:"vars.cfg":42(time_update)time_secs=1411374530
-        5:"vars.cfg":53(source)export time=08:28
-        5:"vars.cfg":53(source)time=08:28
+        5:"vars.cfg":42(time_update)export time_secs=1411374889
+        5:"vars.cfg":42(time_update)time_secs=1411374889
+        5:"vars.cfg":53(source)export time=08:34
+        5:"vars.cfg":53(source)time=08:34
         5:"vars.cfg":54(source)export BROWSER=google-chrome-stable
         5:"vars.cfg":54(source)BROWSER=google-chrome-stable
         5:"vars.cfg":55(source)export EDITOR=vim
@@ -537,8 +582,8 @@ Capturing!
       5:"tests.sh":32(pipe_translate)set -o nounset
       5:"tests.sh":33(pipe_translate)local line
       5:"tests.sh":34(pipe_translate)'[' 1 -eq 0 ']'
-       5:"tests.sh":35(pipe_translate)echo hello
        5:"tests.sh":35(pipe_translate)cut -d- -f1
+       5:"tests.sh":35(pipe_translate)echo hello
       5:"tests.sh":35(pipe_translate)local str1=hello
       5:"tests.sh":36(pipe_translate)'[' -z hello ']'
       5:"tests.sh":37(pipe_translate)local cmd=
@@ -875,8 +920,8 @@ _________________
       5:"tests.sh":10(trace)random 30
       5:"tests.sh":0(random)set +e
       5:"tests.sh":1(random)local num=30
-      5:"tests.sh":2(random)let 'r = 10355 % 30'
-      5:"tests.sh":3(random)return 5
+      5:"tests.sh":2(random)let 'r = 12466 % 30'
+      5:"tests.sh":3(random)return 16
       5:"tests.sh":42(pipe_translate)commander /home/travis/LIBRARY/BANK/GIST/translate.sh ru hello
       5:"tests.sh":0(commander)args=($@)
       5:"tests.sh":0(commander)local args
@@ -1329,8 +1374,8 @@ _______________/trap_err: \________________
       5:"tests.sh":10(trace)random 30
       5:"tests.sh":0(random)set +e
       5:"tests.sh":1(random)local num=30
-      5:"tests.sh":2(random)let 'r = 7184 % 30'
-      5:"tests.sh":3(random)return 14
+      5:"tests.sh":2(random)let 'r = 1252 % 30'
+      5:"tests.sh":3(random)return 22
       5:"tests.sh":42(pipe_translate)commander /home/travis/LIBRARY/BANK/GIST/translate.sh it hello
       5:"tests.sh":0(commander)args=($@)
       5:"tests.sh":0(commander)local args
@@ -1421,7 +1466,6 @@ _______________/trap_err: \________________
       5:"tests.sh":6(use)local res
       5:"tests.sh":7(use)local file
       5:"tests.sh":8(use)local res=1
-[01;32m[*][0m : empty line 
       5:"tests.sh":9(use)str0=times1
       5:"tests.sh":10(use)local act=
       5:"tests.sh":11(use)test 1 -gt 0
@@ -1568,6 +1612,7 @@ _______________/trap_err: \________________
       5:"tests.sh":0(indicator)local res_last=0
       5:"tests.sh":1(indicator)local num=0
       5:"tests.sh":2(indicator)use print
+[01;32m[*][0m : empty line 
       5:"tests.sh":0(use)set -o nounset
       5:"tests.sh":1(use)local str
       5:"tests.sh":2(use)local filename
@@ -1784,755 +1829,8 @@ _______________/trap_err: \________________
       5:"tests.sh":10(trace)random 30
       5:"tests.sh":0(random)set +e
       5:"tests.sh":1(random)local num=30
-      5:"tests.sh":2(random)let 'r = 270 % 30'
-      5:"tests.sh":3(random)return 0
-      5:"tests.sh":10(trace)cowsay log_random
-      5:"tests.sh":11(trace)cat1 /tmp/trace true
-      5:"tests.sh":0(cat1)local file=/tmp/trace
-      5:"tests.sh":1(cat1)local pretty=true
-      5:"tests.sh":2(cat1)local res=1
-      5:"tests.sh":3(cat1)'[' -f /tmp/trace ']'
-      5:"tests.sh":4(cat1)'[' -s /tmp/trace ']'
-       5:"tests.sh":5(cat1)cat /tmp/trace
-       5:"tests.sh":5(cat1)wc -l
-      5:"tests.sh":5(cat1)local num=7
-      5:"tests.sh":6(cat1)'[' 7 -gt 0 ']'
-      5:"tests.sh":7(cat1)'[' true = true ']'
-      5:"tests.sh":8(cat1)cat_present /tmp/trace
-      5:"tests.sh":0(cat_present)local file=/tmp/trace
-       5:"tests.sh":1(cat_present)basename /tmp/trace
-      5:"tests.sh":1(cat_present)local filename=trace
-       5:"tests.sh":2(cat_present)wc -l
-       5:"tests.sh":2(cat_present)cat /tmp/trace
-      5:"tests.sh":2(cat_present)local num=7
-      5:"tests.sh":3(cat_present)print color 34 ' [ file ]  trace: 7'
-      5:"tests.sh":0(print)args=($@)
-      5:"tests.sh":0(print)local args
-      5:"tests.sh":1(print)local 'cmd=color 34 [ file ] trace: 7'
-      5:"tests.sh":2(print)printn color 34 '[' file ']' trace: 7
-      5:"tests.sh":0(printn)use times1
-      5:"tests.sh":0(use)set -o nounset
-      5:"tests.sh":1(use)local str
-      5:"tests.sh":2(use)local filename
-      5:"tests.sh":3(use)local str0
-      5:"tests.sh":4(use)local cmd
-      5:"tests.sh":5(use)local type
-      5:"tests.sh":6(use)local res
-      5:"tests.sh":7(use)local file
-      5:"tests.sh":8(use)local res=1
-      5:"tests.sh":9(use)str0=times1
-      5:"tests.sh":10(use)local act=
-      5:"tests.sh":11(use)test 1 -gt 0
-       5:"tests.sh":15(use)basename times1
-      5:"tests.sh":15(use)local funcname=times1
-      5:"tests.sh":16(use)set -o pipefail
-      5:"tests.sh":17(use)exec
-      5:"tests.sh":19(use)res=0
-      5:"tests.sh":20(use)'[' 0 -eq 0 ']'
-      5:"tests.sh":20(use)'[' '' '!=' edit ']'
-      5:"tests.sh":20(use)'[' '' '!=' force ']'
-      5:"tests.sh":21(use)return 0
-      5:"tests.sh":1(printn)use trace
-      5:"tests.sh":0(use)set -o nounset
-      5:"tests.sh":1(use)local str
-      5:"tests.sh":2(use)local filename
-      5:"tests.sh":3(use)local str0
-      5:"tests.sh":4(use)local cmd
-      5:"tests.sh":5(use)local type
-      5:"tests.sh":6(use)local res
-      5:"tests.sh":7(use)local file
-      5:"tests.sh":8(use)local res=1
-      5:"tests.sh":9(use)str0=trace
-      5:"tests.sh":10(use)local act=
-      5:"tests.sh":11(use)test 1 -gt 0
-       5:"tests.sh":15(use)basename trace
-      5:"tests.sh":15(use)local funcname=trace
-      5:"tests.sh":16(use)set -o pipefail
-      5:"tests.sh":17(use)exec
-      5:"tests.sh":19(use)res=0
-      5:"tests.sh":20(use)'[' 0 -eq 0 ']'
-      5:"tests.sh":20(use)'[' '' '!=' edit ']'
-      5:"tests.sh":20(use)'[' '' '!=' force ']'
-      5:"tests.sh":21(use)return 0
-      5:"tests.sh":2(printn)'[' 7 -gt 0 ']'
-      5:"tests.sh":6(printn)local type=color
-      5:"tests.sh":7(printn)shift
-      5:"tests.sh":8(printn)local 'str=34 [ file ] trace: 7'
-      5:"tests.sh":9(printn)local cmd=
-      5:"tests.sh":10(printn)case "$type" in
-      5:"tests.sh":22(printn)print_color_n 34 '[' file ']' trace: 7
-      5:"tests.sh":0(print_color_n)use assert
-      5:"tests.sh":0(use)set -o nounset
-      5:"tests.sh":1(use)local str
-      5:"tests.sh":2(use)local filename
-      5:"tests.sh":3(use)local str0
-      5:"tests.sh":4(use)local cmd
-      5:"tests.sh":5(use)local type
-      5:"tests.sh":6(use)local res
-      5:"tests.sh":7(use)local file
-      5:"tests.sh":8(use)local res=1
-      5:"tests.sh":9(use)str0=assert
-      5:"tests.sh":10(use)local act=
-      5:"tests.sh":11(use)test 1 -gt 0
-       5:"tests.sh":15(use)basename assert
-      5:"tests.sh":15(use)local funcname=assert
-      5:"tests.sh":16(use)set -o pipefail
-      5:"tests.sh":17(use)exec
-      5:"tests.sh":19(use)res=0
-      5:"tests.sh":20(use)'[' 0 -eq 0 ']'
-      5:"tests.sh":20(use)'[' '' '!=' edit ']'
-      5:"tests.sh":20(use)'[' '' '!=' force ']'
-      5:"tests.sh":21(use)return 0
-      5:"tests.sh":1(print_color_n)'[' 6 -gt 1 ']'
-      5:"tests.sh":2(print_color_n)local color=34
-      5:"tests.sh":3(print_color_n)assert is_number 34
-      5:"tests.sh":0(assert)use trace
-      5:"tests.sh":0(use)set -o nounset
-      5:"tests.sh":1(use)local str
-      5:"tests.sh":2(use)local filename
-      5:"tests.sh":3(use)local str0
-      5:"tests.sh":4(use)local cmd
-      5:"tests.sh":5(use)local type
-      5:"tests.sh":6(use)local res
-      5:"tests.sh":7(use)local file
-      5:"tests.sh":8(use)local res=1
-      5:"tests.sh":9(use)str0=trace
-      5:"tests.sh":10(use)local act=
-      5:"tests.sh":11(use)test 1 -gt 0
-       5:"tests.sh":15(use)basename trace
-      5:"tests.sh":15(use)local funcname=trace
-      5:"tests.sh":16(use)set -o pipefail
-      5:"tests.sh":17(use)exec
-      5:"tests.sh":19(use)res=0
-      5:"tests.sh":20(use)'[' 0 -eq 0 ']'
-      5:"tests.sh":20(use)'[' '' '!=' edit ']'
-      5:"tests.sh":20(use)'[' '' '!=' force ']'
-      5:"tests.sh":21(use)return 0
-      5:"tests.sh":1(assert)use print
-      5:"tests.sh":0(use)set -o nounset
-      5:"tests.sh":1(use)local str
-      5:"tests.sh":2(use)local filename
-      5:"tests.sh":3(use)local str0
-      5:"tests.sh":4(use)local cmd
-      5:"tests.sh":5(use)local type
-      5:"tests.sh":6(use)local res
-      5:"tests.sh":7(use)local file
-      5:"tests.sh":8(use)local res=1
-      5:"tests.sh":9(use)str0=print
-      5:"tests.sh":10(use)local act=
-      5:"tests.sh":11(use)test 1 -gt 0
-       5:"tests.sh":15(use)basename print
-      5:"tests.sh":15(use)local funcname=print
-      5:"tests.sh":16(use)set -o pipefail
-      5:"tests.sh":17(use)exec
-      5:"tests.sh":19(use)res=0
-      5:"tests.sh":20(use)'[' 0 -eq 0 ']'
-      5:"tests.sh":20(use)'[' '' '!=' edit ']'
-      5:"tests.sh":20(use)'[' '' '!=' force ']'
-      5:"tests.sh":21(use)return 0
-      5:"tests.sh":2(assert)local max=2
-       5:"tests.sh":3(assert)caller
-      5:"tests.sh":3(assert)local str_caller=
-      5:"tests.sh":4(assert)'[' 2 -gt 1 ']'
-      5:"tests.sh":8(assert)local name=is_number
-      5:"tests.sh":9(assert)local item=34
-      5:"tests.sh":10(assert)local extra=
-      5:"tests.sh":11(assert)local res=1
-      5:"tests.sh":12(assert)case $name in
-      5:"tests.sh":95(assert)re='^[0-9]+$'
-      5:"tests.sh":96(assert)[[ 34 =~ ^[0-9]+$ ]]
-      5:"tests.sh":97(assert)let res=0
-      5:"tests.sh":105(assert)'[' 0 -ne 0 ']'
-      5:"tests.sh":113(assert)return 0
-      5:"tests.sh":4(print_color_n)shift
-      5:"tests.sh":5(print_color_n)local 'args=[ file ] trace: 7'
-      5:"tests.sh":6(print_color_n)echo -en '\x1B[01;34m[*]\x1B[0m [ file ] trace: 7 '
-[01;34m[*][0m [ file ] trace: 7       5:"tests.sh":3(print)echo
-      5:"tests.sh":4(print)set +u
-      5:"tests.sh":5(print)set +e
-      5:"tests.sh":4(cat_present)print line
-      5:"tests.sh":0(print)args=($@)
-      5:"tests.sh":0(print)local args
-      5:"tests.sh":1(print)local cmd=line
-      5:"tests.sh":2(print)printn line
-      5:"tests.sh":0(printn)use times1
-      5:"tests.sh":0(use)set -o nounset
-      5:"tests.sh":1(use)local str
-      5:"tests.sh":2(use)local filename
-      5:"tests.sh":3(use)local str0
-      5:"tests.sh":4(use)local cmd
-      5:"tests.sh":5(use)local type
-      5:"tests.sh":6(use)local res
-      5:"tests.sh":7(use)local file
-      5:"tests.sh":8(use)local res=1
-      5:"tests.sh":9(use)str0=times1
-      5:"tests.sh":10(use)local act=
-      5:"tests.sh":11(use)test 1 -gt 0
-       5:"tests.sh":15(use)basename times1
-      5:"tests.sh":15(use)local funcname=times1
-      5:"tests.sh":16(use)set -o pipefail
-      5:"tests.sh":17(use)exec
-      5:"tests.sh":19(use)res=0
-      5:"tests.sh":20(use)'[' 0 -eq 0 ']'
-      5:"tests.sh":20(use)'[' '' '!=' edit ']'
-      5:"tests.sh":20(use)'[' '' '!=' force ']'
-      5:"tests.sh":21(use)return 0
-      5:"tests.sh":1(printn)use trace
-      5:"tests.sh":0(use)set -o nounset
-      5:"tests.sh":1(use)local str
-      5:"tests.sh":2(use)local filename
-      5:"tests.sh":3(use)local str0
-      5:"tests.sh":4(use)local cmd
-      5:"tests.sh":5(use)local type
-      5:"tests.sh":6(use)local res
-      5:"tests.sh":7(use)local file
-      5:"tests.sh":8(use)local res=1
-      5:"tests.sh":9(use)str0=trace
-      5:"tests.sh":10(use)local act=
-      5:"tests.sh":11(use)test 1 -gt 0
-       5:"tests.sh":15(use)basename trace
-      5:"tests.sh":15(use)local funcname=trace
-      5:"tests.sh":16(use)set -o pipefail
-      5:"tests.sh":17(use)exec
-      5:"tests.sh":19(use)res=0
-      5:"tests.sh":20(use)'[' 0 -eq 0 ']'
-      5:"tests.sh":20(use)'[' '' '!=' edit ']'
-      5:"tests.sh":20(use)'[' '' '!=' force ']'
-      5:"tests.sh":21(use)return 0
-      5:"tests.sh":2(printn)'[' 1 -gt 0 ']'
-      5:"tests.sh":6(printn)local type=line
-      5:"tests.sh":7(printn)shift
-      5:"tests.sh":8(printn)local str=
-      5:"tests.sh":9(printn)local cmd=
-      5:"tests.sh":10(printn)case "$type" in
-      5:"tests.sh":28(printn)'[' -n '' ']'
-      5:"tests.sh":36(printn)echo -en _________________
-_________________      5:"tests.sh":37(printn)echo -e _________________
-_________________
-      5:"tests.sh":3(print)echo
-      5:"tests.sh":4(print)set +u
-      5:"tests.sh":5(print)set +e
-      5:"tests.sh":5(cat_present)cat /tmp/trace
-      5:"tests.sh":6(cat_present)print line
-      5:"tests.sh":0(print)args=($@)
-      5:"tests.sh":0(print)local args
-      5:"tests.sh":1(print)local cmd=line
-      5:"tests.sh":2(print)printn line
-      5:"tests.sh":0(printn)use times1
-      5:"tests.sh":0(use)set -o nounset
-      5:"tests.sh":1(use)local str
-      5:"tests.sh":2(use)local filename
-      5:"tests.sh":3(use)local str0
-      5:"tests.sh":4(use)local cmd
-      5:"tests.sh":5(use)local type
-      5:"tests.sh":6(use)local res
-      5:"tests.sh":7(use)local file
-      5:"tests.sh":8(use)local res=1
-      5:"tests.sh":9(use)str0=times1
-      5:"tests.sh":10(use)local act=
-      5:"tests.sh":11(use)test 1 -gt 0
-       5:"tests.sh":15(use)basename times1
-      5:"tests.sh":15(use)local funcname=times1
-      5:"tests.sh":16(use)set -o pipefail
-      5:"tests.sh":17(use)exec
-      5:"tests.sh":19(use)res=0
-      5:"tests.sh":20(use)'[' 0 -eq 0 ']'
-      5:"tests.sh":20(use)'[' '' '!=' edit ']'
-      5:"tests.sh":20(use)'[' '' '!=' force ']'
-      5:"tests.sh":21(use)return 0
-      5:"tests.sh":1(printn)use trace
-      5:"tests.sh":0(use)set -o nounset
-      5:"tests.sh":1(use)local str
-      5:"tests.sh":2(use)local filename
-      5:"tests.sh":3(use)local str0
-      5:"tests.sh":4(use)local cmd
-      5:"tests.sh":5(use)local type
-      5:"tests.sh":6(use)local res
-      5:"tests.sh":7(use)local file
-      5:"tests.sh":8(use)local res=1
-      5:"tests.sh":9(use)str0=trace
-      5:"tests.sh":10(use)local act=
-      5:"tests.sh":11(use)test 1 -gt 0
-       5:"tests.sh":15(use)basename trace
-      5:"tests.sh":15(use)local funcname=trace
-      5:"tests.sh":16(use)set -o pipefail
-      5:"tests.sh":17(use)exec
-      5:"tests.sh":19(use)res=0
-      5:"tests.sh":20(use)'[' 0 -eq 0 ']'
-      5:"tests.sh":20(use)'[' '' '!=' edit ']'
-      5:"tests.sh":20(use)'[' '' '!=' force ']'
-      5:"tests.sh":21(use)return 0
-      5:"tests.sh":2(printn)'[' 1 -gt 0 ']'
-      5:"tests.sh":6(printn)local type=line
-      5:"tests.sh":7(printn)shift
-      5:"tests.sh":8(printn)local str=
-      5:"tests.sh":9(printn)local cmd=
-      5:"tests.sh":10(printn)case "$type" in
-      5:"tests.sh":28(printn)'[' -n '' ']'
-      5:"tests.sh":36(printn)echo -en _________________
-_________________      5:"tests.sh":37(printn)echo -e _________________
-_________________
-      5:"tests.sh":3(print)echo
-      5:"tests.sh":4(print)set +u
-      5:"tests.sh":5(print)set +e
-      5:"tests.sh":9(cat1)res=0
-      5:"tests.sh":23(cat1)return 0
-      5:"tests.sh":12(trace)use ensure
-      5:"tests.sh":0(use)set -o nounset
-      5:"tests.sh":1(use)local str
-      5:"tests.sh":2(use)local filename
-      5:"tests.sh":3(use)local str0
-      5:"tests.sh":4(use)local cmd
-      5:"tests.sh":5(use)local type
-      5:"tests.sh":6(use)local res
-      5:"tests.sh":7(use)local file
-      5:"tests.sh":8(use)local res=1
-      5:"tests.sh":9(use)str0=ensure
-      5:"tests.sh":10(use)local act=
-      5:"tests.sh":11(use)test 1 -gt 0
-       5:"tests.sh":15(use)basename ensure
-      5:"tests.sh":15(use)local funcname=ensure
-      5:"tests.sh":16(use)set -o pipefail
-      5:"tests.sh":17(use)exec
-      5:"tests.sh":19(use)res=0
-      5:"tests.sh":20(use)'[' 0 -eq 0 ']'
-      5:"tests.sh":20(use)'[' '' '!=' edit ']'
-      5:"tests.sh":20(use)'[' '' '!=' force ']'
-      5:"tests.sh":21(use)return 0
-      5:"tests.sh":13(trace)commander ensure rm /tmp/trace
-      5:"tests.sh":0(commander)args=($@)
-      5:"tests.sh":0(commander)local args
-      5:"tests.sh":1(commander)local 'cmd=ensure rm /tmp/trace'
-      5:"tests.sh":2(commander)local res
-      5:"tests.sh":3(commander)use_many indicator print trace
-      5:"tests.sh":0(use_many)for item in '$@'
-      5:"tests.sh":2(use_many)use indicator
-      5:"tests.sh":0(use)set -o nounset
-      5:"tests.sh":1(use)local str
-      5:"tests.sh":2(use)local filename
-      5:"tests.sh":3(use)local str0
-      5:"tests.sh":4(use)local cmd
-      5:"tests.sh":5(use)local type
-      5:"tests.sh":6(use)local res
-      5:"tests.sh":7(use)local file
-      5:"tests.sh":8(use)local res=1
-      5:"tests.sh":9(use)str0=indicator
-      5:"tests.sh":10(use)local act=
-      5:"tests.sh":11(use)test 1 -gt 0
-       5:"tests.sh":15(use)basename indicator
-      5:"tests.sh":15(use)local funcname=indicator
-      5:"tests.sh":16(use)set -o pipefail
-      5:"tests.sh":17(use)exec
-      5:"tests.sh":19(use)res=0
-      5:"tests.sh":20(use)'[' 0 -eq 0 ']'
-      5:"tests.sh":20(use)'[' '' '!=' edit ']'
-      5:"tests.sh":20(use)'[' '' '!=' force ']'
-      5:"tests.sh":21(use)return 0
-      5:"tests.sh":0(use_many)for item in '$@'
-      5:"tests.sh":2(use_many)use print
-      5:"tests.sh":0(use)set -o nounset
-      5:"tests.sh":1(use)local str
-      5:"tests.sh":2(use)local filename
-      5:"tests.sh":3(use)local str0
-      5:"tests.sh":4(use)local cmd
-      5:"tests.sh":5(use)local type
-      5:"tests.sh":6(use)local res
-      5:"tests.sh":7(use)local file
-      5:"tests.sh":8(use)local res=1
-      5:"tests.sh":9(use)str0=print
-      5:"tests.sh":10(use)local act=
-      5:"tests.sh":11(use)test 1 -gt 0
-       5:"tests.sh":15(use)basename print
-      5:"tests.sh":15(use)local funcname=print
-      5:"tests.sh":16(use)set -o pipefail
-      5:"tests.sh":17(use)exec
-      5:"tests.sh":19(use)res=0
-      5:"tests.sh":20(use)'[' 0 -eq 0 ']'
-      5:"tests.sh":20(use)'[' '' '!=' edit ']'
-      5:"tests.sh":20(use)'[' '' '!=' force ']'
-      5:"tests.sh":21(use)return 0
-      5:"tests.sh":0(use_many)for item in '$@'
-      5:"tests.sh":2(use_many)use trace
-      5:"tests.sh":0(use)set -o nounset
-      5:"tests.sh":1(use)local str
-      5:"tests.sh":2(use)local filename
-      5:"tests.sh":3(use)local str0
-      5:"tests.sh":4(use)local cmd
-      5:"tests.sh":5(use)local type
-      5:"tests.sh":6(use)local res
-      5:"tests.sh":7(use)local file
-      5:"tests.sh":8(use)local res=1
-      5:"tests.sh":9(use)str0=trace
-      5:"tests.sh":10(use)local act=
-      5:"tests.sh":11(use)test 1 -gt 0
-       5:"tests.sh":15(use)basename trace
-      5:"tests.sh":15(use)local funcname=trace
-      5:"tests.sh":16(use)set -o pipefail
-      5:"tests.sh":17(use)exec
-      5:"tests.sh":19(use)res=0
-      5:"tests.sh":20(use)'[' 0 -eq 0 ']'
-      5:"tests.sh":20(use)'[' '' '!=' edit ']'
-      5:"tests.sh":20(use)'[' '' '!=' force ']'
-      5:"tests.sh":21(use)return 0
-      5:"tests.sh":4(commander)print color 34 '[cmd] ensure rm /tmp/trace'
-      5:"tests.sh":0(print)args=($@)
-      5:"tests.sh":0(print)local args
-      5:"tests.sh":1(print)local 'cmd=color 34 [cmd] ensure rm /tmp/trace'
-      5:"tests.sh":2(print)printn color 34 '[cmd]' ensure rm /tmp/trace
-      5:"tests.sh":0(printn)use times1
-      5:"tests.sh":0(use)set -o nounset
-      5:"tests.sh":1(use)local str
-      5:"tests.sh":2(use)local filename
-      5:"tests.sh":3(use)local str0
-      5:"tests.sh":4(use)local cmd
-      5:"tests.sh":5(use)local type
-      5:"tests.sh":6(use)local res
-      5:"tests.sh":7(use)local file
-      5:"tests.sh":8(use)local res=1
-      5:"tests.sh":9(use)str0=times1
-      5:"tests.sh":10(use)local act=
-      5:"tests.sh":11(use)test 1 -gt 0
-       5:"tests.sh":15(use)basename times1
-      5:"tests.sh":15(use)local funcname=times1
-      5:"tests.sh":16(use)set -o pipefail
-      5:"tests.sh":17(use)exec
-      5:"tests.sh":19(use)res=0
-      5:"tests.sh":20(use)'[' 0 -eq 0 ']'
-      5:"tests.sh":20(use)'[' '' '!=' edit ']'
-      5:"tests.sh":20(use)'[' '' '!=' force ']'
-      5:"tests.sh":21(use)return 0
-      5:"tests.sh":1(printn)use trace
-      5:"tests.sh":0(use)set -o nounset
-      5:"tests.sh":1(use)local str
-      5:"tests.sh":2(use)local filename
-      5:"tests.sh":3(use)local str0
-      5:"tests.sh":4(use)local cmd
-      5:"tests.sh":5(use)local type
-      5:"tests.sh":6(use)local res
-      5:"tests.sh":7(use)local file
-      5:"tests.sh":8(use)local res=1
-      5:"tests.sh":9(use)str0=trace
-      5:"tests.sh":10(use)local act=
-      5:"tests.sh":11(use)test 1 -gt 0
-       5:"tests.sh":15(use)basename trace
-      5:"tests.sh":15(use)local funcname=trace
-      5:"tests.sh":16(use)set -o pipefail
-      5:"tests.sh":17(use)exec
-      5:"tests.sh":19(use)res=0
-      5:"tests.sh":20(use)'[' 0 -eq 0 ']'
-      5:"tests.sh":20(use)'[' '' '!=' edit ']'
-      5:"tests.sh":20(use)'[' '' '!=' force ']'
-      5:"tests.sh":21(use)return 0
-      5:"tests.sh":2(printn)'[' 6 -gt 0 ']'
-      5:"tests.sh":6(printn)local type=color
-      5:"tests.sh":7(printn)shift
-      5:"tests.sh":8(printn)local 'str=34 [cmd] ensure rm /tmp/trace'
-      5:"tests.sh":9(printn)local cmd=
-      5:"tests.sh":10(printn)case "$type" in
-      5:"tests.sh":22(printn)print_color_n 34 '[cmd]' ensure rm /tmp/trace
-      5:"tests.sh":0(print_color_n)use assert
-      5:"tests.sh":0(use)set -o nounset
-      5:"tests.sh":1(use)local str
-      5:"tests.sh":2(use)local filename
-      5:"tests.sh":3(use)local str0
-      5:"tests.sh":4(use)local cmd
-      5:"tests.sh":5(use)local type
-      5:"tests.sh":6(use)local res
-      5:"tests.sh":7(use)local file
-      5:"tests.sh":8(use)local res=1
-      5:"tests.sh":9(use)str0=assert
-      5:"tests.sh":10(use)local act=
-      5:"tests.sh":11(use)test 1 -gt 0
-       5:"tests.sh":15(use)basename assert
-      5:"tests.sh":15(use)local funcname=assert
-      5:"tests.sh":16(use)set -o pipefail
-      5:"tests.sh":17(use)exec
-      5:"tests.sh":19(use)res=0
-      5:"tests.sh":20(use)'[' 0 -eq 0 ']'
-      5:"tests.sh":20(use)'[' '' '!=' edit ']'
-      5:"tests.sh":20(use)'[' '' '!=' force ']'
-      5:"tests.sh":21(use)return 0
-      5:"tests.sh":1(print_color_n)'[' 5 -gt 1 ']'
-      5:"tests.sh":2(print_color_n)local color=34
-      5:"tests.sh":3(print_color_n)assert is_number 34
-      5:"tests.sh":0(assert)use trace
-      5:"tests.sh":0(use)set -o nounset
-      5:"tests.sh":1(use)local str
-      5:"tests.sh":2(use)local filename
-      5:"tests.sh":3(use)local str0
-      5:"tests.sh":4(use)local cmd
-      5:"tests.sh":5(use)local type
-      5:"tests.sh":6(use)local res
-      5:"tests.sh":7(use)local file
-      5:"tests.sh":8(use)local res=1
-      5:"tests.sh":9(use)str0=trace
-      5:"tests.sh":10(use)local act=
-      5:"tests.sh":11(use)test 1 -gt 0
-       5:"tests.sh":15(use)basename trace
-      5:"tests.sh":15(use)local funcname=trace
-      5:"tests.sh":16(use)set -o pipefail
-      5:"tests.sh":17(use)exec
-      5:"tests.sh":19(use)res=0
-      5:"tests.sh":20(use)'[' 0 -eq 0 ']'
-      5:"tests.sh":20(use)'[' '' '!=' edit ']'
-      5:"tests.sh":20(use)'[' '' '!=' force ']'
-      5:"tests.sh":21(use)return 0
-      5:"tests.sh":1(assert)use print
-      5:"tests.sh":0(use)set -o nounset
-      5:"tests.sh":1(use)local str
-      5:"tests.sh":2(use)local filename
-      5:"tests.sh":3(use)local str0
-      5:"tests.sh":4(use)local cmd
-      5:"tests.sh":5(use)local type
-      5:"tests.sh":6(use)local res
-      5:"tests.sh":7(use)local file
-      5:"tests.sh":8(use)local res=1
-      5:"tests.sh":9(use)str0=print
-      5:"tests.sh":10(use)local act=
-      5:"tests.sh":11(use)test 1 -gt 0
-       5:"tests.sh":15(use)basename print
-      5:"tests.sh":15(use)local funcname=print
-      5:"tests.sh":16(use)set -o pipefail
-      5:"tests.sh":17(use)exec
-      5:"tests.sh":19(use)res=0
-      5:"tests.sh":20(use)'[' 0 -eq 0 ']'
-      5:"tests.sh":20(use)'[' '' '!=' edit ']'
-      5:"tests.sh":20(use)'[' '' '!=' force ']'
-      5:"tests.sh":21(use)return 0
-      5:"tests.sh":2(assert)local max=2
-       5:"tests.sh":3(assert)caller
-      5:"tests.sh":3(assert)local str_caller=
-      5:"tests.sh":4(assert)'[' 2 -gt 1 ']'
-      5:"tests.sh":8(assert)local name=is_number
-      5:"tests.sh":9(assert)local item=34
-      5:"tests.sh":10(assert)local extra=
-      5:"tests.sh":11(assert)local res=1
-      5:"tests.sh":12(assert)case $name in
-      5:"tests.sh":95(assert)re='^[0-9]+$'
-      5:"tests.sh":96(assert)[[ 34 =~ ^[0-9]+$ ]]
-      5:"tests.sh":97(assert)let res=0
-      5:"tests.sh":105(assert)'[' 0 -ne 0 ']'
-      5:"tests.sh":113(assert)return 0
-      5:"tests.sh":4(print_color_n)shift
-      5:"tests.sh":5(print_color_n)local 'args=[cmd] ensure rm /tmp/trace'
-      5:"tests.sh":6(print_color_n)echo -en '\x1B[01;34m[*]\x1B[0m [cmd] ensure rm /tmp/trace '
-[01;34m[*][0m [cmd] ensure rm /tmp/trace       5:"tests.sh":3(print)echo
-      5:"tests.sh":4(print)set +u
-      5:"tests.sh":5(print)set +e
-      5:"tests.sh":5(commander)eval 'ensure rm /tmp/trace'
-       5:"tests.sh":5(commander)ensure rm /tmp/trace
-       5:"tests.sh":0(ensure)set +e
-       5:"tests.sh":1(ensure)set -u
-       5:"tests.sh":2(ensure)local name=rm
-       5:"tests.sh":3(ensure)local item=/tmp/trace
-       5:"tests.sh":4(ensure)local item2
-       5:"tests.sh":5(ensure)case $name in
-       5:"tests.sh":15(ensure)use rm1
-       5:"tests.sh":0(use)set -o nounset
-       5:"tests.sh":1(use)local str
-       5:"tests.sh":2(use)local filename
-       5:"tests.sh":3(use)local str0
-       5:"tests.sh":4(use)local cmd
-       5:"tests.sh":5(use)local type
-       5:"tests.sh":6(use)local res
-       5:"tests.sh":7(use)local file
-       5:"tests.sh":8(use)local res=1
-       5:"tests.sh":9(use)str0=rm1
-       5:"tests.sh":10(use)local act=
-       5:"tests.sh":11(use)test 1 -gt 0
-        5:"tests.sh":15(use)basename rm1
-       5:"tests.sh":15(use)local funcname=rm1
-       5:"tests.sh":16(use)set -o pipefail
-       5:"tests.sh":17(use)exec
-       5:"tests.sh":19(use)res=0
-       5:"tests.sh":20(use)'[' 0 -eq 0 ']'
-       5:"tests.sh":20(use)'[' '' '!=' edit ']'
-       5:"tests.sh":20(use)'[' '' '!=' force ']'
-       5:"tests.sh":21(use)return 0
-       5:"tests.sh":16(ensure)'[' -f /tmp/trace ']'
-       5:"tests.sh":17(ensure)rm1 /tmp/trace
-       5:"tests.sh":0(rm1)local file=/tmp/trace
-       5:"tests.sh":1(rm1)'[' -f /tmp/trace ']'
-       5:"tests.sh":2(rm1)rm /tmp/trace
-       5:"tests.sh":37(ensure)set +u
-      5:"tests.sh":6(commander)res=0
-      5:"tests.sh":7(commander)indicator 0
-      5:"tests.sh":0(indicator)local res_last=0
-      5:"tests.sh":1(indicator)local num=0
-      5:"tests.sh":2(indicator)use print
-      5:"tests.sh":0(use)set -o nounset
-      5:"tests.sh":1(use)local str
-      5:"tests.sh":2(use)local filename
-      5:"tests.sh":3(use)local str0
-      5:"tests.sh":4(use)local cmd
-      5:"tests.sh":5(use)local type
-      5:"tests.sh":6(use)local res
-      5:"tests.sh":7(use)local file
-      5:"tests.sh":8(use)local res=1
-      5:"tests.sh":9(use)str0=print
-      5:"tests.sh":10(use)local act=
-      5:"tests.sh":11(use)test 1 -gt 0
-       5:"tests.sh":15(use)basename print
-      5:"tests.sh":15(use)local funcname=print
-      5:"tests.sh":16(use)set -o pipefail
-      5:"tests.sh":17(use)exec
-      5:"tests.sh":19(use)res=0
-      5:"tests.sh":20(use)'[' 0 -eq 0 ']'
-      5:"tests.sh":20(use)'[' '' '!=' edit ']'
-      5:"tests.sh":20(use)'[' '' '!=' force ']'
-      5:"tests.sh":21(use)return 0
-      5:"tests.sh":3(indicator)'[' 0 -eq 0 ']'
-      5:"tests.sh":4(indicator)print ok
-      5:"tests.sh":0(print)args=($@)
-      5:"tests.sh":0(print)local args
-      5:"tests.sh":1(print)local cmd=ok
-      5:"tests.sh":2(print)printn ok
-      5:"tests.sh":0(printn)use times1
-      5:"tests.sh":0(use)set -o nounset
-      5:"tests.sh":1(use)local str
-      5:"tests.sh":2(use)local filename
-      5:"tests.sh":3(use)local str0
-      5:"tests.sh":4(use)local cmd
-      5:"tests.sh":5(use)local type
-      5:"tests.sh":6(use)local res
-      5:"tests.sh":7(use)local file
-      5:"tests.sh":8(use)local res=1
-      5:"tests.sh":9(use)str0=times1
-      5:"tests.sh":10(use)local act=
-      5:"tests.sh":11(use)test 1 -gt 0
-       5:"tests.sh":15(use)basename times1
-      5:"tests.sh":15(use)local funcname=times1
-      5:"tests.sh":16(use)set -o pipefail
-      5:"tests.sh":17(use)exec
-      5:"tests.sh":19(use)res=0
-      5:"tests.sh":20(use)'[' 0 -eq 0 ']'
-      5:"tests.sh":20(use)'[' '' '!=' edit ']'
-      5:"tests.sh":20(use)'[' '' '!=' force ']'
-      5:"tests.sh":21(use)return 0
-      5:"tests.sh":1(printn)use trace
-      5:"tests.sh":0(use)set -o nounset
-      5:"tests.sh":1(use)local str
-      5:"tests.sh":2(use)local filename
-      5:"tests.sh":3(use)local str0
-      5:"tests.sh":4(use)local cmd
-      5:"tests.sh":5(use)local type
-      5:"tests.sh":6(use)local res
-      5:"tests.sh":7(use)local file
-      5:"tests.sh":8(use)local res=1
-      5:"tests.sh":9(use)str0=trace
-      5:"tests.sh":10(use)local act=
-      5:"tests.sh":11(use)test 1 -gt 0
-       5:"tests.sh":15(use)basename trace
-      5:"tests.sh":15(use)local funcname=trace
-      5:"tests.sh":16(use)set -o pipefail
-      5:"tests.sh":17(use)exec
-      5:"tests.sh":19(use)res=0
-      5:"tests.sh":20(use)'[' 0 -eq 0 ']'
-      5:"tests.sh":20(use)'[' '' '!=' edit ']'
-      5:"tests.sh":20(use)'[' '' '!=' force ']'
-      5:"tests.sh":21(use)return 0
-      5:"tests.sh":2(printn)'[' 1 -gt 0 ']'
-      5:"tests.sh":6(printn)local type=ok
-      5:"tests.sh":7(printn)shift
-      5:"tests.sh":8(printn)local str=
-      5:"tests.sh":9(printn)local cmd=
-      5:"tests.sh":10(printn)case "$type" in
-      5:"tests.sh":19(printn)print_color 32 ': '
-      5:"tests.sh":0(print_color)local 'cmd=print_color_n 32 : '
-      5:"tests.sh":1(print_color)print_color_n 32 :
-      5:"tests.sh":0(print_color_n)use assert
-      5:"tests.sh":0(use)set -o nounset
-      5:"tests.sh":1(use)local str
-      5:"tests.sh":2(use)local filename
-      5:"tests.sh":3(use)local str0
-      5:"tests.sh":4(use)local cmd
-      5:"tests.sh":5(use)local type
-      5:"tests.sh":6(use)local res
-      5:"tests.sh":7(use)local file
-      5:"tests.sh":8(use)local res=1
-      5:"tests.sh":9(use)str0=assert
-      5:"tests.sh":10(use)local act=
-      5:"tests.sh":11(use)test 1 -gt 0
-       5:"tests.sh":15(use)basename assert
-      5:"tests.sh":15(use)local funcname=assert
-      5:"tests.sh":16(use)set -o pipefail
-      5:"tests.sh":17(use)exec
-      5:"tests.sh":19(use)res=0
-      5:"tests.sh":20(use)'[' 0 -eq 0 ']'
-      5:"tests.sh":20(use)'[' '' '!=' edit ']'
-      5:"tests.sh":20(use)'[' '' '!=' force ']'
-      5:"tests.sh":21(use)return 0
-      5:"tests.sh":1(print_color_n)'[' 2 -gt 1 ']'
-      5:"tests.sh":2(print_color_n)local color=32
-      5:"tests.sh":3(print_color_n)assert is_number 32
-      5:"tests.sh":0(assert)use trace
-      5:"tests.sh":0(use)set -o nounset
-      5:"tests.sh":1(use)local str
-      5:"tests.sh":2(use)local filename
-      5:"tests.sh":3(use)local str0
-      5:"tests.sh":4(use)local cmd
-      5:"tests.sh":5(use)local type
-      5:"tests.sh":6(use)local res
-      5:"tests.sh":7(use)local file
-      5:"tests.sh":8(use)local res=1
-      5:"tests.sh":9(use)str0=trace
-      5:"tests.sh":10(use)local act=
-      5:"tests.sh":11(use)test 1 -gt 0
-       5:"tests.sh":15(use)basename trace
-      5:"tests.sh":15(use)local funcname=trace
-      5:"tests.sh":16(use)set -o pipefail
-      5:"tests.sh":17(use)exec
-      5:"tests.sh":19(use)res=0
-      5:"tests.sh":20(use)'[' 0 -eq 0 ']'
-      5:"tests.sh":20(use)'[' '' '!=' edit ']'
-      5:"tests.sh":20(use)'[' '' '!=' force ']'
-      5:"tests.sh":21(use)return 0
-      5:"tests.sh":1(assert)use print
-      5:"tests.sh":0(use)set -o nounset
-      5:"tests.sh":1(use)local str
-      5:"tests.sh":2(use)local filename
-      5:"tests.sh":3(use)local str0
-      5:"tests.sh":4(use)local cmd
-      5:"tests.sh":5(use)local type
-      5:"tests.sh":6(use)local res
-      5:"tests.sh":7(use)local file
-      5:"tests.sh":8(use)local res=1
-      5:"tests.sh":9(use)str0=print
-      5:"tests.sh":10(use)local act=
-      5:"tests.sh":11(use)test 1 -gt 0
-       5:"tests.sh":15(use)basename print
-      5:"tests.sh":15(use)local funcname=print
-      5:"tests.sh":16(use)set -o pipefail
-      5:"tests.sh":17(use)exec
-      5:"tests.sh":19(use)res=0
-      5:"tests.sh":20(use)'[' 0 -eq 0 ']'
-      5:"tests.sh":20(use)'[' '' '!=' edit ']'
-      5:"tests.sh":20(use)'[' '' '!=' force ']'
-      5:"tests.sh":21(use)return 0
-      5:"tests.sh":2(assert)local max=2
-       5:"tests.sh":3(assert)caller
-      5:"tests.sh":3(assert)local str_caller=
-      5:"tests.sh":4(assert)'[' 2 -gt 1 ']'
-      5:"tests.sh":8(assert)local name=is_number
-      5:"tests.sh":9(assert)local item=32
-      5:"tests.sh":10(assert)local extra=
-      5:"tests.sh":11(assert)local res=1
-      5:"tests.sh":12(assert)case $name in
-      5:"tests.sh":95(assert)re='^[0-9]+$'
-      5:"tests.sh":96(assert)[[ 32 =~ ^[0-9]+$ ]]
-      5:"tests.sh":97(assert)let res=0
-      5:"tests.sh":105(assert)'[' 0 -ne 0 ']'
-      5:"tests.sh":113(assert)return 0
-      5:"tests.sh":4(print_color_n)shift
-      5:"tests.sh":5(print_color_n)local args=:
-      5:"tests.sh":6(print_color_n)echo -en '\x1B[01;32m[*]\x1B[0m : '
-[01;32m[*][0m :       5:"tests.sh":2(print_color)echo
-
-      5:"tests.sh":3(print)echo
-      5:"tests.sh":4(print)set +u
-      5:"tests.sh":5(print)set +e
-      5:"tests.sh":8(indicator)return 0
-      5:"tests.sh":8(commander)return 0
+      5:"tests.sh":2(random)let 'r = 5839 % 30'
+      5:"tests.sh":3(random)return 19
       5:"tests.sh":42(pipe_translate)commander /home/travis/LIBRARY/BANK/GIST/translate.sh ar hello
       5:"tests.sh":0(commander)args=($@)
       5:"tests.sh":0(commander)local args
@@ -3302,11 +2600,11 @@ _______________/trap_err: \________________
 
 *********************************************
 
-Cached 1 MB, from 2688 MB that were received.
+Cached 2 MB, from 2700 MB that were received.
 Average cache compression ratio: 99.9 %
 
 *********************************************
-Saved 896 frames in a total of 896 requests
+Saved 900 frames in a total of 899 requests
 Shutting down.....
 STATE:ENCODING
 Encoding started!
@@ -3319,8 +2617,8 @@ Encoding finished!
 Wait a moment please...
    
 Done.
-Written 46860 bytes
-(41515 of which were video data and 5345 audio data)
+Written 45705 bytes
+(40259 of which were video data and 5446 audio data)
 
 Cleanning up cache...
 Done!!!
