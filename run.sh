@@ -1,6 +1,10 @@
 #!/bin/bash
 shopt -s expand_aliases
-exec 2> >(tee -a /tmp/log.err >&2)
+filename_init="$1"
+
+exec 2>  /tmp/${filename_init}.err
+exec 1>  /tmp/${filename_init}.out
+
 
 set -u
 export dir_root=$(cd $(dirname $0) && pwd )
@@ -25,7 +29,6 @@ eval "$cmd"
 
 }
 
-filename_init="$1"
 source $dir_root/config.cfg
 steps_for_config
 eval "task $filename_init"
