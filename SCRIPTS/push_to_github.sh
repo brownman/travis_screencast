@@ -18,7 +18,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   cd gh-pages
   
   test -d old || { mkdir old; }
-  mv *.* old/
+ # mv *.* old/
  # git rm -rf *.*
   git rm -rf old
   git rm -rf log
