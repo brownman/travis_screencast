@@ -1,5 +1,4 @@
 use temporary func: commander
-/home/travis/build/brownman/travis_screencast/config.cfg: line 49: export: `WIDTH-1280': not a valid identifier
 [-] /home/travis/build/brownman/travis_screencast/SCRIPTS/library.sh
 [-] ---------------
 [-] [cmd] :: cd /home/travis
@@ -55,7 +54,6 @@ TESITNG use of the LIBRARY:
 [ register ] use
 [ register ] use_sh
 [01;32m[*][0m : Activated Important stuff 
-/home/travis/build/brownman/travis_screencast/config.cfg: line 49: export: `WIDTH-1280': not a valid identifier
 [-] /home/travis/build/brownman/travis_screencast/SCRIPTS/install_deps.sh
 Extracting templates from packages: 93%Extracting templates from packages: 100%
 Extracting templates from packages: 55%Extracting templates from packages: 100%
@@ -79,16 +77,15 @@ gpg:               imported: 1  (RSA: 1)
 [ register ] use
 [ register ] use_sh
 [01;32m[*][0m : Activated Important stuff 
-/home/travis/build/brownman/travis_screencast/config.cfg: line 49: export: `WIDTH-1280': not a valid identifier
 [-] /home/travis/build/brownman/travis_screencast/SCRIPTS/debug_screen.sh
 [01;34m[*][0m [cmd] xwininfo -root -tree [01;32m[*][0m : 
 Xlib:  extension "RANDR" missing on display ":99".
 [01;34m[*][0m [cmd] import -window root $dir_product/session.png [01;32m[*][0m : 
 /tmp/library.cfg
+[source] ps1.cfg
 /tmp/library.cfg
-[source] ps1.cfg
-[source] ps1.cfg
 [source] ps4.cfg
+[source] ps1.cfg
 [source] ps4.cfg
 [source] dialog_optional.cfg
 [source] dialog_optional.cfg
@@ -103,13 +100,11 @@ Xlib:  extension "RANDR" missing on display ":99".
 [ register ] use_sh
 [ register ] use_sh
 [01;32m[*][0m : Activated Important stuff 
-/home/travis/build/brownman/travis_screencast/config.cfg: line 49: export: `WIDTH-1280': not a valid identifier
 [-] /home/travis/build/brownman/travis_screencast/SCRIPTS/tests.sh
 [01;32m[*][0m : Activated Important stuff 
-/home/travis/build/brownman/travis_screencast/config.cfg: line 49: export: `WIDTH-1280': not a valid identifier
 [-] /home/travis/build/brownman/travis_screencast/SCRIPTS/record_start.sh
-[01;33m[*][0m DISPLAY: :99 [01;34m[*][0m [cmd] recordmydesktop --width --height 1024 \ --full-shots --fps 15 --channels 1 --device pulse --v_quality 63 --s_quality 10 --v_bitrate 2000000 --no-wm-check --no-cursor --output=$dir_product/session.${media_type} Error when parsing `--height': Bad number
-[01;34m[*][0m [cmd] test_simple_gui Xlib:  extension "RANDR" missing on display ":99".
+[01;33m[*][0m DISPLAY: :99 [01;34m[*][0m [cmd] recordmydesktop --width --height \ --full-shots --fps 15 --channels 1 --device pulse --v_quality 63 --s_quality 10 --v_bitrate 2000000 --no-wm-check --no-cursor --output=$dir_product/session.${media_type} [01;34m[*][0m [cmd] test_simple_gui Error when parsing `--height': Bad number
+Xlib:  extension "RANDR" missing on display ":99".
 [01;31m[*][0m : 
 Xlib:  extension "RANDR" missing on display ":99".
 [01;34m[*][0m [cmd] test_espeak Xlib:  extension "RANDR" missing on display ":99".
@@ -121,7 +116,7 @@ Cannot get client list properties.
 (_NET_CLIENT_LIST or _WIN_CLIENT_LIST)
 [01;34m[*][0m [cmd] sleep 10 [01;32m[*][0m : empty line 
 [01;32m[*][0m : 
-/home/travis/build/brownman/travis_screencast/SCRIPTS/tests.sh: line 1: 13390 Terminated              firefox www.youtube.com/watch?v=oHg5SJYRHA0
+/home/travis/build/brownman/travis_screencast/SCRIPTS/tests.sh: line 1: 13362 Terminated              firefox www.youtube.com/watch?v=oHg5SJYRHA0
 [01;32m[*][0m : 
 [01;32m[*][0m : 
 recordmydesktop: no process found
@@ -135,5 +130,4 @@ recordmydesktop: no process found
 [ register ] use
 [ register ] use_sh
 [01;32m[*][0m : Activated Important stuff 
-/home/travis/build/brownman/travis_screencast/config.cfg: line 49: export: `WIDTH-1280': not a valid identifier
 [-] /home/travis/build/brownman/travis_screencast/SCRIPTS/push_to_github.sh
