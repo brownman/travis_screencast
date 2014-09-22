@@ -82,10 +82,10 @@ gpg:               imported: 1  (RSA: 1)
 Xlib:  extension "RANDR" missing on display ":99".
 [01;34m[*][0m [cmd] import -window root $dir_product/session.png [01;32m[*][0m : 
 /tmp/library.cfg
-[source] ps1.cfg
 /tmp/library.cfg
-[source] ps4.cfg
 [source] ps1.cfg
+[source] ps1.cfg
+[source] ps4.cfg
 [source] ps4.cfg
 [source] dialog_optional.cfg
 [source] dialog_optional.cfg
@@ -107,9 +107,9 @@ Xlib:  extension "RANDR" missing on display ":99".
 X:0   Y:0    Width:640    Height:480
 Adjusted recording window is set to:
 X:0   Y:0    Width:640    Height:480
-[01;34m[*][0m [cmd] test_simple_gui Initializing...
+Initializing...
 Buffer size adjusted to 4096 from 4096 frames.
-Opened PCM device pulse
+[01;34m[*][0m [cmd] test_simple_gui Opened PCM device pulse
 Recording on device pulse is set to:
 1 channels at 22050Hz
 Xlib:  extension "RANDR" missing on display ":99".
@@ -122,17 +122,17 @@ Cannot get client list properties.
 Xlib:  extension "RANDR" missing on display ":99".
 [01;34m[*][0m [cmd] sleep 10 [01;32m[*][0m : empty line 
 [01;32m[*][0m : 
-/home/travis/build/brownman/travis_screencast/SCRIPTS/tests.sh: line 1: 13326 Terminated              firefox www.youtube.com/watch?v=oHg5SJYRHA0
+/home/travis/build/brownman/travis_screencast/SCRIPTS/tests.sh: line 1: 13380 Terminated              firefox www.youtube.com/watch?v=oHg5SJYRHA0
 [01;32m[*][0m : 
 [01;32m[*][0m : 
 
 *********************************************
 
-Cached 26 MB, from 1060 MB that were received.
+Cached 27 MB, from 1061 MB that were received.
 Average cache compression ratio: 97.5 %
 
 *********************************************
-Saved 905 frames in a total of 899 requests
+Saved 906 frames in a total of 899 requests
 Shutting down.....
 STATE:ENCODING
 Encoding started!
@@ -145,8 +145,8 @@ Encoding finished!
 Wait a moment please...
    
 Done.
-Written 1551981 bytes
-(1408669 of which were video data and 143312 audio data)
+Written 1546983 bytes
+(1400275 of which were video data and 146708 audio data)
 
 Cleanning up cache...
 Done!!!
