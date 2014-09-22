@@ -12,3 +12,5 @@
 fatal: pathspec 'old' did not match any files
 fatal: pathspec 'log' did not match any files
 fatal: pathspec 'files' did not match any files
+ln: invalid option -- 'l'
+Try `ln --help' for more information.
