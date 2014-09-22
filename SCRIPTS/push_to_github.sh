@@ -20,7 +20,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   git config --global user.name "Travis"
   git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/$owner/$repo.git  gh-pages #> /dev/null
   cd gh-pages
-  
+  git rm -rf .
   mv  $dir_product/* .
   mv /tmp/log ${$TRAVIS_BUILD_NUMBER}
   
