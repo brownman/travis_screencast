@@ -28,7 +28,7 @@ before_script:
   #- eval "SCREEN='0 640x480x16'"
   - export WIDTH=1024
   - export HEIGHT=768
-  - eval "SCREEN='0 $WIDTHxHEIGHTx16'"
+  - eval "SCREEN='0 ${WIDTH}x${HEIGHT}x16'"
 
   
 
