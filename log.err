@@ -112,27 +112,29 @@ Buffer size adjusted to 4096 from 4096 frames.
 [01;34m[*][0m [cmd] test_simple_gui Opened PCM device pulse
 Recording on device pulse is set to:
 1 channels at 22050Hz
-Xlib:  extension "RANDR" missing on display ":99".
 Capturing!
 Xlib:  extension "RANDR" missing on display ":99".
 Xlib:  extension "RANDR" missing on display ":99".
-[01;34m[*][0m [cmd] test_espeak [01;34m[*][0m [cmd] test_firefox [01;34m[*][0m [cmd] firefox www.youtube.com/watch?v=oHg5SJYRHA0 & [01;32m[*][0m : 
+Xlib:  extension "RANDR" missing on display ":99".
+[01;34m[*][0m [cmd] test_espeak [01;34m[*][0m [cmd] test_firefox [01;34m[*][0m [cmd] firefox www.youtube.com/watch?v=oHg5SJYRHA0 & Xlib:  extension "RANDR" missing on display ":99".
+[01;32m[*][0m : 
 Cannot get client list properties. 
 (_NET_CLIENT_LIST or _WIN_CLIENT_LIST)
-Xlib:  extension "RANDR" missing on display ":99".
+Cannot get client list properties. 
+(_NET_CLIENT_LIST or _WIN_CLIENT_LIST)
 [01;34m[*][0m [cmd] sleep 10 [01;32m[*][0m : empty line 
 [01;32m[*][0m : 
-/home/travis/build/brownman/travis_screencast/SCRIPTS/tests.sh: line 1: 13380 Terminated              firefox www.youtube.com/watch?v=oHg5SJYRHA0
+/home/travis/build/brownman/travis_screencast/SCRIPTS/tests.sh: line 1: 13379 Terminated              firefox www.youtube.com/watch?v=oHg5SJYRHA0
 [01;32m[*][0m : 
 [01;32m[*][0m : 
 
 *********************************************
 
-Cached 27 MB, from 1061 MB that were received.
-Average cache compression ratio: 97.5 %
+Cached 27 MB, from 1057 MB that were received.
+Average cache compression ratio: 97.4 %
 
 *********************************************
-Saved 906 frames in a total of 899 requests
+Saved 902 frames in a total of 899 requests
 Shutting down.....
 STATE:ENCODING
 Encoding started!
@@ -145,8 +147,8 @@ Encoding finished!
 Wait a moment please...
    
 Done.
-Written 1546983 bytes
-(1400275 of which were video data and 146708 audio data)
+Written 1146418 bytes
+(1000753 of which were video data and 145665 audio data)
 
 Cleanning up cache...
 Done!!!
