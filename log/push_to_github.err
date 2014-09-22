@@ -9,3 +9,5 @@
 [ register ] use_sh
 [01;32m[*][0m : Activated Important stuff 
 [-] /home/travis/build/brownman/travis_screencast/SCRIPTS/push_to_github.sh
+ln: invalid option -- 'l'
+Try `ln --help' for more information.
