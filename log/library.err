@@ -58,6 +58,9 @@ __________________________________
 [01;32m[*][0m : input: hello 
 [01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
 [-] naming: input_wsp: hello
+[01;34m[*][0m [ file ] trace: 2 __________________________________
+__________________________________
+[01;34m[*][0m [cmd] ensure rm /tmp/trace [01;32m[*][0m : 
 [01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
 [-] naming: file_mp3:  /tmp/hello_ru.mp3
                 __________
@@ -65,9 +68,6 @@ _______________/trap_err: \________________
 [01;31m[*][0m : 
 [01;32m[*][0m : 
 [01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
-[01;34m[*][0m [ file ] trace: 4 __________________________________
-__________________________________
-[01;34m[*][0m [cmd] ensure rm /tmp/trace [01;32m[*][0m : 
 [01;34m[*][0m [cmd] /home/travis/LIBRARY/BANK/GIST/translate.sh it hello [source] flite1.cfg
 [source] paplay1.cfg
 [01;34m[*][0m [cmd] trap trap_err ERR [01;32m[*][0m : 
@@ -81,9 +81,6 @@ _______________/trap_err: \________________
 [01;31m[*][0m : 
 [01;32m[*][0m : 
 [01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
-[01;34m[*][0m [ file ] trace: 3 __________________________________
-__________________________________
-[01;34m[*][0m [cmd] ensure rm /tmp/trace [01;32m[*][0m : 
 [01;34m[*][0m [cmd] /home/travis/LIBRARY/BANK/GIST/translate.sh ar hello [source] flite1.cfg
 [source] paplay1.cfg
 [01;34m[*][0m [cmd] trap trap_err ERR [01;32m[*][0m : 
@@ -92,10 +89,12 @@ __________________________________
 [-] naming: input_wsp: hello
 [01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
 [-] naming: file_mp3:  /tmp/hello_ar.mp3
-                __________
-_______________/trap_err: \________________
+[01;34m[*][0m [ file ] trace: 7 __________________________________
+__________________________________
+[01;34m[*][0m [cmd] ensure rm /tmp/trace [01;32m[*][0m : 
+/home/travis/LIBRARY/BANK/GIST/translate.sh: notify-send: command not found
+[01;34m[*][0m [PLAYING] paplay2 /tmp/hello_ar.mp3 /home/travis/LIBRARY/BANK/GIST/translate.sh: line 6: gxmessage: command not found
 [01;31m[*][0m : 
-[01;32m[*][0m : 
-[01;32m[*][0m : 
+[01;31m[*][0m : 
 __________________________________
 [01;32m[*][0m : 
