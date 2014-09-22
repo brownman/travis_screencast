@@ -93,8 +93,8 @@ Xlib:  extension "RANDR" missing on display ":99".
 [source] history_sync.cfg
 [source] history_sync.cfg
 [source] vars.cfg
-[source] alias.cfg
 [source] vars.cfg
+[source] alias.cfg
 [source] alias.cfg
 [ register ] use
 [ register ] use
