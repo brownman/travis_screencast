@@ -22,13 +22,13 @@ install:
   - ./run.sh install_deps
   
 before_script:
-  - eval "export DISPLAY=:99"
-  - eval "sh -e /etc/init.d/xvfb start"
-  - eval "dbus-launch pulseaudio --start"
+  - export DISPLAY=:99
+  - sh -e /etc/init.d/xvfb start
+  - dbus-launch pulseaudio --start
   #- eval "SCREEN='0 640x480x16'"
   - export WIDTH=1024
   - export HEIGHT=768
-  - eval "SCREEN='0 ${WIDTH}x${HEIGHT}x16'"
+  - export SCREEN="0 ${WIDTH}x${HEIGHT}x16"
 
   
 
