@@ -1,8 +1,6 @@
 
 Starting to update gh-pages
 
-rm 'date.txt'
-rm 'log.txt'
 rm 'log/debug_screen.err'
 rm 'log/debug_screen.out'
 rm 'log/install_deps.err'
@@ -15,5 +13,3 @@ rm 'log/record_start.err'
 rm 'log/record_start.out'
 rm 'log/tests.err'
 rm 'log/tests.out'
-rm 'session.ogv'
-rm 'session.png'
