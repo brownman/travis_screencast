@@ -1,3 +1,5 @@
+test_library
+
 test_simple_gui
 test_espeak
 test_firefox
