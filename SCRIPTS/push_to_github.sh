@@ -19,6 +19,8 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   
   test -d old || { mkdir old; }
   mv *.* old/
+  git rm -rf *.*
+  git rm -rf old
   git rm -rf log
   git rm -rf files
   
