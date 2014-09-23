@@ -31,7 +31,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   mv /tmp/log $dir_new/log
   
   ### summary
-  ls -lR --sort=size $dir_new > $dir_new/README.md #_${TRAVIS_BUILD_NUMBER}.txt
+  ls -lR --sort=size $dir_new > $dir_new/log.txt  #_${TRAVIS_BUILD_NUMBER}.txt
   #ls -l --sort=size files  > files.txt #_${TRAVIS_BUILD_NUMBER}.txt
   #ln -l ./web/index.html .
  
