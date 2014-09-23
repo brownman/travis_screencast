@@ -25,8 +25,8 @@ before_script:
   - export DISPLAY=:99
   - sh -e /etc/init.d/xvfb start
   - dbus-launch pulseaudio --start
-  - export WIDTH=1024
-  - export HEIGHT=768
+  - export WIDTH=800
+  - export HEIGHT=600
   - export SCREEN="0 ${WIDTH}x${HEIGHT}x16"
 
 script:
