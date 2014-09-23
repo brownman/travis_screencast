@@ -55,3 +55,13 @@ git
 travis
 ---
 - http://docs.travis-ci.com/
+
+amazon
+--
+- http://aws.amazon.com/free/
+
+
+```
+#http://docs.travis-ci.com/user/speeding-up-the-build/
+ [skip ci].
+```
