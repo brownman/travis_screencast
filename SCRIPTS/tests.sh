@@ -5,7 +5,7 @@ test_library(){
   
 }
 test_game(){
-  tumiki-fighters &
+  tumiki-fighters -fullscreen &
   sleep 1
   while :;do
   xdotool key ctrl
