@@ -1,0 +1,78 @@
+export AUDIODEV=null
+[H[2J[CMD] find * -type f | grep -v .old >$file
+[ /tmp/target ] [LINES] 226
+
+
+
+
+
+
+
+
+[H[2J
+
+
+/home/travis/LIBRARY/BANK/GIST/translate.sh
+
+
+ru
+it
+ar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[cmd] /home/travis/LIBRARY/BANK/GIST/translate.sh ru hello
+naming: input_wsp: hello
+naming: file_mp3: /tmp/hello_ru.mp3
+[cmd] /home/travis/LIBRARY/BANK/GIST/translate.sh it hello
+naming: input_wsp: hello
+naming: file_mp3: /tmp/hello_it.mp3
+[cmd] /home/travis/LIBRARY/BANK/GIST/translate.sh ar hello
+naming: input_wsp: hello
+naming: file_mp3: /tmp/hello_ar.mp3
+
+
+
+مرحبا
+
+
+
+
+
+[ exiting ] 
+
+
+
+
+
