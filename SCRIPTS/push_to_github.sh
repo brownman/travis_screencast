@@ -17,19 +17,22 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/$owner/$repo.git  gh-pages #> /dev/null
   cd gh-pages
   
-  test -d old || { mkdir old; }
+  #test -d old || { mkdir old; }
  # mv *.* old/
  # git rm -rf *.*
-  git rm -rf old
-  git rm -rf log
-  git rm -rf files
+  #git rm -rf old
+  #git rm -rf log
+  #git rm -rf files
   
-  mv  $dir_product files #/* files
-  mv /tmp/log log
+  dir_new=$TRAVIS_BUILD_NUMBER
+  mkdir $dir_new
+  
+  mv  $dir_product $dir_new/files #/* files
+  mv /tmp/log $dir_new/log
   
   ### summary
-  ls -l --sort=size log > log.txt #_${TRAVIS_BUILD_NUMBER}.txt
-  ls -l --sort=size files  > files.txt #_${TRAVIS_BUILD_NUMBER}.txt
+  ls -lR --sort=size $dir_new > $dir_new/README.md #_${TRAVIS_BUILD_NUMBER}.txt
+  #ls -l --sort=size files  > files.txt #_${TRAVIS_BUILD_NUMBER}.txt
   #ln -l ./web/index.html .
  
 
