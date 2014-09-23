@@ -28,11 +28,11 @@ links
 - >> https://github.com/angular/angular.dart/blob/master/scripts/travis/publish-docs.sh
 
 
-x11
+x11: xvfb
 ------
 - https://twolfson.com/2013-09-22-debugging-travis-ci 
 - http://dev.e-taxonomy.eu/trac/wiki/TestingSelenium
-
+- https://gist.github.com/jterrace/2911875
 
 keyboard
 ---
