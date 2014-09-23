@@ -1,0 +1,25 @@
+build/371:
+total 8
+drwxrwxr-x 2 travis travis 4096 Sep 23 10:10 log
+drwxrwxr-x 2 travis travis 4096 Sep 23 10:09 media
+-rw-rw-r-- 1 travis travis    0 Sep 23 10:11 log.txt
+
+build/371/log:
+total 108
+-rw-rw-r-- 1 travis travis 48915 Sep 23 10:08 install_deps.out
+-rw-rw-r-- 1 travis travis  8421 Sep 23 10:08 tests.err
+-rw-rw-r-- 1 travis travis  6244 Sep 23 10:10 record_start.out
+-rw-rw-r-- 1 travis travis  3507 Sep 23 10:06 library.err
+-rw-rw-r-- 1 travis travis  1544 Sep 23 10:10 record_start.err
+-rw-rw-r-- 1 travis travis   920 Sep 23 10:08 install_deps.err
+-rw-rw-r-- 1 travis travis   498 Sep 23 10:08 debug_screen.err
+-rw-rw-r-- 1 travis travis   302 Sep 23 10:06 library.out
+-rw-rw-r-- 1 travis travis   301 Sep 23 10:10 push_to_github.err
+-rw-rw-r-- 1 travis travis   171 Sep 23 10:08 debug_screen.out
+-rw-rw-r-- 1 travis travis    30 Sep 23 10:10 push_to_github.out
+-rw-rw-r-- 1 travis travis     4 Sep 23 10:08 tests.out
+
+build/371/media:
+total 9736
+-rw-rw-r-- 1 travis travis 9944445 Sep 23 10:10 session.ogv
+-rw-rw-r-- 1 travis travis   23983 Sep 23 10:08 session.png
