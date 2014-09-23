@@ -23,7 +23,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   #git rm -rf old
   #git rm -rf log
   #git rm -rf files
-  git rm -f 36*
+  git rm -rf 36*
   git rm -rf files
   git rm -rf log
   git rm -rf web
