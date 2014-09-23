@@ -6,6 +6,8 @@ env:
   global:
     - secure: "eeg3fbZ+021Nwb519WvJ6jBWJxQzepJAq/kPRCQgP7JgWadWcSuOukn+aN+Dij7T8Wks+PRZGsPN91Xh4keKOnlPSBme7wK8pt0osFpy2fdX9KCj6gOp0/+cpRrkpomdSo+hX1iNdqJcFjP8OtMtC08Vs0mTbjzN2OaPtEfuXGU="
     - TIMEOUT=1000
+    - WIDTH=800
+    - HEIGHT=600
 
 # whitelist
 branches:
@@ -23,11 +25,9 @@ install:
   
 before_script:
   - export DISPLAY=:99
+  - export SCREEN="0 ${WIDTH}x${HEIGHT}x16"
   - sh -e /etc/init.d/xvfb start
   - dbus-launch pulseaudio --start
-  - export WIDTH=800
-  - export HEIGHT=600
-  - export SCREEN="0 ${WIDTH}x${HEIGHT}x16"
 
 script:
   - ./run.sh debug_screen
