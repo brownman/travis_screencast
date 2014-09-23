@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/brownman/travis_screencast.svg?branch=develop)](https://travis-ci.org/browman/travis_screencast)
  
-[Demo: recorded session](http://brownman.github.io/travis_screencast)
+### [Demo: recorded session](http://brownman.github.io/travis_screencast)
 
 
 Travis: Automated screencasts
