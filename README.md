@@ -26,19 +26,22 @@ links
 - > https://github.com/angular/angular.dart/tree/master/scripts/travis
 - >> https://github.com/angular/angular.dart/blob/master/scripts/travis/publish-docs.sh
 
+
 x11
 ------
 - https://twolfson.com/2013-09-22-debugging-travis-ci 
 - http://dev.e-taxonomy.eu/trac/wiki/TestingSelenium
 
+
 keyboard
 ---
 - http://www.semicomplete.com/projects/xdotool/xdotool.xhtml
-- 
+
+
 bash
 ---
 - http://www.shellcheck.net
-- 
+
 
 later
 ---
