@@ -56,7 +56,8 @@ travis
 ---
 - http://docs.travis-ci.com/
 - https://pypi.python.org/pypi/BuildNotify/0.2.9
-- 
+- https://github.com/travis-ci/travis.rb/tree/master/spec/cli
+
 amazon
 --
 - http://aws.amazon.com/free/
