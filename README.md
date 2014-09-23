@@ -63,6 +63,10 @@ amazon
 - http://aws.amazon.com/free/
 - https://github.com/Fingertips/WAD
 
+jenkins
+----
+- https://wiki.jenkins-ci.org/display/JENKINS/Plugins
+
 
 ```
 #http://docs.travis-ci.com/user/speeding-up-the-build/
