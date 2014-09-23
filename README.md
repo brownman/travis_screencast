@@ -44,7 +44,7 @@ bash
 - http://www.shellcheck.net
 
 
-later
+vm
 ---
 - https://github.com/rogaha/docker-desktop
 
