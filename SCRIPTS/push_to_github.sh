@@ -24,8 +24,8 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   #git rm -rf log
   #git rm -rf files
   
-  dir_new=$TRAVIS_BUILD_NUMBER
-  mkdir $dir_new
+  dir_new=build/$TRAVIS_BUILD_NUMBER
+  mkdir -p $dir_new
   
   mv  $dir_product $dir_new/files #/* files
   mv /tmp/log $dir_new/log
