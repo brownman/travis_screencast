@@ -1,7 +1,6 @@
 travis_screencast
 =================
 
-<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8" />
