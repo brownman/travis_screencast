@@ -74,10 +74,9 @@ markdown
 
 ```
 #http://docs.travis-ci.com/user/speeding-up-the-build/
- [skip ci].
+[skip ci].
  
- #http://docs.travis-ci.com/user/gui-and-headless-browsers/
-   - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16"
-
+#http://docs.travis-ci.com/user/gui-and-headless-browsers/
+"/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16"
 
 ```
