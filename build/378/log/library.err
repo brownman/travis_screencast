@@ -1,0 +1,95 @@
+use temporary func: commander
+[-] /home/travis/build/brownman/travis_screencast/SCRIPTS/library.sh
+[-] ---------------
+[-] [cmd] :: cd /home/travis
+[-] res: 0
+[-] ---------------
+[-] ---------------
+[-] [cmd] :: git clone --depth=1 https://github.com/brownman/LIBRARY --branch=develop
+Cloning into 'LIBRARY'...
+[-] res: 0
+[-] ---------------
+[-] ---------------
+[-] [cmd] :: source /home/travis/LIBRARY/library.cfg
+/home/travis/LIBRARY/library.cfg
+[source] ps1.cfg
+[source] who_am_i.cfg
+[source] ps4.cfg
+[source] indicator.cfg
+[source] print.cfg
+[source] traps.cfg
+[source] trace.cfg
+[source] expose_var.cfg
+[source] commander.cfg
+[source] dialog_optional.cfg
+[source] random.cfg
+[source] assert.cfg
+[source] ensure.cfg
+[source] history_sync.cfg
+[source] quick_follow.cfg
+[source] quick_remember.cfg
+[source] register.cfg
+[source] vars.cfg
+[source] alias.cfg
+[source] cat1.cfg
+[source] file_update.cfg
+[source] realpath.cfg
+[ register ] use
+[ register ] use_sh
+[source] times1.cfg
+[01;32m[*][0m : Activated Important stuff 
+[01;34m[*][0m skip testing [-] res: 0
+[-] ---------------
+[01;34m[*][0m [cmd] source /tmp/library.cfg library already loaded
+[01;32m[*][0m : 
+TESITNG use of the LIBRARY:
+[01;34m[*][0m [cmd] print ok [01;32m[*][0m : 
+[01;32m[*][0m : 
+[source] pipe_translate.cfg
+[01;34m[*][0m [cmd] subshell pipe_translate hello [01;33m[*][0m [jail] run safely: __________________________________
+[01;34m[*][0m [cmd] pipe_translate hello [CMD] export builtin_translate=/home/travis/LIBRARY/BANK/GIST/translate.sh
+[source] vars.cfg
+[01;34m[*][0m [ file ] languages.txt: 3 __________________________________
+__________________________________
+[01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
+[01;34m[*][0m [cmd] /home/travis/LIBRARY/BANK/GIST/translate.sh ru hello [source] flite1.cfg
+[source] paplay1.cfg
+[01;34m[*][0m [cmd] trap trap_err ERR [01;32m[*][0m : 
+[01;32m[*][0m : input: hello 
+[01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
+[-] naming: input_wsp: hello
+[01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
+[-] naming: file_mp3:  /tmp/hello_ru.mp3
+                __________
+_______________/trap_err: \________________
+[01;31m[*][0m : 
+[01;32m[*][0m : 
+[01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
+[01;34m[*][0m [cmd] /home/travis/LIBRARY/BANK/GIST/translate.sh it hello [source] flite1.cfg
+[source] paplay1.cfg
+[01;34m[*][0m [cmd] trap trap_err ERR [01;32m[*][0m : 
+[01;32m[*][0m : input: hello 
+[01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
+[-] naming: input_wsp: hello
+[01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
+[-] naming: file_mp3:  /tmp/hello_it.mp3
+                __________
+_______________/trap_err: \________________
+[01;31m[*][0m : 
+[01;32m[*][0m : 
+[01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
+[01;34m[*][0m [cmd] /home/travis/LIBRARY/BANK/GIST/translate.sh ar hello [source] flite1.cfg
+[source] paplay1.cfg
+[01;34m[*][0m [cmd] trap trap_err ERR [01;32m[*][0m : 
+[01;32m[*][0m : input: hello 
+[01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
+[-] naming: input_wsp: hello
+[01;31m[*][0m : [MISSING DEPENDENCIES] cowsay 
+[-] naming: file_mp3:  /tmp/hello_ar.mp3
+                __________
+_______________/trap_err: \________________
+[01;31m[*][0m : 
+[01;32m[*][0m : 
+[01;32m[*][0m : 
+__________________________________
+[01;32m[*][0m : 
