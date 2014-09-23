@@ -22,26 +22,27 @@ ar
 
 
 
-
-
-
-
-
-
 [cmd] /home/travis/LIBRARY/BANK/GIST/translate.sh ru hello
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 naming: input_wsp: hello
 naming: file_mp3: /tmp/hello_ru.mp3
-
-
-
-привет
-privet
-
-
-
-
-
-[ exiting ] 
+[cmd] /home/travis/LIBRARY/BANK/GIST/translate.sh it hello
 
 
 
@@ -58,6 +59,16 @@ privet
 
 
 
+
+
+
+
+
+
+naming: input_wsp: hello
+naming: file_mp3: /tmp/hello_it.mp3
+[cmd] /home/travis/LIBRARY/BANK/GIST/translate.sh ar hello
+naming: input_wsp: hello
 
 
 
