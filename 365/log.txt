@@ -1,0 +1,25 @@
+365:
+total 8
+drwxrwxr-x 2 travis travis 4096 Sep 23 09:15 files
+drwxrwxr-x 2 travis travis 4096 Sep 23 09:17 log
+-rw-rw-r-- 1 travis travis    0 Sep 23 09:17 log.txt
+
+365/files:
+total 9172
+-rw-rw-r-- 1 travis travis 9364921 Sep 23 09:17 session.ogv
+-rw-rw-r-- 1 travis travis   24407 Sep 23 09:14 session.png
+
+365/log:
+total 108
+-rw-rw-r-- 1 travis travis 48984 Sep 23 09:14 install_deps.out
+-rw-rw-r-- 1 travis travis  8421 Sep 23 09:14 tests.err
+-rw-rw-r-- 1 travis travis  6227 Sep 23 09:17 record_start.out
+-rw-rw-r-- 1 travis travis  3341 Sep 23 09:12 library.err
+-rw-rw-r-- 1 travis travis  1544 Sep 23 09:17 record_start.err
+-rw-rw-r-- 1 travis travis   920 Sep 23 09:14 install_deps.err
+-rw-rw-r-- 1 travis travis   498 Sep 23 09:14 debug_screen.err
+-rw-rw-r-- 1 travis travis   301 Sep 23 09:17 push_to_github.err
+-rw-rw-r-- 1 travis travis   213 Sep 23 09:12 library.out
+-rw-rw-r-- 1 travis travis   171 Sep 23 09:14 debug_screen.out
+-rw-rw-r-- 1 travis travis    30 Sep 23 09:17 push_to_github.out
+-rw-rw-r-- 1 travis travis     4 Sep 23 09:14 tests.out
