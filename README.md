@@ -47,3 +47,7 @@ bash
 later
 ---
 - https://github.com/rogaha/docker-desktop
+
+git
+----
+- http://nvie.com/posts/a-successful-git-branching-model
