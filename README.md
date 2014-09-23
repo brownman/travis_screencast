@@ -51,3 +51,7 @@ later
 git
 ----
 - http://nvie.com/posts/a-successful-git-branching-model
+
+travis
+---
+- http://docs.travis-ci.com/
