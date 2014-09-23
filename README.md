@@ -6,7 +6,9 @@
 Travis: Automated screencasts
 ====
 
-##### mission: present my repositories
+##### Mission: present my projects
+
+
 steps:
 ----
 - clone one of my github repositories
