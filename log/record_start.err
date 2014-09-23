@@ -22,11 +22,11 @@ Capturing!
 Shutting down.
 *********************************************
 
-Cached 406 MB, from 2712 MB that were received.
-Average cache compression ratio: 85.0 %
+Cached 392 MB, from 2715 MB that were received.
+Average cache compression ratio: 85.6 %
 
 *********************************************
-Saved 904 frames in a total of 898 requests
+Saved 905 frames in a total of 898 requests
 ....
 STATE:ENCODING
 Encoding started!
@@ -39,8 +39,8 @@ Encoding finished!
 Wait a moment please...
    
 Done.
-Written 4725071 bytes
-(4719561 of which were video data and 5510 audio data)
+Written 9906122 bytes
+(9217654 of which were video data and 688468 audio data)
 
 Cleanning up cache...
 Done!!!

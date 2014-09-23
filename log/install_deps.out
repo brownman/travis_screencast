@@ -16,7 +16,7 @@ Setting up libc6 (2.15-0ubuntu10.7) ...
 Processing triggers for libc-bin ...
 ldconfig deferred processing now taking place
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 70555 files and directories currently installed.)
-Preparing to replace libdbus-1-3 1.4.18-1ubuntu1 (using .../libdbus-1-3_1.4.18-1ubuntu1.5_amd64.deb) ...
+Preparing to replace libdbus-1-3 1.4.18-1ubuntu1 (using .../libdbus-1-3_1.4.18-1ubuntu1.6_amd64.deb) ...
 Unpacking replacement libdbus-1-3 ...
 Selecting previously unselected package libsamplerate0.
 Unpacking libsamplerate0 (from .../libsamplerate0_0.1.8-4_amd64.deb) ...
@@ -38,6 +38,8 @@ Selecting previously unselected package libspeexdsp1.
 Unpacking libspeexdsp1 (from .../libspeexdsp1_1.2~rc1-3ubuntu2_amd64.deb) ...
 Selecting previously unselected package libtheora0.
 Unpacking libtheora0 (from .../libtheora0_1.1.1+dfsg.1-3ubuntu2_amd64.deb) ...
+Preparing to replace dbus-x11 1.4.18-1ubuntu1.5 (using .../dbus-x11_1.4.18-1ubuntu1.6_amd64.deb) ...
+Unpacking replacement dbus-x11 ...
 Selecting previously unselected package espeak.
 Unpacking espeak (from .../espeak_1.46.02-0ubuntu1_amd64.deb) ...
 Selecting previously unselected package gstreamer0.10-pulseaudio.
@@ -47,7 +49,7 @@ Unpacking libasound2-plugins (from .../libasound2-plugins_1.0.25-1ubuntu1_amd64.
 Selecting previously unselected package libavahi-common-dev.
 Unpacking libavahi-common-dev (from .../libavahi-common-dev_0.6.30-5ubuntu2.1_amd64.deb) ...
 Selecting previously unselected package libdbus-1-dev.
-Unpacking libdbus-1-dev (from .../libdbus-1-dev_1.4.18-1ubuntu1.5_amd64.deb) ...
+Unpacking libdbus-1-dev (from .../libdbus-1-dev_1.4.18-1ubuntu1.6_amd64.deb) ...
 Selecting previously unselected package libavahi-client-dev.
 Unpacking libavahi-client-dev (from .../libavahi-client-dev_0.6.30-5ubuntu2.1_amd64.deb) ...
 Selecting previously unselected package libc6-i386.
@@ -76,7 +78,7 @@ Processing triggers for man-db ...
 Processing triggers for ureadahead ...
 Setting up libc-dev-bin (2.15-0ubuntu10.7) ...
 Setting up libc6-dev (2.15-0ubuntu10.7) ...
-Setting up libdbus-1-3 (1.4.18-1ubuntu1.5) ...
+Setting up libdbus-1-3 (1.4.18-1ubuntu1.6) ...
 Setting up libsamplerate0 (0.1.8-4) ...
 Setting up libjack-jackd2-0 (1.9.8~dfsg.1-1ubuntu2) ...
 Setting up libportaudio2 (19+svn20111121-1) ...
@@ -87,11 +89,12 @@ Setting up libpulse-mainloop-glib0 (1:1.1-0ubuntu15.4) ...
 Setting up libpulsedsp (1:1.1-0ubuntu15.4) ...
 Setting up libspeexdsp1 (1.2~rc1-3ubuntu2) ...
 Setting up libtheora0 (1.1.1+dfsg.1-3ubuntu2) ...
+Setting up dbus-x11 (1.4.18-1ubuntu1.6) ...
 Setting up espeak (1.46.02-0ubuntu1) ...
 Setting up gstreamer0.10-pulseaudio (0.10.31-1ubuntu1.2) ...
 Setting up libasound2-plugins (1.0.25-1ubuntu1) ...
 Setting up libavahi-common-dev (0.6.30-5ubuntu2.1) ...
-Setting up libdbus-1-dev (1.4.18-1ubuntu1.5) ...
+Setting up libdbus-1-dev (1.4.18-1ubuntu1.6) ...
 Setting up libavahi-client-dev (0.6.30-5ubuntu2.1) ...
 Setting up libc6-i386 (2.15-0ubuntu10.7) ...
 Setting up libpulse-dev (1:1.1-0ubuntu15.4) ...
@@ -139,7 +142,7 @@ The following NEW packages will be installed:
   zenity zenity-common
 The following packages will be upgraded:
   curl wget
-2 upgraded, 53 newly installed, 0 to remove and 115 not upgraded.
+2 upgraded, 53 newly installed, 0 to remove and 116 not upgraded.
 Need to get 30.8 MB of archives.
 After this operation, 77.9 MB of additional disk space will be used.
 Get:1 http://us.archive.ubuntu.com/ubuntu/ precise/main libcaca0 amd64 0.99.beta17-2.1ubuntu2 [246 kB]
@@ -198,7 +201,7 @@ Get:53 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main zenity amd64 3.
 Get:54 http://us.archive.ubuntu.com/ubuntu/ precise/main libflite1 amd64 1.4-release-4 [14.8 MB]
 Get:55 http://us.archive.ubuntu.com/ubuntu/ precise/universe flite amd64 1.4-release-4 [241 kB]
 Preconfiguring packages ...
-Fetched 30.8 MB in 1s (26.2 MB/s)
+Fetched 30.8 MB in 17s (1,755 kB/s)
 Selecting previously unselected package libcaca0.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 71757 files and directories currently installed.)
 Unpacking libcaca0 (from .../libcaca0_0.99.beta17-2.1ubuntu2_amd64.deb) ...
@@ -403,7 +406,7 @@ xvfb is already the newest version.
 The following package was automatically installed and is no longer required:
   libgeos-3.2.2
 Use 'apt-get autoremove' to remove them.
-0 upgraded, 0 newly installed, 0 to remove and 115 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 116 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -412,7 +415,7 @@ libgtk2.0-0 set to manually installed.
 The following package was automatically installed and is no longer required:
   libgeos-3.2.2
 Use 'apt-get autoremove' to remove them.
-0 upgraded, 0 newly installed, 0 to remove and 115 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 116 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -428,7 +431,7 @@ x11-utils set to manually installed.
 The following package was automatically installed and is no longer required:
   libgeos-3.2.2
 Use 'apt-get autoremove' to remove them.
-0 upgraded, 0 newly installed, 0 to remove and 115 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 116 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -439,13 +442,13 @@ The following extra packages will be installed:
   libxdo2
 The following NEW packages will be installed:
   libxdo2 wmctrl xdotool
-0 upgraded, 3 newly installed, 0 to remove and 115 not upgraded.
+0 upgraded, 3 newly installed, 0 to remove and 116 not upgraded.
 Need to get 89.9 kB of archives.
 After this operation, 369 kB of additional disk space will be used.
 Get:1 http://us.archive.ubuntu.com/ubuntu/ precise/universe wmctrl amd64 1.07-6 [22.9 kB]
 Get:2 http://us.archive.ubuntu.com/ubuntu/ precise/universe libxdo2 amd64 1:2.20110530.1-3ubuntu1 [24.2 kB]
 Get:3 http://us.archive.ubuntu.com/ubuntu/ precise/universe xdotool amd64 1:2.20110530.1-3ubuntu1 [42.8 kB]
-Fetched 89.9 kB in 0s (1,179 kB/s)
+Fetched 89.9 kB in 0s (92.0 kB/s)
 Selecting previously unselected package wmctrl.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 74039 files and directories currently installed.)
 Unpacking wmctrl (from .../wmctrl_1.07-6_amd64.deb) ...
@@ -459,118 +462,56 @@ Setting up libxdo2 (1:2.20110530.1-3ubuntu1) ...
 Setting up xdotool (1:2.20110530.1-3ubuntu1) ...
 Processing triggers for libc-bin ...
 ldconfig deferred processing now taking place
-Executing: gpg --ignore-time-conflict --no-options --no-default-keyring --secret-keyring /tmp/tmp.dqha5rknFV --trustdb-name /etc/apt/trustdb.gpg --keyring /etc/apt/trusted.gpg --primary-keyring /etc/apt/trusted.gpg --keyring /etc/apt/trusted.gpg.d//apt.postgresql.org.gpg --keyserver hkp://keyserver.ubuntu.com:80/ --recv 7B2C3B0889BF5709A105D03AC2518248EEA14886
-Executing: gpg --ignore-time-conflict --no-options --no-default-keyring --secret-keyring /tmp/tmp.dsdXv3Bexi --trustdb-name /etc/apt/trustdb.gpg --keyring /etc/apt/trusted.gpg --primary-keyring /etc/apt/trusted.gpg --keyring /etc/apt/trusted.gpg.d//apt.postgresql.org.gpg --keyserver hkp://keyserver.ubuntu.com:80/ --recv 0D87EE084E8DB990ADD3899C82EB5823F4FE239D
+Executing: gpg --ignore-time-conflict --no-options --no-default-keyring --secret-keyring /tmp/tmp.5dqnvT5QAo --trustdb-name /etc/apt/trustdb.gpg --keyring /etc/apt/trusted.gpg --primary-keyring /etc/apt/trusted.gpg --keyring /etc/apt/trusted.gpg.d//apt.postgresql.org.gpg --keyserver hkp://keyserver.ubuntu.com:80/ --recv 7B2C3B0889BF5709A105D03AC2518248EEA14886
+Executing: gpg --ignore-time-conflict --no-options --no-default-keyring --secret-keyring /tmp/tmp.OHr8sZPX63 --trustdb-name /etc/apt/trustdb.gpg --keyring /etc/apt/trusted.gpg --primary-keyring /etc/apt/trusted.gpg --keyring /etc/apt/trusted.gpg.d//apt.postgresql.org.gpg --keyserver hkp://keyserver.ubuntu.com:80/ --recv 0D87EE084E8DB990ADD3899C82EB5823F4FE239D
 Ign http://downloads-distro.mongodb.org dist InRelease
 Hit http://downloads-distro.mongodb.org dist Release.gpg
 Hit http://downloads-distro.mongodb.org dist Release
+Hit http://downloads-distro.mongodb.org dist/10gen amd64 Packages
+Hit http://downloads-distro.mongodb.org dist/10gen i386 Packages
+Ign http://downloads-distro.mongodb.org dist/10gen TranslationIndex
+Hit http://apt.postgresql.org precise-pgdg InRelease
+Ign http://downloads-distro.mongodb.org dist/10gen Translation-en_US
 Hit http://apt.basho.com precise InRelease
+Ign http://downloads-distro.mongodb.org dist/10gen Translation-en
+Hit http://apt.basho.com precise/main amd64 Packages
+Hit http://apt.basho.com precise/main i386 Packages
+Hit http://www.rabbitmq.com testing InRelease
+Ign http://security.ubuntu.com precise-security InRelease
 Ign http://us.archive.ubuntu.com precise InRelease
 Ign http://us.archive.ubuntu.com precise-updates InRelease
 Ign http://us.archive.ubuntu.com precise-backports InRelease
-Hit http://downloads-distro.mongodb.org dist/10gen amd64 Packages
-Hit http://downloads-distro.mongodb.org dist/10gen i386 Packages
-Hit http://apt.basho.com precise/main amd64 Packages
-Ign http://downloads-distro.mongodb.org dist/10gen TranslationIndex
-Hit http://us.archive.ubuntu.com precise Release.gpg
-Hit http://us.archive.ubuntu.com precise-updates Release.gpg
-Hit http://apt.basho.com precise/main i386 Packages
-Hit http://us.archive.ubuntu.com precise-backports Release.gpg
-Hit http://us.archive.ubuntu.com precise Release
-Hit http://apt.postgresql.org precise-pgdg InRelease
-Hit http://us.archive.ubuntu.com precise-updates Release
-Hit http://us.archive.ubuntu.com precise-backports Release
-Hit http://us.archive.ubuntu.com precise/main Sources
-Hit http://us.archive.ubuntu.com precise/restricted Sources
-Hit http://us.archive.ubuntu.com precise/universe Sources
-Hit http://us.archive.ubuntu.com precise/multiverse Sources
-Hit http://us.archive.ubuntu.com precise/main amd64 Packages
-Hit http://us.archive.ubuntu.com precise/restricted amd64 Packages
-Hit http://us.archive.ubuntu.com precise/universe amd64 Packages
-Ign http://downloads-distro.mongodb.org dist/10gen Translation-en_US
-Ign http://downloads-distro.mongodb.org dist/10gen Translation-en
-Ign http://apt.basho.com precise/main TranslationIndex
-Hit http://us.archive.ubuntu.com precise/multiverse amd64 Packages
-Hit http://us.archive.ubuntu.com precise/main i386 Packages
-Hit http://us.archive.ubuntu.com precise/restricted i386 Packages
-Hit http://us.archive.ubuntu.com precise/universe i386 Packages
-Hit http://us.archive.ubuntu.com precise/multiverse i386 Packages
-Hit http://us.archive.ubuntu.com precise/main TranslationIndex
-Hit http://us.archive.ubuntu.com precise/multiverse TranslationIndex
-Hit http://us.archive.ubuntu.com precise/restricted TranslationIndex
-Hit http://www.rabbitmq.com testing InRelease
-Hit http://us.archive.ubuntu.com precise/universe TranslationIndex
-Hit http://us.archive.ubuntu.com precise-updates/main Sources
-Hit http://us.archive.ubuntu.com precise-updates/restricted Sources
-Hit http://us.archive.ubuntu.com precise-updates/universe Sources
-Hit http://us.archive.ubuntu.com precise-updates/multiverse Sources
-Hit http://us.archive.ubuntu.com precise-updates/main amd64 Packages
-Hit http://us.archive.ubuntu.com precise-updates/restricted amd64 Packages
-Hit http://us.archive.ubuntu.com precise-updates/universe amd64 Packages
-Hit http://us.archive.ubuntu.com precise-updates/multiverse amd64 Packages
-Hit http://us.archive.ubuntu.com precise-updates/main i386 Packages
-Hit http://us.archive.ubuntu.com precise-updates/restricted i386 Packages
-Hit http://us.archive.ubuntu.com precise-updates/universe i386 Packages
-Hit http://us.archive.ubuntu.com precise-updates/multiverse i386 Packages
-Hit http://us.archive.ubuntu.com precise-updates/main TranslationIndex
-Hit http://us.archive.ubuntu.com precise-updates/multiverse TranslationIndex
-Hit http://us.archive.ubuntu.com precise-updates/restricted TranslationIndex
-Hit http://us.archive.ubuntu.com precise-updates/universe TranslationIndex
-Ign http://security.ubuntu.com precise-security InRelease
-Hit http://us.archive.ubuntu.com precise-backports/main Sources
-Hit http://us.archive.ubuntu.com precise-backports/restricted Sources
-Hit http://us.archive.ubuntu.com precise-backports/universe Sources
-Hit http://us.archive.ubuntu.com precise-backports/multiverse Sources
-Hit http://us.archive.ubuntu.com precise-backports/main amd64 Packages
 Hit http://apt.postgresql.org precise-pgdg/main amd64 Packages
-Hit http://us.archive.ubuntu.com precise-backports/restricted amd64 Packages
-Hit http://us.archive.ubuntu.com precise-backports/universe amd64 Packages
-Hit http://us.archive.ubuntu.com precise-backports/multiverse amd64 Packages
-Hit http://us.archive.ubuntu.com precise-backports/main i386 Packages
-Hit http://us.archive.ubuntu.com precise-backports/restricted i386 Packages
-Hit http://us.archive.ubuntu.com precise-backports/universe i386 Packages
-Hit http://us.archive.ubuntu.com precise-backports/multiverse i386 Packages
-Hit http://us.archive.ubuntu.com precise-backports/main TranslationIndex
-Hit http://us.archive.ubuntu.com precise-backports/multiverse TranslationIndex
-Hit http://us.archive.ubuntu.com precise-backports/restricted TranslationIndex
+Ign http://apt.basho.com precise/main TranslationIndex
+Ign http://ppa.launchpad.net precise InRelease
+Ign http://ppa.launchpad.net precise InRelease
+Ign http://ppa.launchpad.net precise InRelease
+Ign http://ppa.launchpad.net precise InRelease
+Ign http://ppa.launchpad.net precise InRelease
+Ign http://ppa.launchpad.net precise InRelease
+Ign http://ppa.launchpad.net precise InRelease
+Ign http://ppa.launchpad.net precise InRelease
 Hit http://www.rabbitmq.com testing/main amd64 Packages
-Hit http://us.archive.ubuntu.com precise-backports/universe TranslationIndex
-Hit http://us.archive.ubuntu.com precise/main Translation-en
-Hit http://us.archive.ubuntu.com precise/multiverse Translation-en
-Hit http://us.archive.ubuntu.com precise/restricted Translation-en
-Hit http://us.archive.ubuntu.com precise/universe Translation-en
-Ign http://ppa.launchpad.net precise InRelease
-Ign http://ppa.launchpad.net precise InRelease
-Ign http://ppa.launchpad.net precise InRelease
-Ign http://ppa.launchpad.net precise InRelease
-Ign http://ppa.launchpad.net precise InRelease
-Ign http://ppa.launchpad.net precise InRelease
-Ign http://apt.basho.com precise/main Translation-en_US
-Ign http://ppa.launchpad.net precise InRelease
-Ign http://ppa.launchpad.net precise InRelease
-Hit http://us.archive.ubuntu.com precise-updates/main Translation-en
-Hit http://us.archive.ubuntu.com precise-updates/multiverse Translation-en
-Hit http://us.archive.ubuntu.com precise-updates/restricted Translation-en
-Ign http://apt.basho.com precise/main Translation-en
-Hit http://us.archive.ubuntu.com precise-updates/universe Translation-en
-Hit http://us.archive.ubuntu.com precise-backports/main Translation-en
-Hit http://us.archive.ubuntu.com precise-backports/multiverse Translation-en
-Hit http://us.archive.ubuntu.com precise-backports/restricted Translation-en
-Hit http://us.archive.ubuntu.com precise-backports/universe Translation-en
 Hit http://security.ubuntu.com precise-security Release.gpg
 Hit http://apt.postgresql.org precise-pgdg/main i386 Packages
+Hit http://us.archive.ubuntu.com precise Release.gpg
+Hit http://us.archive.ubuntu.com precise-updates Release.gpg
+Ign http://apt.basho.com precise/main Translation-en_US
+Ign http://apt.basho.com precise/main Translation-en
+Hit http://ppa.launchpad.net precise Release.gpg
 Hit http://www.rabbitmq.com testing/main i386 Packages
 Ign http://www.rabbitmq.com testing/main TranslationIndex
-Hit http://ppa.launchpad.net precise Release.gpg
+Hit http://security.ubuntu.com precise-security Release
+Ign http://apt.postgresql.org precise-pgdg/main TranslationIndex
+Hit http://us.archive.ubuntu.com precise-backports Release.gpg
+Hit http://us.archive.ubuntu.com precise Release
+Hit http://security.ubuntu.com precise-security/main Sources
 Get:1 http://ppa.launchpad.net precise Release.gpg [316 B]
 Hit http://ppa.launchpad.net precise Release.gpg
 Hit http://ppa.launchpad.net precise Release.gpg
 Hit http://ppa.launchpad.net precise Release.gpg
-Hit http://security.ubuntu.com precise-security Release
-Ign http://apt.postgresql.org precise-pgdg/main TranslationIndex
 Hit http://ppa.launchpad.net precise Release.gpg
 Hit http://ppa.launchpad.net precise Release.gpg
-Hit http://security.ubuntu.com precise-security/main Sources
 Hit http://security.ubuntu.com precise-security/restricted Sources
 Hit http://security.ubuntu.com precise-security/universe Sources
 Hit http://security.ubuntu.com precise-security/multiverse Sources
@@ -581,41 +522,61 @@ Hit http://security.ubuntu.com precise-security/multiverse amd64 Packages
 Hit http://security.ubuntu.com precise-security/main i386 Packages
 Hit http://security.ubuntu.com precise-security/restricted i386 Packages
 Hit http://security.ubuntu.com precise-security/universe i386 Packages
+Hit http://us.archive.ubuntu.com precise-updates Release
 Get:2 http://ppa.launchpad.net precise Release.gpg [316 B]
 Hit http://ppa.launchpad.net precise Release
 Get:3 http://ppa.launchpad.net precise Release [11.9 kB]
-Hit http://ppa.launchpad.net precise Release
-Hit http://ppa.launchpad.net precise Release
 Hit http://security.ubuntu.com precise-security/multiverse i386 Packages
 Hit http://ppa.launchpad.net precise Release
 Hit http://ppa.launchpad.net precise Release
+Hit http://ppa.launchpad.net precise Release
+Hit http://ppa.launchpad.net precise Release
+Hit http://us.archive.ubuntu.com precise-backports Release
 Hit http://security.ubuntu.com precise-security/main TranslationIndex
 Hit http://security.ubuntu.com precise-security/multiverse TranslationIndex
+Hit http://us.archive.ubuntu.com precise/main Sources
+Hit http://us.archive.ubuntu.com precise/restricted Sources
 Hit http://security.ubuntu.com precise-security/restricted TranslationIndex
 Hit http://security.ubuntu.com precise-security/universe TranslationIndex
+Hit http://us.archive.ubuntu.com precise/universe Sources
+Hit http://us.archive.ubuntu.com precise/multiverse Sources
+Hit http://us.archive.ubuntu.com precise/main amd64 Packages
+Ign http://apt.postgresql.org precise-pgdg/main Translation-en_US
 Hit http://ppa.launchpad.net precise Release
 Get:4 http://ppa.launchpad.net precise Release [12.4 kB]
 Hit http://ppa.launchpad.net precise/main amd64 Packages
 Hit http://ppa.launchpad.net precise/main i386 Packages
 Hit http://ppa.launchpad.net precise/main TranslationIndex
-Ign http://apt.postgresql.org precise-pgdg/main Translation-en_US
+Get:5 http://ppa.launchpad.net precise/main Sources [770 B]
 Hit http://security.ubuntu.com precise-security/main Translation-en
 Hit http://security.ubuntu.com precise-security/multiverse Translation-en
 Hit http://security.ubuntu.com precise-security/restricted Translation-en
 Ign http://apt.postgresql.org precise-pgdg/main Translation-en
-Get:5 http://ppa.launchpad.net precise/main Sources [770 B]
 Get:6 http://ppa.launchpad.net precise/main amd64 Packages [667 B]
+Hit http://us.archive.ubuntu.com precise/restricted amd64 Packages
+Hit http://us.archive.ubuntu.com precise/universe amd64 Packages
+Hit http://us.archive.ubuntu.com precise/multiverse amd64 Packages
+Hit http://us.archive.ubuntu.com precise/main i386 Packages
+Hit http://us.archive.ubuntu.com precise/restricted i386 Packages
+Hit http://us.archive.ubuntu.com precise/universe i386 Packages
+Hit http://us.archive.ubuntu.com precise/multiverse i386 Packages
+Hit http://us.archive.ubuntu.com precise/main TranslationIndex
+Hit http://us.archive.ubuntu.com precise/multiverse TranslationIndex
 Get:7 http://ppa.launchpad.net precise/main i386 Packages [659 B]
 Ign http://ppa.launchpad.net precise/main TranslationIndex
 Hit http://ppa.launchpad.net precise/main amd64 Packages
-Hit http://security.ubuntu.com precise-security/universe Translation-en
-Ign http://www.rabbitmq.com testing/main Translation-en_US
 Hit http://ppa.launchpad.net precise/main i386 Packages
 Ign http://ppa.launchpad.net precise/main TranslationIndex
 Hit http://ppa.launchpad.net precise/main amd64 Packages
 Hit http://ppa.launchpad.net precise/main i386 Packages
+Hit http://security.ubuntu.com precise-security/universe Translation-en
+Hit http://us.archive.ubuntu.com precise/restricted TranslationIndex
+Hit http://us.archive.ubuntu.com precise/universe TranslationIndex
+Hit http://us.archive.ubuntu.com precise-updates/main Sources
+Hit http://us.archive.ubuntu.com precise-updates/restricted Sources
+Hit http://us.archive.ubuntu.com precise-updates/universe Sources
+Hit http://us.archive.ubuntu.com precise-updates/multiverse Sources
 Hit http://ppa.launchpad.net precise/main TranslationIndex
-Ign http://www.rabbitmq.com testing/main Translation-en
 Hit http://ppa.launchpad.net precise/main amd64 Packages
 Hit http://ppa.launchpad.net precise/main i386 Packages
 Hit http://ppa.launchpad.net precise/main TranslationIndex
@@ -623,6 +584,7 @@ Hit http://ppa.launchpad.net precise/main amd64 Packages
 Hit http://ppa.launchpad.net precise/main i386 Packages
 Hit http://ppa.launchpad.net precise/main TranslationIndex
 Hit http://ppa.launchpad.net precise/main Translation-en
+Ign http://www.rabbitmq.com testing/main Translation-en_US
 Hit http://ppa.launchpad.net precise/main amd64 Packages
 Hit http://ppa.launchpad.net precise/main i386 Packages
 Ign http://ppa.launchpad.net precise/main TranslationIndex
@@ -630,17 +592,58 @@ Get:8 http://ppa.launchpad.net precise/main Sources [1,739 B]
 Get:9 http://ppa.launchpad.net precise/main amd64 Packages [1,331 B]
 Get:10 http://ppa.launchpad.net precise/main i386 Packages [1,339 B]
 Get:11 http://ppa.launchpad.net precise/main TranslationIndex [72 B]
+Hit http://us.archive.ubuntu.com precise-updates/main amd64 Packages
+Hit http://us.archive.ubuntu.com precise-updates/restricted amd64 Packages
+Hit http://us.archive.ubuntu.com precise-updates/universe amd64 Packages
+Hit http://us.archive.ubuntu.com precise-updates/multiverse amd64 Packages
+Hit http://us.archive.ubuntu.com precise-updates/main i386 Packages
+Hit http://us.archive.ubuntu.com precise-updates/restricted i386 Packages
+Hit http://us.archive.ubuntu.com precise-updates/universe i386 Packages
+Hit http://us.archive.ubuntu.com precise-updates/multiverse i386 Packages
+Hit http://us.archive.ubuntu.com precise-updates/main TranslationIndex
+Ign http://www.rabbitmq.com testing/main Translation-en
 Hit http://ppa.launchpad.net precise/main Translation-en
 Hit http://ppa.launchpad.net precise/main Translation-en
 Hit http://ppa.launchpad.net precise/main Translation-en
+Hit http://us.archive.ubuntu.com precise-updates/multiverse TranslationIndex
+Hit http://us.archive.ubuntu.com precise-updates/restricted TranslationIndex
+Hit http://us.archive.ubuntu.com precise-updates/universe TranslationIndex
+Hit http://us.archive.ubuntu.com precise-backports/main Sources
+Hit http://us.archive.ubuntu.com precise-backports/restricted Sources
+Hit http://us.archive.ubuntu.com precise-backports/universe Sources
 Get:12 http://ppa.launchpad.net precise/main Translation-en [1,008 B]
+Hit http://us.archive.ubuntu.com precise-backports/multiverse Sources
+Hit http://us.archive.ubuntu.com precise-backports/main amd64 Packages
+Hit http://us.archive.ubuntu.com precise-backports/restricted amd64 Packages
+Hit http://us.archive.ubuntu.com precise-backports/universe amd64 Packages
+Hit http://us.archive.ubuntu.com precise-backports/multiverse amd64 Packages
+Hit http://us.archive.ubuntu.com precise-backports/main i386 Packages
+Hit http://us.archive.ubuntu.com precise-backports/restricted i386 Packages
+Hit http://us.archive.ubuntu.com precise-backports/universe i386 Packages
+Hit http://us.archive.ubuntu.com precise-backports/multiverse i386 Packages
+Hit http://us.archive.ubuntu.com precise-backports/main TranslationIndex
+Hit http://us.archive.ubuntu.com precise-backports/multiverse TranslationIndex
+Hit http://us.archive.ubuntu.com precise-backports/restricted TranslationIndex
+Hit http://us.archive.ubuntu.com precise-backports/universe TranslationIndex
+Hit http://us.archive.ubuntu.com precise/main Translation-en
+Hit http://us.archive.ubuntu.com precise/multiverse Translation-en
+Hit http://us.archive.ubuntu.com precise/restricted Translation-en
+Hit http://us.archive.ubuntu.com precise/universe Translation-en
+Hit http://us.archive.ubuntu.com precise-updates/main Translation-en
+Hit http://us.archive.ubuntu.com precise-updates/multiverse Translation-en
+Hit http://us.archive.ubuntu.com precise-updates/restricted Translation-en
+Hit http://us.archive.ubuntu.com precise-updates/universe Translation-en
+Hit http://us.archive.ubuntu.com precise-backports/main Translation-en
+Hit http://us.archive.ubuntu.com precise-backports/multiverse Translation-en
+Hit http://us.archive.ubuntu.com precise-backports/restricted Translation-en
+Hit http://us.archive.ubuntu.com precise-backports/universe Translation-en
 Ign http://ppa.launchpad.net precise/main Translation-en_US
 Ign http://ppa.launchpad.net precise/main Translation-en
 Ign http://ppa.launchpad.net precise/main Translation-en_US
 Ign http://ppa.launchpad.net precise/main Translation-en
 Ign http://ppa.launchpad.net precise/main Translation-en_US
 Ign http://ppa.launchpad.net precise/main Translation-en
-Fetched 32.5 kB in 2s (15.1 kB/s)
+Fetched 32.5 kB in 1s (16.3 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -652,13 +655,13 @@ The following extra packages will be installed:
   libpanel-applet-4-0
 The following NEW packages will be installed:
   byzanz libpanel-applet-4-0 yad
-0 upgraded, 3 newly installed, 0 to remove and 115 not upgraded.
+0 upgraded, 3 newly installed, 0 to remove and 116 not upgraded.
 Need to get 446 kB of archives.
 After this operation, 1,737 kB of additional disk space will be used.
-Get:1 http://us.archive.ubuntu.com/ubuntu/ precise-updates/universe libpanel-applet-4-0 amd64 1:3.4.1-0ubuntu1.2 [94.2 kB]
-Get:2 http://ppa.launchpad.net/fossfreedom/byzanz/ubuntu/ precise/main byzanz amd64 0.3.0-1~ppafossfreedomprecise [167 kB]
-Get:3 http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu/ precise/main yad amd64 0.27.0-1~webupd8~precise0 [185 kB]
-Fetched 446 kB in 0s (545 kB/s)
+Get:1 http://ppa.launchpad.net/fossfreedom/byzanz/ubuntu/ precise/main byzanz amd64 0.3.0-1~ppafossfreedomprecise [167 kB]
+Get:2 http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu/ precise/main yad amd64 0.27.0-1~webupd8~precise0 [185 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu/ precise-updates/universe libpanel-applet-4-0 amd64 1:3.4.1-0ubuntu1.2 [94.2 kB]
+Fetched 446 kB in 1s (404 kB/s)
 Selecting previously unselected package libpanel-applet-4-0.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 74058 files and directories currently installed.)
 Unpacking libpanel-applet-4-0 (from .../libpanel-applet-4-0_1%3a3.4.1-0ubuntu1.2_amd64.deb) ...
@@ -686,7 +689,7 @@ The following extra packages will be installed:
 The following NEW packages will be installed:
   libbulletml0d2 libmikmod2 libsdl-mixer1.2 libsdl1.2debian oss-compat
   tumiki-fighters tumiki-fighters-data
-0 upgraded, 7 newly installed, 0 to remove and 115 not upgraded.
+0 upgraded, 7 newly installed, 0 to remove and 116 not upgraded.
 Need to get 5,328 kB of archives.
 After this operation, 6,788 kB of additional disk space will be used.
 Get:1 http://us.archive.ubuntu.com/ubuntu/ precise/universe oss-compat all 1 [4,498 B]
@@ -696,7 +699,7 @@ Get:4 http://us.archive.ubuntu.com/ubuntu/ precise/universe libsdl-mixer1.2 amd6
 Get:5 http://us.archive.ubuntu.com/ubuntu/ precise/universe libbulletml0d2 amd64 0.0.6-5 [57.7 kB]
 Get:6 http://us.archive.ubuntu.com/ubuntu/ precise/universe tumiki-fighters-data all 0.2.dfsg1-5 [4,619 kB]
 Get:7 http://us.archive.ubuntu.com/ubuntu/ precise/universe tumiki-fighters amd64 0.2.dfsg1-5 [198 kB]
-Fetched 5,328 kB in 0s (16.2 MB/s)
+Fetched 5,328 kB in 1s (4,237 kB/s)
 Selecting previously unselected package oss-compat.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 74149 files and directories currently installed.)
 Unpacking oss-compat (from .../archives/oss-compat_1_all.deb) ...
