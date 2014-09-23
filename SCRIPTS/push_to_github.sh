@@ -31,7 +31,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   dir_new=build/$TRAVIS_BUILD_NUMBER
   mkdir -p $dir_new
   
-  mv  $dir_product $dir_new/files #/* files
+  mv  $dir_product $dir_new/media #/* files
   mv /tmp/log $dir_new/log
   
   ### summary
