@@ -67,6 +67,10 @@ jenkins
 ----
 - https://wiki.jenkins-ci.org/display/JENKINS/Plugins
 
+markdown
+---
+- http://markdown-here.com/features.html
+
 
 ```
 #http://docs.travis-ci.com/user/speeding-up-the-build/
