@@ -1,0 +1,14 @@
+/tmp/library.cfg
+[source] ps1.cfg
+[source] ps4.cfg
+[source] dialog_optional.cfg
+[source] history_sync.cfg
+[source] vars.cfg
+[source] alias.cfg
+[ register ] use
+[ register ] use_sh
+[01;32m[*][0m : Activated Important stuff 
+[-] /home/travis/build/brownman/travis_screencast/SCRIPTS/debug_screen.sh
+[01;34m[*][0m [cmd] xwininfo -root -tree [01;32m[*][0m : 
+Xlib:  extension "RANDR" missing on display ":99".
+[01;34m[*][0m [cmd] import -window root $dir_product/session.png [01;32m[*][0m : 
