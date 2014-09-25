@@ -27,4 +27,4 @@ commander subshell pipe_translate hello
 
 
 steps_for_library
-library_test
+#library_test
