@@ -26,7 +26,7 @@ install:
 before_script:
   - export DISPLAY=:99
   - export SCREEN="0 ${WIDTH}x${HEIGHT}x16"
-  - cat /etc/init.d/xvfb
+ # - cat /etc/init.d/xvfb
   - sh -e /etc/init.d/xvfb start
   - dbus-launch pulseaudio --start
 
