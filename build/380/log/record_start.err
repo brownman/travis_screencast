@@ -1,0 +1,48 @@
+/tmp/library.cfg
+[source] ps1.cfg
+[source] ps4.cfg
+[source] dialog_optional.cfg
+[source] history_sync.cfg
+[source] vars.cfg
+[source] alias.cfg
+[ register ] use
+[ register ] use_sh
+[01;32m[*][0m : Activated Important stuff 
+[-] /home/travis/build/brownman/travis_screencast/SCRIPTS/record_start.sh
+[01;34m[*][0m [cmd] recordmydesktop --width 1024 --height 768 \ --full-shots --fps 15 --channels 1 --device pulse --v_quality 63 --s_quality 10 --v_bitrate 2000000 --no-wm-check --no-cursor --output=$dir_product/session.${media_type} Initial recording window is set to:
+X:0   Y:0    Width:1024    Height:768
+Adjusted recording window is set to:
+X:0   Y:0    Width:1024    Height:768
+Initializing...
+Buffer size adjusted to 4096 from 4096 frames.
+Opened PCM device pulse
+Recording on device pulse is set to:
+1 channels at 22050Hz
+Capturing!
+
+*********************************************
+
+Cached 391 MB, from 2715 MB that were received.
+Average cache compression ratio: 85.6 %
+
+*********************************************
+Saved 905 frames in a total of 897 requests
+Shutting down.....
+STATE:ENCODING
+Encoding started!
+This may take several minutes.
+Pressing Ctrl-C will cancel the procedure (resuming will not be possible, but
+any portion of the video, which is already encoded won't be deleted).
+Please wait...
+Output file: /tmp/PRODUCT/session.ogv
+Encoding finished!
+Wait a moment please...
+   
+Done.
+Written 10549617 bytes
+(9918475 of which were video data and 631142 audio data)
+
+Cleanning up cache...
+Done!!!
+Goodbye!
+[01;32m[*][0m : 
