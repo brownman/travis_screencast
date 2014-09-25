@@ -1,0 +1,11 @@
+/tmp/library.cfg
+[source] ps1.cfg
+[source] ps4.cfg
+[source] dialog_optional.cfg
+[source] history_sync.cfg
+[source] vars.cfg
+[source] alias.cfg
+[ register ] use
+[ register ] use_sh
+[01;32m[*][0m : Activated Important stuff 
+[-] /home/travis/build/brownman/travis_screencast/SCRIPTS/push_to_github.sh
