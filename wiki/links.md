@@ -57,6 +57,8 @@ media convert
 - http://manpages.ubuntu.com/manpages/maverick/man1/byzanz-playback.1.html
 - https://github.com/GNOME/byzanz/blob/master/src/byzanz-record.1
 - https://wiki.archlinux.org/index.php/List_of_applications/Multimedia
+- http://www.commandlinefu.com/commands/matching/animated/YW5pbWF0ZWQ=/sort-by-votes
+
 
 ```
 #http://docs.travis-ci.com/user/speeding-up-the-build/
