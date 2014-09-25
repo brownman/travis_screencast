@@ -27,15 +27,22 @@ commander recordmydesktop $options
 
 record1(){
 use assert
-util=byzanz-record
+local util=byzanz-record
+local util1=byzanz-playback
+
 depend $util
+local file_productt=/tmp/session.byzanz #debug extension: <filename>.byzanz
+local timeout_record=20 #seconds
 commander $util -v --duration=$timeout_record --x=0 --y=0 --width=1280 --height=800 $file_product --cursor
+commander  $util1 $file_product /tmp/session.gif
+ls -l /tmp/session.*
 }
 #--cursor=NULL
 #--display=$DISPLAY
 #/tmp/screencast/15_24_16_18_09_14.gif 
 
 
+record1 &
 
 record0 &
 sleep $timeout_record
