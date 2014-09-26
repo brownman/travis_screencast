@@ -39,6 +39,11 @@ travis
 - https://pypi.python.org/pypi/BuildNotify/0.2.9
 - https://github.com/travis-ci/travis.rb/tree/master/spec/cli
 
+travis-keys
+----
+- http://docs.travis-ci.com/user/encryption-keys/
+
+
 amazon
 --
 - http://aws.amazon.com/free/
