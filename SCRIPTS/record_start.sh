@@ -51,7 +51,7 @@ commander  $util1 $file_product1 $dir_product/session.gif
 #/tmp/screencast/15_24_16_18_09_14.gif 
 
 
-record1 &
+#record1 &
 
 record0 &
 sleep $timeout_record
