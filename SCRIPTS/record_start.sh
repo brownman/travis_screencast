@@ -19,7 +19,13 @@ options="--width $WIDTH --height $HEIGHT  \
  --no-cursor  \
 --output=$file_product"
 
-commander recordmydesktop $options
+commander recordmydesktop $options &
+
+commander sleep $timeout_record
+#kill 0
+commander killall recordmydesktop
+while pgrep -x recordmydesktop > /dev/null ; do sleep 1; done # wait for transcoding
+
 
 }
 #--delay $timeout_record \
@@ -50,12 +56,14 @@ commander  $util1 $file_product1 $dir_product/session.gif
 #--display=$DISPLAY
 #/tmp/screencast/15_24_16_18_09_14.gif 
 
+record2(){
+  local file=$dir_product/session-recording.avi
+ffmpeg -f x11grab -vc x264  -s xga -r 30 -b 2000k -g 300 -i :1.0 $file
+#./ffmpeg -f x11grab -vc x264  -s wsxga -r 30 -b 2000k -g 300 -i :1.0 session-recording.avi
+}
+ 
 
 #record1 &
 
-record0 &
-sleep $timeout_record
-#kill 0
-killall recordmydesktop
-while pgrep -x recordmydesktop > /dev/null ; do sleep 1; done # wait for transcoding
+record2
 
