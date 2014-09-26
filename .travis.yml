@@ -24,7 +24,7 @@ before_install:
   
 install:
   - ./run.sh install_deps
-  - ./run.sh install_ffmpeg
+  - ./run.sh install_ffmpeg2
 
   
 before_script:
