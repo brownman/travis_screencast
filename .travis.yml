@@ -48,4 +48,5 @@ after_success:
 after_failure:
   - echo failure
 
+#http://www.jedi.be/blog/2010/08/30/capturing-the-screen-of-your-virtual-machines-using-x-vnc-rdp-or-native/
 
