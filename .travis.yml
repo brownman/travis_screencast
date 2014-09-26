@@ -8,6 +8,8 @@ env:
     - TIMEOUT=1000
     - WIDTH=1024
     - HEIGHT=768
+    - timeout_record=60
+    - timeout_task=7
 
 # whitelist
 branches:
