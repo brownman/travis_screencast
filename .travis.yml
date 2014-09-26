@@ -22,11 +22,12 @@ before_install:
   
 install:
   - ./run.sh install_deps
+  - ./run.sh install_ffmpeg
+
   
 before_script:
   - export DISPLAY=:99
   - export SCREEN="0 ${WIDTH}x${HEIGHT}x16"
- # - cat /etc/init.d/xvfb
   - sh -e /etc/init.d/xvfb start
   - dbus-launch pulseaudio --start
 
@@ -36,7 +37,7 @@ script:
   - ./run.sh record_start 
   
 after_script:
-  - echo after script
+  - echo finish recording
 
 after_success:
   - ./run.sh push_to_github
