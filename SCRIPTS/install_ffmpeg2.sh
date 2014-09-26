@@ -15,14 +15,11 @@ sudo make install
 
 }
 
-run(){
-./ffmpeg -f x11grab -vc x264  -s xga -r 30 -b 2000k -g 300 -i :1.0 session-recording.avi
-./ffmpeg -f x11grab -vc x264  -s wsxga -r 30 -b 2000k -g 300 -i :1.0 session-recording.avi
-}
+
 
 steps(){
 install
-run
+ 
 }
 
 steps
