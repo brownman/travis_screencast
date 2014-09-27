@@ -1,4 +1,4 @@
-#
+#http://www.commandlinefu.com/commands/matching/ffmpeg/ZmZtcGVn/sort-by-votes
 # capture fullscreen using SERVER: alsa or pulseaudio
 ffx-full-hw() { ffmpeg -f $SERVER -ac $FFX_MONO \
 	-i $FFX_HW -f x11grab -r $FFX_FPS -s $FFX_WIN_FULL -i :0.0 \
