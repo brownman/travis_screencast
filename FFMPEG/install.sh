@@ -6,6 +6,8 @@ tar xzvf ffmpeg-0.6.tar.gz
  cd ffmpeg-0.6
   #sudo apt-get install xorg-libxext
  #sudo apt-get install xorg-libxfixes
+ sudo apt-get install libxfixes-dev
+sudo apt-get install libxext-dev
 ./configure --enable-x11grab --enable-gpl --enable-nonfree --extra-cflags="-I/opt/local/include -I/opt/local/include/X11"  --extra-ldflags=-L/opt/local/lib
 
 
