@@ -14,7 +14,7 @@ env:
 # whitelist
 branches:
   only:
-    - develop
+    - ffmpeg
     
 before_install:
   - mkdir /tmp/log
