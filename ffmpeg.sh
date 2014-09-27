@@ -3,7 +3,8 @@ shopt -s expand_aliases
 filename_init="$1"
 
 #
-#exec 2>  /tmp/log/${filename_init}.err
+#
+exec 2>  /tmp/log/${filename_init}.err
 exec 1>  /tmp/log/${filename_init}.out
 
 
@@ -31,7 +32,7 @@ eval "$cmd"
 }
 
 source $dir_root/config.cfg
-source $dir_root/config_ffmpeg.cfg
+#source $dir_root/config_ffmpeg.cfg
 
 steps_for_config
 eval "task $filename_init"
