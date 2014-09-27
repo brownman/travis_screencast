@@ -45,6 +45,11 @@ ffx-winselect-pa() {
 	-y $FFX_OUTPUT
 }
 
+#record
+record(){
+	local file=$dir_product/screencast.avi
+commander ffmpeg -f x11grab -r 25 -s 1024x768 -i $DISPLAY -vcodec huffyuv $file
+}
 
 
-$RECORD_FUNC
+record
