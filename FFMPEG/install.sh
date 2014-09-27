@@ -10,8 +10,12 @@ tar xzvf ffmpeg-0.6.tar.gz
 sudo apt-get install libxext-dev
 #$#
 #commander
-./configure --enable-x11grab --enable-gpl --enable-nonfree --extra-cflags="-I/opt/local/include -I/opt/local/include/X11"  --extra-ldflags=-L/opt/local/lib
-
+./configure --enable-x11grab \
+--enable-gpl --enable-nonfree \
+--extra-cflags="-I/opt/local/include \
+-I/opt/local/include/X11"  \
+--extra-ldflags=-L/opt/local/lib &>/dev/null #1
+#,
 
 #./configure --prefix="$HOME/ffmpeg_build" \
 #  --extra-cflags="-I$HOME/ffmpeg_build/include" --extra-ldflags="-L$HOME/ffmpeg_build/lib" \
