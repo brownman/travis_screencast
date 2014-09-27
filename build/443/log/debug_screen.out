@@ -1,0 +1,16 @@
+
+validate_env
+-----------
+WIDTH: 1024
+HEIGHT: 768
+
+
+xwininfo: Window id: 0x12d (the root window) (has no name)
+
+  Root window id: 0x12d (the root window) (has no name)
+  Parent window id: 0x0 (none)
+     0 children.
+
+
+
+
