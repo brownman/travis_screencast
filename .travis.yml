@@ -23,7 +23,7 @@ before_install:
   - ./run.sh library
   
 install:
-#  - ./run.sh install_deps
+  - ./run.sh install_deps
   - ./ffmpeg.sh install
 
   
@@ -35,8 +35,9 @@ before_script:
 
 script:
   - ./run.sh debug_screen
-#  - ./run.sh tests &
+  - ./run.sh tests &
   - ./ffmpeg.sh record
+  - echo ./ffmpeg.sh convert
   
 after_script:
   - echo finish recording
