@@ -1,15 +1,18 @@
 #!/bin/sh
 # https://github.com/AmericanCouncils/ac-common-ansible/blob/master/files/install_ffmpeg.sh
+#https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu
+
+
 
 # custom install script for ffmpeg for use on travis
-
 # TODO: Use /usr/local/bin as bindir, don't install to $HOME/bin and move after
-
 # fail entire script on first error
-set -e
+#set -e
+#rm -rf ~/ffmpeg_sources
+#rm -rf ~/ffmpeg_build
 
-rm -rf ~/ffmpeg_sources
-rm -rf ~/ffmpeg_build
+
+
 
 ## dependencies
 sudo apt-get -y install autoconf automake build-essential git libass-dev libgpac-dev \
