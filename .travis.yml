@@ -10,6 +10,7 @@ env:
     - HEIGHT=768
     - timeout_record=60
     - timeout_task=7
+    - dir_log=/tmp/log
 
 # whitelist
 branches:
@@ -17,8 +18,7 @@ branches:
     - develop
     
 before_install:
-  - mkdir /tmp/log
-  - chmod u+x ./run.sh 
+  - mkdir $dir_log
   - chmod u+x ./SCRIPTS/*.sh
   - chmod u+x *.sh
   - ./run.sh library
