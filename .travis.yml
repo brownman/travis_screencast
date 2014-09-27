@@ -14,7 +14,7 @@ env:
 # whitelist
 branches:
   only:
-    - master
+    - develop
     
 before_install:
   - mkdir /tmp/log
@@ -23,8 +23,8 @@ before_install:
   - ./run.sh library
   
 install:
-  - ./run.sh install_deps
-  - ./run.sh install_ffmpeg
+#  - ./run.sh install_deps
+  - ./ffmpeg.sh install
 
   
 before_script:
@@ -35,8 +35,8 @@ before_script:
 
 script:
   - ./run.sh debug_screen
-  - ./run.sh tests &
-  - ./run.sh record_start 
+#  - ./run.sh tests &
+  - ./ffmpeg.sh record
   
 after_script:
   - echo finish recording
