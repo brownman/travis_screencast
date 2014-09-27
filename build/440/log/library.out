@@ -1,0 +1,14 @@
+validate_env
+-----------
+WIDTH: 1024
+HEIGHT: 768
+export AUDIODEV=null
+[H[2J[CMD] find * -type f | grep -v .old >$file
+[ /tmp/target ] [LINES] 226
+
+
+
+
+
+
+
