@@ -14,7 +14,7 @@ env:
 # whitelist
 branches:
   only:
-    - develop
+    - master
     
 before_install:
   - mkdir /tmp/log
