@@ -1,0 +1,26 @@
+build/444:
+total 0
+drwxrwxr-x 2 travis travis 320 Sep 28 17:52 log
+drwxrwxr-x 2 travis travis  60 Sep 28 17:52 media
+-rw-rw-r-- 1 travis travis   0 Sep 28 17:53 log.txt
+
+build/444/log:
+total 308
+-rw-rw-r-- 1 travis travis 120985 Sep 28 17:51 install.err
+-rw-rw-r-- 1 travis travis  97232 Sep 28 17:51 install.out
+-rw-rw-r-- 1 travis travis  47514 Sep 28 17:52 install_deps.out
+-rw-rw-r-- 1 travis travis   1858 Sep 28 17:53 tests.err
+-rw-rw-r-- 1 travis travis   1301 Sep 28 17:52 record.err
+-rw-rw-r-- 1 travis travis   1271 Sep 28 17:46 library.err
+-rw-rw-r-- 1 travis travis    838 Sep 28 17:52 install_deps.err
+-rw-rw-r-- 1 travis travis    498 Sep 28 17:52 debug_screen.err
+-rw-rw-r-- 1 travis travis    301 Sep 28 17:52 push_to_github.err
+-rw-rw-r-- 1 travis travis    220 Sep 28 17:52 debug_screen.out
+-rw-rw-r-- 1 travis travis    155 Sep 28 17:46 library.out
+-rw-rw-r-- 1 travis travis    139 Sep 28 17:53 tests.out
+-rw-rw-r-- 1 travis travis     79 Sep 28 17:52 push_to_github.out
+-rw-rw-r-- 1 travis travis     52 Sep 28 17:52 record.out
+
+build/444/media:
+total 24
+-rw-rw-r-- 1 travis travis 23493 Sep 28 17:52 session.png
