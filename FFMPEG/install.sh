@@ -1,5 +1,7 @@
-#sudo apt-get install ffmpeg
+#s,
+sudo apt-get install ffmpeg
 #
+return
 set -e # e
 wget http://www.ffmpeg.org/releases/ffmpeg-0.6.tar.gz
 tar xzvf ffmpeg-0.6.tar.gz
