@@ -1,0 +1,26 @@
+/tmp/library.cfg
+[source] ps1.cfg
+[source] ps4.cfg
+[source] dialog_optional.cfg
+[source] history_sync.cfg
+[source] vars.cfg
+[source] alias.cfg
+[ register ] use
+[ register ] use_sh
+[01;32m[*][0m : Activated Important stuff 
+[-] /home/travis/build/brownman/travis_screencast/FFMPEG/record.sh
+[01;34m[*][0m [cmd] ffmpeg -f x11grab -r 25 -s 1024x768 -i :99 -vcodec huffyuv /tmp/PRODUCT/screencast.avi ffmpeg version 0.8.16-4:0.8.16-0ubuntu0.12.04.1, Copyright (c) 2000-2014 the Libav developers
+  built on Sep 16 2014 18:33:49 with gcc 4.6.3
+The ffmpeg program is only provided for script compatibility and will be removed
+in a future release. It has been deprecated in the Libav project to allow for
+incompatible command line syntax improvements in its replacement called avconv
+(see Changelog for details). Please use avconv instead.
+[x11grab @ 0xbf27a0] device: :99 -> display: :99 x: 0 y: 0 width: 1024 height: 768
+[x11grab @ 0xbf27a0] shared memory extension  found
+X Error of failed request:  BadCursor (invalid Cursor parameter)
+  Major opcode of failed request:  142 (XFIXES)
+  Minor opcode of failed request:  25 (XFixesGetCursorImageAndName)
+  Resource id in failed request:  0xa00001
+  Serial number of failed request:  14
+  Current serial number in output stream:  14
+[01;31m[*][0m : 
