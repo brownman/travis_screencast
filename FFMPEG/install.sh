@@ -1,7 +1,7 @@
 #https://github.com/jnvsor/screencap
 sudo apt-get update
 
-#sudo apt-get install git build-essential yasm libcdio-paranoia-dev libx264-dev libvpx-dev libvorbis-dev libtheora-dev libspeex-dev libschroedinger-dev librtmp-dev libpulse-dev libopus-dev libopenjpeg-dev libopencv-dev libmp3lame-dev libgsm1-dev libgnutls-dev libfrei0r-ocaml-dev
+sudo apt-get install git build-essential yasm libcdio-paranoia-dev libx264-dev libvpx-dev libvorbis-dev libtheora-dev libspeex-dev libschroedinger-dev librtmp-dev libpulse-dev libopus-dev libopenjpeg-dev libopencv-dev libmp3lame-dev libgsm1-dev libgnutls-dev libfrei0r-ocaml-dev
 git clone https://github.com/FFmpeg/FFmpeg.git --depth=1
 cd FFmpeg 
 ./configure --enable-gpl --enable-x11grab
