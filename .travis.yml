@@ -25,7 +25,7 @@ before_install:
   - ./run.sh library
   
 install:
-  - ./ffmpeg.sh install
+ # - ./ffmpeg.sh install
   - ./run.sh install_deps
 
 
