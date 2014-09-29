@@ -23,3 +23,4 @@ sudo apt-get install yad byzanz
 
 sudo apt-get install tumiki-fighters
 sudo apt-get install ffmpeg
+sudo ln -s /usr/bin/avconv /usr/bin/ffmpeg 
