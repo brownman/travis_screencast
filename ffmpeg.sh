@@ -29,6 +29,8 @@ local cmd args size
 args="$@"
 cmd="$dir_ffmpeg/${args}.sh"
 trace0 $cmd
+$cmd_trap_err
+blahhhh
 eval "$cmd"
 
 
