@@ -1,4 +1,7 @@
 #!/bin/bash
+set -e
+
+
 shopt -s expand_aliases
 filename_init="$1"
 
