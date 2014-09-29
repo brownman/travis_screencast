@@ -3,8 +3,15 @@ shopt -s expand_aliases
 filename_init="$1"
 
 #
-#exec 2>  /tmp/log/${filename_init}.err
-exec 1>  /tmp/log/${filename_init}.out
+if [ $mute_err = true ];then
+    exec 2>  /tmp/log/${filename_init}.err
+fi
+
+if [ $mute_out = true ];then
+    exec 1>  /tmp/log/${filename_init}.out
+fi
+
+
 
 
 set -u
