@@ -1,4 +1,6 @@
-set -e
+
+$cmd_trap_err
+
 #sudo apt-get update -qq
 #sudo apt-get install -qq recordmydesktop 
 
