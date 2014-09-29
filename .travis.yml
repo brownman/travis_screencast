@@ -27,7 +27,7 @@ before_install:
 install:
  # - ./ffmpeg.sh install
   - ./run.sh install_ppa
-  #- ./run.sh install_deps
+  - ./run.sh install_deps
 
 
 
