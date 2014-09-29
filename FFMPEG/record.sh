@@ -8,7 +8,8 @@ ffx-full-hw() { ffmpeg -f $SERVER -ac $FFX_MONO \
        	-preset $FFX_PRESET -crf $FFX_CRF -threads $FFX_THREADS \
 	-vf $FFX_SCALE \
 	-y $FFX_OUTPUT \
-	-t $FFX_TIMEOUT
+	-t $FFX_TIMEOUT \
+	$FFX_OUTPUT
 }
 ffx-full-pa() { ffmpeg -f $SERVER -ac $FFX_MONO \
 	-i $FFX_PULSE -f x11grab -r $FFX_FPS -s $FFX_WIN_FULL -i :0.0 \
@@ -50,13 +51,12 @@ ffx-winselect-pa() {
 
 #record
 record(){
-	local file=$dir_product/screencast.avi
-commander ffmpeg -t $FFX_TIMEOUT \
--f x11grab -r 25 -s 1024x768 -i $DISPLAY -vcodec huffyuv $file
+ commander ffmpeg -t $FFX_TIMEOUT \
+-f x11grab -r 25 -s 1024x768 -i $DISPLAY -vcodec huffyuv FFX_OUTPUT
 }
 
 steps(){
-record
+ 
 ffx-full-hw
 }
 
