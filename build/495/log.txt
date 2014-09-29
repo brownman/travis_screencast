@@ -1,0 +1,19 @@
+build/495:
+total 8
+drwxrwxr-x 2 travis travis 4096 Sep 29 14:26 log
+drwxrwxr-x 2 travis travis 4096 Sep 29 14:26 media
+-rw-rw-r-- 1 travis travis    0 Sep 29 14:26 log.txt
+
+build/495/log:
+total 384
+-rw-rw-r-- 1 travis travis 350026 Sep 29 14:25 install_ffmpeg.out
+-rw-rw-r-- 1 travis travis  15801 Sep 29 14:26 install_deps.out
+-rw-rw-r-- 1 travis travis    171 Sep 29 14:26 debug_screen.out
+-rw-rw-r-- 1 travis travis    106 Sep 29 14:19 library.out
+-rw-rw-r-- 1 travis travis     30 Sep 29 14:26 push_to_github.out
+-rw-rw-r-- 1 travis travis     19 Sep 29 14:26 record.out
+-rw-rw-r-- 1 travis travis      5 Sep 29 14:26 tests.out
+
+build/495/media:
+total 20
+-rw-rw-r-- 1 travis travis 17234 Sep 29 14:26 session.png
