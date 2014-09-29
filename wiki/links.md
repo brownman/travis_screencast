@@ -64,6 +64,9 @@ media convert
 - https://wiki.archlinux.org/index.php/List_of_applications/Multimedia
 - http://www.commandlinefu.com/commands/matching/animated/YW5pbWF0ZWQ=/sort-by-votes
 
+ffmpeg
+----
+- http://wiki.ubuntuusers.de/FFmpeg
 
 ```
 #http://docs.travis-ci.com/user/speeding-up-the-build/
