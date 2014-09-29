@@ -1,5 +1,7 @@
 $cmd_trap_err
 
+some_errrr
+
 pre(){
 sudo apt-get update
 sudo apt-get -y install autoconf automake build-essential libass-dev libfreetype6-dev libgpac-dev \
