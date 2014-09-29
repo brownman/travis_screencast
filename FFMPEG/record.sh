@@ -50,14 +50,15 @@ ffx-winselect-pa() {
 }
 
 #record
-record(){
+record_simple(){
  commander ffmpeg -t $FFX_TIMEOUT \
 -f x11grab -r 25 -s 1024x768 -i $DISPLAY -vcodec huffyuv FFX_OUTPUT
 }
 
 steps(){
  
-ffx-full-hw
+#ffx-full-hw
+record_simple
 }
 
 steps
