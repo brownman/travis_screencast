@@ -1,5 +1,5 @@
 $cmd_trap_err
-
+$cmd_trap_exit
  
 
 pre(){
@@ -26,7 +26,7 @@ cd mstorsjo-fdk-aac*
 autoreconf -fiv
 ./configure --prefix="$HOME/ffmpeg_build" --disable-shared
 make
-make install
+commander make install
 make distclean
 #########################################
 
@@ -36,7 +36,7 @@ tar xjvf libvpx-v1.3.0.tar.bz2
 cd libvpx-v1.3.0
 ./configure --prefix="$HOME/ffmpeg_build" --disable-examples
 make
-make install
+commander make install
 make clean
 
 #########################################
@@ -73,7 +73,7 @@ PATH="$PATH:$HOME/bin" PKG_CONFIG_PATH="$HOME/ffmpeg_build/lib/pkgconfig" ./conf
   --enable-nonfree \
   --enable-x11grab
 PATH="$PATH:$HOME/bin" make
-make install
+commander make install
 make distclean
 hash -r
 }
