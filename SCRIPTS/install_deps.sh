@@ -3,7 +3,7 @@ set -e
 #sudo apt-get install -qq recordmydesktop 
 
 
-install libgtk2.0-0
+install libgtk2.0-0 xcowsay
 
 
 #audio
