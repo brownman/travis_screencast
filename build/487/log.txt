@@ -1,0 +1,12 @@
+build/487:
+total 0
+drwxrwxr-x 2 travis travis 60 Sep 29 12:49 media
+drwxrwxr-x 2 travis travis 40 Sep 29 12:48 log
+-rw-rw-r-- 1 travis travis  0 Sep 29 12:49 log.txt
+
+build/487/media:
+total 20
+-rw-rw-r-- 1 travis travis 20051 Sep 29 12:49 session.png
+
+build/487/log:
+total 0
