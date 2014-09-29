@@ -1,3 +1,6 @@
+#http://superuser.com/questions/540391/x-error-of-failed-request-badcursor-invalid-cursor-parameter-when-recording-x  
+
+
 language: bash 
 cache: apt
 
@@ -33,9 +36,8 @@ install:
 
 
 
-  
 before_script:
-  - export DISPLAY=:99
+  - export DISPLAY=:99.0
   - export SCREEN="0 ${WIDTH}x${HEIGHT}x${COLORS}"
   - sh -e /etc/init.d/xvfb start
   - dbus-launch pulseaudio --start
