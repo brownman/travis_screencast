@@ -31,13 +31,13 @@ before_install:
 install:
  # - ./ffmpeg.sh install
   - ./run.sh install_ffmpeg
-  - ./run.sh install_ppa
+ # - ./run.sh install_ppa
   - ./run.sh install_deps
 
 
 
 before_script:
-  - export DISPLAY=:99.0
+  - export DISPLAY=:99
   - export SCREEN="0 ${WIDTH}x${HEIGHT}x${COLORS}"
   - sh -e /etc/init.d/xvfb start
   - dbus-launch pulseaudio --start
