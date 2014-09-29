@@ -10,7 +10,7 @@ sudo apt-get -y install autoconf automake build-essential libass-dev libfreetype
 
 sudo apt-get install yasm
 sudo apt-get install libx264-dev
-sudo apt-get install libopus-dev
+#sudo apt-get install libopus-dev
 sudo apt-get install libmp3lame-dev
 }
 
@@ -38,6 +38,16 @@ cd libvpx-v1.3.0
 make
 make install
 make clean
+
+#########################################
+cd ~/ffmpeg_sources
+wget http://downloads.xiph.org/releases/opus/opus-1.1.tar.gz
+tar xzvf opus-1.1.tar.gz
+cd opus-1.1
+./configure --prefix="$HOME/ffmpeg_build" --disable-shared
+make
+make install
+make distclean
 }
 
 compile(){
