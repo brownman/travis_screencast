@@ -16,7 +16,10 @@ sudo apt-get install xdotool wmctrl
 #PPA
 sudo add-apt-repository ppa:webupd8team/y-ppa-manager -y
 sudo add-apt-repository ppa:fossfreedom/byzanz -y 
+sudo add-apt-repository ppa:jon-severinsson/ffmpeg 
+
 sudo apt-get update 
 sudo apt-get install yad byzanz
 
 sudo apt-get install tumiki-fighters
+sudo apt-get install ffmpeg
