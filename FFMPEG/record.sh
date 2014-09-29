@@ -1,11 +1,14 @@
 #http://www.commandlinefu.com/commands/matching/ffmpeg/ZmZtcGVn/sort-by-votes
 # capture fullscreen using SERVER: alsa or pulseaudio
+#http://linuxers.org/tutorial/how-convert-video-files-various-other-video-formats-using-ffmpeg
+#http://forum.videohelp.com/threads/277807-Useful-FFmpeg-Syntax-Examples
 ffx-full-hw() { ffmpeg -f $SERVER -ac $FFX_MONO \
-	-i $FFX_HW -f x11grab -r $FFX_FPS -s $FFX_WIN_FULL -i :0.0 \
+	-i $FFX_HW -f x11grab -r $FFX_FPS -s $FFX_WIN_FULL -i $DISPLAY \
 	-acodec $FFX_AUDIO -vcodec $FFX_VIDEO \
        	-preset $FFX_PRESET -crf $FFX_CRF -threads $FFX_THREADS \
 	-vf $FFX_SCALE \
-	-y $FFX_OUTPUT
+	-y $FFX_OUTPUT \
+	-t $FFX_TIMEOUT
 }
 ffx-full-pa() { ffmpeg -f $SERVER -ac $FFX_MONO \
 	-i $FFX_PULSE -f x11grab -r $FFX_FPS -s $FFX_WIN_FULL -i :0.0 \
@@ -52,5 +55,9 @@ commander ffmpeg -t $FFX_TIMEOUT \
 -f x11grab -r 25 -s 1024x768 -i $DISPLAY -vcodec huffyuv $file
 }
 
-
+steps(){
 record
+ffx-full-hw
+}
+
+steps
