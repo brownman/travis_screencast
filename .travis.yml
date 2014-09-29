@@ -40,7 +40,7 @@ before_script:
 
 script:
   - ./run.sh debug_screen
-  - ./run.sh tests &
+  #- ./run.sh tests &
   - ./ffmpeg.sh record
   - echo ./ffmpeg.sh convert
   
