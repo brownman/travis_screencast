@@ -49,7 +49,7 @@ before_script:
 script:
   - ./run.sh debug_screen
   - ./run.sh tests &
-  - ./ffmpeg.sh record
+  - ./run.sh record
   - echo ./ffmpeg.sh convert
   
 after_script:
