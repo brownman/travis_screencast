@@ -57,7 +57,7 @@ tar xjvf ffmpeg-snapshot.tar.bz2
 cd ffmpeg
 PATH="$PATH:$HOME/bin" PKG_CONFIG_PATH="$HOME/ffmpeg_build/lib/pkgconfig" 
 
-./configure \
+commander./configure \
   --prefix="$HOME/ffmpeg_build" \
   --extra-cflags="-I$HOME/ffmpeg_build/include" \
   --extra-ldflags="-L$HOME/ffmpeg_build/lib" \
