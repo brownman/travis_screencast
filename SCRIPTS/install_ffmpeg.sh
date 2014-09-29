@@ -1,4 +1,4 @@
-
+$cmd_trap_err
 
 pre(){
 sudo apt-get update
