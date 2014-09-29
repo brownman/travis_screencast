@@ -7,4 +7,4 @@ sudo add-apt-repository ppa:jon-severinsson/ffmpeg -y
 #update
 sudo apt-get update 
 sudo apt-get install yad byzanz ffmpeg
-sudo ln -s /usr/bin/avconv /usr/bin/ffmpeg 
+#sudo ln -s /usr/bin/avconv /usr/bin/ffmpeg 
