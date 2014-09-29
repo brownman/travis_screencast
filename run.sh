@@ -25,8 +25,6 @@ local cmd args size
 args="$@"
 cmd="$dir_script/${args}.sh"
 trace0 $cmd
-$cmd_trap_err
-blaaah
 eval "$cmd"
 
 
