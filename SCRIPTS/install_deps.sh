@@ -6,10 +6,10 @@ sudo apt-get install xvfb
 sudo apt-get install libgtk2.0-0
 
 #install firefox
-sudo apt-get install icewease
+#sudo apt-get install iceweasle
 
 #show xinfo of root window
-sudo apt-get install xvfb apt-get libgl1-mesa-dri xfonts-cyrillic xfonts-100dpi xfonts-75dpi
+sudo apt-get install xvfb  libgl1-mesa-dri xfonts-cyrillic xfonts-100dpi xfonts-75dpi
 sudo apt-get install imagemagick x11-utils
 
 sudo apt-get install xdotool wmctrl
