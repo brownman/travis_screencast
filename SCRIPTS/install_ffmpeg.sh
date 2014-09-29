@@ -1,6 +1,6 @@
 $cmd_trap_err
 
-some_errrr
+ 
 
 pre(){
 sudo apt-get update
