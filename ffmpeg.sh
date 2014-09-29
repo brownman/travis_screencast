@@ -8,7 +8,7 @@ filename_init="$1"
 #
 #
 #exec 2>  /tmp/log/${filename_init}.err
-#exec 1>  /tmp/log/${filename_init}.out
+exec 1>  /tmp/log/${filename_init}.out
 
 
 set -u
