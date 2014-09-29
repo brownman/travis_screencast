@@ -1,34 +1,8 @@
-#s,
-sudo apt-get install ffmpeg
-#
-#ec
-exit
-#return
-set -e # e
-wget http://www.ffmpeg.org/releases/ffmpeg-0.6.tar.gz
-tar xzvf ffmpeg-0.6.tar.gz
-
- cd ffmpeg-0.6
-  #sudo apt-get install xorg-libxext
- #sudo apt-get install xorg-libxfixes
- sudo apt-get install libxfixes-dev
-sudo apt-get install libxext-dev
-#$#
-#commander
-./configure --enable-x11grab \
---enable-gpl --enable-nonfree \
---extra-cflags="-I/opt/local/include \
--I/opt/local/include/X11"  \
---extra-ldflags=-L/opt/local/lib &>/dev/null #1
-#,
-
-#./configure --prefix="$HOME/ffmpeg_build" \
-#  --extra-cflags="-I$HOME/ffmpeg_build/include" --extra-ldflags="-L$HOME/ffmpeg_build/lib" \
-#  --bindir="$HOME/bin" --extra-libs="-ldl" --enable-gpl --enable-libass --enable-libfdk-aac \
-#  --enable-libmp3lame --enable-libopus --enable-libtheora --enable-libvorbis --enable-libvpx \
-#  --enable-libx264 --enable-nonfree --enable-x11grab
-
-make 
+#https://github.com/jnvsor/screencap
+sudo apt-get update
+sudo apt-get install git build-essential yasm libcdio-paranoia-dev libx264-dev libvpx-dev libvorbis-dev libtheora-dev libspeex-dev libschroedinger-dev librtmp-dev libpulse-dev libopus-dev libopenjpeg-dev libopencv-dev libmp3lame-dev libgsm1-dev libgnutls-dev libfrei0r-ocaml-dev
+git clone https://github.com/FFmpeg/FFmpeg.git
+cd FFmpeg
+./configure --arch=amd64 --enable-pthreads --enable-libopencv --enable-librtmp --enable-libopenjpeg --enable-libopus --enable-libschroedinger --enable-libspeex --enable-libtheora --enable-vaapi --enable-runtime-cpudetect --enable-libvorbis --enable-zlib --enable-swscale --enable-libcdio --enable-bzlib --enable-libdc1394 --enable-frei0r --enable-gnutls --enable-libgsm --enable-libmp3lame --enable-libpulse --enable-vdpau --enable-libvpx --enable-gpl --enable-x11grab --enable-libx264 --enable-filters --enable-libzmq
+make -j4
 sudo make install
-sudo make distclean
-hash -r
