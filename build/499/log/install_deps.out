@@ -1,0 +1,216 @@
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+imagemagick is already the newest version.
+libgtk2.0-0 is already the newest version.
+libgtk2.0-0 set to manually installed.
+The following package was automatically installed and is no longer required:
+  libgeos-3.2.2
+Use 'apt-get autoremove' to remove them.
+The following NEW packages will be installed:
+  libnotify-bin xcowsay
+0 upgraded, 2 newly installed, 0 to remove and 129 not upgraded.
+Need to get 81.3 kB of archives.
+After this operation, 270 kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ precise/main libnotify-bin amd64 0.7.5-1 [7,298 B]
+Get:2 http://us.archive.ubuntu.com/ubuntu/ precise/universe xcowsay amd64 1.2-1 [74.0 kB]
+Fetched 81.3 kB in 0s (539 kB/s)
+Selecting previously unselected package libnotify-bin.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 72363 files and directories currently installed.)
+Unpacking libnotify-bin (from .../libnotify-bin_0.7.5-1_amd64.deb) ...
+Selecting previously unselected package xcowsay.
+Unpacking xcowsay (from .../xcowsay_1.2-1_amd64.deb) ...
+Processing triggers for man-db ...
+Setting up libnotify-bin (0.7.5-1) ...
+Setting up xcowsay (1.2-1) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+libpulse-dev is already the newest version.
+libpulse-dev set to manually installed.
+The following package was automatically installed and is no longer required:
+  libgeos-3.2.2
+Use 'apt-get autoremove' to remove them.
+The following extra packages will be installed:
+  espeak-data gstreamer0.10-pulseaudio libasound2-plugins libc-bin
+  libc-dev-bin libc6 libc6-dev libc6-i386 libespeak1 libjack-jackd2-0
+  libportaudio2 libpulsedsp libsamplerate0 libsonic0 libspeexdsp1 mbrola
+  pulseaudio-module-x11 rtkit
+Suggested packages:
+  glibc-doc jackd2 mbrola-voice cicero pavumeter paman paprefs
+  pulseaudio-module-raop pulseaudio-esound-compat avahi-daemon
+The following NEW packages will be installed:
+  espeak espeak-data gstreamer0.10-pulseaudio libasound2-plugins libc6-i386
+  libespeak1 libjack-jackd2-0 libportaudio2 libpulsedsp libsamplerate0
+  libsonic0 libspeexdsp1 mbrola mbrola-us2 pulseaudio pulseaudio-module-x11
+  pulseaudio-utils rtkit
+The following packages will be upgraded:
+  libc-bin libc-dev-bin libc6 libc6-dev
+4 upgraded, 18 newly installed, 0 to remove and 125 not upgraded.
+Need to get 23.2 MB of archives.
+After this operation, 26.1 MB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libc6-dev amd64 2.15-0ubuntu10.7 [2,941 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libc-dev-bin amd64 2.15-0ubuntu10.7 [83.9 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libc-bin amd64 2.15-0ubuntu10.7 [1,181 kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libc6 amd64 2.15-0ubuntu10.7 [4,654 kB]
+Get:5 http://us.archive.ubuntu.com/ubuntu/ precise/main libsamplerate0 amd64 0.1.8-4 [1,341 kB]
+Get:6 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libjack-jackd2-0 amd64 1.9.8~dfsg.1-1ubuntu2 [165 kB]
+Get:7 http://us.archive.ubuntu.com/ubuntu/ precise/main libportaudio2 amd64 19+svn20111121-1 [74.0 kB]
+Get:8 http://us.archive.ubuntu.com/ubuntu/ precise/main libsonic0 amd64 0.1.17-1.1 [11.2 kB]
+Get:9 http://us.archive.ubuntu.com/ubuntu/ precise/main espeak-data amd64 1.46.02-0ubuntu1 [800 kB]
+Get:10 http://us.archive.ubuntu.com/ubuntu/ precise/main libespeak1 amd64 1.46.02-0ubuntu1 [148 kB]
+Get:11 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libpulsedsp amd64 1:1.1-0ubuntu15.4 [24.8 kB]
+Get:12 http://us.archive.ubuntu.com/ubuntu/ precise/main libspeexdsp1 amd64 1.2~rc1-3ubuntu2 [43.3 kB]
+Get:13 http://us.archive.ubuntu.com/ubuntu/ precise/main espeak amd64 1.46.02-0ubuntu1 [68.0 kB]
+Get:14 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main gstreamer0.10-pulseaudio amd64 0.10.31-1ubuntu1.2 [111 kB]
+Get:15 http://us.archive.ubuntu.com/ubuntu/ precise/main libasound2-plugins amd64 1.0.25-1ubuntu1 [72.5 kB]
+Get:16 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libc6-i386 amd64 2.15-0ubuntu10.7 [3,992 kB]
+Get:17 http://us.archive.ubuntu.com/ubuntu/ precise/multiverse mbrola amd64 3.01h-6 [38.2 kB]
+Get:18 http://us.archive.ubuntu.com/ubuntu/ precise/multiverse mbrola-us2 all 0.1-2 [6,389 kB]
+Get:19 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main pulseaudio-utils amd64 1:1.1-0ubuntu15.4 [60.2 kB]
+Get:20 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main pulseaudio amd64 1:1.1-0ubuntu15.4 [928 kB]
+Get:21 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main pulseaudio-module-x11 amd64 1:1.1-0ubuntu15.4 [19.2 kB]
+Get:22 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main rtkit amd64 0.10-2ubuntu0.12.04.1 [36.3 kB]
+Preconfiguring packages ...
+Fetched 23.2 MB in 1s (18.3 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 72389 files and directories currently installed.)
+Preparing to replace libc6-dev 2.15-0ubuntu10 (using .../libc6-dev_2.15-0ubuntu10.7_amd64.deb) ...
+Unpacking replacement libc6-dev ...
+Preparing to replace libc-dev-bin 2.15-0ubuntu10 (using .../libc-dev-bin_2.15-0ubuntu10.7_amd64.deb) ...
+Unpacking replacement libc-dev-bin ...
+Preparing to replace libc-bin 2.15-0ubuntu10 (using .../libc-bin_2.15-0ubuntu10.7_amd64.deb) ...
+Unpacking replacement libc-bin ...
+Processing triggers for man-db ...
+Setting up libc-bin (2.15-0ubuntu10.7) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 72388 files and directories currently installed.)
+Preparing to replace libc6 2.15-0ubuntu10 (using .../libc6_2.15-0ubuntu10.7_amd64.deb) ...
+Unpacking replacement libc6 ...
+Setting up libc6 (2.15-0ubuntu10.7) ...
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+Selecting previously unselected package libsamplerate0.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 72388 files and directories currently installed.)
+Unpacking libsamplerate0 (from .../libsamplerate0_0.1.8-4_amd64.deb) ...
+Selecting previously unselected package libjack-jackd2-0.
+Unpacking libjack-jackd2-0 (from .../libjack-jackd2-0_1.9.8~dfsg.1-1ubuntu2_amd64.deb) ...
+Selecting previously unselected package libportaudio2.
+Unpacking libportaudio2 (from .../libportaudio2_19+svn20111121-1_amd64.deb) ...
+Selecting previously unselected package libsonic0.
+Unpacking libsonic0 (from .../libsonic0_0.1.17-1.1_amd64.deb) ...
+Selecting previously unselected package espeak-data.
+Unpacking espeak-data (from .../espeak-data_1.46.02-0ubuntu1_amd64.deb) ...
+Selecting previously unselected package libespeak1.
+Unpacking libespeak1 (from .../libespeak1_1.46.02-0ubuntu1_amd64.deb) ...
+Selecting previously unselected package libpulsedsp.
+Unpacking libpulsedsp (from .../libpulsedsp_1%3a1.1-0ubuntu15.4_amd64.deb) ...
+Selecting previously unselected package libspeexdsp1.
+Unpacking libspeexdsp1 (from .../libspeexdsp1_1.2~rc1-3ubuntu2_amd64.deb) ...
+Selecting previously unselected package espeak.
+Unpacking espeak (from .../espeak_1.46.02-0ubuntu1_amd64.deb) ...
+Selecting previously unselected package gstreamer0.10-pulseaudio.
+Unpacking gstreamer0.10-pulseaudio (from .../gstreamer0.10-pulseaudio_0.10.31-1ubuntu1.2_amd64.deb) ...
+Selecting previously unselected package libasound2-plugins.
+Unpacking libasound2-plugins (from .../libasound2-plugins_1.0.25-1ubuntu1_amd64.deb) ...
+Selecting previously unselected package libc6-i386.
+Unpacking libc6-i386 (from .../libc6-i386_2.15-0ubuntu10.7_amd64.deb) ...
+Selecting previously unselected package mbrola.
+Unpacking mbrola (from .../mbrola_3.01h-6_amd64.deb) ...
+Selecting previously unselected package mbrola-us2.
+Unpacking mbrola-us2 (from .../mbrola-us2_0.1-2_all.deb) ...
+Selecting previously unselected package pulseaudio-utils.
+Unpacking pulseaudio-utils (from .../pulseaudio-utils_1%3a1.1-0ubuntu15.4_amd64.deb) ...
+Selecting previously unselected package pulseaudio.
+Unpacking pulseaudio (from .../pulseaudio_1%3a1.1-0ubuntu15.4_amd64.deb) ...
+Selecting previously unselected package pulseaudio-module-x11.
+Unpacking pulseaudio-module-x11 (from .../pulseaudio-module-x11_1%3a1.1-0ubuntu15.4_amd64.deb) ...
+Selecting previously unselected package rtkit.
+Unpacking rtkit (from .../rtkit_0.10-2ubuntu0.12.04.1_amd64.deb) ...
+Processing triggers for man-db ...
+Processing triggers for ureadahead ...
+Setting up libc-dev-bin (2.15-0ubuntu10.7) ...
+Setting up libc6-dev (2.15-0ubuntu10.7) ...
+Setting up libsamplerate0 (0.1.8-4) ...
+Setting up libjack-jackd2-0 (1.9.8~dfsg.1-1ubuntu2) ...
+Setting up libportaudio2 (19+svn20111121-1) ...
+Setting up libsonic0 (0.1.17-1.1) ...
+Setting up espeak-data (1.46.02-0ubuntu1) ...
+Setting up libespeak1 (1.46.02-0ubuntu1) ...
+Setting up libpulsedsp (1:1.1-0ubuntu15.4) ...
+Setting up libspeexdsp1 (1.2~rc1-3ubuntu2) ...
+Setting up espeak (1.46.02-0ubuntu1) ...
+Setting up gstreamer0.10-pulseaudio (0.10.31-1ubuntu1.2) ...
+Setting up libasound2-plugins (1.0.25-1ubuntu1) ...
+Setting up libc6-i386 (2.15-0ubuntu10.7) ...
+Setting up mbrola (3.01h-6) ...
+Setting up mbrola-us2 (0.1-2) ...
+Setting up pulseaudio-utils (1:1.1-0ubuntu15.4) ...
+Setting up pulseaudio (1:1.1-0ubuntu15.4) ...
+Adding user pulse to group audio
+Setting up pulseaudio-module-x11 (1:1.1-0ubuntu15.4) ...
+Setting up rtkit (0.10-2ubuntu0.12.04.1) ...
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+Reading package lists...
+Building dependency tree...
+Reading state information...
+libgl1-mesa-dri is already the newest version.
+libgl1-mesa-dri set to manually installed.
+The following package was automatically installed and is no longer required:
+  libgeos-3.2.2
+Use 'apt-get autoremove' to remove them.
+The following NEW packages will be installed:
+  xfonts-100dpi xfonts-75dpi xfonts-cyrillic
+0 upgraded, 3 newly installed, 0 to remove and 125 not upgraded.
+Need to get 7,761 kB of archives.
+After this operation, 10.2 MB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ precise/universe xfonts-100dpi all 1:1.0.3 [3,908 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu/ precise/universe xfonts-75dpi all 1:1.0.3 [3,464 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu/ precise/universe xfonts-cyrillic all 1:1.0.3 [389 kB]
+Fetched 7,761 kB in 0s (18.7 MB/s)
+Selecting previously unselected package xfonts-100dpi.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 73248 files and directories currently installed.)
+Unpacking xfonts-100dpi (from .../xfonts-100dpi_1%3a1.0.3_all.deb) ...
+Selecting previously unselected package xfonts-75dpi.
+Unpacking xfonts-75dpi (from .../xfonts-75dpi_1%3a1.0.3_all.deb) ...
+Selecting previously unselected package xfonts-cyrillic.
+Unpacking xfonts-cyrillic (from .../xfonts-cyrillic_1%3a1.0.3_all.deb) ...
+Processing triggers for fontconfig ...
+Setting up xfonts-100dpi (1:1.0.3) ...
+Setting up xfonts-75dpi (1:1.0.3) ...
+Setting up xfonts-cyrillic (1:1.0.3) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+x11-utils is already the newest version.
+x11-utils set to manually installed.
+xvfb is already the newest version.
+The following package was automatically installed and is no longer required:
+  libgeos-3.2.2
+Use 'apt-get autoremove' to remove them.
+The following extra packages will be installed:
+  xbitmaps
+Suggested packages:
+  mesa-utils
+The following NEW packages will be installed:
+  x11-apps xbitmaps
+The following packages will be upgraded:
+  dbus-x11
+1 upgraded, 2 newly installed, 0 to remove and 124 not upgraded.
+Need to get 778 kB of archives.
+After this operation, 2,536 kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main dbus-x11 amd64 1.4.18-1ubuntu1.6 [22.0 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu/ precise/main x11-apps amd64 7.6+5ubuntu1 [729 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu/ precise/main xbitmaps all 1.1.1-1 [27.5 kB]
+Fetched 778 kB in 0s (4,951 kB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 74080 files and directories currently installed.)
+Preparing to replace dbus-x11 1.4.18-1ubuntu1.5 (using .../dbus-x11_1.4.18-1ubuntu1.6_amd64.deb) ...
+Unpacking replacement dbus-x11 ...
+Selecting previously unselected package x11-apps.
+Unpacking x11-apps (from .../x11-apps_7.6+5ubuntu1_amd64.deb) ...
+Selecting previously unselected package xbitmaps.
+Unpacking xbitmaps (from .../xbitmaps_1.1.1-1_all.deb) ...
+Processing triggers for man-db ...
+Setting up dbus-x11 (1.4.18-1ubuntu1.6) ...
+Setting up x11-apps (7.6+5ubuntu1) ...
+Setting up xbitmaps (1.1.1-1) ...
