@@ -14,7 +14,7 @@ env:
     - timeout_record=60
     - timeout_task=7
     - dir_log=/tmp/log
-    - mute_err=true
+    - mute_err=false
     - mute_out=true
 
 matrix:
