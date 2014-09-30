@@ -1,12 +1,13 @@
 
 #https://gist.github.com/holms/7009218
-
+set -x
+#st
 # Add multimedia source
 echo "deb http://www.deb-multimedia.org wheezy main non-free" | sudo tee -a /etc/apt/sources.list
 echo "deb-src http://www.deb-multimedia.org wheezy main non-free"  | sudo tee -a /etc/apt/sources.list
-apt-get update
-apt-get install deb-multimedia-keyring # if this aborts, try again
-apt-get update
+sudo apt-get update
+sudo apt-get install deb-multimedia-keyring # if this aborts, try again
+#apt-get update
  
 # Go to local source directory
 cd /usr/local/src
@@ -30,7 +31,7 @@ aptitude install \
   checkinstall
  
 # Install all build dependencies for ffmpeg
-apt-get build-dep ffmpeg
+sudo apt-get build-dep ffmpeg
  
 # Get the actual ffmpeg source code
 apt-get source ffmpeg
