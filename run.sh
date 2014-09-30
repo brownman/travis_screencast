@@ -38,7 +38,8 @@ eval "$cmd"
 }
 
 source $dir_root/config.cfg
+steps_for_config
 source $dir_root/config_ffmpeg.cfg
 
-steps_for_config
+
 eval "task $filename_init"
