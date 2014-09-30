@@ -7,6 +7,7 @@ cache: apt
 env:
   global:
     - source ./config_travis.cfg
+    - type set_env
     - set_env
 
 
