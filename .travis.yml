@@ -19,7 +19,7 @@ branches:
     - develop
     
 before_install:
-  - before_install1
+  - before_install
 
   
 install:
