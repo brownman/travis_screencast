@@ -17,8 +17,8 @@ env:
     - mute_err=false
     - mute_out=true
 
-matrix:
-  fast_finish: true
+#matrix:
+#  fast_finish: true
   
 # whitelist
 branches:
@@ -35,3 +35,32 @@ install:
   - ./run.sh install_ffmpeg
   - ./run.sh install_deps
    # - ./run.sh install_ppa
+
+
+
+
+before_script:
+  - export DISPLAY=:99
+  - export SCREEN="0 ${WIDTH}x${HEIGHT}x${COLORS}"
+  - sh -e /etc/init.d/xvfb start
+  - dbus-launch pulseaudio --start
+
+script:
+  - ./run.sh debug_screen
+  - ./run.sh tests &
+  - ./run.sh record
+  - echo ./ffmpeg.sh convert
+  
+after_script:
+  - echo finish recording
+
+after_success:
+  - ./run.sh push_to_github
+
+
+after_failure:
+  - echo failure
+ # - ./run.sh push_to_github
+
+#http://www.jedi.be/blog/2010/08/30/capturing-the-screen-of-your-virtual-machines-using-x-vnc-rdp-or-native/
+
