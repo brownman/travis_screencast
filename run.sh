@@ -1,7 +1,7 @@
 #!/bin/bash
 shopt -s expand_aliases
 filename_init="$1"
-
+ 
 #
 if [ $mute_err = true ];then
     exec 2>  /tmp/log/${filename_init}.err
