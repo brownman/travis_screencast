@@ -17,8 +17,8 @@ env:
     - mute_err=false
     - mute_out=true
 
-#matrix:
-#  fast_finish: true
+matrix:
+   fast_finish: true
   
 # whitelist
 branches:
