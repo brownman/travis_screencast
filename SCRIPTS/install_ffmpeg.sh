@@ -45,7 +45,7 @@ wget http://downloads.xiph.org/releases/opus/opus-1.1.tar.gz
 tar xzvf opus-1.1.tar.gz
 cd opus-1.1
 ./configure --prefix="$HOME/ffmpeg_build" --disable-shared
-make 1>$dir_log/make_ffmpeg.out 2>$dir_log/make_ffmpeg.err
+make
 make install
 make distclean
 }
@@ -84,8 +84,7 @@ commander ./configure \
   --bindir="$HOME/bin" $OPTIONS1
 
   
-#PATH="$PATH:$HOME/bin"
-commander make
+ commander make  1>$dir_log/make_ffmpeg.out 2>$dir_log/make_ffmpeg.err
 commander make install
 commander make distclean
 commander hash -r
