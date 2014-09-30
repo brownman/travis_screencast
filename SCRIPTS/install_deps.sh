@@ -1,8 +1,8 @@
 
 $cmd_trap_err
 
-#sudo apt-get update -qq
-#sudo apt-get install -qq recordmydesktop 
+sudo apt-get update -qq
+sudo apt-get install -qq recordmydesktop 
 
 
 install libgtk2.0-0 xcowsay libnotify-bin imagemagick
