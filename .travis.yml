@@ -19,7 +19,6 @@ branches:
     
 before_install:
   - source ./config_travis.cfg
-  - type set_env
   - set_env
   - before_install
 
