@@ -20,7 +20,7 @@ env:
 matrix:
   fast_finish: true
   
-# whitelistם
+# whitelist
 branches:
   only:
     - develop
