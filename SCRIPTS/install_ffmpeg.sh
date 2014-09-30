@@ -74,19 +74,25 @@ commander./configure \
   --enable-libx264 \
   --enable-nonfree \
   --enable-x11grab
-PATH="$PATH:$HOME/bin"
+#PATH="$PATH:$HOME/bin"
 make
 commander make install
 make distclean
 hash -r
 }
 
+validate(){
+sudo apt-get install tree
+tree $HOME/ffmpeg_build
+commander whereis ffmpeg
+ffmpeg
+}
 
 steps(){
 pre
 manual
 compile
+validate
 }
 
 steps
-commander whereis ffmpeg
