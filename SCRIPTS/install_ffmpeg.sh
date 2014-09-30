@@ -43,7 +43,7 @@ wget http://downloads.xiph.org/releases/opus/opus-1.1.tar.gz
 tar xzvf opus-1.1.tar.gz
 cd opus-1.1
 ./configure --prefix="$HOME/ffmpeg_build" --disable-shared
-make
+make > $dir_log/make_ffmpeg.log
 make install
 make distclean
 }
