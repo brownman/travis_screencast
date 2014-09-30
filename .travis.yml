@@ -25,8 +25,7 @@ before_install:
 
   
 install:
-  - install
-   # - ./run.sh install_ppa
+  - install1
 
 
 
