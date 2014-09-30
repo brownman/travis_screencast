@@ -57,7 +57,7 @@ commander cd ffmpeg
 PATH="$PATH:$HOME/bin" 
 PKG_CONFIG_PATH="$HOME/ffmpeg_build/lib/pkgconfig" 
 
-commander./configure \
+commander ./configure \
   --prefix="$HOME/ffmpeg_build" \
   --extra-cflags="-I$HOME/ffmpeg_build/include" \
   --extra-ldflags="-L$HOME/ffmpeg_build/lib" \
