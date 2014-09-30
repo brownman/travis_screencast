@@ -81,7 +81,7 @@ commander ./configure \
   --prefix="$HOME/ffmpeg_build" \
   --extra-cflags="-I$HOME/ffmpeg_build/include" \
   --extra-ldflags="-L$HOME/ffmpeg_build/lib" \
-  --bindir="$HOME/bin" $OPTIONS1
+  --bindir="$HOME/bin" $OPTIONS
 
   
  commander make  # 2>$dir_log/make_ffmpeg.err 
@@ -112,5 +112,6 @@ commander compile
 commander validate
 }
 
-MODE_SIMPLE=true
+MODE_SIMPLE=false
+OPTIONS='$OPTION2'
 steps
