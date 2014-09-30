@@ -52,8 +52,10 @@ compile(){
 cd ~/ffmpeg_sources
 wget http://ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2
 tar xjvf ffmpeg-snapshot.tar.bz2
-cd ffmpeg
-PATH="$PATH:$HOME/bin" PKG_CONFIG_PATH="$HOME/ffmpeg_build/lib/pkgconfig" 
+commander cd ffmpeg
+
+PATH="$PATH:$HOME/bin" 
+PKG_CONFIG_PATH="$HOME/ffmpeg_build/lib/pkgconfig" 
 
 commander./configure \
   --prefix="$HOME/ffmpeg_build" \
@@ -87,3 +89,4 @@ compile
 }
 
 steps
+commander whereis ffmpeg
