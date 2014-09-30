@@ -1,6 +1,7 @@
 #$cmd_trap_err
-set -e
-set -x
+
+$cmd_trap_err
+type trap_err
 
 pre(){
 sudo apt-get update
