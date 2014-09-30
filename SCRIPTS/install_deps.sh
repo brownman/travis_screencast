@@ -1,15 +1,17 @@
 
-$cmd_trap_err
 
 sudo apt-get update -qq
-sudo apt-get install -qq recordmydesktop 
+sudo apt-get install -qq
+
+#screencast
+#recordmydesktop espeak mbrola-us2
 
 
 install libgtk2.0-0 xcowsay libnotify-bin imagemagick
 
 
 #audio
-install  libpulse-dev pulseaudio espeak mbrola-us2 pulseaudio-utils
+install  libpulse-dev pulseaudio  pulseaudio-utils
 
 
 #font
