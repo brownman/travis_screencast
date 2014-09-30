@@ -7,6 +7,7 @@ cache: apt
 env:
   global:
     - source ./config_travis.cfg
+    - set_env
 
 
 matrix:
@@ -18,41 +19,31 @@ branches:
     - develop
     
 before_install:
-  - mkdir $dir_log
-  - chmod u+x ./SCRIPTS/*.sh
-  - chmod u+x *.sh
-  - ./run.sh library
-  - ./run.sh install_ffmpeg
+  - before_install
 
   
 install:
-  - ./run.sh install_deps
+  - install
    # - ./run.sh install_ppa
 
 
 
 
 before_script:
-  - export DISPLAY=:99
-  - export SCREEN="0 ${WIDTH}x${HEIGHT}x${COLORS}"
-  - sh -e /etc/init.d/xvfb start
-  - dbus-launch pulseaudio --start
+  - before_script
 
 script:
-  - ./run.sh debug_screen
-  - ./run.sh tests &
-  - ./run.sh record
-  - echo ./ffmpeg.sh convert
+  - script
   
 after_script:
-  - echo finish recording
+  - after_script
 
 after_success:
-  - ./run.sh push_to_github
+  - after_success
 
 
 after_failure:
-  - echo failure
+  - after_failure
  # - ./run.sh push_to_github
 
 #http://www.jedi.be/blog/2010/08/30/capturing-the-screen-of-your-virtual-machines-using-x-vnc-rdp-or-native/
