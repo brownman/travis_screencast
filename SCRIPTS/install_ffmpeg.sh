@@ -1,5 +1,6 @@
 #$cmd_trap_err
 set -e
+set -x
 
 pre(){
 sudo apt-get update
