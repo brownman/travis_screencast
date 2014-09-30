@@ -73,16 +73,13 @@ OPTIONS2='--enable-gpl \
   
   #--enable-libopus \
   
-  OPTIONS1='--enable-gpl \
-  --enable-nonfree \
-  --enable-x11grab'
+  OPTIONS1='--enable-gpl   --enable-nonfree    --enable-x11grab'
 
-commander ./configure \
+./configure \
   --prefix="$HOME/ffmpeg_build" \
   --extra-cflags="-I$HOME/ffmpeg_build/include" \
   --extra-ldflags="-L$HOME/ffmpeg_build/lib" \
-  --bindir="$HOME/bin" \
-  $OPTIONS1
+  --bindir="$HOME/bin" $OPTIONS1
 
   
 #PATH="$PATH:$HOME/bin"
