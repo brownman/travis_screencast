@@ -57,12 +57,7 @@ commander cd ffmpeg
 PATH="$PATH:$HOME/bin" 
 PKG_CONFIG_PATH="$HOME/ffmpeg_build/lib/pkgconfig" 
 
-commander ./configure \
-  --prefix="$HOME/ffmpeg_build" \
-  --extra-cflags="-I$HOME/ffmpeg_build/include" \
-  --extra-ldflags="-L$HOME/ffmpeg_build/lib" \
-  --bindir="$HOME/bin" \
-  --enable-gpl \
+OPTIONS='--enable-gpl \
   --enable-libass \
   --enable-libfdk-aac \
   --enable-libfreetype \
@@ -73,7 +68,16 @@ commander ./configure \
   --enable-libvpx \
   --enable-libx264 \
   --enable-nonfree \
-  --enable-x11grab
+  --enable-x11grab'
+
+commander ./configure \
+  --prefix="$HOME/ffmpeg_build" \
+  --extra-cflags="-I$HOME/ffmpeg_build/include" \
+  --extra-ldflags="-L$HOME/ffmpeg_build/lib" \
+  --bindir="$HOME/bin" \
+  $OPTIONS
+
+  
 #PATH="$PATH:$HOME/bin"
 make
 commander make install
