@@ -1,6 +1,4 @@
-$cmd_trap_err
-$cmd_trap_exit
- 
+
 
 pre(){
 sudo apt-get update
