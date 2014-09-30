@@ -101,9 +101,13 @@ ffmpeg
 
 steps(){
 pre
+if [ $MODE_SIMPLE = false ];then
 manual
+fi
+
 compile
 validate
 }
 
+MODE_SIMPLE=true
 steps
