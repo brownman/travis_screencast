@@ -49,13 +49,13 @@ make distclean
 }
 
 compile(){
+  #https://github.com/charleshross/soarin/wiki/Setup-FFMPEG
 cd ~/ffmpeg_sources
 wget http://ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2
 tar xjvf ffmpeg-snapshot.tar.bz2
 commander cd ffmpeg
 
-PATH="$PATH:$HOME/bin" 
-PKG_CONFIG_PATH="$HOME/ffmpeg_build/lib/pkgconfig" 
+  
 
 OPTIONS2='--enable-gpl \
   --enable-libass \
