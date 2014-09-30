@@ -1,7 +1,7 @@
 #http://superuser.com/questions/540391/x-error-of-failed-request-badcursor-invalid-cursor-parameter-when-recording-x  
 
 
-language: bash 
+language: ruby 
 cache: apt
 
 env:
