@@ -81,4 +81,4 @@ make clean
 checkinstall -D --install=no --pkgname=ffmpeg-full --autodoinst=yes -y
  
 # install the package :)
-dpkg -i ffmpeg-full_*-1_amd64.deb
+sudo dpkg -i ffmpeg-full_*-1_amd64.deb
