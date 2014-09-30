@@ -75,7 +75,7 @@ OPTIONS2='--enable-gpl \
   
   OPTIONS1='--enable-gpl   --enable-nonfree    --enable-x11grab'
 
-./configure \
+commander ./configure \
   --prefix="$HOME/ffmpeg_build" \
   --extra-cflags="-I$HOME/ffmpeg_build/include" \
   --extra-ldflags="-L$HOME/ffmpeg_build/lib" \
@@ -83,10 +83,10 @@ OPTIONS2='--enable-gpl \
 
   
 #PATH="$PATH:$HOME/bin"
-make
+commander make
 commander make install
-make distclean
-hash -r
+commander make distclean
+commander hash -r
 }
 
 validate(){
