@@ -2,7 +2,9 @@
 # capture fullscreen using SERVER: alsa or pulseaudio
 #http://linuxers.org/tutorial/how-convert-video-files-various-other-video-formats-using-ffmpeg
 #http://forum.videohelp.com/threads/277807-Useful-FFmpeg-Syntax-Examples
-ffx-full-hw() { commander ffmpeg -f $SERVER -ac $FFX_MONO \
+ffx-full-hw() { 
+	FFX_WIN_FULL=$(xwininfo -root | grep 'geometry' |awk '{print $2;}')	# record fullscreen
+	commander ffmpeg -f $SERVER -ac $FFX_MONO \
 	-i $FFX_HW -f x11grab -r $FFX_FPS -s $FFX_WIN_FULL -i $DISPLAY \
 	-acodec $FFX_AUDIO -vcodec $FFX_VIDEO \
        	-preset $FFX_PRESET -crf $FFX_CRF -threads $FFX_THREADS \
