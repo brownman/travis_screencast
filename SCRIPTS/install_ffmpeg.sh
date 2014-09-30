@@ -84,7 +84,7 @@ commander ./configure \
   --bindir="$HOME/bin" $OPTIONS1
 
   
- commander make   2>$dir_log/make_ffmpeg.err 
+ commander make  # 2>$dir_log/make_ffmpeg.err 
  #1>$dir_log/make_ffmpeg.out
 commander make install
 commander make distclean
@@ -96,6 +96,7 @@ sudo apt-get install tree
 tree $HOME/ffmpeg_build
 commander whereis ffmpeg
 ffmpeg
+ffmpeg -version
 }
 
 steps(){
