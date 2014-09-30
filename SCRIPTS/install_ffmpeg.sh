@@ -84,7 +84,8 @@ commander ./configure \
   --bindir="$HOME/bin" $OPTIONS1
 
   
- commander make  1>$dir_log/make_ffmpeg.out 2>$dir_log/make_ffmpeg.err
+ commander make   2>$dir_log/make_ffmpeg.err 
+ #1>$dir_log/make_ffmpeg.out
 commander make install
 commander make distclean
 commander hash -r
