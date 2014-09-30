@@ -16,3 +16,22 @@ env:
     - dir_log=/tmp/log
     - mute_err=false
     - mute_out=true
+
+matrix:
+  fast_finish: true
+  
+# whitelistם
+branches:
+  only:
+    - develop
+    
+before_install:
+  - mkdir $dir_log
+  - chmod u+x ./SCRIPTS/*.sh
+  - chmod u+x *.sh
+  - ./run.sh library
+  
+install:
+  - ./run.sh install_ffmpeg
+  - ./run.sh install_deps
+   # - ./run.sh install_ppa
