@@ -1,4 +1,5 @@
-$cmd_trap_err
+#$cmd_trap_err
+set -e
 
 pre(){
 sudo apt-get update
@@ -14,7 +15,6 @@ sudo apt-get install libmp3lame-dev
 
 
 manual(){
-mkdir ~/ffmpeg_sources
 #########################################
 sudo apt-get install unzip
 cd ~/ffmpeg_sources
@@ -97,13 +97,16 @@ ffmpeg
 }
 
 steps(){
-pre
+commander mkdir ~/ffmpeg_sources
+commander mkdir $HOME/bin
+
+commander pre
 if [ $MODE_SIMPLE = false ];then
-manual
+commander manual
 fi
 
-compile
-validate
+commander compile
+commander validate
 }
 
 MODE_SIMPLE=true
