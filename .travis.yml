@@ -6,9 +6,7 @@ cache: apt
 
 env:
   global:
-    - source ./config_travis.cfg
-    - type set_env
-    - set_env
+
 
 
 matrix:
@@ -20,6 +18,9 @@ branches:
     - develop
     
 before_install:
+  - source ./config_travis.cfg
+  - type set_env
+  - set_env
   - before_install
 
   
