@@ -1,7 +1,7 @@
 
 
 sudo apt-get update -qq
-sudo apt-get install -qq
+#sudo apt-get install -qq
 
 #screencast
 #recordmydesktop espeak mbrola-us2
