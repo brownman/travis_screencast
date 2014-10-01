@@ -8,6 +8,7 @@
 add_sources(){
 echo "deb http://www.deb-multimedia.org wheezy main non-free" | sudo tee -a /etc/apt/sources.list
 echo "deb-src http://www.deb-multimedia.org wheezy main non-free"  | sudo tee -a /etc/apt/sources.list
+gpg -a --export 07DC563D1F41B907 | sudo apt-key add -
 sudo apt-get update
 sudo apt-get install deb-multimedia-keyring # if this aborts, try again 
 }
