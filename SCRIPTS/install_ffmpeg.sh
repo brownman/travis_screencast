@@ -48,10 +48,9 @@ install_from_source(){
 
 git clone --depth 1 git://source.ffmpeg.org/ffmpeg
 cd ffmpeg
-./configure --enable-shared  --enable-gpl
-#--enable-libx264
-make
-make install
+commander ./configure --enable-shared  --enable-gpl --enable-libx264
+commander make
+commander make install
 
 }
 # a fix
