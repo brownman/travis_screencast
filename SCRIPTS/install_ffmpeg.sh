@@ -3,7 +3,7 @@
 #https://help.ubuntu.com/community/CompilingSoftware
 #http://www.zoharbabin.com/build-and-install-ffmpeg-and-x264-on-debian-squeeze-the-dumb-guide/
 
-set -e
+#set -e
 
 add_sources(){
 echo "deb http://www.deb-multimedia.org wheezy main non-free" | sudo tee -a /etc/apt/sources.list
