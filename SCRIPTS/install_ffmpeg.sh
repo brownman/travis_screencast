@@ -1,6 +1,7 @@
 
 #https://gist.github.com/holms/7009218
 #https://help.ubuntu.com/community/CompilingSoftware
+set -e
 install checkinstall
  #st
 # Add multimedia source
@@ -30,7 +31,7 @@ sudo apt-get install \
 sudo apt-get build-dep ffmpeg
  
 # Get the actual ffmpeg source code
-sudo apt-get source ffmpeg
+apt-get source ffmpeg
 # Go into the ffmpeg source directory
 cd ffmpeg-*
 # Configure it
@@ -58,7 +59,7 @@ cd ffmpeg-*
 mkdir -p /usr/local/share/ffmpeg 
  
 # Generate the debian package (*.deb)
-commander checkinstall -D --install=no --pkgname=ffmpeg-full --autodoinst=yes -y
+#commander checkinstall -D --install=no --pkgname=ffmpeg-full --autodoinst=yes -y
  
 # if after this step you'll probably will get an error
 # libavcodec/libx264.c:492: undefined reference to `x264_encoder_open_125'
