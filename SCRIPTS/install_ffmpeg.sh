@@ -1,5 +1,7 @@
 
 #https://gist.github.com/holms/7009218
+#https://help.ubuntu.com/community/CompilingSoftware
+install checkinstall
  #st
 # Add multimedia source
 echo "deb http://www.deb-multimedia.org wheezy main non-free" | sudo tee -a /etc/apt/sources.list
