@@ -115,4 +115,6 @@ commander checkinstall -D --install=no --pkgname=ffmpeg-full --autodoinst=yes -y
 commander sudo dpkg -i ffmpeg-full_*-1_amd64.deb
 }
 
+
+commander add_sources
 commander install_from_source
