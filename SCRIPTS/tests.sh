@@ -55,6 +55,9 @@ paplay <(espeak -vmb-us2  "Much better now" --stdout)
 sleep 2
 paplay <(espeak -vmb-us2  "I have to go. See you next build!" --stdout)
 }
+test_cow(){
+  xcowsay -t 10 'hello world'
+}
 #export DISPLAY=:99
 #eval "export DISPLAY=:99.0"
 print color 33 "DISPLAY: $DISPLAY"
