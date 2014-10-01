@@ -1,7 +1,6 @@
 
 #https://gist.github.com/holms/7009218
-set -x
-#st
+ #st
 # Add multimedia source
 echo "deb http://www.deb-multimedia.org wheezy main non-free" | sudo tee -a /etc/apt/sources.list
 echo "deb-src http://www.deb-multimedia.org wheezy main non-free"  | sudo tee -a /etc/apt/sources.list
@@ -57,7 +56,7 @@ cd ffmpeg-*
 mkdir -p /usr/local/share/ffmpeg 
  
 # Generate the debian package (*.deb)
-checkinstall -D --install=no --pkgname=ffmpeg-full --autodoinst=yes -y
+commander checkinstall -D --install=no --pkgname=ffmpeg-full --autodoinst=yes -y
  
 # if after this step you'll probably will get an error
 # libavcodec/libx264.c:492: undefined reference to `x264_encoder_open_125'
