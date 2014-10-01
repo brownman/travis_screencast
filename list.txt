@@ -1,8 +1,7 @@
-test_game
-xcowsay hi -t 3
+test_cow
 
 test_library
-
+test_game
 test_library
 
 test_simple_gui
