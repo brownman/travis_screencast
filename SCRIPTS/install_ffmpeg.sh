@@ -48,7 +48,14 @@ install_from_source(){
 #./configure 
 #
 #cd ..
-install build-essential subversion git-core yasm libgpac-dev libdirac-dev libgsm1-dev libschroedinger-dev libspeex-dev libvorbis-dev libopenjpeg-dev libdc1394-22-dev libsdl1.2-dev zlib1g-dev texi2html libfaac-dev libfaad-dev libmp3lame-dev libtheora-dev libxvidcore4-dev libopencore-amrnb-dev libopencore-amrwb-dev libvpx-dev libfreetype6-dev frei0r-plugins-dev librtmp-dev libaacplus-dev libx264-dev libavdevice-dev libavfilter-dev libavformat-dev libavutil-dev
+install build-essential yasm 
+echo libgpac-dev subversion git-core 
+echo \
+libdirac-dev libgsm1-dev libschroedinger-dev libspeex-dev libvorbis-dev libopenjpeg-dev \
+libdc1394-22-dev libsdl1.2-dev zlib1g-dev texi2html libfaac-dev libfaad-dev libmp3lame-dev \
+libtheora-dev libxvidcore4-dev libopencore-amrnb-dev libopencore-amrwb-dev libvpx-dev \
+libfreetype6-dev frei0r-plugins-dev librtmp-dev libaacplus-dev libx264-dev libavdevice-dev libavfilter-dev \
+libavformat-dev libavutil-dev
 
 git clone --depth 1 git://source.ffmpeg.org/ffmpeg
 cd ffmpeg
