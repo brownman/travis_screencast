@@ -4,7 +4,11 @@
 #http://www.zoharbabin.com/build-and-install-ffmpeg-and-x264-on-debian-squeeze-the-dumb-guide/
 
 #set -e
-$cmd_trap_err
+trap_err(){
+ print func
+ exit 1
+}
+trap trap_err ERR
 
 add_sources(){
 echo "deb http://www.deb-multimedia.org wheezy main non-free" | sudo tee -a /etc/apt/sources.list
