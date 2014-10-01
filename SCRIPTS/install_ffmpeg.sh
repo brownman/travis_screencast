@@ -11,11 +11,6 @@ sudo apt-get install deb-multimedia-keyring # if this aborts, try again
  
 # Go to local source directory
 cd /usr/local/src
- 
-# Become root
-su -
- 
-# Install all dependencies we'll need
 aptitude install \
   -y                  \
   libfaad-dev         \
@@ -34,11 +29,9 @@ aptitude install \
 sudo apt-get build-dep ffmpeg
  
 # Get the actual ffmpeg source code
-apt-get source ffmpeg
- 
+sudo apt-get source ffmpeg
 # Go into the ffmpeg source directory
 cd ffmpeg-*
- 
 # Configure it
 ./configure \
 --enable-gpl \
@@ -71,15 +64,20 @@ checkinstall -D --install=no --pkgname=ffmpeg-full --autodoinst=yes -y
 # here's a solution:
 cd ..
 apt-get remove x264
-git clone git://git.videolan.org/x264.git
+git clone --depth=1 git://git.videolan.org/x264.git
 cd x264
 ./configure --enable-static --enable-shared
 make && make install
 ldconfig
 cd .. && cd ffmpeg*
-LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/src/x264/libx264.a ./configure --enable-gpl --enable-nonfree --enable-libfaac --enable-libgsm --enable-libmp3lame --enable-libtheora --enable-libvorbis --enable-libx264 --enable-libxvid --enable-zlib --enable-postproc --enable-swscale --enable-pthreads --enable-x11grab --enable-libdc1394 --enable-version3 --enable-libopencore-amrnb --enable-libopencore-amrwb
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/src/x264/libx264.a ./configure --enable-gpl \
+--enable-nonfree --enable-libfaac --enable-libgsm --enable-libmp3lame \
+--enable-libtheora --enable-libvorbis --enable-libx264 --enable-libxvid --enable-zlib \
+--enable-postproc --enable-swscale --enable-pthreads --enable-x11grab --enable-libdc1394 --enable-version3 \
+--enable-libopencore-amrnb --enable-libopencore-amrwb
+
 make clean
-checkinstall -D --install=no --pkgname=ffmpeg-full --autodoinst=yes -y
+commander checkinstall -D --install=no --pkgname=ffmpeg-full --autodoinst=yes -y
  
 # install the package :)
-sudo dpkg -i ffmpeg-full_*-1_amd64.deb
+commander sudo dpkg -i ffmpeg-full_*-1_amd64.deb
