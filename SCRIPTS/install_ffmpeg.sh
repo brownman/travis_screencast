@@ -10,7 +10,7 @@ sudo apt-get install deb-multimedia-keyring # if this aborts, try again
  
 # Go to local source directory
 cd /usr/local/src
-aptitude install \
+sudo apt-get install \
   -y                  \
   libfaad-dev         \
   faad                \
