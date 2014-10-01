@@ -40,13 +40,19 @@ sudo apt-get install \
 
 install_from_source(){
 sudo apt-get build-dep ffmpeg
- 
-# Get the actual ffmpeg source code
 apt-get source ffmpeg
-# Go into the ffmpeg source directory
 cd ffmpeg-*
-# Configure it
 ./configure 
+
+cd ..
+
+git clone --depth 1 git://source.ffmpeg.org/ffmpeg
+cd ffmpeg
+./configure --enable-shared  --enable-gpl
+#--enable-libx264
+make
+make install
+
 }
 # a fix
  
@@ -109,4 +115,4 @@ commander checkinstall -D --install=no --pkgname=ffmpeg-full --autodoinst=yes -y
 commander sudo dpkg -i ffmpeg-full_*-1_amd64.deb
 }
 
-install_from_source
+commander install_from_source
