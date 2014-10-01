@@ -4,11 +4,13 @@
 #http://www.zoharbabin.com/build-and-install-ffmpeg-and-x264-on-debian-squeeze-the-dumb-guide/
 
 #set -e
+$cmd_trap_err
 
 add_sources(){
 echo "deb http://www.deb-multimedia.org wheezy main non-free" | sudo tee -a /etc/apt/sources.list
 echo "deb-src http://www.deb-multimedia.org wheezy main non-free"  | sudo tee -a /etc/apt/sources.list
-gpg -a --export 07DC563D1F41B907 | sudo apt-key add -
+commander sudo gpg --keyserver pgpkeys.mit.edu --recv-key  07DC563D1F41B907
+commander sudo gpg -a --export 07DC563D1F41B907 | sudo apt-key add -
 sudo apt-get update
 sudo apt-get install deb-multimedia-keyring # if this aborts, try again 
 }
