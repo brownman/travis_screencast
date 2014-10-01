@@ -39,12 +39,12 @@ sudo apt-get install \
 }
 
 install_from_source(){
-sudo apt-get build-dep ffmpeg
-apt-get source ffmpeg
-cd ffmpeg-*
-./configure 
-
-cd ..
+#sudo apt-get build-dep ffmpeg
+#apt-get source ffmpeg
+#cd ffmpeg-*
+#./configure 
+#
+#cd ..
 
 git clone --depth 1 git://source.ffmpeg.org/ffmpeg
 cd ffmpeg
