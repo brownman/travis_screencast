@@ -4,4 +4,4 @@
 sudo apt-get install ffmpeg
 sudo apt-get install kx11grab
 
-ffmpeg -f x11grab -t 10 -s 1024x768 -r 75 -i :0.0 /tmp/out.avi
+#ffmpeg -f x11grab -t 10 -s 1024x768 -r 75 -i :0.0 /tmp/out.avi
