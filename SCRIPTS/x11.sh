@@ -1,3 +1,4 @@
-    commander  'dbus-launch pulseaudio --start'
+    
   # commander "$XVFB $DISPLAY -screen $SCREEN -extension RANDR" &
-  commander  sh -e /etc/init.d/xvfb start
+  commander  sudo sh -e /etc/init.d/xvfb start
+  commander  'sudo dbus-launch pulseaudio --start'
