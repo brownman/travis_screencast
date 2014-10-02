@@ -21,4 +21,4 @@ steps:
 
  
 
-[links](./wiki/links.md)
+[update wiki](https://github.com/brownman/travis_screencast/edit/develop/wiki/links.md)
