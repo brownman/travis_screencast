@@ -1,0 +1,10 @@
+export AUDIODEV=null
+[H[2J[CMD] find * -type f | grep -v .old >$file
+[ /tmp/target ] [LINES] 227
+
+
+
+
+
+
+

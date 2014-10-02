@@ -1,0 +1,20 @@
+build/632:
+total 0
+drwxrwxr-x 2 travis travis 200 Oct  2 14:46 log
+drwxrwxr-x 2 travis travis  60 Oct  2 14:46 media
+-rw-rw-r-- 1 travis travis   0 Oct  2 14:46 log.txt
+
+build/632/log:
+total 104
+-rw-rw-r-- 1 travis travis 62876 Oct  2 14:45 install_ffmpeg.out
+-rw-rw-r-- 1 travis travis 12930 Oct  2 14:45 install_deps.out
+-rw-rw-r-- 1 travis travis   170 Oct  2 14:46 debug_screen.out
+-rw-rw-r-- 1 travis travis   106 Oct  2 14:44 install_library.out
+-rw-rw-r-- 1 travis travis    43 Oct  2 14:45 x11.out
+-rw-rw-r-- 1 travis travis    29 Oct  2 14:46 push_to_github.out
+-rw-rw-r-- 1 travis travis     3 Oct  2 14:46 tests.out
+-rw-rw-r-- 1 travis travis     2 Oct  2 14:46 record.out
+
+build/632/media:
+total 20
+-rw-rw-r-- 1 travis travis 17226 Oct  2 14:46 session.png
