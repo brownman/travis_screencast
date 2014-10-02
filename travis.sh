@@ -2,7 +2,7 @@
 step(){
   set -e
   local cmd=$1
-  echo  $cmd
+  echo  "[Cmd] $cmd"
   eval "$cmd"
 }
 
