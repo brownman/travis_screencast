@@ -2,7 +2,8 @@
 step(){
   set -e
   local cmd=$1
-  commander $cmd
+  echo  $cmd
+  eval "$cmd"
 }
 
 steps_for_travis(){
