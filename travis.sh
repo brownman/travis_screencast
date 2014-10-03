@@ -4,7 +4,8 @@ export dir_root=$(cd $(dirname $0) && pwd )
 
 step(){
   set -e
-  local cmd=$1
+  set -u
+  local cmd="$@"
   echo  "[STEP] $cmd"
   eval "$cmd"
 }
@@ -18,7 +19,7 @@ steps_for_travis(){
   print ok
   
   source $dir_root/CFG/helper.cfg
-    source $dir_root/CFG/export.cfg
+  source $dir_root/CFG/export.cfg
 
   $dir_root/INSTALL/depend.sh
 }
