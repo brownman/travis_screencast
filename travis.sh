@@ -1,5 +1,5 @@
 export dir_root=$(cd $(dirname $0) && pwd )
-source $dir_root/CFG/config_travis.cfg
+source $dir_root/CFG/travis.cfg
 
 
 step(){
