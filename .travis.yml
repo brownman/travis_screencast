@@ -19,14 +19,17 @@ branches:
     - develop
     
 before_install:
+  - echo before_install
+
+  
+
+  
+install:
   - echo let us start
   - chmod u+x *.sh . -R
   - ./travis.sh
   
 
-  
-install:
-  - echo install1
 
 before_script:
   - echo before_script
