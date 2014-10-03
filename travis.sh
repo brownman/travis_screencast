@@ -3,7 +3,7 @@ export dir_root=$(cd $(dirname $0) && pwd )
 
 
 try(){
-  set -e
+ # set -e
   set -u
   local cmd="$@"
   echo  "[STEP] $cmd"
