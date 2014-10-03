@@ -3,19 +3,15 @@ export dir_root=$(cd $(dirname $0) && pwd )
 
 
 try(){
- set -e
   set -u
   local cmd="$@"
   local res
   echo  "[STEP] $cmd"
-  eval "$cmd" 1>/dev/null 2>/tmp/err 
-  res=$?
-  test $res -eq 0 || ( cat /tmp/err )
-  indicator $?
+  eval "$cmd" 1>/dev/null 2>/tmp/err | ( indicator; cat /tmp/err )|
 }
 
 steps_for_travis(){
- set -e
+ 
   #set_env1
   #before_install &&  step install1
   #step before_script &&   step script1 &&    step after_script &&   step after_success ||   step after_failure
