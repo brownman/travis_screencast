@@ -20,7 +20,7 @@ branches:
     
 before_install:
   - echo let us start
-  - chmod u+x ./travis.sh
+  - chmod u+x -R *.sh
   - ./travis.sh
   
 
