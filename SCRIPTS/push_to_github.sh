@@ -43,7 +43,7 @@ fi
 }
 steps(){
 #validate_products && 
-assert file_exist $file_product_cover
+#assert file_exist $file_product_cover
 #assert file_has_content $file_product
 upload
 }
