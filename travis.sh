@@ -2,7 +2,7 @@ export dir_root=$(cd $(dirname $0) && pwd )
 #source $dir_root/CFG/travis.cfg
 
 
-step(){
+try(){
   set -e
   set -u
   local cmd="$@"
@@ -19,10 +19,10 @@ steps_for_travis(){
   source /tmp/library.cfg
   print ok
   
- step source $dir_root/CFG/helper.cfg
-step  source $dir_root/CFG/exports.cfg
-step  exports
- step  $dir_root/INSTALL/update.sh
- step $dir_root/INSTALL/depend.sh
+ try source $dir_root/CFG/helper.cfg
+try  source $dir_root/CFG/exports.cfg
+try  exports
+ try  $dir_root/INSTALL/update.sh
+ try $dir_root/INSTALL/depend.sh
 }
 steps_for_travis
