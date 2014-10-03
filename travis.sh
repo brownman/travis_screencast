@@ -16,5 +16,8 @@ steps_for_travis(){
   $dir_root/INSTALL/library.sh
   source /tmp/library.cfg
   print ok
+  
+  source $dir_root/CFG/helper.cfg
+  $dir_root/INSTALL/depend.sh
 }
 steps_for_travis
