@@ -35,7 +35,7 @@ commander  git clone --depth=1 --quiet --branch=gh-pages https://${GH_TOKEN}@git
  
 
   git add -f .
- commander git commit -m "Travis build $TRAVIS_BUILD_NUMBER pushed to gh-pages"
+ commander git commit -m \"Travis build $TRAVIS_BUILD_NUMBER pushed to gh-pages\"
 commander   git push -fq origin gh-pages #> /dev/null
  fi
 
