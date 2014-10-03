@@ -14,7 +14,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   cd $HOME
   git config --global user.email "travis@travis-ci.org"
   git config --global user.name "Travis"
-  git clone --depth=1 --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/$owner/$repo.git  gh-pages #> /dev/null
+commander  git clone --depth=1 --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/$owner/$repo.git  gh-pages #> /dev/null
   cd gh-pages
   
   #test -d old || { mkdir old; }
@@ -35,10 +35,9 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
  
 
   git add -f .
-  git commit -m "Travis build $TRAVIS_BUILD_NUMBER pushed to gh-pages"
-  git push -fq origin gh-pages #> /dev/null
-  print color 33 "Done magic with coverage\n"
-fi
+ commander git commit -m "Travis build $TRAVIS_BUILD_NUMBER pushed to gh-pages"
+commander   git push -fq origin gh-pages #> /dev/null
+ fi
 
 }
 steps(){
