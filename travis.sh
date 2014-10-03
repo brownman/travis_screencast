@@ -1,6 +1,6 @@
 export dir_root=$(cd $(dirname $0) && pwd )
 #source $dir_root/CFG/travis.cfg
-export MODE_MUTE=true
+export MODE_MUTE=false
 
 try(){
   set -u
