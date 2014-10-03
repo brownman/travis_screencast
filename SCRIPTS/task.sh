@@ -67,6 +67,6 @@ while read line;do
 test -n "$line" || { print ok empty line; break; }
   (  commander $line  )&
   sleep $timeout_task
-done <$file_list_session
+done <$dir_TXT/task.txt
 
  
