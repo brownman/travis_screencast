@@ -1,6 +1,6 @@
 export dir_root=$(cd $(dirname $0) && pwd )
 #source $dir_root/CFG/travis.cfg
-
+export MODE_MUTE=false
 
 try(){
   set -u
@@ -8,7 +8,11 @@ try(){
   local res
   echo  "[STEP] $cmd"
   set +e
-  eval "$cmd" 1>/dev/null 2>/tmp/err || ( indicator; cat /tmp/err )
+  if [ $MODE_MUTE =  true ];then
+  eval "$cmd" 1>/dev/null 2>/tmp/err || { indicator; cat /tmp/err; exit 1; }
+  else
+  eval "$cmd"
+  fi
 }
 
 steps_for_travis(){
