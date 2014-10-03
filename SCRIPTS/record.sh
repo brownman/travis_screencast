@@ -53,7 +53,7 @@ ffx-winselect-pa() {
 
 #record
 record_simple(){
- commander "avconv -t $FFX_TIMEOUT -f x11grab -r 25 -s 1024x768 -i $DISPLAY -vcodec huffyuv $FFX_OUTPUT"
+ commander "ffmpeg -t $FFX_TIMEOUT -f x11grab -r 25 -s 1024x768 -i $DISPLAY -vcodec huffyuv $FFX_OUTPUT"
 }
 
 steps(){
