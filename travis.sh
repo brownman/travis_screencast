@@ -31,8 +31,12 @@ steps_for_travis(){
  try  $dir_root/INSTALL/update.sh
  try $dir_root/INSTALL/depend.sh
  try $dir_root/run.sh x11
-  try $dir_root/run.sh debug_screen
-    try $dir_root/run.sh push_to_github
+ try $dir_root/run.sh debug_screen
+try $dir_root/run.sh task
+try $dir_root/run.sh record
+
+ try $dir_root/run.sh push_to_github
+ 
 
 
 }
