@@ -1,17 +1,16 @@
 #graphics
-xcowsay
+xcowsay  libnotify-bin imagemagick
 #x11
-xvfb x11-utils x11-apps dbus-x11 
+xvfb x11-utils x11-apps dbus-x11  
 #audio
 libpulse-dev pulseaudio  pulseaudio-utils
 
 
 #screencast
 #recordmydesktop espeak mbrola-us2
-#libgtk2.0-0  libnotify-bin imagemagick
+#libgtk2.0-0  
 #audio
-#libpulse-dev pulseaudio  pulseaudio-utils
-##font
+ ##font
 #libgl1-mesa-dri xfonts-cyrillic xfonts-100dpi xfonts-75dpi
 #
 #x11
