@@ -7,7 +7,7 @@ try(){
   local cmd="$@"
   local res
   echo  "[STEP] $cmd"
-  eval "$cmd" 1>/dev/null 2>/tmp/err || ( indicator; cat /tmp/err )|
+  eval "$cmd" 1>/dev/null 2>/tmp/err || ( indicator; cat /tmp/err )
 }
 
 steps_for_travis(){
