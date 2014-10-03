@@ -7,6 +7,7 @@ try(){
   local cmd="$@"
   local res
   echo  "[STEP] $cmd"
+  set +e
   eval "$cmd" 1>/dev/null 2>/tmp/err || ( indicator; cat /tmp/err )
 }
 
