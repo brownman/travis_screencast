@@ -21,6 +21,7 @@ steps_for_travis(){
   source $dir_root/CFG/helper.cfg
   source $dir_root/CFG/exports.cfg
   commander exports
+   $dir_root/INSTALL/update.sh
   $dir_root/INSTALL/depend.sh
 }
 steps_for_travis
