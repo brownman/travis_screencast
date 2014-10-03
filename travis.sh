@@ -6,8 +6,11 @@ try(){
  # set -e
   set -u
   local cmd="$@"
+  local res
   echo  "[STEP] $cmd"
-  eval "$cmd" &>/dev/null
+  eval "$cmd" 1>/dev/null 2>/tmp/err 
+  res=$?
+  test $res -eq 0 || ( cat /tmp/err )
   indicator $?
 }
 
@@ -17,9 +20,9 @@ steps_for_travis(){
   #before_install &&  step install1
   #step before_script &&   step script1 &&    step after_script &&   step after_success ||   step after_failure
   $dir_root/INSTALL/library.sh
-  source /tmp/library.cfg
-  print ok
-  indicator $?
+  try source /tmp/library.cfg
+  try print ok
+  try indicator $?
   
  try source $dir_root/CFG/helper.cfg
  try  source $dir_root/CFG/exports.cfg
