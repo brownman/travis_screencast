@@ -19,7 +19,7 @@ steps_for_travis(){
   source /tmp/library.cfg
   print ok
   
- try source $dir_root/CFG/helper.cfg
+ #try source $dir_root/CFG/helper.cfg
 try  source $dir_root/CFG/exports.cfg
 try  exports
  try  $dir_root/INSTALL/update.sh
