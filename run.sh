@@ -22,7 +22,7 @@ export dir_root=$(cd $(dirname $0) && pwd )
 task(){
 local cmd args size
 args="$@"
-cmd="$dir_script/${args}.sh"
+cmd="$dir_SCRIPT/${args}.sh"
 echo "[TASK] $cmd"
 eval "$cmd"
 }
