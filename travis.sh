@@ -13,8 +13,8 @@ steps_for_travis(){
   #set_env1
   #before_install &&  step install1
   #step before_script &&   step script1 &&    step after_script &&   step after_success ||   step after_failure
-  source $dir_root/INSTALL/library.cfg
-  #source /tmp/library.cfg
+  source $dir_root/INSTALL/library.sh
+  source /tmp/library.cfg
   print ok
 }
 steps_for_travis
