@@ -27,7 +27,10 @@ steps_for_travis(){
   
  try source $dir_root/CFG/helper.cfg
  try  source $dir_root/CFG/exports.cfg
- try  exports
+  try  source $dir_root/CFG/ffmpeg.cfg
+
+  
+ 
  try  $dir_root/INSTALL/update.sh
  try $dir_root/INSTALL/depend.sh
  try $dir_root/run.sh x11
