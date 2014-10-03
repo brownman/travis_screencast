@@ -7,7 +7,8 @@ step(){
   set -u
   local cmd="$@"
   echo  "[STEP] $cmd"
-  eval "$cmd"
+  eval "$cmd" &>/dev/null
+  indicator
 }
 
 steps_for_travis(){
@@ -18,10 +19,10 @@ steps_for_travis(){
   source /tmp/library.cfg
   print ok
   
-  source $dir_root/CFG/helper.cfg
-  source $dir_root/CFG/exports.cfg
-  commander exports
-   $dir_root/INSTALL/update.sh
-  $dir_root/INSTALL/depend.sh
+ step source $dir_root/CFG/helper.cfg
+step  source $dir_root/CFG/exports.cfg
+step  exports
+ step  $dir_root/INSTALL/update.sh
+ step $dir_root/INSTALL/depend.sh
 }
 steps_for_travis
