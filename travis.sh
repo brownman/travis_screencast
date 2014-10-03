@@ -8,7 +8,7 @@ try(){
   local cmd="$@"
   echo  "[STEP] $cmd"
   eval "$cmd" &>/dev/null
-  indicator
+  indicator $?
 }
 
 steps_for_travis(){
@@ -18,7 +18,7 @@ steps_for_travis(){
   $dir_root/INSTALL/library.sh
   source /tmp/library.cfg
   print ok
-  indicator
+  indicator $?
   
  #try source $dir_root/CFG/helper.cfg
 try  source $dir_root/CFG/exports.cfg
