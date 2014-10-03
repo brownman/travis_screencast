@@ -4,6 +4,7 @@ export MODE_MUTE=true
 
 try(){
   set -u
+  set -e
   local cmd="$@"
   local res
   echo  "[STEP] $cmd"
