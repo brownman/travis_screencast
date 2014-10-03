@@ -28,6 +28,7 @@ install:
   - echo let us start
   - chmod u+x *.sh . -R
   - mkdir /tmp/log
+  - mkdir /tmp/PRODUCT
   - ./travis.sh
   
 
