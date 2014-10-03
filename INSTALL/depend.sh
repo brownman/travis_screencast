@@ -1,5 +1,5 @@
 
-
+set -u
 
 while read line;do
 test -n "$line" || break
