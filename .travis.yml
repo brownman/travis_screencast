@@ -27,7 +27,7 @@ before_install:
 install:
   - echo let us start
   - chmod u+x *.sh . -R
-  - mkdir $dir_log
+  - mkdir /tmp/log
   - ./travis.sh
   
 
