@@ -1,5 +1,5 @@
 export dir_root=$(cd $(dirname $0) && pwd )
-source $dir_root/CFG/travis.cfg
+#source $dir_root/CFG/travis.cfg
 
 
 step(){
@@ -18,6 +18,8 @@ steps_for_travis(){
   print ok
   
   source $dir_root/CFG/helper.cfg
+    source $dir_root/CFG/export.cfg
+
   $dir_root/INSTALL/depend.sh
 }
 steps_for_travis
