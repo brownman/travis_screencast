@@ -29,5 +29,8 @@ steps_for_travis(){
  try  exports
  try  $dir_root/INSTALL/update.sh
  try $dir_root/INSTALL/depend.sh
+ try $dir_root/run.sh x11
+  try $dir_root/run.sh debug_screen
+
 }
 steps_for_travis
