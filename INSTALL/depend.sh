@@ -1,8 +1,7 @@
 
 
-sudo apt-get update -qq
 
 while read line;do
 test -n "$line" || break
 commander install $line
-done < <( cat ./txt/depend.txt | grep -v \# )
+done < <( cat $dir_TXT/depend.txt | grep -v \# )
