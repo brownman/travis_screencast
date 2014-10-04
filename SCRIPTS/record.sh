@@ -101,7 +101,7 @@ andrew46(){
 }
 convert_ogv_to_mp4(){
 	
-commander ffmpeg -y -i $FFX_OUTPUT \
+commander /usr/bin/ffmpeg -y -i $FFX_OUTPUT \
 -sameq -s 1280x720 -aspect 16:9 \
 -r 30000/1001 -b 2M -bt 4M -pass 1 \
 -vcodec libx264 -vpre fastfirstpass \
@@ -115,9 +115,9 @@ steps(){
 #record_simple 
 #&& ffx-full-hw
 
-#record_recordmydesktop
-#convert_ogv_to_mp4
-andrew46
+record_recordmydesktop
+convert_ogv_to_mp4
+#andrew46
 }
 
 steps
