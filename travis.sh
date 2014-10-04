@@ -15,6 +15,9 @@ try(){
   eval "$cmd"
   fi
 }
+test_trap_err(){
+  some_err
+}
 
 steps_for_travis(){
  
@@ -26,7 +29,7 @@ steps_for_travis(){
    print ok
    indicator $?
    $cmd_trap_err
-   some_errrr
+   test_trap_err
   
  try source $dir_root/CFG/helper.cfg
  try  source $dir_root/CFG/exports.cfg
