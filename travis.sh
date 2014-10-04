@@ -9,7 +9,7 @@ try(){
   local res
   echo  "[STEP] $cmd"
   test_trap_err
-  set +e
+  #set +e
   
   
   if [ $MODE_MUTE =  true ];then
@@ -32,6 +32,8 @@ steps_for_travis(){
    print ok
    indicator $?
    $cmd_trap_err
+      $cmd_trap_exit
+
    
   
  try source $dir_root/CFG/helper.cfg
