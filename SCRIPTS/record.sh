@@ -83,12 +83,7 @@ andrew46(){
 	#https://www.google.co.il/search?q=ansrew.46+ubuntu
 	#http://gebaar.blogspot.co.il/2009/06/howto-easily-enable-mp3-mpeg4-aac-and.html
 	#http://www.linuxquestions.org/questions/slackware-14/ffmpeg-x11grab-unknown-format-522296/
-	sudo wget http://www.medibuntu.org/sources.list.d/`lsb_release -cs`.list --output-document=/etc/apt/sources.list.d/medibuntu.list;
-	sudo apt-get -q update;
-	sudo apt-get --yes -q --allow-unauthenticated install medibuntu-keyring; 
-	sudo apt-get -q update
-	commander sudo apt-get install ffmpeg
-	commander whereis ffmpeg
+echo
 	#ffmpeg -vcodec mpeg4 -b 1000 -r 10 -g 300 -vd x11:0,0 -s 1280x1024 test.avi
 	#commander ffmpeg -t $FFX_TIMEOUT -f x11grab -vd x11${DISPLAY} $dir_product/out.mpg
 
