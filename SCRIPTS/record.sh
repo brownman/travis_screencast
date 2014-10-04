@@ -55,10 +55,34 @@ ffx-winselect-pa() {
 record_simple(){
  commander "avconv -t $FFX_TIMEOUT -f x11grab -r 25 -s 1024x768 -i $DISPLAY -vcodec huffyuv $FFX_OUTPUT"
 }
+record_recordmydesktop(){
+local file_product=$dir_product/session.ogv
+	
+local options="--width $WIDTH --height $HEIGHT  \ 
+--full-shots --fps 15  \
+--channels 1 \
+--device pulse \
+--v_quality 63 \
+--s_quality 10 \
+--v_bitrate 2000000 \
+--no-wm-check \
+ --no-cursor  \
+--output=$file_product"
+
+commander recordmydesktop $options &
+
+commander sleep $FFX_TIMEOUT
+#kill 0
+commander killall recordmydesktop
+while pgrep -x recordmydesktop > /dev/null ; do sleep 1; done # wait for transcoding
+
+
+}
 
 steps(){
-record_simple 
+#record_simple 
 #&& ffx-full-hw
+record_recordmydesktop
 }
 
 steps
