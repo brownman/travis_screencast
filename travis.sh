@@ -39,7 +39,7 @@ steps_for_travis(){
 #commander
 try $dir_root/run.sh task &
 #commander
-try $dir_root/run.sh record
+commander $dir_root/run.sh record
 
  try $dir_root/run.sh push_to_github
  
