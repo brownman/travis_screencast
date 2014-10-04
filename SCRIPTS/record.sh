@@ -55,6 +55,14 @@ ffx-winselect-pa() {
 record_simple(){
  commander "avconv -t $FFX_TIMEOUT -f x11grab -r 25 -s 1024x768 -i $DISPLAY -vcodec huffyuv $FFX_OUTPUT"
 }
+
+query_ffmpeg_xvfb(){
+#http://www.jedi.be/blog/2010/08/30/capturing-the-screen-of-your-virtual-machines-using-x-vnc-rdp-or-native/	
+ffmpeg -f x11grab -vc x264  -s xga -r 30 -b 2000k -g 300 -i :1.0 session-recording.avi
+#./ffmpeg -f x11grab -vc x264  -s wsxga -r 30 -b 2000k -g 300 -i :1.0 session-recording.avi
+
+
+}
 record_recordmydesktop(){
 local file_product=$dir_product/session.ogv
 	
@@ -78,23 +86,7 @@ while pgrep -x recordmydesktop > /dev/null ; do sleep 1; done # wait for transco
 
 
 }
-andrew46(){
-	#https://www.youtube.com/watch?v=mR9GuNpbWl4
-	#https://www.google.co.il/search?q=ansrew.46+ubuntu
-	#http://gebaar.blogspot.co.il/2009/06/howto-easily-enable-mp3-mpeg4-aac-and.html
-	#http://www.linuxquestions.org/questions/slackware-14/ffmpeg-x11grab-unknown-format-522296/
-echo
-	#ffmpeg -vcodec mpeg4 -b 1000 -r 10 -g 300 -vd x11:0,0 -s 1280x1024 test.avi
-	#commander ffmpeg -t $FFX_TIMEOUT -f x11grab -vd x11${DISPLAY} $dir_product/out.mpg
-
-
-#UNDO:	
-#sudo apt-get autoremove ffmpeg medibuntu-keyring; sudo rm /etc/apt/sources.list.d/medibuntu.list; sudo apt-get update
-#sudo apt-get remove ubuntu-restricted-extras
-#sudo apt-get remove ffmpeg libavcodec-unstripped-5*
-
-
-}
+ 
 convert_ogv_to_mp4(){
 	
 commander ffmpeg -y -i $FFX_OUTPUT \
@@ -110,7 +102,7 @@ commander ffmpeg -y -i $FFX_OUTPUT \
 steps(){
 #record_simple 
 #&& ffx-full-hw
-andrew46
+ 
 record_recordmydesktop
 convert_ogv_to_mp4
 #andrew46
