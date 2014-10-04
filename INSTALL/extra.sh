@@ -21,3 +21,6 @@ echo "$entry1" | sudo tee -a /etc/apt/sources.list
 	}
 
 case1
+sudo apt-get install ffmpeg
+print ok
+which ffmpeg 1>&2
