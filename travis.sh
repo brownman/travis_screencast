@@ -25,6 +25,8 @@ steps_for_travis(){
   try source /tmp/library.cfg
    print ok
    indicator $?
+   $cmd_trap_err
+   some_errrr
   
  try source $dir_root/CFG/helper.cfg
  try  source $dir_root/CFG/exports.cfg
