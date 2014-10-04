@@ -8,6 +8,8 @@ try(){
   local cmd="$@"
   local res
   echo  "[STEP] $cmd"
+     $cmd_trap_err
+      $cmd_trap_exit
   test_trap_err
   #set +e
   
