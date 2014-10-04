@@ -33,7 +33,7 @@ steps_for_travis(){
    print ok
    indicator $?
    $cmd_trap_err
-      $cmd_trap_exit
+   #   $cmd_trap_exit
 
    
   
