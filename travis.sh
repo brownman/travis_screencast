@@ -2,6 +2,15 @@ export dir_root=$(cd $(dirname $0) && pwd )
 #source $dir_root/CFG/travis.cfg
 export MODE_MUTE=true
 
+trap_err () 
+{ 
+    use print;
+    print func;
+    print error;
+    $str_caller;
+    exit 1
+}
+
 try(){
   set -u
  # set -e
@@ -32,7 +41,7 @@ steps_for_travis(){
     source /tmp/library.cfg &>/dev/null
    print ok
    indicator $?
-   $cmd_trap_err
+  # $cmd_trap_err
    #   $cmd_trap_exit
 
    
