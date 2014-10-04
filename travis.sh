@@ -9,8 +9,8 @@ try(){
   local res
   echo  "[STEP] $cmd"
     
-  test_trap_err
-  #set +e
+  #test_trap_err
+  set +e
   
   
   if [ $MODE_MUTE =  true ];then
