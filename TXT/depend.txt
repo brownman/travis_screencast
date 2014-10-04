@@ -4,7 +4,11 @@ xcowsay  libnotify-bin imagemagick
 xvfb x11-utils x11-apps dbus-x11  
 #audio
 libpulse-dev pulseaudio  pulseaudio-utils
+libxext-dev
+libxfixes-dev
+
 recordmydesktop
+
 
 #ffmpeg kx11grab 
 #screencast
