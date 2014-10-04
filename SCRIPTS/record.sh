@@ -87,9 +87,10 @@ andrew46(){
 	sudo apt-get -q update;
 	sudo apt-get --yes -q --allow-unauthenticated install medibuntu-keyring; 
 	sudo apt-get -q update
-	sudo apt-get install ffmpeg
+	commander sudo apt-get install ffmpeg
+	commander whereis ffmpeg
 	#ffmpeg -vcodec mpeg4 -b 1000 -r 10 -g 300 -vd x11:0,0 -s 1280x1024 test.avi
-	commander ffmpeg -t $FFX_TIMEOUT -f x11grab -vd x11${DISPLAY} $dir_product/out.mpg
+	#commander ffmpeg -t $FFX_TIMEOUT -f x11grab -vd x11${DISPLAY} $dir_product/out.mpg
 
 
 #UNDO:	
@@ -114,7 +115,7 @@ commander ffmpeg -y -i $FFX_OUTPUT \
 steps(){
 #record_simple 
 #&& ffx-full-hw
-
+andrew46
 record_recordmydesktop
 convert_ogv_to_mp4
 #andrew46
