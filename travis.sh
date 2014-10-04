@@ -8,8 +8,9 @@ try(){
   local cmd="$@"
   local res
   echo  "[STEP] $cmd"
-  set +e
   test_trap_err
+  set +e
+  
   
   if [ $MODE_MUTE =  true ];then
   eval "$cmd" 1>/dev/null 2>/tmp/err || { indicator; cat /tmp/err; exit 1; }
