@@ -8,8 +8,7 @@ try(){
   local cmd="$@"
   local res
   echo  "[STEP] $cmd"
-     $cmd_trap_err
-      $cmd_trap_exit
+    
   test_trap_err
   #set +e
   
@@ -30,7 +29,7 @@ steps_for_travis(){
   #before_install &&  step install1
   #step before_script &&   step script1 &&    step after_script &&   step after_success ||   step after_failure
   $dir_root/INSTALL/library.sh
-  try source /tmp/library.cfg
+    source /tmp/library.cfg &>/dev/null
    print ok
    indicator $?
    $cmd_trap_err
