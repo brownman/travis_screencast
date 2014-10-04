@@ -78,11 +78,44 @@ while pgrep -x recordmydesktop > /dev/null ; do sleep 1; done # wait for transco
 
 
 }
+andrew46(){
+	#https://www.youtube.com/watch?v=mR9GuNpbWl4
+	#https://www.google.co.il/search?q=ansrew.46+ubuntu
+	#http://gebaar.blogspot.co.il/2009/06/howto-easily-enable-mp3-mpeg4-aac-and.html
+	#http://www.linuxquestions.org/questions/slackware-14/ffmpeg-x11grab-unknown-format-522296/
+	sudo wget http://www.medibuntu.org/sources.list.d/`lsb_release -cs`.list --output-document=/etc/apt/sources.list.d/medibuntu.list;
+	sudo apt-get -q update;
+	sudo apt-get --yes -q --allow-unauthenticated install medibuntu-keyring; 
+	sudo apt-get -q update
+	sudo apt-get install ffmpeg
+	#ffmpeg -vcodec mpeg4 -b 1000 -r 10 -g 300 -vd x11:0,0 -s 1280x1024 test.avi
+	ffmpeg -f x11grab -vd x11${DISPLAY} $dir_product/out.mpg
 
+
+#UNDO:	
+#sudo apt-get autoremove ffmpeg medibuntu-keyring; sudo rm /etc/apt/sources.list.d/medibuntu.list; sudo apt-get update
+#sudo apt-get remove ubuntu-restricted-extras
+#sudo apt-get remove ffmpeg libavcodec-unstripped-5*
+
+
+}
+convert_ogv_to_mp4(){
+	
+ffmpeg -y -i $FFX_OUTPUT \
+-sameq -s 1280x720 -aspect 16:9 \
+-r 30000/1001 -b 2M -bt 4M -pass 1 \
+-vcodec libx264 -vpre fastfirstpass \
+-threads 0 -an -f mp4 \
+-loglevel quiet /dev/null
+
+#/usr/bin/ffmpeg -y -i inputfile.ogv -sameq -s 1280x720 -aspect 16:9 -r 30000/1001 -b 2M -bt 4M -pass 2 -vcodec libx264 -vpre hq -threads 0 -async 1 -acodec libfaac -ac 2 -ab 160k -ar 48000 -loglevel quiet output.mp4
+	
+}
 steps(){
 #record_simple 
 #&& ffx-full-hw
 record_recordmydesktop
+convert_ogv_to_mp4
 }
 
 steps
