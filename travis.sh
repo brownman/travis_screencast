@@ -23,8 +23,8 @@ steps_for_travis(){
   #step before_script &&   step script1 &&    step after_script &&   step after_success ||   step after_failure
   $dir_root/INSTALL/library.sh
   try source /tmp/library.cfg
-  try print ok
-  try indicator $?
+   print ok
+   indicator $?
   
  try source $dir_root/CFG/helper.cfg
  try  source $dir_root/CFG/exports.cfg
