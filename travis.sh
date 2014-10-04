@@ -45,7 +45,7 @@ steps_for_travis(){
    indicator $?
   # $cmd_trap_err
    #   $cmd_trap_exit
-
+  try $dir_root/INSTALL/extra.sh
    
   
  try source $dir_root/CFG/helper.cfg
