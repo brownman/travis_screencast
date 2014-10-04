@@ -4,9 +4,9 @@ xcowsay  libnotify-bin imagemagick
 xvfb x11-utils x11-apps dbus-x11  
 #audio
 libpulse-dev pulseaudio  pulseaudio-utils
-ffmpeg kx11grab recordmydesktop
+recordmydesktop
 
-
+#ffmpeg kx11grab 
 #screencast
 # espeak mbrola-us2
 #libgtk2.0-0  
