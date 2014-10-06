@@ -8,6 +8,7 @@ libxext-dev
 libxfixes-dev
 recordmydesktop
 handbrake-cli
+tumiki-fighters
 
 #http://askubuntu.com/questions/107915/how-do-i-download-and-install-handbrake
 
