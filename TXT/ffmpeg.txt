@@ -1,6 +1,7 @@
 libxext-dev
 libxfixes-dev
 
+install libass-dev libtheora-dev libvorbis-dev libsamplerate-dev
 autoconf
 automake 
 build-essential 
