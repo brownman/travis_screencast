@@ -88,6 +88,22 @@ while pgrep -x recordmydesktop > /dev/null ; do sleep 1; done # wait for transco
 }
  
 convert_ogv_to_mp4(){
+
+name=$FFX_OUTPUT
+PRESET="-e x264 -q 20.0 -E faac -B 128 -6 dpl2 -w 1280 --loose-crop --loose-anamorphic --x264-preset veryfast --h264-profile high --h264-level 4.1"    
+commander "HandBrakeCLI -i ${name} -o ${name}.mp4 ${PRESET}"
+}
+convert_many(){
+	echo commander ffmpeg -y -i $FFX_OUTPUT  -sameq -s 1280x720 -aspect 16:9 -r 30000/1001 \
+-b 2M -bt 4M -pass 2 -vcodec libx264 \
+-vpre hq -threads 0 -async 1 \
+-acodec libfaac -ac 2 \
+-ab 160k -ar 48000 \
+$dir_product/session_converted2.mp4
+
+echo subshell avconv -i  $FFX_OUTPUT -vcodec libx264  $FFX_OUTPUT.mp4
+echo subshell ffmpeg -i $FFX_OUTPUT  -vcodec h264 -acodec aac -strict -2 $FFX_OUTPUT.1.mp4
+echo subshell handbrakecli -i {input}.mov -e x264 -E facc -o {output}.mp4
 	
 echo commander ffmpeg -y -i $FFX_OUTPUT \
 -sameq -s 1280x720 -aspect 16:9 \
@@ -99,20 +115,6 @@ $dir_product/session_converted1.mp4
 #-loglevel quiet /dev/null \
 #commander ffmpeg -y -i $FFX_OUTPUT $dir_product/session_converted2.mp4
 
-echo commander ffmpeg -y -i $FFX_OUTPUT  -sameq -s 1280x720 -aspect 16:9 -r 30000/1001 \
--b 2M -bt 4M -pass 2 -vcodec libx264 \
--vpre hq -threads 0 -async 1 \
--acodec libfaac -ac 2 \
--ab 160k -ar 48000 \
-$dir_product/session_converted2.mp4
-
-echo subshell avconv -i  $FFX_OUTPUT -vcodec libx264  $FFX_OUTPUT.mp4
-echo subshell ffmpeg -i $FFX_OUTPUT  -vcodec h264 -acodec aac -strict -2 $FFX_OUTPUT.1.mp4
-echo subshell handbrakecli -i {input}.mov -e x264 -E facc -o {output}.mp4
-
-name=$FFX_OUTPUT
-PRESET="-e x264 -q 20.0 -E faac -B 128 -6 dpl2 -w 1280 --loose-crop --loose-anamorphic --x264-preset veryfast --h264-profile high --h264-level 4.1"    
-commander HandBrakeCLI -i "${name}" -o "${name}.mp4" ${PRESET} 
 
 	
 }
