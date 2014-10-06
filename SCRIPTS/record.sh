@@ -108,9 +108,9 @@ steps(){
 commander record_recordmydesktop
 commander convert_ogv_to_mp4
 #andrew46
-commander query_ffmpeg_xvfb
-commander record_simple
-commander ffx-full-hw
+#commander query_ffmpeg_xvfb
+#commander record_simple
+#commander ffx-full-hw
 }
 
 steps
