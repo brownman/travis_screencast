@@ -64,7 +64,8 @@ commander ffmpeg -t $FFX_TIMEOUT  -f x11grab -vc x264  -s xga -r 30 -b 2000k -g 
 
 }
 record_recordmydesktop(){
-local file_product=$dir_product/session.ogv
+local file_product=$file_input
+#dir_product/session.ogv
 	
 local options="--width $WIDTH --height $HEIGHT  \ 
 --full-shots --fps 15  \
@@ -89,10 +90,12 @@ while pgrep -x recordmydesktop > /dev/null ; do sleep 1; done # wait for transco
  
 convert_ogv_to_mp4(){
 
-name=$FFX_OUTPUT
+ 
 PRESET="-e x264 -q 20.0 -E faac -B 128 -6 dpl2 -w 1280 --loose-crop --loose-anamorphic --x264-preset veryfast --h264-profile high --h264-level 4.1"    
-commander "HandBrakeCLI -i ${name} -o ${name}.mp4 ${PRESET}"
+commander "HandBrakeCLI -i $file_input -o $file_output ${PRESET}"
 }
+
+
 convert_many(){
 	echo commander ffmpeg -y -i $FFX_OUTPUT  -sameq -s 1280x720 -aspect 16:9 -r 30000/1001 \
 -b 2M -bt 4M -pass 2 -vcodec libx264 \
