@@ -7,7 +7,9 @@ libpulse-dev pulseaudio  pulseaudio-utils
 libxext-dev
 libxfixes-dev
 recordmydesktop
-handbreak
+handbrake-cli
+
+#http://askubuntu.com/questions/107915/how-do-i-download-and-install-handbrake
 
 
 #ffmpeg kx11grab 
