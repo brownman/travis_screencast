@@ -1,23 +1,0 @@
-/tmp/library.cfg
-[source] ps1.cfg
-[source] ps4.cfg
-[source] dialog_optional.cfg
-[source] history_sync.cfg
-[source] vars.cfg
-[source] alias.cfg
-[ register ] use
-[ register ] use_sh
-[01;32m[*][0m : Activated Important stuff 
-[-] /home/travis/build/brownman/travis_screencast/SCRIPTS/install_deps.sh
-Extracting templates from packages: 90%Extracting templates from packages: 100%
-Extracting templates from packages: 54%Extracting templates from packages: 100%
-E: Unable to locate package icewease
-E: Unable to locate package apt-get
-gpg: requesting key EEA14886 from hkp server keyserver.ubuntu.com
-gpg: key EEA14886: "Launchpad VLC" not changed
-gpg: Total number processed: 1
-gpg:              unchanged: 1
-gpg: requesting key F4FE239D from hkp server keyserver.ubuntu.com
-gpg: key F4FE239D: public key "Launchpad PPA for fossfreedom" imported
-gpg: Total number processed: 1
-gpg:               imported: 1  (RSA: 1)

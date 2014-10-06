@@ -1,248 +1,0 @@
-
-
-deb http://www.deb-multimedia.org wheezy main non-free
-deb-src http://www.deb-multimedia.org wheezy main non-free
-
-
-OK
-Ign http://downloads-distro.mongodb.org dist InRelease
-Hit http://downloads-distro.mongodb.org dist Release.gpg
-Hit http://downloads-distro.mongodb.org dist Release
-Ign http://us.archive.ubuntu.com precise InRelease
-Ign http://us.archive.ubuntu.com precise-updates InRelease
-Ign http://us.archive.ubuntu.com precise-backports InRelease
-Hit http://downloads-distro.mongodb.org dist/10gen amd64 Packages
-Hit http://downloads-distro.mongodb.org dist/10gen i386 Packages
-Hit http://us.archive.ubuntu.com precise Release.gpg
-Get:1 http://us.archive.ubuntu.com precise-updates Release.gpg [198 B]
-Ign http://downloads-distro.mongodb.org dist/10gen TranslationIndex
-Hit http://us.archive.ubuntu.com precise-backports Release.gpg
-Hit http://us.archive.ubuntu.com precise Release
-Get:2 http://apt.postgresql.org precise-pgdg InRelease [33.7 kB]
-Get:3 http://us.archive.ubuntu.com precise-updates Release [98.7 kB]
-Hit http://apt.basho.com precise InRelease
-Ign http://downloads-distro.mongodb.org dist/10gen Translation-en_US
-Ign http://downloads-distro.mongodb.org dist/10gen Translation-en
-Hit http://apt.basho.com precise/main amd64 Packages
-Hit http://apt.basho.com precise/main i386 Packages
-Hit http://us.archive.ubuntu.com precise-backports Release
-Hit http://us.archive.ubuntu.com precise/main Sources
-Hit http://us.archive.ubuntu.com precise/restricted Sources
-Ign http://ppa.launchpad.net precise InRelease
-Hit http://us.archive.ubuntu.com precise/universe Sources
-Ign http://ppa.launchpad.net precise InRelease
-Hit http://us.archive.ubuntu.com precise/multiverse Sources
-Hit http://us.archive.ubuntu.com precise/main amd64 Packages
-Ign http://ppa.launchpad.net precise InRelease
-Ign http://ppa.launchpad.net precise InRelease
-Ign http://ppa.launchpad.net precise InRelease
-Hit http://us.archive.ubuntu.com precise/restricted amd64 Packages
-Hit http://us.archive.ubuntu.com precise/universe amd64 Packages
-Ign http://ppa.launchpad.net precise InRelease
-Ign http://apt.basho.com precise/main TranslationIndex
-Get:4 http://apt.postgresql.org precise-pgdg/main amd64 Packages [50.7 kB]
-Hit http://us.archive.ubuntu.com precise/multiverse amd64 Packages
-Hit http://us.archive.ubuntu.com precise/main i386 Packages
-Hit http://us.archive.ubuntu.com precise/restricted i386 Packages
-Hit http://us.archive.ubuntu.com precise/universe i386 Packages
-Hit http://us.archive.ubuntu.com precise/multiverse i386 Packages
-Hit http://us.archive.ubuntu.com precise/main TranslationIndex
-Hit http://us.archive.ubuntu.com precise/multiverse TranslationIndex
-Hit http://us.archive.ubuntu.com precise/restricted TranslationIndex
-Hit http://us.archive.ubuntu.com precise/universe TranslationIndex
-Get:5 http://us.archive.ubuntu.com precise-updates/main Sources [479 kB]
-Get:6 http://www.deb-multimedia.org wheezy InRelease [25.8 kB]
-Hit http://ppa.launchpad.net precise Release.gpg
-Hit http://ppa.launchpad.net precise Release.gpg
-Hit http://ppa.launchpad.net precise Release.gpg
-Get:7 http://ppa.launchpad.net precise Release.gpg [316 B]
-Get:8 http://apt.postgresql.org precise-pgdg/main i386 Packages [50.8 kB]
-Ign http://apt.basho.com precise/main Translation-en_US
-Get:9 http://us.archive.ubuntu.com precise-updates/restricted Sources [8,056 B]
-Get:10 http://us.archive.ubuntu.com precise-updates/universe Sources [110 kB]
-Get:11 http://us.archive.ubuntu.com precise-updates/multiverse Sources [8,886 B]
-Get:12 http://us.archive.ubuntu.com precise-updates/main amd64 Packages [836 kB]
-Ign http://apt.basho.com precise/main Translation-en
-Ign http://apt.postgresql.org precise-pgdg/main TranslationIndex
-Hit http://ppa.launchpad.net precise Release.gpg
-Get:13 http://us.archive.ubuntu.com precise-updates/restricted amd64 Packages [13.7 kB]
-Get:14 http://us.archive.ubuntu.com precise-updates/universe amd64 Packages [248 kB]
-Get:15 http://us.archive.ubuntu.com precise-updates/multiverse amd64 Packages [15.3 kB]
-Get:16 http://us.archive.ubuntu.com precise-updates/main i386 Packages [867 kB]
-Get:17 http://www.deb-multimedia.org wheezy/main Sources [75.4 kB]
-Get:18 http://us.archive.ubuntu.com precise-updates/restricted i386 Packages [13.7 kB]
-Get:19 http://us.archive.ubuntu.com precise-updates/universe i386 Packages [255 kB]
-Get:20 http://us.archive.ubuntu.com precise-updates/multiverse i386 Packages [15.5 kB]
-Get:21 http://us.archive.ubuntu.com precise-updates/main TranslationIndex [3,564 B]
-Get:22 http://us.archive.ubuntu.com precise-updates/multiverse TranslationIndex [2,605 B]
-Get:23 http://us.archive.ubuntu.com precise-updates/restricted TranslationIndex [2,461 B]
-Get:24 http://us.archive.ubuntu.com precise-updates/universe TranslationIndex [2,850 B]
-Hit http://us.archive.ubuntu.com precise-backports/main Sources
-Hit http://us.archive.ubuntu.com precise-backports/restricted Sources
-Hit http://ppa.launchpad.net precise Release.gpg
-Hit http://ppa.launchpad.net precise Release
-Hit http://ppa.launchpad.net precise Release
-Hit http://ppa.launchpad.net precise Release
-Hit http://us.archive.ubuntu.com precise-backports/universe Sources
-Hit http://us.archive.ubuntu.com precise-backports/multiverse Sources
-Hit http://us.archive.ubuntu.com precise-backports/main amd64 Packages
-Hit http://us.archive.ubuntu.com precise-backports/restricted amd64 Packages
-Hit http://us.archive.ubuntu.com precise-backports/universe amd64 Packages
-Hit http://us.archive.ubuntu.com precise-backports/multiverse amd64 Packages
-Hit http://us.archive.ubuntu.com precise-backports/main i386 Packages
-Hit http://us.archive.ubuntu.com precise-backports/restricted i386 Packages
-Hit http://us.archive.ubuntu.com precise-backports/universe i386 Packages
-Hit http://us.archive.ubuntu.com precise-backports/multiverse i386 Packages
-Hit http://us.archive.ubuntu.com precise-backports/main TranslationIndex
-Hit http://us.archive.ubuntu.com precise-backports/multiverse TranslationIndex
-Hit http://us.archive.ubuntu.com precise-backports/restricted TranslationIndex
-Hit http://us.archive.ubuntu.com precise-backports/universe TranslationIndex
-Hit http://us.archive.ubuntu.com precise/main Translation-en
-Hit http://us.archive.ubuntu.com precise/multiverse Translation-en
-Hit http://us.archive.ubuntu.com precise/restricted Translation-en
-Hit http://us.archive.ubuntu.com precise/universe Translation-en
-Get:25 http://us.archive.ubuntu.com precise-updates/main Translation-en [368 kB]
-Hit http://us.archive.ubuntu.com precise-updates/multiverse Translation-en
-Hit http://us.archive.ubuntu.com precise-updates/restricted Translation-en
-Get:26 http://us.archive.ubuntu.com precise-updates/universe Translation-en [144 kB]
-Hit http://us.archive.ubuntu.com precise-backports/main Translation-en
-Hit http://us.archive.ubuntu.com precise-backports/multiverse Translation-en
-Hit http://us.archive.ubuntu.com precise-backports/restricted Translation-en
-Hit http://us.archive.ubuntu.com precise-backports/universe Translation-en
-Get:27 http://ppa.launchpad.net precise Release [12.4 kB]
-Get:28 http://www.deb-multimedia.org wheezy/non-free Sources [4,205 B]
-Get:29 http://www.deb-multimedia.org wheezy/main amd64 Packages [106 kB]
-Hit http://ppa.launchpad.net precise Release
-Hit http://ppa.launchpad.net precise Release
-Hit http://ppa.launchpad.net precise/main amd64 Packages
-Hit http://ppa.launchpad.net precise/main i386 Packages
-Hit http://ppa.launchpad.net precise/main TranslationIndex
-Hit http://ppa.launchpad.net precise/main amd64 Packages
-Hit http://ppa.launchpad.net precise/main i386 Packages
-Get:30 http://www.deb-multimedia.org wheezy/non-free amd64 Packages [2,667 B]
-Get:31 http://www.deb-multimedia.org wheezy/main i386 Packages [106 kB]
-Ign http://ppa.launchpad.net precise/main TranslationIndex
-Hit http://ppa.launchpad.net precise/main amd64 Packages
-Hit http://ppa.launchpad.net precise/main i386 Packages
-Ign http://apt.postgresql.org precise-pgdg/main Translation-en_US
-Get:32 http://www.deb-multimedia.org wheezy/non-free i386 Packages [6,515 B]
-Ign http://www.deb-multimedia.org wheezy/main TranslationIndex
-Ign http://www.deb-multimedia.org wheezy/non-free TranslationIndex
-Hit http://ppa.launchpad.net precise/main TranslationIndex
-Get:33 http://ppa.launchpad.net precise/main amd64 Packages [1,398 B]
-Get:34 http://ppa.launchpad.net precise/main i386 Packages [943 B]
-Get:35 http://ppa.launchpad.net precise/main TranslationIndex [71 B]
-Hit http://ppa.launchpad.net precise/main Translation-en
-Ign http://apt.postgresql.org precise-pgdg/main Translation-en
-Hit http://ppa.launchpad.net precise/main amd64 Packages
-Hit http://ppa.launchpad.net precise/main i386 Packages
-Hit http://ppa.launchpad.net precise/main TranslationIndex
-Hit http://ppa.launchpad.net precise/main amd64 Packages
-Hit http://ppa.launchpad.net precise/main i386 Packages
-Ign http://ppa.launchpad.net precise/main TranslationIndex
-Hit http://ppa.launchpad.net precise/main Translation-en
-Get:36 http://ppa.launchpad.net precise/main Translation-en [735 B]
-Hit http://ppa.launchpad.net precise/main Translation-en
-Ign http://ppa.launchpad.net precise/main Translation-en_US
-Ign http://www.deb-multimedia.org wheezy/main Translation-en_US
-Ign http://ppa.launchpad.net precise/main Translation-en
-Ign http://www.deb-multimedia.org wheezy/main Translation-en
-Ign http://www.deb-multimedia.org wheezy/non-free Translation-en_US
-Ign http://ppa.launchpad.net precise/main Translation-en_US
-Ign http://ppa.launchpad.net precise/main Translation-en
-Ign http://www.deb-multimedia.org wheezy/non-free Translation-en
-Hit http://www.rabbitmq.com testing InRelease
-Hit http://www.rabbitmq.com testing/main amd64 Packages
-Hit http://www.rabbitmq.com testing/main i386 Packages
-Ign http://www.rabbitmq.com testing/main TranslationIndex
-Ign http://www.rabbitmq.com testing/main Translation-en_US
-Ign http://www.rabbitmq.com testing/main Translation-en
-Ign http://security.ubuntu.com precise-security InRelease
-Get:37 http://security.ubuntu.com precise-security Release.gpg [198 B]
-Get:38 http://security.ubuntu.com precise-security Release [50.7 kB]
-Get:39 http://security.ubuntu.com precise-security/main Sources [110 kB]
-Get:40 http://security.ubuntu.com precise-security/restricted Sources [2,494 B]
-Get:41 http://security.ubuntu.com precise-security/universe Sources [32.7 kB]
-Get:42 http://security.ubuntu.com precise-security/multiverse Sources [1,785 B]
-Get:43 http://security.ubuntu.com precise-security/main amd64 Packages [426 kB]
-Get:44 http://security.ubuntu.com precise-security/restricted amd64 Packages [4,627 B]
-Get:45 http://security.ubuntu.com precise-security/universe amd64 Packages [98.1 kB]
-Get:46 http://security.ubuntu.com precise-security/multiverse amd64 Packages [2,447 B]
-Get:47 http://security.ubuntu.com precise-security/main i386 Packages [458 kB]
-Get:48 http://security.ubuntu.com precise-security/restricted i386 Packages [4,620 B]
-Get:49 http://security.ubuntu.com precise-security/universe i386 Packages [104 kB]
-Get:50 http://security.ubuntu.com precise-security/multiverse i386 Packages [2,638 B]
-Get:51 http://security.ubuntu.com precise-security/main TranslationIndex [74 B]
-Get:52 http://security.ubuntu.com precise-security/multiverse TranslationIndex [72 B]
-Get:53 http://security.ubuntu.com precise-security/restricted TranslationIndex [72 B]
-Get:54 http://security.ubuntu.com precise-security/universe TranslationIndex [73 B]
-Get:55 http://security.ubuntu.com precise-security/main Translation-en [194 kB]
-Hit http://security.ubuntu.com precise-security/multiverse Translation-en
-Hit http://security.ubuntu.com precise-security/restricted Translation-en
-Get:56 http://security.ubuntu.com precise-security/universe Translation-en [60.4 kB]
-Fetched 5,523 kB in 24s (225 kB/s)
-Reading package lists...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following package was automatically installed and is no longer required:
-  libgeos-3.2.2
-Use 'apt-get autoremove' to remove them.
-The following NEW packages will be installed:
-  deb-multimedia-keyring
-0 upgraded, 1 newly installed, 0 to remove and 132 not upgraded.
-Need to get 14.4 kB of archives.
-After this operation, 46.1 kB of additional disk space will be used.
-Get:1 http://www.deb-multimedia.org/ wheezy/main deb-multimedia-keyring all 2012.05.10-dmo4 [14.4 kB]
-Fetched 14.4 kB in 0s (57.0 kB/s)
-Selecting previously unselected package deb-multimedia-keyring.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 70556 files and directories currently installed.)
-Unpacking deb-multimedia-keyring (from .../deb-multimedia-keyring_2012.05.10-dmo4_all.deb) ...
-Setting up deb-multimedia-keyring (2012.05.10-dmo4) ...
-OK
-
-
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following package was automatically installed and is no longer required:
-  libgeos-3.2.2
-Use 'apt-get autoremove' to remove them.
-The following NEW packages will be installed:
-  yasm
-The following packages will be upgraded:
-  build-essential
-1 upgraded, 1 newly installed, 0 to remove and 131 not upgraded.
-Need to get 396 kB of archives.
-After this operation, 2,348 kB of additional disk space will be used.
-Get:1 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main build-essential amd64 11.5ubuntu2.1 [5,816 B]
-Get:2 http://www.deb-multimedia.org/ wheezy/main yasm amd64 1.2.0-dmo1 [391 kB]
-Fetched 396 kB in 0s (674 kB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 70562 files and directories currently installed.)
-Preparing to replace build-essential 11.5ubuntu2 (using .../build-essential_11.5ubuntu2.1_amd64.deb) ...
-Unpacking replacement build-essential ...
-Selecting previously unselected package yasm.
-Unpacking yasm (from .../yasm_1.2.0-dmo1_amd64.deb) ...
-Processing triggers for man-db ...
-Setting up build-essential (11.5ubuntu2.1) ...
-Setting up yasm (1.2.0-dmo1) ...
-libgpac-dev subversion git-core
-libdirac-dev libgsm1-dev libschroedinger-dev libspeex-dev libvorbis-dev libopenjpeg-dev libdc1394-22-dev libsdl1.2-dev zlib1g-dev texi2html libfaac-dev libfaad-dev libmp3lame-dev libtheora-dev libxvidcore4-dev libopencore-amrnb-dev libopencore-amrwb-dev libvpx-dev libfreetype6-dev frei0r-plugins-dev librtmp-dev libaacplus-dev libx264-dev libavdevice-dev libavfilter-dev libavformat-dev libavutil-dev
-
-ERROR: libx264 not found
-
-If you think configure made a mistake, make sure you are using the latest
-version from Git.  If the latest version fails, report the problem to the
-ffmpeg-user@ffmpeg.org mailing list or IRC #ffmpeg on irc.freenode.net.
-Include the log file "config.log" produced by configure as this will help
-solve the problem.
-
-
-
-
-
-
-
-
-
-

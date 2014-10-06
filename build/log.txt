@@ -1,19 +1,19 @@
 build:
-total 8
-drwxrwxr-x 2 travis travis 4096 Oct  6 09:41 log
-drwxrwxr-x 2 travis travis 4096 Oct  6 09:41 media
--rw-rw-r-- 1 travis travis    0 Oct  6 09:41 log.txt
+total 0
+drwxrwxr-x 2 travis travis 140 Oct  6 10:01 log
+drwxrwxr-x 2 travis travis 100 Oct  6 10:01 media
+-rw-rw-r-- 1 travis travis   0 Oct  6 10:02 log.txt
 
 build/log:
-total 24
--rw-rw-r-- 1 travis travis 7395 Oct  6 09:41 record.out
--rw-rw-r-- 1 travis travis  249 Oct  6 09:39 debug_screen.out
--rw-rw-r-- 1 travis travis  241 Oct  6 09:40 task.out
--rw-rw-r-- 1 travis travis  110 Oct  6 09:41 push_to_github.out
--rw-rw-r-- 1 travis travis   74 Oct  6 09:39 x11.out
+total 56
+-rw-rw-r-- 1 travis travis 34107 Oct  6 10:02 push_to_github.out
+-rw-rw-r-- 1 travis travis  7494 Oct  6 10:01 record.out
+-rw-rw-r-- 1 travis travis   249 Oct  6 09:59 debug_screen.out
+-rw-rw-r-- 1 travis travis   241 Oct  6 09:59 task.out
+-rw-rw-r-- 1 travis travis    74 Oct  6 09:59 x11.out
 
 build/media:
-total 14456
--rw-rw-r-- 1 travis travis 9137874 Oct  6 09:41 session.ogv
--rw-rw-r-- 1 travis travis 5629841 Oct  6 09:41 session.mp4
--rw-rw-r-- 1 travis travis   30293 Oct  6 09:39 session.png
+total 16364
+-rw-rw-r-- 1 travis travis 9500020 Oct  6 10:01 session.ogv
+-rw-rw-r-- 1 travis travis 7218210 Oct  6 10:01 session.mp4
+-rw-rw-r-- 1 travis travis   30016 Oct  6 09:59 session.png
