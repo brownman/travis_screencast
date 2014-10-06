@@ -1,0 +1,19 @@
+build/810:
+total 8
+drwxrwxr-x 2 travis travis 4096 Oct  6 08:33 log
+drwxrwxr-x 2 travis travis 4096 Oct  6 08:33 media
+-rw-rw-r-- 1 travis travis    0 Oct  6 08:33 log.txt
+
+build/810/log:
+total 28
+-rw-rw-r-- 1 travis travis 8361 Oct  6 08:33 record.out
+-rw-rw-r-- 1 travis travis  249 Oct  6 08:30 debug_screen.out
+-rw-rw-r-- 1 travis travis  241 Oct  6 08:31 task.out
+-rw-rw-r-- 1 travis travis  110 Oct  6 08:33 push_to_github.out
+-rw-rw-r-- 1 travis travis   74 Oct  6 08:30 x11.out
+
+build/810/media:
+total 8228
+-rw-rw-r-- 1 travis travis 4347024 Oct  6 08:33 session.mp4
+-rw-rw-r-- 1 travis travis 4049829 Oct  6 08:33 session.ogv
+-rw-rw-r-- 1 travis travis   24129 Oct  6 08:30 session.png
