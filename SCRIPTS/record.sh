@@ -58,7 +58,7 @@ record_simple(){
 
 query_ffmpeg_xvfb(){
 #http://www.jedi.be/blog/2010/08/30/capturing-the-screen-of-your-virtual-machines-using-x-vnc-rdp-or-native/	
-commander ffmpeg -f x11grab -vc x264  -s xga -r 30 -b 2000k -g 300 -i $DISPLAY session-recording.avi
+commander ffmpeg -t $FFX_TIMEOUT  -f x11grab -vc x264  -s xga -r 30 -b 2000k -g 300 -i $DISPLAY $dir_product/session-recording.avi
 #./ffmpeg -f x11grab -vc x264  -s wsxga -r 30 -b 2000k -g 300 -i :1.0 session-recording.avi
 
 
