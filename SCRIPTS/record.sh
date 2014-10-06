@@ -90,8 +90,8 @@ while pgrep -x recordmydesktop > /dev/null ; do sleep 1; done # wait for transco
  
 convert_ogv_to_mp4(){
 
- 
-PRESET="-e x264 -q 20.0 -E faac -B 128 -6 dpl2 -w 1280 --loose-crop --loose-anamorphic --x264-preset veryfast --h264-profile high --h264-level 4.1"    
+PRESET='--encoder x264 --vb 1800 --ab 128 --maxWidth 640 --maxHeight 480 --two-pass --optimize'
+PRESET2="-e x264 -q 20.0 -E faac -B 128 -6 dpl2 -w 1280 --loose-crop --loose-anamorphic --x264-preset veryfast --h264-profile high --h264-level 4.1"    
 commander "HandBrakeCLI -i $file_input -o $file_output ${PRESET}"
 # WebM/vp8
 commander ffmpeg -i $file_output \
