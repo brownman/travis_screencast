@@ -119,7 +119,7 @@ echo commander HandBrakeCLI -i "${name}" -o "${name}.mp4" ${PRESET}
 steps(){
 #record_simple 
 #&& ffx-full-hw
-commander ffmpeg --version
+commander ffmpeg -version
 commander record_recordmydesktop
 commander convert_ogv_to_mp4
 #andrew46
