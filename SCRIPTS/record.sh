@@ -58,7 +58,7 @@ record_simple(){
 
 query_ffmpeg_xvfb(){
 #http://www.jedi.be/blog/2010/08/30/capturing-the-screen-of-your-virtual-machines-using-x-vnc-rdp-or-native/	
-ffmpeg -f x11grab -vc x264  -s xga -r 30 -b 2000k -g 300 -i :1.0 session-recording.avi
+commander ffmpeg -f x11grab -vc x264  -s xga -r 30 -b 2000k -g 300 -i $DISPLAY session-recording.avi
 #./ffmpeg -f x11grab -vc x264  -s wsxga -r 30 -b 2000k -g 300 -i :1.0 session-recording.avi
 
 
@@ -103,9 +103,12 @@ steps(){
 #record_simple 
 #&& ffx-full-hw
  
-record_recordmydesktop
-convert_ogv_to_mp4
+commander record_recordmydesktop
+commander convert_ogv_to_mp4
 #andrew46
+commander query_ffmpeg_xvfb
+commander record_simple
+commander ffx-full-hw
 }
 
 steps
