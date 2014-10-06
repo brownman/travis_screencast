@@ -96,7 +96,7 @@ commander "HandBrakeCLI -i $file_input -o $file_output ${PRESET}"
 # WebM/vp8
 commander ffmpeg -i $file_output \
   -acodec libvorbis -ac 2 -ab 96k -ar 44100 \
-  -b:v 345k -s $2 $dir_product/session.webm
+  -b:v 345k -s ${WIDTH}x${HEIGHT} $2 $dir_product/session.webm
 }
 
 
