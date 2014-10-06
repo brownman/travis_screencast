@@ -20,7 +20,7 @@ commander  git clone --depth=1 --quiet --branch=gh-pages https://${GH_TOKEN}@git
   #test -d old || { mkdir old; }
  # mv *.* old/
  # git rm -rf *.*
- 
+ mv build /tmp
   
   dir_new=build
   #/$TRAVIS_BUILD_NUMBER
