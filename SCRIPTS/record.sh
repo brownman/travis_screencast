@@ -89,7 +89,7 @@ while pgrep -x recordmydesktop > /dev/null ; do sleep 1; done # wait for transco
  
 convert_ogv_to_mp4(){
 	
-commander ffmpeg -y -i $FFX_OUTPUT \
+echo commander ffmpeg -y -i $FFX_OUTPUT \
 -sameq -s 1280x720 -aspect 16:9 \
 -r 30000/1001 -b 2M -bt 4M -pass 1 \
 -vcodec libx264 \
@@ -105,6 +105,9 @@ echo commander ffmpeg -y -i $FFX_OUTPUT  -sameq -s 1280x720 -aspect 16:9 -r 3000
 -acodec libfaac -ac 2 \
 -ab 160k -ar 48000 \
 $dir_product/session_converted2.mp4
+
+commander avconv -i  $FFX_OUTPUT -vcodec libx264  $FFX_OUTPUT.mp4
+
 	
 }
 steps(){
