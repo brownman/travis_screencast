@@ -6,7 +6,6 @@ xvfb x11-utils x11-apps dbus-x11
 libpulse-dev pulseaudio  pulseaudio-utils
 libxext-dev
 libxfixes-dev
-
 recordmydesktop
 
 
