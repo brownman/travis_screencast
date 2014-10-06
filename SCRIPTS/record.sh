@@ -112,7 +112,7 @@ echo subshell handbrakecli -i {input}.mov -e x264 -E facc -o {output}.mp4
 
 name=$FFX_OUTPUT
 PRESET="-e x264 -q 20.0 -E faac -B 128 -6 dpl2 -w 1280 --loose-crop --loose-anamorphic --x264-preset veryfast --h264-profile high --h264-level 4.1"    
-echo commander HandBrakeCLI -i "${name}" -o "${name}.mp4" ${PRESET} 
+commander HandBrakeCLI -i "${name}" -o "${name}.mp4" ${PRESET} 
 
 	
 }
