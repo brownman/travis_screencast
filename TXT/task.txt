@@ -1,9 +1,7 @@
-test_cow
 test_game
 test_library
 
-test_library
-
+test_cow
 test_simple_gui
 test_espeak
 test_firefox
