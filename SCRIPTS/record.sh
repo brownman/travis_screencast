@@ -106,7 +106,7 @@ echo commander ffmpeg -y -i $FFX_OUTPUT  -sameq -s 1280x720 -aspect 16:9 -r 3000
 -ab 160k -ar 48000 \
 $dir_product/session_converted2.mp4
 
-subshell avconv -i  $FFX_OUTPUT -vcodec libx264  $FFX_OUTPUT.mp4
+echo subshell avconv -i  $FFX_OUTPUT -vcodec libx264  $FFX_OUTPUT.mp4
 subshell ffmpeg -i $FFX_OUTPUT  -vcodec h264 -acodec aac -strict -2 $FFX_OUTPUT.1.mp4
 echo subshell handbrakecli -i {input}.mov -e x264 -E facc -o {output}.mp4
 
