@@ -68,7 +68,8 @@ try $dir_root/run.sh task &
 #commander
 commander $dir_root/run.sh record
 
- try $dir_root/run.sh push_to_github
+commander "assert file_has_content $dir_product/session.mp4"
+try $dir_root/run.sh push_to_github
  
 
 
