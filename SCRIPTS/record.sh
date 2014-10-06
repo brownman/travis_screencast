@@ -108,6 +108,8 @@ $dir_product/session_converted2.mp4
 
 subshell avconv -i  $FFX_OUTPUT -vcodec libx264  $FFX_OUTPUT.mp4
 subshell ffmpeg -i $FFX_OUTPUT  -vcodec h264 -acodec aac -strict -2 $FFX_OUTPUT.1.mp4
+echo subshell handbrakecli -i {input}.mov -e x264 -E facc -o {output}.mp4
+
 	
 }
 steps(){
