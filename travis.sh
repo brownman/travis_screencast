@@ -10,7 +10,7 @@ trap_err_travis ()
     $str_caller;
     exit 1
 }
-trap trap_err_travis ERR
+export cmd_trap_err_travis='trap trap_err_travis ERR'
 export -f trap_err_travis
 
 try(){
@@ -43,6 +43,9 @@ steps_for_travis(){
     source /tmp/library.cfg &>/dev/null
    print ok
    indicator $?
+   trap
+   trap - ERR
+   commander $cmd_trap_err_travis
   # $cmd_trap_err
    #   $cmd_trap_exit
   try $dir_root/INSTALL/extra.sh
