@@ -93,6 +93,10 @@ convert_ogv_to_mp4(){
  
 PRESET="-e x264 -q 20.0 -E faac -B 128 -6 dpl2 -w 1280 --loose-crop --loose-anamorphic --x264-preset veryfast --h264-profile high --h264-level 4.1"    
 commander "HandBrakeCLI -i $file_input -o $file_output ${PRESET}"
+# WebM/vp8
+commander ffmpeg -i $file_output \
+  -acodec libvorbis -ac 2 -ab 96k -ar 44100 \
+  -b:v 345k -s $2 $dir_product/session.webm
 }
 
 
