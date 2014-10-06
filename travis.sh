@@ -51,7 +51,6 @@ install_others(){
 }
 
 set_env_travis(){
- try source $dir_root/CFG/helper.cfg
  try  source $dir_root/CFG/exports.cfg
  try  source $dir_root/CFG/ffmpeg.cfg
 }
