@@ -22,7 +22,8 @@ commander  git clone --depth=1 --quiet --branch=gh-pages https://${GH_TOKEN}@git
  # git rm -rf *.*
  
   
-  dir_new=build/$TRAVIS_BUILD_NUMBER
+  dir_new=build
+  #/$TRAVIS_BUILD_NUMBER
   mkdir -p $dir_new
   
   mv  $dir_product $dir_new/media #/* files
