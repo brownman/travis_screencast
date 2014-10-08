@@ -61,3 +61,27 @@ query_ffmpeg_xvfb(){
 commander ffmpeg -t $FFX_TIMEOUT  -f x11grab -vc x264  -s xga -r 30 -b 2000k -g 300 -i $DISPLAY $dir_product/session-recording.avi
 #./ffmpeg -f x11grab -vc x264  -s wsxga -r 30 -b 2000k -g 300 -i :1.0 session-recording.avi
 }
+
+convert_many(){
+	echo commander ffmpeg -y -i $FFX_OUTPUT  -sameq -s 1280x720 -aspect 16:9 -r 30000/1001 \
+-b 2M -bt 4M -pass 2 -vcodec libx264 \
+-vpre hq -threads 0 -async 1 \
+-acodec libfaac -ac 2 \
+-ab 160k -ar 48000 \
+$dir_product/session_converted2.mp4
+
+echo subshell avconv -i  $FFX_OUTPUT -vcodec libx264  $FFX_OUTPUT.mp4
+echo subshell ffmpeg -i $FFX_OUTPUT  -vcodec h264 -acodec aac -strict -2 $FFX_OUTPUT.1.mp4
+echo subshell handbrakecli -i {input}.mov -e x264 -E facc -o {output}.mp4
+	
+echo commander ffmpeg -y -i $FFX_OUTPUT \
+-sameq -s 1280x720 -aspect 16:9 \
+-r 30000/1001 -b 2M -bt 4M -pass 1 \
+-vcodec libx264 \
+-threads 0 -an -f mp4 \
+$dir_product/session_converted1.mp4 
+#-vpre fastfirstpass \
+#-loglevel quiet /dev/null \
+#commander ffmpeg -y -i $FFX_OUTPUT $dir_product/session_converted2.mp4
+
+}
