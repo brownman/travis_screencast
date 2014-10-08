@@ -65,11 +65,12 @@ set_env_travis(){
  try  source $dir_root/CFG/exports.cfg
  try  source $dir_root/CFG/ffmpeg.cfg
 }
-
+############################################################## configure
 validate_travis(){
     commander "assert file_has_content $file_output"
 }
 
+############################################################## main 
 steps_for_travis(){
 install_library
 set_env_travis
@@ -82,6 +83,7 @@ try $dir_root/run.sh record
 validate_travis
 try $dir_root/run.sh push_to_github
 }
+############################################################## run!
 steps_for_travis
 
  
