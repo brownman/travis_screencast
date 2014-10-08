@@ -43,20 +43,30 @@ install_library(){
 }
 
 install_others(){
- try $dir_root/INSTALL/tests.sh    
- try $dir_root/INSTALL/extra.sh
- try $dir_root/INSTALL/ppa.sh
- try $dir_root/INSTALL/update.sh
- try $dir_root/INSTALL/depend.sh
+
+#1. UPDATE: APT-GET RESOURCES
+try $dir_root/INSTALL/sources.sh
+
+#depend: apt-add-repository
+try $dir_root/INSTALL/ppa.sh
+
+#2. APT-GET UPDATE
+try $dir_root/INSTALL/update.sh
+
+#3.install packages
+try $dir_root/INSTALL/tests.sh    
+try $dir_root/INSTALL/depend.sh
 }
 
 set_env_travis(){
  try  source $dir_root/CFG/exports.cfg
  try  source $dir_root/CFG/ffmpeg.cfg
 }
+
 validate_travis(){
     commander "assert file_has_content $file_output"
 }
+
 steps_for_travis(){
 install_library
 set_env_travis
