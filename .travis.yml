@@ -16,7 +16,7 @@ matrix:
 # whitelist
 branches:
   only:
-    - develop
+    - master
     
 before_install:
   - echo before_install
