@@ -1,7 +1,7 @@
 export dir_root=$(cd $(dirname $0) && pwd )
 #source $dir_root/CFG/travis.cfg
 export MODE_MUTE=true
-########################################### fast fail on travis
+############################################################## fast fail on travis
 trap_err_travis () 
 { 
     use print;
@@ -12,6 +12,12 @@ trap_err_travis ()
 }
 export cmd_trap_err_travis='trap trap_err_travis ERR'
 export -f trap_err_travis
+############################################################## testing traps
+test_trap_err(){
+  some_err
+}
+
+##########
 ############################################################## 1 step:
 try(){
   set -u
@@ -28,10 +34,7 @@ try(){
   eval "$cmd"
   fi
 }
-##############################################################
-test_trap_err(){
-  some_err
-}
+############################################################## the library has helpers functions 
 install_library(){
    $dir_root/INSTALL/library.sh
    source /tmp/library.cfg &>/dev/null
@@ -41,7 +44,7 @@ install_library(){
    trap - ERR
    commander $cmd_trap_err_travis
 }
-
+############################################################## install packages
 install_others(){
 
 #1. UPDATE: APT-GET RESOURCES
