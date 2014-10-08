@@ -15,7 +15,7 @@
 
 set -u
 
-while read line;do
-test -n "$line" || break
-commander sudo add-apt-repository  $line
-done < <( cat $dir_TXT/ppa.txt | grep -v \# )
+
+use act_on_list
+cmd='sudo add-apt-repository'
+act_on_list $dir_TXT/tests.txt "$cmd""
