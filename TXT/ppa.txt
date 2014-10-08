@@ -1,1 +1,5 @@
- ppa:stebbins/handbrake-releases
+ppa:stebbins/handbrake-releases
+ppa:webupd8team/y-ppa-manager -y
+ 
+#ppa:fossfreedom/byzanz -y 
+#ppa:jon-severinsson/ffmpeg -y
