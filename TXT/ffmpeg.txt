@@ -1,6 +1,7 @@
 libxext-dev
 libxfixes-dev
 
+#ignore:
 install libass-dev libtheora-dev libvorbis-dev libsamplerate-dev
 autoconf
 automake 
@@ -9,15 +10,15 @@ git
 libass-dev
 libgpac-dev
 
-  libsdl1.2-dev
-  libtheora-dev 
-  libtool 
-  libva-dev 
-  libvdpau-dev
-  libvorbis-dev
-  libx11-dev 
-  
+libsdl1.2-dev
+libtheora-dev 
+libtool 
+libva-dev 
+libvdpau-dev
+libvorbis-dev
+libx11-dev 
 
-  pkg-config 
-  texi2html
-  zlib1g-dev
+
+pkg-config 
+texi2html
+zlib1g-dev
