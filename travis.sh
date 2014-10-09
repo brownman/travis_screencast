@@ -96,7 +96,7 @@ set_env_travis
 }
 #steps_for_travis
 
-
+steps_for_gitbook
  
   #set_env1
   #before_install &&  step install1
