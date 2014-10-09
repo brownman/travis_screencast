@@ -1,38 +1,36 @@
 export dir_root=$(cd $(dirname $0) && pwd )
 #source $dir_root/CFG/travis.cfg
-export MODE_MUTE=true
-############################################################## fast fail on travis
-trap_err_travis () 
-{ 
-    use print;
-    print func;
-    print error;
-    $str_caller;
-    exit 1
-}
-export cmd_trap_err_travis='trap trap_err_travis ERR'
-export -f trap_err_travis
-############################################################## testing traps
-test_trap_err(){
-  some_err
-}
+#export MODE_MUTE=true
 
-##########
 ############################################################## 1 step:
 try(){
   set -u
  # set -e
+  local type=$1
+  shift
   local cmd="$@"
   local res
   echo  "[STEP] $cmd"
     
   #test_trap_err
   #set +e
-  if [ $MODE_MUTE =  true ];then
-  eval "$cmd" 1>/dev/null 2>/tmp/err || { indicator; cat /tmp/err; exit 1; }
-  else
-  eval "$cmd"
-  fi
+  case $type in
+      0) #show all
+      eval "$cmd" || { indicator; cat /tmp/err; exit 1; }
+      ;;
+      12) #hide all
+      eval "$cmd" 1>/dev/null 2>/tmp/err || { indicator; cat /tmp/err; exit 1; }
+      ;;
+      1) #hide std OUT
+      eval "$cmd" 1>/dev/null || { indicator; cat /tmp/err; exit 1; }
+      ;;
+      2) #hide std ERR
+      eval "$cmd" 2>/dev/null || { indicator; cat /tmp/err; exit 1; }
+      ;;
+      **)
+      print error 'no handler for type: ' "$type"
+      ;;
+  esac
 }
 ############################################################## the library has helpers functions 
 install_library(){
@@ -48,22 +46,22 @@ install_library(){
 install_others(){
 
 #1. UPDATE: APT-GET RESOURCES
-try $dir_root/INSTALL/sources.sh
+try 12 $dir_root/INSTALL/sources.sh
 
 #depend: apt-add-repository
-try $dir_root/INSTALL/ppa.sh
+try 12 $dir_root/INSTALL/ppa.sh
 
 #2. APT-GET UPDATE
-try $dir_root/INSTALL/update.sh
+try 12 $dir_root/INSTALL/update.sh
 
 #3.install packages
-try $dir_root/INSTALL/tests.sh    
-try $dir_root/INSTALL/depend.sh
+try 12 $dir_root/INSTALL/tests.sh    
+try 12 $dir_root/INSTALL/depend.sh
 }
 
 set_env_travis(){
- try  source $dir_root/CFG/exports.cfg
- try  source $dir_root/CFG/ffmpeg.cfg
+ try 12  source $dir_root/CFG/exports.cfg
+ try 12  source $dir_root/CFG/ffmpeg.cfg
 }
 ############################################################## configure
 validate_travis(){
@@ -76,16 +74,17 @@ install_library
 set_env_travis
 install_others
 
-try $dir_root/run.sh x11
-try $dir_root/run.sh debug_screen
+try 12 $dir_root/run.sh x11
+try 12 $dir_root/run.sh debug_screen
 commander  $dir_root/run.sh task &
 commander  $dir_root/run.sh capture &
-try $dir_root/run.sh record
+try 12 $dir_root/run.sh record
 validate_travis
-try $dir_root/run.sh push_to_github
+try 12 $dir_root/run.sh push_to_github
 }
 ############################################################## run!
 steps_for_travis
+
 
  
   #set_env1
