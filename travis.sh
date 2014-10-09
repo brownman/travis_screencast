@@ -78,7 +78,7 @@ install_others
 
 try $dir_root/run.sh x11
 try $dir_root/run.sh debug_screen
-try $dir_root/run.sh task &
+commander  $dir_root/run.sh task &
 try $dir_root/run.sh record
 validate_travis
 try $dir_root/run.sh push_to_github
