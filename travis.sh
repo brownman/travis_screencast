@@ -79,8 +79,7 @@ try 12 $dir_root/run.sh debug_screen
 commander  $dir_root/run.sh task &
 commander  $dir_root/run.sh capture &
 try 12 $dir_root/run.sh record
-validate_travis
-try 12 $dir_root/run.sh push_to_github
+validate_travis && { try 12 $dir_root/run.sh push_to_github; }
 }
 ############################################################## run!
 steps_for_travis
