@@ -39,22 +39,20 @@ install_library(){
    source /tmp/library.cfg &>/dev/null
    print ok
    indicator $?
+}
+set_traps(){
    trap
    trap - ERR
    commander $cmd_trap_err_travis
 }
 ############################################################## install packages
-install_others(){
-
+install_packages(){
 #1. UPDATE: APT-GET RESOURCES
 try 12 $dir_root/INSTALL/sources.sh
-
 #depend: apt-add-repository
 try 12 $dir_root/INSTALL/ppa.sh
-
 #2. APT-GET UPDATE
 try 12 $dir_root/INSTALL/update.sh
-
 #3.install packages
 try 12 $dir_root/INSTALL/tests.sh    
 try 12 $dir_root/INSTALL/depend.sh
@@ -72,8 +70,9 @@ validate_travis(){
 ############################################################## main 
 steps_for_travis(){
 install_library
+set_traps
 set_env_travis
-install_others
+install_packages
 
 try 12 $dir_root/run.sh x11
 try 12 $dir_root/run.sh debug_screen
