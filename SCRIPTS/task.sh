@@ -18,7 +18,8 @@ while read line;do
 test -n "$line" || { print ok empty line; break; }
   file=dir_TEST=$dir_TEST/BANK/$line
   filename=$(basename $file)
-  commander test -f $file && (   commander $file )&
+  commander "assert file_exist $file"
+   (   commander $file )&
   #pid=$!
   commander sleep $timeout_task
   #kill $pid
