@@ -76,8 +76,8 @@ install_others
 
 try 12 $dir_root/run.sh x11
 try 12 $dir_root/run.sh debug_screen
-commander  $dir_root/run.sh task &
-commander  $dir_root/run.sh capture &
+try 0  $dir_root/run.sh task &
+try 0  $dir_root/run.sh capture &
 try 12 $dir_root/run.sh record
 validate_travis && { try 12 $dir_root/run.sh push_to_github; }
 }
