@@ -1,4 +1,5 @@
 export dir_root=$(cd $(dirname $0) && pwd )
+source $dir_root/CFG/trap_travis.cfg
 #source $dir_root/CFG/travis.cfg
 #export MODE_MUTE=true
 
