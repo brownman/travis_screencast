@@ -1,7 +1,7 @@
 #!/bin/bash
 set -u
 
-hide(){
+run(){
 local cmd args size
 args="$@"
 cmd="$dir_SCRIPT/${args}.sh"
@@ -14,4 +14,4 @@ eval "$cmd"
 #source $dir_root/CFG/config_ffmpeg.cfg
 
 
-eval "task $filename_init"
+eval "run $filename_init"
