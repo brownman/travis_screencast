@@ -82,7 +82,19 @@ try 12 $dir_root/run.sh record
 validate_travis && { try 12 $dir_root/run.sh push_to_github; }
 }
 ############################################################## run!
-steps_for_travis
+steps_for_gitbook(){
+  install_library
+set_traps
+set_env_travis
+  
+  commander npm install gitbook -g
+  local fmt='Static Website'
+  local dir_readme="$dir_product"
+  commander "gitbook build $dir_readme --format='$fmt'--output=$dir_product/gitbook"
+  
+  try 12 $dir_root/run.sh push_to_github;
+}
+#steps_for_travis
 
 
  
