@@ -1,11 +1,11 @@
+cow
 tumiki
+library
 
-test_library
 
-test_cow
-test_simple_gui
-test_espeak
-test_firefox
-test_prototype
+simple_gui
+espeak
+firefox
+prototype
 
 test_flite
