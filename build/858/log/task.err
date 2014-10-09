@@ -1,0 +1,5 @@
+[01;33m[*][0m DISPLAY: :99.0 [01;34m[*][0m [cmd] assert file_exist dir_TEST=/home/travis/build/brownman/travis_screencast/TEST/BANK/cow.sh [01;31m[*][0m : [ASSERT ERROR] 
+type:  file_exist
+item:  dir_TEST=/home/travis/build/brownman/travis_screencast/TEST/BANK/cow.sh
+extra:  
+[CALLER] 
