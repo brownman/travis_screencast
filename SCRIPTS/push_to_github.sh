@@ -17,13 +17,14 @@ commander  git clone --depth=1 --quiet --branch=gh-pages https://${GH_TOKEN}@git
 }
 
 rm2(){
-test -d old || { mkdir old; }
-mv *.* old/
+#test -d old || { mkdir old; }
+#mv *.* old/
 git rm -rf build
 }
 
 migrate1(){
 cd gh-pages
+commander rm2
 dir_new=build/$TRAVIS_BUILD_NUMBER
 mkdir -p $dir_new
 #
@@ -45,7 +46,7 @@ echo "https://${GH_TOKEN}:@github.com" > .git/credentials
 
 if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   clone1
-  rm2
+  
   migrate1
   push1
 fi
