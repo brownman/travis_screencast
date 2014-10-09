@@ -1,4 +1,0 @@
-[01;34m[*][0m [cmd] trap trap_err_travis ERR [01;32m[*][0m : 
-[01;33m[*][0m DISPLAY: :99.0 [01;34m[*][0m [cmd] test -f dir_TEST=/home/travis/build/brownman/travis_screencast/TEST/BANK/tumiki [01;34m[*][0m [cmd] sleep 7 [01;31m[*][0m : 
-[01;32m[*][0m : 
-[01;32m[*][0m : empty line 

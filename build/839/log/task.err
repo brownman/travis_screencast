@@ -1,5 +1,0 @@
-[01;34m[*][0m [cmd] trap trap_err_travis ERR [01;32m[*][0m : 
-[01;33m[*][0m DISPLAY: :99.0 /home/travis/build/brownman/travis_screencast/SCRIPTS/task.sh: line 9: /home/travis/build/brownman/travis_screencast/TXT/task.txt: No such file or directory
-                _________________
-_______________/trap_err_travis: \________________
-[01;31m[*][0m : 

@@ -1,2 +1,0 @@
-[01;34m[*][0m [cmd] git clone --depth=1 --quiet --branch=gh-pages https://0178027dd39c64f558369bab4c813688c5db58c2@github.com/brownman/travis_screencast.git gh-pages [01;32m[*][0m : 
-fatal: Not a git repository (or any of the parent directories): .git
