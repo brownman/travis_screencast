@@ -45,7 +45,7 @@ echo "https://${GH_TOKEN}:@github.com" > .git/credentials
 
 if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   clone1
-  #rm2
+  rm2
   migrate1
   push1
 fi
