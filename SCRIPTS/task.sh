@@ -16,7 +16,7 @@ local pid file filename
 while read line;do
 
 test -n "$line" || { print ok empty line; break; }
-  file=dir_TEST=$dir_TEST/BANK/$line
+  file=dir_TEST=$dir_TEST/BANK/${line}.sh
   filename=$(basename $file)
   commander "assert file_exist $file"
    (   commander $file )&
