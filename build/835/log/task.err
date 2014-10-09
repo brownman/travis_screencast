@@ -1,0 +1,3 @@
+[01;33m[*][0m DISPLAY: :99.0 /home/travis/build/brownman/travis_screencast/SCRIPTS/task.sh: line 16: kill: (12391) - No such process
+/home/travis/build/brownman/travis_screencast/SCRIPTS/task.sh: line 16: kill: (12579) - No such process
+[01;32m[*][0m : empty line 
