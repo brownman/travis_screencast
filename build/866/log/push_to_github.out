@@ -1,0 +1,38 @@
+Starting to update gh-pages
+
+
+
+
+rm 'build/867/log.txt'
+rm 'build/867/log/capture.err'
+rm 'build/867/log/capture.out'
+rm 'build/867/log/debug_screen.err'
+rm 'build/867/log/debug_screen.out'
+rm 'build/867/log/push_to_github.err'
+rm 'build/867/log/push_to_github.out'
+rm 'build/867/log/record.err'
+rm 'build/867/log/record.out'
+rm 'build/867/log/task.err'
+rm 'build/867/log/task.out'
+rm 'build/867/log/x11.err'
+rm 'build/867/log/x11.out'
+rm 'build/867/media/02.png'
+rm 'build/867/media/05.png'
+rm 'build/867/media/09.png'
+rm 'build/867/media/12.png'
+rm 'build/867/media/15.png'
+rm 'build/867/media/19.png'
+rm 'build/867/media/22.png'
+rm 'build/867/media/26.png'
+rm 'build/867/media/38.png'
+rm 'build/867/media/41.png'
+rm 'build/867/media/45.png'
+rm 'build/867/media/48.png'
+rm 'build/867/media/52.png'
+rm 'build/867/media/55.png'
+rm 'build/867/media/58.png'
+rm 'build/867/media/session.mp4'
+rm 'build/867/media/session.ogv'
+rm 'build/867/media/session.png'
+rm 'build/867/media/session.webm'
+

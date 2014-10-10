@@ -1,4 +1,4 @@
-[01;34m[*][0m [cmd] exec /usr/bin/Xvfb :99.0 -screen 0 1024x768x16 -extension RANDR [01;34m[*][0m [cmd] dbus-launch pulseaudio --start [dix] Could not init font path element /usr/share/fonts/X11/cyrillic, removing from list!
+[01;34m[*][0m [cmd] dbus-launch pulseaudio --start [01;34m[*][0m [cmd] exec /usr/bin/Xvfb :99.0 -screen 0 1024x768x16 -extension RANDR [dix] Could not init font path element /usr/share/fonts/X11/cyrillic, removing from list!
 [dix] Could not init font path element /usr/share/fonts/X11/100dpi/:unscaled, removing from list!
 [dix] Could not init font path element /usr/share/fonts/X11/75dpi/:unscaled, removing from list!
 [dix] Could not init font path element /usr/share/fonts/X11/Type1, removing from list!
