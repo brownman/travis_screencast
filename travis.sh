@@ -103,6 +103,7 @@ steps_for_youtube(){
 set_traps
 set_env_travis
  sudo   pip install googlecl
+commander google youtube post --category Education killer_robots.avi
   
 }
 steps_for_youtube
