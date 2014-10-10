@@ -97,7 +97,16 @@ set_env_travis
 #steps_for_travis
 
 #steps_for_gitbook
- steps_for_travis
+
+steps_for_youtube(){
+  install_library
+set_traps
+set_env_travis
+   pip install googlecl
+  
+}
+steps_for_youtube
+ #steps_for_travis
   #set_env1
   #before_install &&  step install1
   #step before_script &&   step script1 &&    step after_script &&   step after_success ||   step after_failure
