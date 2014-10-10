@@ -102,7 +102,7 @@ steps_for_youtube(){
   install_library
 set_traps
 set_env_travis
-   pip install googlecl
+ sudo   pip install googlecl
   
 }
 steps_for_youtube
