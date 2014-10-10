@@ -24,7 +24,7 @@ git rm -rf build
 
 migrate1(){
 cd gh-pages
-commander rm2
+#commander rm2
 dir_new=build/$TRAVIS_BUILD_NUMBER
 mkdir -p $dir_new
 #
