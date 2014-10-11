@@ -108,7 +108,7 @@ VERSION=0.7.3
 wget http://youtube-upload.googlecode.com/files/youtube-upload-$VERSION.tgz
  tar xvzf youtube-upload-$VERSION.tgz
   cd youtube-upload-$VERSION
-  pip install youtube-upload
+  pip install --allow-external  youtube-upload
   sudo python setup.py install 
  # cd youtube-upload-VERSION
  #python youtube_upload/youtube_upload.py ...
