@@ -108,7 +108,7 @@ VERSION=0.7.3
 wget http://youtube-upload.googlecode.com/files/youtube-upload-$VERSION.tgz
  tar xvzf youtube-upload-$VERSION.tgz
   cd youtube-upload-$VERSION
- #sudo python setup.py install 
+  sudo python setup.py install 
  # cd youtube-upload-VERSION
  #python youtube_upload/youtube_upload.py ...
 # sudo apt-get install subversion
