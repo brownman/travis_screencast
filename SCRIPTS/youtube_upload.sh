@@ -29,7 +29,7 @@ sudo pip install pycurl gdata progressbar
  #svn checkout http://youtube-upload.googlecode.com/svn/trunk/ youtube-upload
  #cd youtube-upload
  #sudo python setup.py install
- file_vid=test.mov
+# file_vid=test.mov
  #wget https://github.com/kylejginavan/youtube_it/blob/master/test/${file_vid}?raw=true
 # wget  "https://raw.githubusercontent.com/kylejginavan/youtube_it/master/test/${file_vid}"
 
