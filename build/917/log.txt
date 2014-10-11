@@ -1,0 +1,41 @@
+build/917:
+total 8
+drwxrwxr-x 2 travis travis 4096 Oct 11 07:35 log
+drwxrwxr-x 2 travis travis 4096 Oct 11 07:35 media
+-rw-rw-r-- 1 travis travis    0 Oct 11 07:35 log.txt
+
+build/917/log:
+total 72
+-rw-rw-r-- 1 travis travis 16464 Oct 11 07:35 record.err
+-rw-rw-r-- 1 travis travis  8361 Oct 11 07:34 task.err
+-rw-rw-r-- 1 travis travis  5467 Oct 11 07:34 x11.err
+-rw-rw-r-- 1 travis travis  1665 Oct 11 07:35 record.out
+-rw-rw-r-- 1 travis travis  1134 Oct 11 07:35 capture.err
+-rw-rw-r-- 1 travis travis   330 Oct 11 07:34 debug_screen.err
+-rw-rw-r-- 1 travis travis   172 Oct 11 07:34 debug_screen.out
+-rw-rw-r-- 1 travis travis    29 Oct 11 07:35 push_to_github.out
+-rw-rw-r-- 1 travis travis    28 Oct 11 07:35 capture.out
+-rw-rw-r-- 1 travis travis     7 Oct 11 07:34 task.out
+-rw-rw-r-- 1 travis travis     6 Oct 11 07:34 x11.out
+-rw-rw-r-- 1 travis travis     0 Oct 11 07:35 push_to_github.err
+
+build/917/media:
+total 4832
+-rw-rw-r-- 1 travis travis 2476136 Oct 11 07:34 session.mp4
+-rw-rw-r-- 1 travis travis 1782577 Oct 11 07:34 session.ogv
+-rw-rw-r-- 1 travis travis  356165 Oct 11 07:35 session.webm
+-rw-rw-r-- 1 travis travis   32601 Oct 11 07:34 32.png
+-rw-rw-r-- 1 travis travis   32601 Oct 11 07:34 session.png
+-rw-rw-r-- 1 travis travis   26667 Oct 11 07:34 35.png
+-rw-rw-r-- 1 travis travis   21869 Oct 11 07:35 12.png
+-rw-rw-r-- 1 travis travis   21622 Oct 11 07:34 48.png
+-rw-rw-r-- 1 travis travis   21060 Oct 11 07:34 55.png
+-rw-rw-r-- 1 travis travis   19855 Oct 11 07:35 15.png
+-rw-rw-r-- 1 travis travis   18759 Oct 11 07:34 52.png
+-rw-rw-r-- 1 travis travis   17410 Oct 11 07:34 58.png
+-rw-rw-r-- 1 travis travis   16337 Oct 11 07:35 09.png
+-rw-rw-r-- 1 travis travis   15225 Oct 11 07:34 45.png
+-rw-rw-r-- 1 travis travis   15033 Oct 11 07:35 05.png
+-rw-rw-r-- 1 travis travis   14936 Oct 11 07:34 42.png
+-rw-rw-r-- 1 travis travis   14377 Oct 11 07:34 38.png
+-rw-rw-r-- 1 travis travis   13553 Oct 11 07:35 02.png
