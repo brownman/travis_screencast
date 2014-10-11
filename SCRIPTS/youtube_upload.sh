@@ -37,8 +37,8 @@ file_vid=$dir_product/session.mp4
 ls -l $file_vid
 
 python youtube_upload/youtube_upload.py --email=$user@gmail.com --password=$password \
-                 --title="A.S. Mutter" --description="A.S. Mutter plays Beethoven" \
-                 --category=Music --keywords="mutter, beethoven" $file_vid #&>/dev/null
+                 --title="$TRAVIS_BUILD_NUMBER" --description="$TRAVIS_BUILD_NUMBER" \
+                 --category=Music --keywords="x,y" $file_vid #&>/dev/null
 #www.youtube.com/watch?v=pxzZ-fYjeYs
 
 
