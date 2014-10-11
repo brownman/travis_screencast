@@ -114,7 +114,7 @@ wget http://youtube-upload.googlecode.com/files/youtube-upload-$VERSION.tgz
   
   # stuff for youtube
 sudo apt-get install -y libcurl4-gnutls-dev librtmp-dev
-sudo pip install pycurl gdata
+sudo pip install pycurl gdata python-progressbar 
   sudo python setup.py install 
 #sudo pip install youtube-upload
 #curl http://youtube-upload.googlecode.com/svn/trunk/examples/split_video_for_youtube.sh > ../bin/split_video_for_youtube && chmod u+x ../bin/split_video_for_youtube
@@ -129,7 +129,8 @@ sudo pip install pycurl gdata
  #cd youtube-upload
  #sudo python setup.py install
  file_vid=test.mov
- wget https://github.com/kylejginavan/youtube_it/blob/master/test/${file_vid}?raw=true
+ #wget https://github.com/kylejginavan/youtube_it/blob/master/test/${file_vid}?raw=true
+ wget  "https://raw.githubusercontent.com/kylejginavan/youtube_it/master/test/${file_vid}"
 ls -l $file_vid
 
 python youtube_upload/youtube_upload.py --email=$user@gmail.com --password=$password \
