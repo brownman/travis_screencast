@@ -147,7 +147,7 @@ set_env_travis
 }
 #steps_for_youtube
 #echo $super_secret_password
-echo "my secret env: $password"
+echo "my secret env: $user"
 
 #openssl aes-256-cbc -k "$super_secret_password" -in super_secret.txt.enc -out super_secret.txt -d
 
