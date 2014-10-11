@@ -46,4 +46,4 @@ python youtube_upload/youtube_upload.py --email=$user@gmail.com --password=$pass
  
 #steps_for_youtube
 #echo "my secret env: $user"
-steps_for_youtube
+echo $TRAVIS_COMMIT | grep 'youtube upload' && ( echo steps_for_youtube )
