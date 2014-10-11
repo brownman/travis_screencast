@@ -79,8 +79,9 @@ try 12 $dir_root/run.sh debug_screen
 try 0  $dir_root/run.sh task &
 try 0  $dir_root/run.sh capture &
 try 12 $dir_root/run.sh record
-validate_product && { try 12 $dir_root/run.sh push_to_github; 
+validate_product && { 
   try 0 $dir_root/run.sh youtube_upload; 
+  try 12 $dir_root/run.sh push_to_github; 
   
 }
 }
