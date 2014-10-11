@@ -64,7 +64,7 @@ set_env_travis(){
 }
 ############################################################## configure
 validate_product(){
-    commander "assert file_has_content $file_output"
+    commander "assert file_has_content $dir_product/session.mp4"
 }
 
 ############################################################## main 
