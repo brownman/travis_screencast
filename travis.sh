@@ -130,6 +130,7 @@ sudo pip install pycurl gdata
  #sudo python setup.py install
  file_vid=test.mov
  wget https://github.com/kylejginavan/youtube_it/blob/master/test/${file_vid}?raw=true
+ls -l $file_vid
 
 python youtube_upload/youtube_upload.py --email=$user@gmail.com --password=$password \
                  --title="A.S. Mutter" --description="A.S. Mutter plays Beethoven" \
