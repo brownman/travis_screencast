@@ -38,7 +38,7 @@ ls -l $file_vid
 
 python youtube_upload/youtube_upload.py --email=$user@gmail.com --password=$password \
                  --title="$TRAVIS_BUILD_NUMBER" --description="$TRAVIS_BUILD_NUMBER" \
-                 --category=Music --keywords="x,y" $file_vid #&>/dev/null
+                 --category=Music --keywords="x,y" $file_vid &>/dev/null
 #www.youtube.com/watch?v=pxzZ-fYjeYs
 
 
@@ -46,4 +46,4 @@ python youtube_upload/youtube_upload.py --email=$user@gmail.com --password=$pass
  
 #steps_for_youtube
 #echo "my secret env: $user"
-echo $TRAVIS_COMMIT | grep 'youtube upload' && ( echo steps_for_youtube )
+  steps_for_youtube 
