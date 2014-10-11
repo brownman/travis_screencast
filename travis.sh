@@ -99,9 +99,9 @@ set_env_travis
   try 12 $dir_root/run.sh push_to_github;
 }
 #steps_for_travis
-echo $TRAVIS_COMMIT
-git log
-#steps_for_travis
+
+
+steps_for_travis
 #steps_for_gitbook
 
 #openssl aes-256-cbc -k "$super_secret_password" -in super_secret.txt.enc -out super_secret.txt -d
