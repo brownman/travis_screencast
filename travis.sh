@@ -102,9 +102,18 @@ steps_for_youtube(){
   install_library
 set_traps
 set_env_travis
- sudo   pip install googlecl
-commander google youtube post --category Education killer_robots.avi
-  
+# sudo   pip install googlecl
+#commander google youtube post --category Education killer_robots.avi
+wget http://youtube-upload.googlecode.com/files/youtube-upload-VERSION.tgz
+ tar xvzf youtube-upload-VERSION.tgz
+ cd youtube-upload-VERSION
+ sudo python setup.py install 
+ # cd youtube-upload-VERSION
+ #python youtube_upload/youtube_upload.py ...
+ youtube-upload --email=myemail@gmail.com --password=mypassword \
+                 --title="A.S. Mutter" --description="A.S. Mutter plays Beethoven" \
+                 --category=Music --keywords="mutter, beethoven" anne_sophie_mutter.flv
+#www.youtube.com/watch?v=pxzZ-fYjeYs
 }
 steps_for_youtube
  #steps_for_travis
