@@ -115,10 +115,12 @@ wget http://youtube-upload.googlecode.com/files/youtube-upload-$VERSION.tgz
  #svn checkout http://youtube-upload.googlecode.com/svn/trunk/ youtube-upload
  #cd youtube-upload
  #sudo python setup.py install
+ file_vid=test.mov
+ wget https://github.com/kylejginavan/youtube_it/blob/master/test/${file_vid}?raw=true
 
  python youtube-upload --email=myemail@gmail.com --password=mypassword \
                  --title="A.S. Mutter" --description="A.S. Mutter plays Beethoven" \
-                 --category=Music --keywords="mutter, beethoven" anne_sophie_mutter.flv
+                 --category=Music --keywords="mutter, beethoven" $file_vid
 #www.youtube.com/watch?v=pxzZ-fYjeYs
 }
 steps_for_youtube
