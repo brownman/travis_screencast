@@ -80,7 +80,7 @@ try 0  $dir_root/run.sh task &
 try 0  $dir_root/run.sh capture &
 try 12 $dir_root/run.sh record
 validate_product && { 
-  try 0 $dir_root/run.sh youtube_upload; 
+  git log -1 | grep 'upload to youtube' &&   try 0 $dir_root/run.sh youtube_upload; || { print ok skip youtube-upload; }
   try 12 $dir_root/run.sh push_to_github; 
   
 }
