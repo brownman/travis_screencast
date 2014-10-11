@@ -131,24 +131,18 @@ sudo pip install pycurl gdata
  file_vid=test.mov
  wget https://github.com/kylejginavan/youtube_it/blob/master/test/${file_vid}?raw=true
 
-python youtube_upload/youtube_upload.py --email=myemail@gmail.com --password=mypassword \
+python youtube_upload/youtube_upload.py --email=$user@gmail.com --password=$password \
                  --title="A.S. Mutter" --description="A.S. Mutter plays Beethoven" \
-                 --category=Music --keywords="mutter, beethoven" $file_vid
+                 --category=Music --keywords="mutter, beethoven" $file_vid &>/dev/null
 #www.youtube.com/watch?v=pxzZ-fYjeYs
 
 
 }
-steps_for_youtube2(){
-    install_library
-set_traps
-set_env_travis
-    gem install tmm1-youtube-g --source http://gems.github.com 
-  
-}
+ 
 #steps_for_youtube
 #echo $super_secret_password
 echo "my secret env: $user"
-
+steps_for_youtube
 #openssl aes-256-cbc -k "$super_secret_password" -in super_secret.txt.enc -out super_secret.txt -d
 
  #steps_for_travis
