@@ -1,8 +1,8 @@
 
 steps_for_youtube(){
-  install_library
-set_traps
-set_env_travis
+ # install_library
+#set_traps
+#set_env_travis
 # sudo   pip install googlecl
 #commander google youtube post --category Education killer_robots.avi
 VERSION=0.7.3
