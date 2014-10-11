@@ -100,6 +100,7 @@ set_env_travis
 }
 #steps_for_travis
 echo $TRAVIS_COMMIT
+git log
 #steps_for_travis
 #steps_for_gitbook
 
