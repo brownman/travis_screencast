@@ -118,7 +118,7 @@ wget http://youtube-upload.googlecode.com/files/youtube-upload-$VERSION.tgz
  file_vid=test.mov
  wget https://github.com/kylejginavan/youtube_it/blob/master/test/${file_vid}?raw=true
 
- python youtube-upload --email=myemail@gmail.com --password=mypassword \
+python youtube_upload/youtube_upload.py --email=myemail@gmail.com --password=mypassword \
                  --title="A.S. Mutter" --description="A.S. Mutter plays Beethoven" \
                  --category=Music --keywords="mutter, beethoven" $file_vid
 #www.youtube.com/watch?v=pxzZ-fYjeYs
