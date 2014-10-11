@@ -6,7 +6,8 @@ cache: apt
 
 env:
   global:
-    secure: "XyxrwdEK1RxYFDzmU1+WCkEL0MlDlPdF9wP6kDjDoOAs6o5+oRUqVXP8uCdahREJZaL3n4PpnSa1X7UcbC+E6q/IY7BYdNCCQ0v2xYOMf7H5op7WF4x0Sb2DhzcJGx9E5R1xJZHb7y5t/AAB61k97UQxwtA3LEI6LS2FdSPrghY="
+    secure: "UoWHJNW/YXhHHBdjJ9pQCrPQa1WLc24s8kxpgF5bOCAZbRLLh7ndVoLLpsMdf9XCbTw/42RpYFrhag8oLwNn2cqAHBV38A32vAodwt6TGjGlEqM7oNTllikGOolEo4XAkldULcG2dHa22oQjUqqrcFVu0AiPcOCJs7/BC5aalF8="
+
 
 
   #  secure: "eeg3fbZ+021Nwb519WvJ6jBWJxQzepJAq/kPRCQgP7JgWadWcSuOukn+aN+Dij7T8Wks+PRZGsPN91Xh4keKOnlPSBme7wK8pt0osFpy2fdX9KCj6gOp0/+cpRrkpomdSo+hX1iNdqJcFjP8OtMtC08Vs0mTbjzN2OaPtEfuXGU="
