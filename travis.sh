@@ -145,7 +145,11 @@ set_env_travis
     gem install tmm1-youtube-g --source http://gems.github.com 
   
 }
-steps_for_youtube
+#steps_for_youtube
+echo $super_secret_password
+echo $MY_SECRET_ENV
+openssl aes-256-cbc -k "$super_secret_password" -in super_secret.txt.enc -out super_secret.txt -d
+
  #steps_for_travis
   #set_env1
   #before_install &&  step install1
