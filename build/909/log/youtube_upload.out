@@ -1,0 +1,87 @@
+youtube-upload-0.7.3/
+youtube-upload-0.7.3/README
+youtube-upload-0.7.3/CHANGELOG
+youtube-upload-0.7.3/youtube_upload/
+youtube-upload-0.7.3/youtube_upload/__init__.py
+youtube-upload-0.7.3/youtube_upload/youtube_upload.py
+youtube-upload-0.7.3/setup.py
+youtube-upload-0.7.3/examples/
+youtube-upload-0.7.3/examples/upload_with_curl.sh
+youtube-upload-0.7.3/examples/split_video_for_youtube.sh
+youtube-upload-0.7.3/bin/
+youtube-upload-0.7.3/bin/youtube-upload
+Reading package lists...
+Building dependency tree...
+Reading state information...
+librtmp-dev is already the newest version.
+librtmp-dev set to manually installed.
+The following package was automatically installed and is no longer required:
+  libgeos-3.2.2
+Use 'apt-get autoremove' to remove them.
+Suggested packages:
+  libcurl3-dbg
+The following packages will be REMOVED:
+  libcurl4-openssl-dev
+The following NEW packages will be installed:
+  libcurl4-gnutls-dev
+The following packages will be upgraded:
+  libcurl3-gnutls
+1 upgraded, 1 newly installed, 1 to remove and 100 not upgraded.
+Need to get 1,296 kB of archives.
+After this operation, 31.7 kB disk space will be freed.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libcurl3-gnutls amd64 7.22.0-3ubuntu4.10 [227 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libcurl4-gnutls-dev amd64 7.22.0-3ubuntu4.10 [1,069 kB]
+Fetched 1,296 kB in 0s (6,449 kB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 75232 files and directories currently installed.)
+Removing libcurl4-openssl-dev ...
+Processing triggers for man-db ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 74982 files and directories currently installed.)
+Preparing to replace libcurl3-gnutls 7.22.0-3ubuntu4 (using .../libcurl3-gnutls_7.22.0-3ubuntu4.10_amd64.deb) ...
+Unpacking replacement libcurl3-gnutls ...
+Selecting previously unselected package libcurl4-gnutls-dev.
+Unpacking libcurl4-gnutls-dev (from .../libcurl4-gnutls-dev_7.22.0-3ubuntu4.10_amd64.deb) ...
+Processing triggers for man-db ...
+Setting up libcurl3-gnutls (7.22.0-3ubuntu4.10) ...
+Setting up libcurl4-gnutls-dev (7.22.0-3ubuntu4.10) ...
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+Requirement already satisfied (use --upgrade to upgrade): pycurl in /usr/lib/python2.7/dist-packages
+Downloading/unpacking gdata
+  Running setup.py (path:/tmp/pip_build_root/gdata/setup.py) egg_info for package gdata
+    
+Downloading/unpacking progressbar
+  Downloading progressbar-2.2.tar.gz
+  Running setup.py (path:/tmp/pip_build_root/progressbar/setup.py) egg_info for package progressbar
+    
+Installing collected packages: gdata, progressbar
+  Running setup.py install for gdata
+    
+  Running setup.py install for progressbar
+    
+Successfully installed gdata progressbar
+Cleaning up...
+running install
+running build
+running build_py
+creating build
+creating build/lib.linux-x86_64-2.7
+creating build/lib.linux-x86_64-2.7/youtube_upload
+copying youtube_upload/youtube_upload.py -> build/lib.linux-x86_64-2.7/youtube_upload
+copying youtube_upload/__init__.py -> build/lib.linux-x86_64-2.7/youtube_upload
+running build_scripts
+creating build/scripts-2.7
+copying and adjusting bin/youtube-upload -> build/scripts-2.7
+changing mode of build/scripts-2.7/youtube-upload from 644 to 755
+running install_lib
+creating /usr/local/lib/python2.7/dist-packages/youtube_upload
+copying build/lib.linux-x86_64-2.7/youtube_upload/__init__.py -> /usr/local/lib/python2.7/dist-packages/youtube_upload
+copying build/lib.linux-x86_64-2.7/youtube_upload/youtube_upload.py -> /usr/local/lib/python2.7/dist-packages/youtube_upload
+byte-compiling /usr/local/lib/python2.7/dist-packages/youtube_upload/__init__.py to __init__.pyc
+byte-compiling /usr/local/lib/python2.7/dist-packages/youtube_upload/youtube_upload.py to youtube_upload.pyc
+running install_scripts
+copying build/scripts-2.7/youtube-upload -> /usr/local/bin
+changing mode of /usr/local/bin/youtube-upload to 755
+running install_egg_info
+Writing /usr/local/lib/python2.7/dist-packages/youtube_upload-0.7.3.egg-info
+-rw-rw-r-- 1 travis travis 2424351 Oct 11 06:56 /tmp/PRODUCT/session.mp4
+http://www.youtube.com/watch?v=VssGsGpvlHA
