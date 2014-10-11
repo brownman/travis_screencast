@@ -123,6 +123,15 @@ python youtube_upload/youtube_upload.py --email=myemail@gmail.com --password=myp
                  --title="A.S. Mutter" --description="A.S. Mutter plays Beethoven" \
                  --category=Music --keywords="mutter, beethoven" $file_vid
 #www.youtube.com/watch?v=pxzZ-fYjeYs
+
+
+}
+steps_for_youtube2(){
+    install_library
+set_traps
+set_env_travis
+    gem install tmm1-youtube-g --source http://gems.github.com 
+  
 }
 steps_for_youtube
  #steps_for_travis
