@@ -115,7 +115,8 @@ wget http://youtube-upload.googlecode.com/files/youtube-upload-$VERSION.tgz
   # stuff for youtube
 sudo apt-get install -y libcurl4-gnutls-dev librtmp-dev
 sudo pip install pycurl gdata
-sudo pip install youtube-upload
+  sudo python setup.py install 
+#sudo pip install youtube-upload
 #curl http://youtube-upload.googlecode.com/svn/trunk/examples/split_video_for_youtube.sh > ../bin/split_video_for_youtube && chmod u+x ../bin/split_video_for_youtube
 
 
