@@ -63,7 +63,7 @@ set_env_travis(){
  try 12  source $dir_root/CFG/ffmpeg.cfg
 }
 ############################################################## configure
-validate_travis(){
+validate_product(){
     commander "assert file_has_content $file_output"
 }
 
@@ -79,7 +79,10 @@ try 12 $dir_root/run.sh debug_screen
 try 0  $dir_root/run.sh task &
 try 0  $dir_root/run.sh capture &
 try 12 $dir_root/run.sh record
-validate_travis && { try 12 $dir_root/run.sh push_to_github; }
+validate_product && { try 12 $dir_root/run.sh push_to_github; 
+  try 12 $dir_root/run.sh youtube_upload; 
+  
+}
 }
 ############################################################## run!
 steps_for_gitbook(){
@@ -95,56 +98,9 @@ set_env_travis
   try 12 $dir_root/run.sh push_to_github;
 }
 #steps_for_travis
-
+steps_for_travis
 #steps_for_gitbook
 
-steps_for_youtube(){
-  install_library
-set_traps
-set_env_travis
-# sudo   pip install googlecl
-#commander google youtube post --category Education killer_robots.avi
-VERSION=0.7.3
-wget http://youtube-upload.googlecode.com/files/youtube-upload-$VERSION.tgz
- tar xvzf youtube-upload-$VERSION.tgz
-  cd youtube-upload-$VERSION
- # pip install --allow-external  youtube-upload
-#  sudo python setup.py install 
-  
-  
-  # stuff for youtube
-sudo apt-get install -y libcurl4-gnutls-dev librtmp-dev
-sudo pip install pycurl gdata progressbar 
-  sudo python setup.py install 
-#sudo pip install youtube-upload
-#curl http://youtube-upload.googlecode.com/svn/trunk/examples/split_video_for_youtube.sh > ../bin/split_video_for_youtube && chmod u+x ../bin/split_video_for_youtube
-
-
-
-
- # cd youtube-upload-VERSION
- #python youtube_upload/youtube_upload.py ...
-# sudo apt-get install subversion
- #svn checkout http://youtube-upload.googlecode.com/svn/trunk/ youtube-upload
- #cd youtube-upload
- #sudo python setup.py install
- file_vid=test.mov
- #wget https://github.com/kylejginavan/youtube_it/blob/master/test/${file_vid}?raw=true
- wget  "https://raw.githubusercontent.com/kylejginavan/youtube_it/master/test/${file_vid}"
-ls -l $file_vid
-
-python youtube_upload/youtube_upload.py --email=$user@gmail.com --password=$password \
-                 --title="A.S. Mutter" --description="A.S. Mutter plays Beethoven" \
-                 --category=Music --keywords="mutter, beethoven" $file_vid #&>/dev/null
-#www.youtube.com/watch?v=pxzZ-fYjeYs
-
-
-}
- 
-#steps_for_youtube
-#echo $super_secret_password
-echo "my secret env: $user"
-steps_for_youtube
 #openssl aes-256-cbc -k "$super_secret_password" -in super_secret.txt.enc -out super_secret.txt -d
 
  #steps_for_travis
