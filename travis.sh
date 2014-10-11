@@ -133,7 +133,7 @@ sudo pip install pycurl gdata
 
 python youtube_upload/youtube_upload.py --email=$user@gmail.com --password=$password \
                  --title="A.S. Mutter" --description="A.S. Mutter plays Beethoven" \
-                 --category=Music --keywords="mutter, beethoven" $file_vid &>/dev/null
+                 --category=Music --keywords="mutter, beethoven" $file_vid #&>/dev/null
 #www.youtube.com/watch?v=pxzZ-fYjeYs
 
 
