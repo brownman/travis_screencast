@@ -1,0 +1,22 @@
+
+
+
+
+
+total 36
+-rw-rw-r-- 1 travis travis 1271 Oct 12 08:59 CHANGELOG.md
+-rw-rw-r-- 1 travis travis 1033 Oct 12 08:59 commands.sh
+drwxrwxr-x 4 travis travis  180 Oct 12 08:59 config.sh
+lrwxrwxrwx 1 travis travis   14 Oct 12 08:59 container -> /tmp/container
+lrwxrwxrwx 1 travis travis   15 Oct 12 08:59 container2 -> /tmp/container2
+-rw-rw-r-- 1 travis travis   20 Oct 12 08:59 dependencies.txt
+lrwxrwxrwx 1 travis travis   24 Oct 12 08:59 docker-desktop -> config.sh/docker-desktop
+-rw-rw-r-- 1 travis travis 2613 Oct 12 08:59 Dockerfile
+-rw-rw-r-- 1 travis travis  143 Oct 12 08:59 history
+drwxrwxr-x 2 travis travis   60 Oct 12 08:59 image
+-rwxrwxr-x 1 travis travis 5550 Oct 12 08:59 ofer.sh
+-rw-rw-r-- 1 travis travis 4019 Oct 12 08:59 README.md
+-rwxrwxr-x 1 travis travis  798 Oct 12 08:59 startup.sh
+
+
+
