@@ -1,4 +1,6 @@
 #https://github.com/rogaha/docker-desktop
+
+step1(){
 #Add the PPA sources to your apt sources list.
 sudo apt-get install python-software-properties && sudo add-apt-repository ppa:dotcloud/lxc-docker
 
@@ -21,3 +23,12 @@ docker@192.168.56.102's password: xxxxxxxxxxxx
  ./docker-desktop -h
   xpra --ssh="ssh -p 49153" attach ssh:docker@192.168.56.102:10 # user@ip_address:session_number
 docker@192.168.56.102's password: xxxxxxxxxxxx 
+}
+
+step0(){
+ git clone https://github.com/brownman/GENERATOR
+ cd GENERATOR/DESKTOP
+ ls -l
+ 
+}
+step0
