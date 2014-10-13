@@ -2,6 +2,7 @@ export dir_root=$(cd $(dirname $0) && pwd )
 source $dir_root/CFG/trap_travis.cfg
 #source $dir_root/CFG/travis.cfg
 #export MODE_MUTE=true
+export MODE_DEPLOY=false
 
 try(){
   set -u
@@ -86,22 +87,20 @@ validate_product && {
 }
 }
 ############################################################## run!
-steps_for_gitbook(){
-  install_library
+steps_for_temp(){
+install_library
 set_traps
 set_env_travis
-  
-  commander npm install gitbook -g
-  local fmt='Static Website'
-  local dir_readme="$dir_product"
-  commander "gitbook build $dir_readme --format='$fmt'--output=$dir_product/gitbook"
-  
-  try 12 $dir_root/run.sh push_to_github;
+apt-get source tumiki-fighters
+mv tumiki-fighters* $dir_product
+ls -lR $dir_product
+return 1
 }
-#steps_for_travis
-
-print_env
+if [ $MODE_DEPLOY = true ];then
+steps_for_temp 
+else
 steps_for_travis
+fi
 #steps_for_gitbook
 
 #openssl aes-256-cbc -k "$super_secret_password" -in super_secret.txt.enc -out super_secret.txt -d
