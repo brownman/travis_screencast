@@ -88,8 +88,8 @@ validate_product && {
 }
 ############################################################## run!
 steps_for_temp(){
-install_library
-set_traps
+#install_library
+#set_traps
 set_env_travis
 apt-get source tumiki-fighters
 mv tumiki-fighters* $dir_product
