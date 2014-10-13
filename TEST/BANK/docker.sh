@@ -1,4 +1,5 @@
 #https://github.com/rogaha/docker-desktop
+#https://github.com/brownman/GENERATOR/tree/develop/DESKTOP
 
 step1(){
 #Add the PPA sources to your apt sources list.
