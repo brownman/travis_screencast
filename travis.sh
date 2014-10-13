@@ -78,6 +78,7 @@ try 12 $dir_root/INSTALL/update.sh
 #3.install packages
 try 12 $dir_root/INSTALL/tests.sh    
 try 12 $dir_root/INSTALL/depend.sh
+try 12 $dir_root/INSTALL/youtube.sh
 }
 
 set_env_travis(){
