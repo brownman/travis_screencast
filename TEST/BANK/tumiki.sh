@@ -6,7 +6,7 @@ test_game(){
   sleep 1
   while :;do
   xdotool key ctrl
-  sleep .3
+  sleep .01
   done
   
 }
