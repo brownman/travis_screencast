@@ -96,7 +96,7 @@ mv tumiki-fighters* $dir_product
 ls -lR $dir_product
 return 1
 }
-if [ $MODE_DEPLOY = true ];then
+if [ $MODE_DEPLOY = false ];then
 steps_for_temp 
 else
 steps_for_travis
