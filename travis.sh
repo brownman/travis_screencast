@@ -93,14 +93,15 @@ validate_product && {
 }
 steps_for_travis(){
   before_task
-if [ $MODE_EXTERNAL = true ];then
-  test -n  $task_external || exit
-  try 12 $task_external &
-else
-  try 0  $dir_root/run.sh task &  
-fi
-
-after_task
+  ######################## example: task_external=$HOME/tumiki.sh
+  if [ "$MODE_EXTERNAL" = true ];then
+    test -n  "$task_external" || exit
+    try 12 $task_external &
+  else
+    try 0  $dir_root/run.sh task &  
+  fi
+  #########################
+  after_task
 }
 
 
@@ -115,7 +116,7 @@ ls -lR $dir_product
 return 1
 }
 
-if [ $MODE_DEPLOY = false ];then
+if [ "$MODE_DEPLOY" = false ];then
   steps_for_temp  ### use only for fast fail on testing
 else
   steps_for_travis
