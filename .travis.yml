@@ -7,8 +7,7 @@ cache: apt
 env:
   global:
   ###################################GIT
-    owner: brownman
-    repo: travis_screencast
+
     secure: "UoWHJNW/YXhHHBdjJ9pQCrPQa1WLc24s8kxpgF5bOCAZbRLLh7ndVoLLpsMdf9XCbTw/42RpYFrhag8oLwNn2cqAHBV38A32vAodwt6TGjGlEqM7oNTllikGOolEo4XAkldULcG2dHa22oQjUqqrcFVu0AiPcOCJs7/BC5aalF8="
 
 
@@ -27,7 +26,9 @@ branches:
     
 before_install:
   - echo before install
-  - echo repo: $repo
+  - export owner=brownman
+  - export repo=travis_screencast
+  - echo "repo: $repo"
 
 
   
