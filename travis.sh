@@ -94,9 +94,10 @@ validate_product && {
 steps_for_travis(){
   before_task
 if [ $MODE_EXTERNAL = true ];then
-try 12 $task_external &
+  test -n  $task_external || exit
+  try 12 $task_external &
 else
-try 0  $dir_root/run.sh task &  
+  try 0  $dir_root/run.sh task &  
 fi
 
 after_task
@@ -115,15 +116,7 @@ return 1
 }
 
 if [ $MODE_DEPLOY = false ];then
-steps_for_temp 
+  steps_for_temp  ### use only for fast fail on testing
 else
-steps_for_travis
+  steps_for_travis
 fi
-#steps_for_gitbook
-
-#openssl aes-256-cbc -k "$super_secret_password" -in super_secret.txt.enc -out super_secret.txt -d
-
- #steps_for_travis
-  #set_env1
-  #before_install &&  step install1
-  #step before_script &&   step script1 &&    step after_script &&   step after_success ||   step after_failure
