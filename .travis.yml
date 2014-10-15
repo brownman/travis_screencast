@@ -27,6 +27,7 @@ branches:
     
 before_install:
   - echo before install
+  - echo repo: $repo
 
 
   
