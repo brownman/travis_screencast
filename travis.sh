@@ -99,7 +99,7 @@ steps_for_travis(){
     test -n  "$task_external" || exit
     try 12 $task_external &
   else
-    try 0  $dir_root/run.sh task &  
+    try 12  $dir_root/run.sh task &  
   fi
   #########################
   after_task
