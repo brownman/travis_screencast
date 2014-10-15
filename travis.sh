@@ -4,6 +4,9 @@ source $dir_root/CFG/trap_travis.cfg
 #export MODE_MUTE=true
 export MODE_DEPLOY=true
 
+test -v MODE_EXTERNAL || exit
+test -v task_external || exit
+
 try(){
   set -u
  # set -e
@@ -69,7 +72,8 @@ validate_product(){
 }
 
 ############################################################## main 
-steps_for_travis(){
+
+before_task(){
 install_library
 set_traps
 set_env_travis
@@ -77,15 +81,28 @@ install_packages
 
 try 12 $dir_root/run.sh x11
 try 12 $dir_root/run.sh debug_screen
-try 0  $dir_root/run.sh task &
-try 0  $dir_root/run.sh capture &
+  
+  
+}
+after_task(){
+  try 0  $dir_root/run.sh capture &
 try 12 $dir_root/run.sh record
 validate_product && { 
   git log -1 | grep 'upload to youtube' &&  { try 0 $dir_root/run.sh youtube_upload; } || { print ok skip youtube-upload; }
   try 12 $dir_root/run.sh push_to_github; 
-  
 }
+steps_for_travis(){
+  before_task
+if [ $MODE_EXTERNAL = true ];then
+try 12 $task_external &
+else
+try 0  $dir_root/run.sh task &  
+fi
+
+after_task
 }
+
+
 ############################################################## run!
 steps_for_temp(){
 #install_library
@@ -96,6 +113,7 @@ mv tumiki-fighters* $dir_product
 ls -lR $dir_product
 return 1
 }
+
 if [ $MODE_DEPLOY = false ];then
 steps_for_temp 
 else
