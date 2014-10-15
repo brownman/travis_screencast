@@ -28,6 +28,8 @@ before_install:
   - echo before install
   - export owner=brownman
   - export repo=travis_screencast
+  - export MODE_EXTERNAL=false
+  - export task_external=''
 
   
 
