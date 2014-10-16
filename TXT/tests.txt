@@ -5,4 +5,4 @@ imagemagick notify-osd libnotify-bin xcowsay
 #windows control
 xdotool wmctrl
 #needed for some tests:
-tumiki-fighters
+#tumiki-fighters
