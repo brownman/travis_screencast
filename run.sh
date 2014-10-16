@@ -3,7 +3,7 @@ set -u
 
 run(){
 local cmd args size
-local str="$@"
+
 local runner="$1"
 shift
 local args="${@:-}"
