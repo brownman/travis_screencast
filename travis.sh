@@ -101,7 +101,7 @@ steps_for_travis(){
     try 12  $dir_root/run.sh external  
 
   else
-    try 12  $dir_root/run.sh task 
+    try 12  $dir_root/run.sh task &
   fi
   #########################
   after_task
