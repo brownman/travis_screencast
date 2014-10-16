@@ -1,10 +1,14 @@
 #!/bin/bash
 set -u
 
-run(){
+run2(){
 local cmd args size
-args="$@"
-cmd="$dir_SCRIPT/${args}.sh"
+str="$@"
+runner=${str[@]:0:1}
+args=${str[@]:1}
+
+
+cmd="$dir_SCRIPT/${runner}.sh $args"
 echo "[TASK] $cmd" 
 eval "$cmd" 2>/tmp/log/${filename_init}.err 1>/tmp/log/${filename_init}.out
 }
