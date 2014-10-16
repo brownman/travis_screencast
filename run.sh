@@ -4,8 +4,9 @@ set -u
 run(){
 local cmd args size
 local str="$@"
-local runner=${str[@]:0:1}
-local args=${str[@]:1}
+local runner="$1"
+shift
+local args="${@:-}"
 
 
 cmd="$dir_SCRIPT/${runner}.sh $args"
