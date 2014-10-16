@@ -96,8 +96,10 @@ steps_for_travis(){
   before_task
   ######################## example: task_external=$HOME/tumiki.sh
   if [ "$MODE_EXTERNAL" = true ];then
-    test -n  "$task_external" || exit
-    try 12 $task_external &
+    test -n  "$task_external" || { exit 1; }
+    
+    try 12  $dir_root/run.sh external &  
+
   else
     try 12  $dir_root/run.sh task &  
   fi
