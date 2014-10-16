@@ -3,9 +3,9 @@ set -u
 
 run(){
 local cmd args size
-str="$@"
-runner=${str[@]:0:1}
-args=${str[@]:1}
+local str="$@"
+local runner=${str[@]:0:1}
+local args=${str[@]:1}
 
 
 cmd="$dir_SCRIPT/${runner}.sh $args"
