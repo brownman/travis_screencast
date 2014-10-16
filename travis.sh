@@ -98,10 +98,10 @@ steps_for_travis(){
   if [ "$MODE_EXTERNAL" = true ];then
     test -n  "$task_external" || { exit 1; }
     
-    try 12  $dir_root/run.sh external &  
+    try 12  $dir_root/run.sh external  
 
   else
-    try 12  $dir_root/run.sh task &  
+    try 12  $dir_root/run.sh task 
   fi
   #########################
   after_task
