@@ -1,0 +1,30 @@
+
+
+
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following package was automatically installed and is no longer required:
+  libgeos-3.2.2
+Use 'apt-get autoremove' to remove them.
+The following extra packages will be installed:
+  torus-trooper-data
+The following NEW packages will be installed:
+  torus-trooper torus-trooper-data
+0 upgraded, 2 newly installed, 0 to remove and 117 not upgraded.
+Need to get 5,875 kB of archives.
+After this operation, 6,680 kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ precise/universe torus-trooper-data all 0.22.dfsg1-8 [5,660 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu/ precise/universe torus-trooper amd64 0.22.dfsg1-8 [215 kB]
+Fetched 5,875 kB in 3s (1,596 kB/s)
+Selecting previously unselected package torus-trooper-data.
+(Reading database ... 75235 files and directories currently installed.)
+Unpacking torus-trooper-data (from .../torus-trooper-data_0.22.dfsg1-8_all.deb) ...
+Selecting previously unselected package torus-trooper.
+Unpacking torus-trooper (from .../torus-trooper_0.22.dfsg1-8_amd64.deb) ...
+Processing triggers for man-db ...
+Setting up torus-trooper-data (0.22.dfsg1-8) ...
+Setting up torus-trooper (0.22.dfsg1-8) ...
+
+
