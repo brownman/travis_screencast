@@ -6,12 +6,9 @@ cache: apt
 
 env:
   global:
-  ###################################GIT
+    secure: "W8bEwk3wKCqnRepUVoSC1CjPgpl0AuB37JAwdnZ4RuMNn5D1nVI10i1C62UlE2W1nbt3y7GS1ViEqsvza54xdGKpMcV63Qr0W+E6kqI23qumHKnF5+dys7wFGl3y+akPAWnHPXfGhyCFjrWlkjuUsafFVh7ol4M+/7o/n/RL248="
 
-    secure: "UoWHJNW/YXhHHBdjJ9pQCrPQa1WLc24s8kxpgF5bOCAZbRLLh7ndVoLLpsMdf9XCbTw/42RpYFrhag8oLwNn2cqAHBV38A32vAodwt6TGjGlEqM7oNTllikGOolEo4XAkldULcG2dHa22oQjUqqrcFVu0AiPcOCJs7/BC5aalF8="
-
-
-
+#    secure: "UoWHJNW/YXhHHBdjJ9pQCrPQa1WLc24s8kxpgF5bOCAZbRLLh7ndVoLLpsMdf9XCbTw/42RpYFrhag8oLwNn2cqAHBV38A32vAodwt6TGjGlEqM7oNTllikGOolEo4XAkldULcG2dHa22oQjUqqrcFVu0AiPcOCJs7/BC5aalF8="
   #  secure: "eeg3fbZ+021Nwb519WvJ6jBWJxQzepJAq/kPRCQgP7JgWadWcSuOukn+aN+Dij7T8Wks+PRZGsPN91Xh4keKOnlPSBme7wK8pt0osFpy2fdX9KCj6gOp0/+cpRrkpomdSo+hX1iNdqJcFjP8OtMtC08Vs0mTbjzN2OaPtEfuXGU="
 
 
