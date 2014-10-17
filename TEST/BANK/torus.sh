@@ -1,10 +1,11 @@
 install(){
-sudo apt-get install tumiki-fighters
-#torus-trooper
+sudo apt-get install torus-trooper
+#tumiki-fighters
 }
+
 run(){
-#torus-trooper
-tumiki-fighters
+torus-trooper
+#tumiki-fighters
 }
 
 
