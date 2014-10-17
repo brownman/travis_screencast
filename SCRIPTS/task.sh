@@ -11,7 +11,7 @@ expose_file(){
   gxmessage -file "$file" -timeout 3 -title "$filename";
 }
 
-run(){
+run_many(){
 local pid file
 
 #test -f $file_list_session || exiting
@@ -27,4 +27,20 @@ test -n "$line" || { print ok empty line; break; }
 done <$dir_root/task.txt
 }
 
-run
+run_1(){
+local  file
+#test -f $file_list_session || exiting
+while read line;do
+test -n "$line" || { print ok empty line; break; }
+  file="$dir_TEST/BANK/${line}.sh"
+  commander "assert file_exist $file"
+  commander $file
+done <$dir_root/task.txt
+  
+}
+
+steps(){
+expose_file
+run_1
+}
+steps
