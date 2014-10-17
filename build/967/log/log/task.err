@@ -1,0 +1,50 @@
+[01;33m[*][0m DISPLAY: :99.0 basename: missing operand
+Try `basename --help' for more information.
+Xlib:  extension "RANDR" missing on display ":99.0".
+gxmessage: unable to read file
+[01;34m[*][0m [cmd] assert file_exist /home/travis/build/brownman/travis_screencast/TEST/BANK/torus.sh [01;32m[*][0m : 
+[01;34m[*][0m [cmd] /home/travis/build/brownman/travis_screencast/TEST/BANK/torus.sh [01;32m[*][0m : 
+[01;32m[*][0m : empty line 
+open /dev/sequencer or /dev/snd/seq: No such file or directory
+Load BulletML: basic/straight.xml
+Load BulletML: morph/speed_rnd.xml
+Load BulletML: morph/wedge_half.xml
+Load BulletML: morph/accelshot.xml
+Load BulletML: morph/fast.xml
+Load BulletML: morph/divide.xml
+Load BulletML: morph/wide.xml
+Load BulletML: morph/bar.xml
+Load BulletML: morph/accel.xml
+Load BulletML: morph/slide.xml
+Load BulletML: morph/twin.xml
+Load BulletML: morph/fire_slowshot.xml
+Load BulletML: morph/0to1.xml
+Load BulletML: morph/slowdown.xml
+Load BulletML: middle/random_fire.xml
+Load BulletML: middle/diamondnway.xml
+Load BulletML: middle/fast_aim.xml
+Load BulletML: middle/backword_spread.xml
+Load BulletML: middle/squirt.xml
+Load BulletML: middle/grow3way.xml
+Load BulletML: middle/grow.xml
+Load BulletML: middle/spread2blt.xml
+Load BulletML: middle/alt_sideshot.xml
+Load BulletML: middle/clow_rocket.xml
+Load BulletML: middle/35way.xml
+Load BulletML: middle/nway.xml
+Load BulletML: middle/alt_nway.xml
+Load BulletML: middle/forward_1way.xml
+Load bgm: tt1.ogg
+Load bgm: tt4.ogg
+Load bgm: tt3.ogg
+Load bgm: tt2.ogg
+Load SE: shot.wav
+Load SE: charge.wav
+Load SE: charge_shot.wav
+Load SE: hit.wav
+Load SE: small_dest.wav
+Load SE: middle_dest.wav
+Load SE: boss_dest.wav
+Load SE: myship_dest.wav
+Load SE: extend.wav
+Load SE: timeup_beep.wav
