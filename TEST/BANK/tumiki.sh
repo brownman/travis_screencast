@@ -20,5 +20,5 @@ build_game(){
 #  commander make 
   commander mv tumiki-fighters* $dir_product
 }
-#test_game
-build_game
+test_game
+#build_game
