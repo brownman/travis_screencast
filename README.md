@@ -17,7 +17,7 @@ steps:
 - upload to: [url](https://github.com/brownman/travis_screencast/tree/gh-pages)
 
 
-project which use this project:
+projects that use travis_screencast:
 ----
 [tumiki-fighters](https://github.com/brownman/tumiki-fighters)
 
