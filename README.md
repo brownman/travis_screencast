@@ -17,11 +17,5 @@ steps:
 
 projects that use travis_screencast:
 ----
-[tumiki-fighters](https://github.com/brownman/tumiki-fighters)
-
+##### [tumiki-fighters](https://github.com/brownman/tumiki-fighters)
  
-
-
-private
------
-[update wiki](https://github.com/brownman/travis_screencast/tree/develop/wiki)
