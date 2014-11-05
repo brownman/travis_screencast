@@ -3,16 +3,8 @@
 
 Travis: Automated screencast
 -----
-- product: a video capture: of a linux desktop (video+sound)
+- produce a video capture of a linux desktop (video+sound) and upload it to github-pages OR youtube
 - integrated services: Travis-ci + Github + Youtube
-
-
-steps:
-----
-- Mission: present my projects
-- clone one of my github repositories
-- run it + record a screencast
-- upload to: [url](https://github.com/brownman/travis_screencast/tree/gh-pages)
 
 
 projects that use travis_screencast:
