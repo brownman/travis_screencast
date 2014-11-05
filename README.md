@@ -23,4 +23,7 @@ projects that use travis_screencast:
 
  
 
+
+private
+-----
 [update wiki](https://github.com/brownman/travis_screencast/tree/develop/wiki)
