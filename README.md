@@ -1,7 +1,5 @@
 [![Build Status](https://travis-ci.org/brownman/travis_screencast.svg?branch=develop)](https://travis-ci.org/browman/travis_screencast)
  
-### [Video](http://brownman.github.io/travis_screencast/)
-
 
 Travis: Automated screencast
 -----
@@ -19,7 +17,7 @@ steps:
 
 projects that use travis_screencast:
 ----
-[tumiki-fighters](https://github.com/brownman/tumiki-fighters)
+![tumiki-fighters](https://github.com/brownman/tumiki-fighters)
 
  
 
