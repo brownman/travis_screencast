@@ -119,8 +119,8 @@ ls -lR $dir_product
 return 1
 }
 
-if [ "$MODE_DEPLOY" = false ];then
-  steps_for_temp  ### use only for fast fail on testing
-else
+#if [ "$MODE_DEPLOY" = false ];then
+#  steps_for_temp  ### use only for fast fail on testing
+#else
   steps_for_travis
-fi
+#fi
