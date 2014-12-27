@@ -9,4 +9,4 @@ commander sleep 10
 paplay <(espeak -vmb-us2  "That bored me" --stdout)
 killall firefox  
 }
-tess_firefox
+test_firefox
