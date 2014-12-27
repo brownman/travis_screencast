@@ -1,0 +1,9 @@
+[01;33m[*][0m DISPLAY: :99.0 basename: missing operand
+Try `basename --help' for more information.
+Xlib:  extension "RANDR" missing on display ":99.0".
+gxmessage: unable to read file
+[01;34m[*][0m [cmd] assert file_exist /home/travis/build/brownman/travis_screencast/TEST/BANK/service.sh [01;31m[*][0m : [ASSERT ERROR] 
+type:  file_exist
+item:  /home/travis/build/brownman/travis_screencast/TEST/BANK/service.sh
+extra:  
+[CALLER] 
