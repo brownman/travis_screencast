@@ -1,0 +1,17 @@
+[01;33m[*][0m DISPLAY: :99.0 basename: missing operand
+Try `basename --help' for more information.
+Xlib:  extension "RANDR" missing on display ":99.0".
+gxmessage: unable to read file
+[01;34m[*][0m [cmd] assert file_exist /home/travis/build/brownman/travis_screencast/TEST/BANK/firefox.sh [01;32m[*][0m : 
+[01;34m[*][0m [cmd] /home/travis/build/brownman/travis_screencast/TEST/BANK/firefox.sh [01;34m[*][0m [cmd] firefox www.youtube.com/watch?v=oHg5SJYRHA0 & [01;32m[*][0m : 
+Cannot get client list properties. 
+(_NET_CLIENT_LIST or _WIN_CLIENT_LIST)
+/home/travis/build/brownman/travis_screencast/TEST/BANK/firefox.sh: line 6: xcowsay: command not found
+Cannot get client list properties. 
+(_NET_CLIENT_LIST or _WIN_CLIENT_LIST)
+Xlib:  extension "RANDR" missing on display ":99.0".
+[01;34m[*][0m [cmd] sleep 10 [01;32m[*][0m : 
+/home/travis/build/brownman/travis_screencast/TEST/BANK/firefox.sh: line 10: espeak: command not found
+Failed to open audio file.
+[01;32m[*][0m : 
+[01;32m[*][0m : empty line 
