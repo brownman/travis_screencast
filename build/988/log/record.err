@@ -1,0 +1,333 @@
+[01;34m[*][0m [cmd] ffmpeg -version ffmpeg version 0.8.16-4:0.8.16-0ubuntu0.12.04.1, Copyright (c) 2000-2014 the Libav developers
+  built on Sep 16 2014 18:33:49 with gcc 4.6.3
+The ffmpeg program is only provided for script compatibility and will be removed
+in a future release. It has been deprecated in the Libav project to allow for
+incompatible command line syntax improvements in its replacement called avconv
+(see Changelog for details). Please use avconv instead.
+[01;32m[*][0m : 
+[01;34m[*][0m [cmd] record_recordmydesktop [01;34m[*][0m [cmd] sleep 10 [01;34m[*][0m [cmd] recordmydesktop --width 1024 --height 768 \ --full-shots --fps 15 --channels 1 --device pulse --v_quality 63 --s_quality 10 --v_bitrate 2000000 --no-wm-check --no-cursor --output=/tmp/PRODUCT/session.ogv Initial recording window is set to:
+X:0   Y:0    Width:1024    Height:768
+Adjusted recording window is set to:
+X:0   Y:0    Width:1024    Height:768
+Initializing...
+Buffer size adjusted to 4096 from 4096 frames.
+Opened PCM device pulse
+Recording on device pulse is set to:
+1 channels at 22050Hz
+Capturing!
+[01;32m[*][0m : 
+[01;34m[*][0m [cmd] killall recordmydesktop Shutting down.
+*********************************************
+
+Cached 19 MB, from 226 MB that were received.
+Average cache compression ratio: 91.3 %
+
+*********************************************
+Saved 151 frames in a total of 152 requests
+...[01;32m[*][0m : 
+.
+STATE:ENCODING
+Encoding started!
+This may take several minutes.
+Pressing Ctrl-C will cancel the procedure (resuming will not be possible, but
+any portion of the video, which is already encoded won't be deleted).
+Please wait...
+Output file: /tmp/PRODUCT/session.ogv
+Encoding finished!
+Wait a moment please...
+   
+Done.
+Written 704943 bytes
+(661941 of which were video data and 43002 audio data)
+
+Cleanning up cache...
+Done!!!
+Goodbye!
+[01;32m[*][0m : 
+[01;32m[*][0m : 
+[01;34m[*][0m [cmd] convert_from_ogv [01;34m[*][0m [cmd] HandBrakeCLI -i /tmp/PRODUCT/session.ogv -o /tmp/PRODUCT/session.mp4 --encoder x264 --vb 1800 --ab 128 --maxWidth $WIDTH --maxHeight $HEIGHT --two-pass --optimize [18:37:21] hb_init: starting libhb thread
+HandBrake rev0 (2013051899) - Linux x86_64 - http://handbrake.fr
+32 CPUs detected
+Opening /tmp/PRODUCT/session.ogv...
+[18:37:21] hb_scan: path=/tmp/PRODUCT/session.ogv, title_index=1
+libbluray/bdnav/index_parse.c:162: indx_parse(): error opening /tmp/PRODUCT/session.ogv/BDMV/index.bdmv
+libbluray/bdnav/index_parse.c:162: indx_parse(): error opening /tmp/PRODUCT/session.ogv/BDMV/BACKUP/index.bdmv
+libbluray/bluray.c:1725: nav_get_title_list(/tmp/PRODUCT/session.ogv) failed (0x7f5e84000900)
+[18:37:21] bd: not a bd - trying as a stream/file instead
+libdvdnav: Using dvdnav version 4.1.3
+libdvdread: Encrypted DVD support unavailable.
+libdvdnav:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdnav:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+[18:37:21] dvd: not a dvd - trying as a stream/file instead
+Input #0, ogg, from '/tmp/PRODUCT/session.ogv':
+  Duration: 00:00:10.33, start: 0.000000, bitrate: 551 kb/s
+    Stream #0.0: Data: skeleton
+    Stream #0.1: Video: theora, yuv420p, 1024x768 [PAR 1:1 DAR 4:3], 5.83 fps, 15 tbn, 15 tbc
+    Stream #0.2: Audio: vorbis, 22050 Hz, mono, fltp, 89 kb/s
+[18:37:21] scan: decoding previews for title 1
+[18:37:21] scan: audio 0x2: vorbis, rate=22050Hz, bitrate=89991 Unknown (vorbis) (1.0 ch)
+[18:37:21] Warning: Could not read data for preview 1, skipped
+[ogg @ 0x7f5e84001860] read_timestamp() failed in the middle
+[ogg @ 0x7f5e84001860] read_timestamp() failed in the middle
+[ogg @ 0x7f5e84001860] read_timestamp() failed in the middle
+[ogg @ 0x7f5e84001860] read_timestamp() failed in the middle
+[ogg @ 0x7f5e84001860] read_timestamp() failed in the middle
+[ogg @ 0x7f5e84001860] read_timestamp() failed in the middle
+[ogg @ 0x7f5e84001860] read_timestamp() failed in the middle
+[ogg @ 0x7f5e84001860] read_timestamp() failed in the middle
+[18:37:21] scan: 9 previews, 1024x768, 15.000 fps, autocrop = 0/0/0/0, aspect 4:3, PAR 1:1
+[18:37:21] libhb: scan thread found 1 valid title(s)
++ title 1:
+  + stream: /tmp/PRODUCT/session.ogv
+  + duration: 00:00:10
+  + size: 1024x768, pixel aspect: 1/1, display aspect: 1.33, 15.000 fps
+  + autocrop: 0/0/0/0
+  + chapters:
+    + 1: cells 0->0, 0 blocks, duration 00:00:10
+  + audio tracks:
+    + 1, Unknown (vorbis) (1.0 ch) (iso639-2: und)
+  + subtitle tracks:
+[18:37:21] 2 job(s) to process
+[18:37:21] starting job
+[18:37:21] work: mixdown not specified, track 1 setting mixdown Mono
+[18:37:21] work: sanitizing track 1 bitrate 128 to 96 Kbps
+[18:37:21] sync: expecting 154 video frames
+[18:37:21] job configuration:
+[18:37:21]  * source
+[18:37:21]    + /tmp/PRODUCT/session.ogv
+[18:37:21]    + title 1, chapter(s) 1 to 1
+[18:37:21]    + container: ogg
+[18:37:21]    + data rate: 551 kbps
+[18:37:21]  * destination
+[18:37:21]    + /tmp/PRODUCT/session.mp4
+[18:37:21]    + container: MPEG-4 (.mp4 and .m4v)
+[18:37:21]      + optimized for progressive web downloads
+[18:37:21]  * video track
+[18:37:21]    + decoder: theora
+[18:37:21]    + frame rate: same as source (around 15.000 fps)
+[18:37:21]    + filters
+[18:37:21]      + Framerate Shaper (0:27000000:1800000)
+[18:37:21]        + frame rate: same as source (around 15.000 fps)
+[18:37:21]      + Crop and Scale (1024:768:0:0:0:0)
+[18:37:21]        + source: 1024 * 768, crop (0/0/0/0): 1024 * 768, scale: 1024 * 768
+[18:37:21]    + dimensions: 1024 * 768, mod 0
+[18:37:21]    + encoder: H.264 (x264)
+[18:37:21]      + bitrate: 1800 kbps, pass: 1
+[18:37:21]  * audio track 1
+[18:37:21]    + decoder: Unknown (vorbis) (1.0 ch) (track 1, id 0x2)
+[18:37:21]      + bitrate: 89 kbps, samplerate: 22050 Hz
+[18:37:21]    + mixdown: Mono
+[18:37:21]    + encoder: AAC (faac)
+[18:37:21]      + bitrate: 96 kbps, samplerate: 22050 Hz
+[18:37:21] reader: first SCR 0 id 0x1 DTS 0
+[18:37:21] encx264: min-keyint: 15, keyint: 150
+x264 [warning]: --psnr used with psy on: results will be invalid!
+x264 [warning]: --tune psnr should be used if attempting to benchmark psnr!
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX XOP FMA4 FMA3 SSEMisalign LZCNT BMI1
+x264 [info]: profile High, level 3.1
+[18:37:21] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 576000, next 588000, dur 12000)
+[18:37:21] reader: done. 1 scr changes
+[18:37:21] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 588000, next 600000, dur 12000)
+[18:37:21] sync: video time didn't advance - dropped 2 frames (delta 0 ms, current 600000, next 612000, dur 12000)
+[18:37:21] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 612000, next 624000, dur 12000)
+[18:37:21] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 624000, next 636000, dur 12000)
+[18:37:21] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 636000, next 648000, dur 12000)
+[18:37:21] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 648000, next 660000, dur 12000)
+[18:37:21] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 660000, next 672000, dur 12000)
+[18:37:21] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 672000, next 684000, dur 12000)
+[18:37:21] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 684000, next 696000, dur 12000)
+[18:37:21] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 696000, next 708000, dur 12000)
+[18:37:21] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 708000, next 720000, dur 12000)
+[18:37:21] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 720000, next 732000, dur 12000)
+[18:37:21] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 732000, next 744000, dur 12000)
+[18:37:21] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 744000, next 756000, dur 12000)
+[18:37:21] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 756000, next 768000, dur 12000)
+[18:37:21] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 768000, next 780000, dur 12000)
+[18:37:21] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 780000, next 792000, dur 12000)
+[18:37:21] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 792000, next 804000, dur 12000)
+[18:37:21] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 804000, next 816000, dur 12000)
+[18:37:21] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 816000, next 828000, dur 12000)
+[18:37:21] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 828000, next 840000, dur 12000)
+[18:37:21] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 840000, next 852000, dur 12000)
+[18:37:21] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 852000, next 864000, dur 12000)
+[18:37:21] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 864000, next 876000, dur 12000)
+[18:37:21] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 876000, next 888000, dur 12000)
+[18:37:21] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 888000, next 900000, dur 12000)
+[18:37:21] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 900000, next 912000, dur 12000)
+[18:37:21] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 912000, next 924000, dur 12000)
+[18:37:22] work: average encoding speed for job is 0.000000 fps
+[18:37:22] sync: got 72 frames, 154 expected
+[18:37:22] render: lost time: 0 (0 frames)
+[18:37:22] render: gained time: 0 (0 frames) (0 not accounted for)
+[18:37:22] theora-decoder done: 104 frames, 0 decoder errors, 0 drops
+x264 [info]: frame I:1     Avg QP:15.32  size:  3407  PSNR Mean Y:60.60 U:76.72 V:77.89 Avg:62.32 Global:62.32
+x264 [info]: frame P:25    Avg QP:10.08  size: 15576  PSNR Mean Y:59.61 U:63.68 V:65.20 Avg:60.62 Global:57.71
+x264 [info]: frame B:46    Avg QP:13.08  size:  7842  PSNR Mean Y:59.17 U:61.93 V:62.73 Avg:59.94 Global:56.87
+x264 [info]: consecutive B-frames: 13.9%  2.8%  0.0% 83.3%
+x264 [info]: mb I  I16..4: 98.9%  0.1%  1.0%
+x264 [info]: mb P  I16..4:  9.6%  2.5%  2.8%  P16..4:  3.9%  0.4%  0.3%  0.0%  0.0%    skip:80.5%
+x264 [info]: mb B  I16..4:  0.5%  1.2%  0.9%  B16..8:  3.3%  0.8%  0.6%  direct: 1.3%  skip:91.4%  L0:46.7% L1:47.0% BI: 6.4%
+x264 [info]: final ratefactor: -2.18
+x264 [info]: 8x8 transform intra:19.6% inter:58.6%
+x264 [info]: coded y,uvDC,uvAC intra: 36.7% 40.3% 30.8% inter: 2.2% 3.2% 2.2%
+x264 [info]: i16 v,h,dc,p: 75% 23%  2%  0%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 33% 26% 20%  3%  3%  3%  3%  5%  5%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 29% 35% 11%  4%  4%  4%  4%  4%  5%
+x264 [info]: i8c dc,h,v,p: 61% 25% 11%  4%
+x264 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x264 [info]: ref P L0: 87.2%  3.1%  7.0%  2.6%
+x264 [info]: ref B L0: 88.1%  9.1%  2.8%
+x264 [info]: ref B L1: 95.1%  4.9%
+x264 [info]: SSIM Mean Y:0.9995459 (33.428db)
+x264 [info]: PSNR Mean Y:59.398 U:62.898 V:64.066 Avg:60.294 Global:57.289 kb/s:579.62
+[18:37:22] vorbis-decoder done: 0 frames, 0 decoder errors, 0 drops
+[18:37:22] starting job
+[18:37:22] work: mixdown not specified, track 1 setting mixdown Mono
+[18:37:22] work: sanitizing track 1 bitrate 128 to 96 Kbps
+[18:37:22] sync: expecting 72 video frames
+[18:37:22] job configuration:
+[18:37:22]  * source
+[18:37:22]    + /tmp/PRODUCT/session.ogv
+[18:37:22]    + title 1, chapter(s) 1 to 1
+[18:37:22]    + container: ogg
+[18:37:22]    + data rate: 551 kbps
+[18:37:22]  * destination
+[18:37:22]    + /tmp/PRODUCT/session.mp4
+[18:37:22]    + container: MPEG-4 (.mp4 and .m4v)
+[18:37:22]      + optimized for progressive web downloads
+[18:37:22]  * video track
+[18:37:22]    + decoder: theora
+[18:37:22]    + frame rate: same as source (around 15.000 fps)
+[18:37:22]    + filters
+[18:37:22]      + Framerate Shaper (0:27000000:1800000)
+[18:37:22]        + frame rate: same as source (around 15.000 fps)
+[18:37:22]      + Crop and Scale (1024:768:0:0:0:0)
+[18:37:22]        + source: 1024 * 768, crop (0/0/0/0): 1024 * 768, scale: 1024 * 768
+[18:37:22]    + dimensions: 1024 * 768, mod 0
+[18:37:22]    + encoder: H.264 (x264)
+[18:37:22]      + bitrate: 1800 kbps, pass: 2
+[18:37:22]  * audio track 1
+[18:37:22]    + decoder: Unknown (vorbis) (1.0 ch) (track 1, id 0x2)
+[18:37:22]      + bitrate: 89 kbps, samplerate: 22050 Hz
+[18:37:22]    + mixdown: Mono
+[18:37:22]    + encoder: AAC (faac)
+[18:37:22]      + bitrate: 96 kbps, samplerate: 22050 Hz
+[18:37:22] reader: first SCR 0 id 0x1 DTS 0
+[18:37:22] encx264: min-keyint: 15, keyint: 150
+x264 [warning]: --psnr used with psy on: results will be invalid!
+x264 [warning]: --tune psnr should be used if attempting to benchmark psnr!
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX XOP FMA4 FMA3 SSEMisalign LZCNT BMI1
+x264 [warning]: Error: 2pass curve failed to converge
+x264 [warning]: target: 1800.00 kbit/s, expected: 1747.14 kbit/s, avg QP: 0.0630
+x264 [warning]: try reducing target bitrate
+x264 [info]: profile High, level 3.1
+[18:37:22] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 576000, next 588000, dur 12000)
+[18:37:22] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 588000, next 600000, dur 12000)
+[18:37:22] sync: video time didn't advance - dropped 2 frames (delta 0 ms, current 600000, next 612000, dur 12000)
+[18:37:22] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 612000, next 624000, dur 12000)
+[18:37:22] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 624000, next 636000, dur 12000)
+[18:37:22] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 636000, next 648000, dur 12000)
+[18:37:22] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 648000, next 660000, dur 12000)
+[18:37:22] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 660000, next 672000, dur 12000)
+[18:37:22] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 672000, next 684000, dur 12000)
+[18:37:22] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 684000, next 696000, dur 12000)
+[18:37:22] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 696000, next 708000, dur 12000)
+[18:37:22] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 708000, next 720000, dur 12000)
+[18:37:22] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 720000, next 732000, dur 12000)
+[18:37:22] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 732000, next 744000, dur 12000)
+[18:37:22] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 744000, next 756000, dur 12000)
+[18:37:22] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 756000, next 768000, dur 12000)
+[18:37:22] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 768000, next 780000, dur 12000)
+[18:37:22] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 780000, next 792000, dur 12000)
+[18:37:22] reader: done. 1 scr changes
+[18:37:22] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 792000, next 804000, dur 12000)
+[18:37:22] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 804000, next 816000, dur 12000)
+[18:37:22] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 816000, next 828000, dur 12000)
+[18:37:22] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 828000, next 840000, dur 12000)
+[18:37:22] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 840000, next 852000, dur 12000)
+[18:37:22] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 852000, next 864000, dur 12000)
+[18:37:22] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 864000, next 876000, dur 12000)
+[18:37:22] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 876000, next 888000, dur 12000)
+[18:37:22] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 888000, next 900000, dur 12000)
+[18:37:22] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 900000, next 912000, dur 12000)
+[18:37:22] sync: video time didn't advance - dropped 1 frames (delta 0 ms, current 912000, next 924000, dur 12000)
+[18:37:23] work: average encoding speed for job is 0.000000 fps
+[18:37:23] sync: got 72 frames, 72 expected
+[18:37:23] render: lost time: 0 (0 frames)
+[18:37:23] render: gained time: 0 (0 frames) (0 not accounted for)
+[18:37:23] theora-decoder done: 104 frames, 0 decoder errors, 0 drops
+x264 [info]: frame I:1     Avg QP: 0.08  size:  6619  PSNR Mean Y:82.97 U:100.00 V:100.00 Avg:84.73 Global:84.73
+x264 [info]: frame P:25    Avg QP: 0.78  size: 20329  PSNR Mean Y:75.42 U:80.83 V:80.35 Avg:76.45 Global:74.20
+x264 [info]: frame B:46    Avg QP: 3.28  size: 11619  PSNR Mean Y:72.07 U:73.75 V:73.78 Avg:72.53 Global:71.10
+x264 [info]: consecutive B-frames: 13.9%  2.8%  0.0% 83.3%
+x264 [info]: mb I  I16..4: 99.0%  0.0%  1.0%
+x264 [info]: mb P  I16..4:  9.3%  2.0%  3.1%  P16..4:  2.4%  0.3%  0.2%  0.0%  0.0%    skip:82.7%
+x264 [info]: mb B  I16..4:  0.2%  1.0%  1.4%  B16..8:  2.0%  0.7%  0.6%  direct: 1.3%  skip:92.9%  L0:49.6% L1:42.3% BI: 8.1%
+x264 [info]: 8x8 transform intra:16.4% inter:50.8%
+x264 [info]: coded y,uvDC,uvAC intra: 40.5% 43.3% 37.6% inter: 1.8% 2.8% 2.6%
+x264 [info]: i16 v,h,dc,p: 79% 18%  2%  1%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 35% 28% 20%  2%  2%  2%  2%  3%  4%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 29% 34% 10%  4%  4%  4%  5%  5%  5%
+x264 [info]: i8c dc,h,v,p: 60% 25% 11%  4%
+x264 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x264 [info]: ref P L0: 89.5%  4.1%  4.2%  2.2%
+x264 [info]: ref B L0: 93.2%  5.0%  1.8%
+x264 [info]: ref B L1: 98.3%  1.7%
+x264 [info]: SSIM Mean Y:0.9999725 (45.601db)
+x264 [info]: PSNR Mean Y:73.815 U:77.457 V:77.233 Avg:74.570 Global:72.413 kb/s:807.17
+[18:37:23] vorbis-decoder done: 0 frames, 0 decoder errors, 0 drops
+[18:37:23] muxmp4: optimizing file
+[18:37:23] mux: track 0, 72 frames, 1049281 bytes, 812.35 kbps, fifo 128
+[18:37:23] mux: track 1, 212 frames, 44809 bytes, 34.69 kbps, fifo 256
+[18:37:23] libhb: work result = 0
+
+Encode done!
+HandBrake has exited.
+[01;32m[*][0m : 
+[01;34m[*][0m [cmd] ffmpeg -i /tmp/PRODUCT/session.mp4 -acodec libvorbis -ac 2 -ab 96k -ar 44100 -b:v 345k -s 1024x768 /tmp/PRODUCT/session.webm ffmpeg version 0.8.16-4:0.8.16-0ubuntu0.12.04.1, Copyright (c) 2000-2014 the Libav developers
+  built on Sep 16 2014 18:33:49 with gcc 4.6.3
+The ffmpeg program is only provided for script compatibility and will be removed
+in a future release. It has been deprecated in the Libav project to allow for
+incompatible command line syntax improvements in its replacement called avconv
+(see Changelog for details). Please use avconv instead.
+
+Seems stream 0 codec frame rate differs from container frame rate: 180000.00 (180000/1) -> 15.00 (15/1)
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/tmp/PRODUCT/session.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42isomavc1
+    creation_time   : 2015-02-01 18:37:22
+    encoder         : HandBrake rev0 2013051899
+  Duration: 00:00:10.26, start: 0.000000, bitrate: 855 kb/s
+    Stream #0.0(und): Video: h264 (High), yuv420p, 1024x768, 817 kb/s, 7.01 fps, 15 tbr, 90k tbn, 180k tbc
+    Metadata:
+      creation_time   : 2015-02-01 18:37:22
+    Stream #0.1(und): Audio: aac, 22050 Hz, mono, s16, 36 kb/s
+    Metadata:
+      creation_time   : 2015-02-01 18:37:22
+[buffer @ 0x1074ae0] w:1024 h:768 pixfmt:yuv420p
+[libvpx @ 0x10761a0] v1.0.0
+Output #0, webm, to '/tmp/PRODUCT/session.webm':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42isomavc1
+    creation_time   : 2015-02-01 18:37:22
+    encoder         : Lavf53.21.1
+    Stream #0.0(und): Video: libvpx, yuv420p, 1024x768, q=-1--1, 200 kb/s, 1k tbn, 15 tbc
+    Metadata:
+      creation_time   : 2015-02-01 18:37:22
+    Stream #0.1(und): Audio: libvorbis, 44100 Hz, 2 channels, s16, 96 kb/s
+    Metadata:
+      creation_time   : 2015-02-01 18:37:22
+Stream mapping:
+  Stream #0.0 -> #0.0
+  Stream #0.1 -> #0.1
+Press ctrl-c to stop encoding
+frame=    6 fps=  0 q=0.0 size=       4kB time=3.07 bitrate=  11.5kbits/s    frame=   13 fps= 12 q=0.0 size=       4kB time=3.53 bitrate=  10.0kbits/s    frame=   17 fps= 10 q=0.0 size=       4kB time=3.80 bitrate=   9.3kbits/s    frame=   22 fps=  9 q=0.0 size=      36kB time=4.12 bitrate=  72.1kbits/s    frame=   25 fps=  8 q=0.0 size=      36kB time=4.40 bitrate=  67.6kbits/s    frame=   29 fps=  8 q=0.0 size=      68kB time=4.68 bitrate= 119.6kbits/s    frame=   34 fps=  8 q=0.0 size=      80kB time=5.24 bitrate= 124.5kbits/s    frame=   37 fps=  8 q=0.0 size=      80kB time=5.67 bitrate= 115.0kbits/s    frame=   40 fps=  7 q=0.0 size=      80kB time=6.07 bitrate= 107.5kbits/s    frame=   43 fps=  7 q=0.0 size=      80kB time=6.47 bitrate= 100.8kbits/s    frame=   46 fps=  7 q=0.0 size=      80kB time=6.87 bitrate=  94.9kbits/s    frame=   52 fps=  7 q=0.0 size=     112kB time=7.67 bitrate= 119.2kbits/s    frame=   57 fps=  7 q=0.0 size=     144kB time=8.33 bitrate= 141.1kbits/s    frame=   62 fps=  7 q=0.0 size=     176kB time=9.00 bitrate= 159.8kbits/s    frame=   65 fps=  7 q=0.0 size=     176kB time=9.40 bitrate= 153.0kbits/s    frame=   70 fps=  7 q=0.0 size=     208kB time=9.79 bitrate= 173.8kbits/s    frame=   72 fps=  7 q=0.0 Lsize=     231kB time=9.85 bitrate= 192.5kbits/s    
+video:191kB audio:32kB global headers:4kB muxing overhead 1.796731%
+[01;32m[*][0m : 
+[01;32m[*][0m : 
