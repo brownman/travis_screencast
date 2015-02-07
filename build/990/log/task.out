@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+1423303799338	addons.manager	WARN	Exception calling callback: TypeError: this._backgroundUpdateCheckCodePing is not a function (resource://gre/components/nsUpdateService.js:2329:8) JS Stack trace: AUS__checkAddonCompatibility/<@nsUpdateService.js:2329:9 < safeCall@AddonManager.jsm:166:5 < getAddonsByTypes_noMoreObjects@AddonManager.jsm:2063:9 < AOC_callNext@AddonManager.jsm:261:7 < getAddonsByTypes_concatAddons@AddonManager.jsm:2058:11 < SocialAddonProvider.getAddonsByTypes@SocialService.jsm:1051:46 < callProvider@AddonManager.jsm:192:5 < getAddonsByTypes_nextObject@AddonManager.jsm:2056:1 < AOC_callNext@AddonManager.jsm:267:7 < getAddonsByTypes_concatAddons@AddonManager.jsm:2058:11 < PL_getAddonsByTypes@PluginProvider.jsm:148:5 < callProvider@AddonManager.jsm:192:5 < getAddonsByTypes_nextObject@AddonManager.jsm:2056:1 < AOC_callNext@AddonManager.jsm:267:7 < getAddonsByTypes_concatAddons@AddonManager.jsm:2058:11 < LightweightThemeManager_getAddonsByTypes@LightweightThemeManager.jsm:390:46 < callProvider@AddonManager.jsm:192:5 < getAddonsByTypes_nextObject@AddonManager.jsm:2056:1 < AOC_callNext@AddonManager.jsm:267:7 < getAddonsByTypes_concatAddons@AddonManager.jsm:2058:11 < getAddonsByTypes_getVisibleAddons@XPIProvider.jsm:3638:45 < makeSafe/<@XPIProviderUtils.js:146:17 < asyncMap_gotValue@XPIProviderUtils.js:181:7 < asyncMap_callback@XPIProviderUtils.js:188:9 < completeAddon@XPIProviderUtils.js:135:5 < getAddon@AddonRepository.jsm:563:7 < AddonRepo_getCachedAddonByID/getCachedAddonByID_retrieveData/<@AddonRepository.jsm:583:56 < getCachedAddonByID_retrieveData@AddonRepository.jsm:583:11 < AD_retrieveStoredData/gatherResults/<@AddonRepository.jsm:1753:30 < openModalWindow@nsPrompter.js:369:5 < ModalPrompter.prototype.openPrompt@nsPrompter.js:552:9 < ModalPrompter.prototype.confirmEx@nsPrompter.js:696:9 < Prompter.prototype.confirmEx@nsPrompter.js:78:9 < BG__onWindowsRestored/<@nsBrowserGlue.js:734:1
+
+
+
