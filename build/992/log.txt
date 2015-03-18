@@ -1,0 +1,42 @@
+build/992:
+total 8
+drwxrwxr-x 2 travis travis 4096 Mar 18 20:36 log
+drwxrwxr-x 2 travis travis 4096 Mar 18 20:36 media
+-rw-rw-r-- 1 travis travis    0 Mar 18 20:36 log.txt
+
+build/992/log:
+total 68
+-rw-rw-r-- 1 travis travis 23440 Mar 18 20:36 record.err
+-rw-rw-r-- 1 travis travis  5206 Mar 18 20:35 x11.err
+-rw-rw-r-- 1 travis travis  1943 Mar 18 20:35 task.out
+-rw-rw-r-- 1 travis travis  1730 Mar 18 20:36 record.out
+-rw-rw-r-- 1 travis travis  1215 Mar 18 20:36 capture.err
+-rw-rw-r-- 1 travis travis  1022 Mar 18 20:35 task.err
+-rw-rw-r-- 1 travis travis   383 Mar 18 20:35 debug_screen.err
+-rw-rw-r-- 1 travis travis   172 Mar 18 20:35 debug_screen.out
+-rw-rw-r-- 1 travis travis    30 Mar 18 20:36 capture.out
+-rw-rw-r-- 1 travis travis    29 Mar 18 20:36 push_to_github.out
+-rw-rw-r-- 1 travis travis     6 Mar 18 20:35 x11.out
+-rw-rw-r-- 1 travis travis     0 Mar 18 20:36 push_to_github.err
+
+build/992/media:
+total 3184
+-rw-rw-r-- 1 travis travis 1541183 Mar 18 20:36 session.mp4
+-rw-rw-r-- 1 travis travis  890966 Mar 18 20:36 session.ogv
+-rw-rw-r-- 1 travis travis  298669 Mar 18 20:36 session.webm
+-rw-rw-r-- 1 travis travis  217695 Mar 18 20:35 51.png
+-rw-rw-r-- 1 travis travis  182214 Mar 18 20:35 47.png
+-rw-rw-r-- 1 travis travis   54249 Mar 18 20:35 44.png
+-rw-rw-r-- 1 travis travis    6486 Mar 18 20:35 41.png
+-rw-rw-r-- 1 travis travis    6486 Mar 18 20:35 session.png
+-rw-rw-r-- 1 travis travis     210 Mar 18 20:36 01.png
+-rw-rw-r-- 1 travis travis     210 Mar 18 20:36 05.png
+-rw-rw-r-- 1 travis travis     210 Mar 18 20:36 08.png
+-rw-rw-r-- 1 travis travis     210 Mar 18 20:36 11.png
+-rw-rw-r-- 1 travis travis     210 Mar 18 20:36 14.png
+-rw-rw-r-- 1 travis travis     210 Mar 18 20:36 17.png
+-rw-rw-r-- 1 travis travis     210 Mar 18 20:36 21.png
+-rw-rw-r-- 1 travis travis     210 Mar 18 20:36 24.png
+-rw-rw-r-- 1 travis travis     210 Mar 18 20:36 28.png
+-rw-rw-r-- 1 travis travis     210 Mar 18 20:35 55.png
+-rw-rw-r-- 1 travis travis     210 Mar 18 20:35 58.png
